@@ -1,29 +1,28 @@
-# Data sources for the Oxted & Hurst Green Bugle
-
-rss_feeds:
-  - name: "Tandridge District Council news"
+rss:
+  - name: "Tandridge District Council"
     url: "https://www.tandridge.gov.uk/rss/news"
     category: council
-  - name: "Surrey Live - Tandridge"
-    url: "https://www.getsurrey.co.uk/news/surrey-news/?service=rss"
-    category: local_news
-  - name: "Surrey Police news"
+  - name: "Surrey Police"
     url: "https://www.surrey.police.uk/sd/rss/"
-    category: police
+    category: crime
 
-planning_applications:
+planning:
   authority: "Tandridge District Council"
-  base_url: "https://www.tandridge.gov.uk/Planning-and-building/Planning-applications"
-  search_area: "Oxted|Hurst Green|Limpsfield|Titsey"
+  lpa_slug: "tandridge"
+  search_terms: "Oxted|Hurst Green|Limpsfield|Titsey"
 
-events:
-  - name: "Oxted Community Events"
-    url: "https://www.oxted.org.uk/events"
-  - name: "Hurst Green Village Hall"
-    url: ""    # add when known
+sports:
+  cricket:
+    club: "Oxted CC"
+  football:
+    club: "Oxted & District FC"
+  hockey:
+    club: "Oxted HC"
 
-weather:
-  provider: "open-meteo"
-  latitude: 51.2572
-  longitude: -0.0000   # Oxted approx
-  timezone: "Europe/London"
+venues:
+  - name: "Barn Theatre"
+    url: "https://barntheatre.org.uk/whats-on"
+    type: theatre
+  - name: "Master Park"
+    url: "https://www.masterpark.co.uk/events"
+    type: park

@@ -1,29 +1,26 @@
 bugle:
   name: "Oxted & Hurst Green Bugle"
-  tagline: "Your local news, delivered daily"
+  tagline: "Your community. Your news. Every day."
   locale: "Oxted, Surrey, UK"
   postcode_district: "RH8"
 
-schedule:
-  digest_time: "07:00"        # morning digest generation
-  article_interval_hours: 4   # how often to check for new stories
+stations:
+  - crs: OXT
+    name: Oxted
+  - crs: HGS
+    name: Hurst Green
+
+location:
+  latitude: 51.2572
+  longitude: -0.0043
+  radius_miles: 2
 
 llm:
   model: "claude-opus-4-8"
-  max_tokens: 2048
-  temperature: 0.4
+  max_tokens: 256
 
-output:
-  articles_dir: "output/articles"
-  digests_dir: "output/digests"
-  archive_dir: "output/archive"
-  keep_days: 30
+output_dir: "data/output"
 
-publisher:
-  email:
-    enabled: false
-    from: "bugle@example.com"
-    subject_prefix: "[Bugle]"
-  web:
-    enabled: false
-    output_dir: "/var/www/bugle"
+alerts:
+  train_cooldown_minutes: 30
+  bin_reminder_days_before: 1

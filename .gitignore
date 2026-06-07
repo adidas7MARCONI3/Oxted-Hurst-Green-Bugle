@@ -6,8 +6,8 @@ __pycache__/
 .ruff_cache/
 dist/
 *.egg-info/
-output/articles/*.md
-output/digests/*.md
-output/archive/
 .venv/
 venv/
+data/events/submissions/*.json
+data/events/rejected/*.json
+data/output/.train_alert_state.json

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Oxted &amp; Hurst Green Bugle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  /* ── Reset & base ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --paper: #f5f0e8;
+    --ink: #1a1008;
+    --rule: #2a1a0a;
+    --accent: #8b1a1a;
+    --col-gap: 1.5rem;
+    --col-rule: 1px solid #b0a090;
+  }
+  body {
+    background: #d4c9b0;
+    font-family: 'Source Serif 4', Georgia, serif;
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  /* ── Newspaper wrapper ── */
+  .newspaper {
+    max-width: 1100px;
+    margin: 1rem auto;
+    background: var(--paper);
+    border: 2px solid var(--rule);
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.35);
+    padding: 0 0 2rem;
+  }
+
+  /* ── Masthead ── */
+  .masthead {
+    text-align: center;
+    padding: 1.5rem 2rem 0.75rem;
+    border-bottom: 4px double var(--rule);
+  }
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  .masthead h1 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    color: var(--ink);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .masthead-tagline {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.25rem;
+  }
+  .masthead-rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0.6rem 0;
+  }
+
+  /* ── Section headers ── */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 2rem;
+    border-top: 3px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin-top: 1.5rem;
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .section-header h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .section-icon { font-size: 1.1rem; }
+
+  /* ── Content grid ── */
+  .section-body {
+    padding: 1rem 2rem;
+  }
+  .columns-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--col-gap);
+    column-gap: calc(var(--col-gap) * 1.5);
+  }
+  .columns-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--col-gap);
+    column-gap: var(--col-gap);
+  }
+  .columns-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 780px) {
+    .columns-2, .columns-3, .columns-4 { grid-template-columns: 1fr; }
+    .masthead { padding: 1rem; }
+  }
+
+  /* ── Story cards ── */
+  .story {
+    padding-bottom: 1rem;
+    border-bottom: var(--col-rule);
+    margin-bottom: 1rem;
+  }
+  .story:last-child { border-bottom: none; margin-bottom: 0; }
+  .story-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.3rem;
+    color: var(--ink);
+  }
+  .story-headline a { color: inherit; text-decoration: none; }
+  .story-headline a:hover { text-decoration: underline; color: var(--accent); }
+  .story-meta {
+    font-size: 0.7rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.35rem;
+  }
+  .story-body {
+    font-size: 0.875rem;
+    color: #2a1f10;
+    line-height: 1.6;
+  }
+
+  /* ── Lead story (top 3) ── */
+  .lead-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--rule);
+  }
+  .lead-grid > .story:not(:first-child) { border-left: var(--col-rule); padding-left: 1.5rem; }
+  .lead-story .story-headline { font-size: 1.5rem; }
+  @media (max-width: 780px) {
+    .lead-grid { grid-template-columns: 1fr; }
+    .lead-grid > .story:not(:first-child) { border-left: none; padding-left: 0; }
+  }
+
+  /* ── Train status ── */
+  .train-status { padding: 0.75rem 2rem; background: #fffef5; border-bottom: 1px solid var(--rule); }
+  .train-ok { color: #1a5c1a; font-weight: 600; }
+  .train-alert { color: var(--accent); font-weight: 600; }
+  .train-item { font-size: 0.85rem; padding: 0.3rem 0; border-bottom: 1px dotted #ccc; }
+  .train-item:last-child { border-bottom: none; }
+  .badge {
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-right: 0.4rem;
+  }
+  .badge-ok { background: #d4edda; color: #155724; }
+  .badge-delay { background: #fff3cd; color: #856404; }
+  .badge-cancel { background: #f8d7da; color: #721c24; }
+
+  /* ── Bins widget ── */
+  .bins-widget {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .bin-card {
+    flex: 1;
+    min-width: 140px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.75rem;
+    text-align: center;
+    background: #fff;
+  }
+  .bin-card .bin-icon { font-size: 2rem; }
+  .bin-card .bin-label { font-size: 0.75rem; font-weight: 700; margin-top: 0.3rem; }
+  .bin-card .bin-date { font-size: 0.7rem; color: #666; }
+
+  /* ── Property sales ── */
+  .property-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .property-table th { text-align: left; font-weight: 700; padding: 0.35rem 0.5rem;
+    border-bottom: 2px solid var(--rule); font-family: 'Playfair Display', serif; }
+  .property-table td { padding: 0.3rem 0.5rem; border-bottom: 1px solid #e0d8cc; }
+  .property-table tr:hover td { background: #f0ebe0; }
+  .price { font-weight: 700; color: #1a3c1a; }
+
+  /* ── Events ── */
+  .event-card {
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 0 0.5rem 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .event-card:last-child { margin-bottom: 0; }
+  .event-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.95rem; }
+  .event-date { font-size: 0.75rem; color: var(--accent); font-weight: 600; text-transform: uppercase; }
+  .event-venue { font-size: 0.75rem; color: #666; }
+
+  /* ── Weather strip ── */
+  .weather-strip {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.6rem 2rem;
+    background: #f0ebe0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.82rem;
+    color: #444;
+  }
+  .weather-strip strong { font-size: 1rem; }
+
+  /* ── Loading / empty ── */
+  .loading { color: #888; font-style: italic; padding: 1rem 0; }
+  .empty { color: #aaa; font-style: italic; font-size: 0.85rem; }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding: 1.5rem 2rem 0.5rem;
+    border-top: 3px double var(--rule);
+    font-size: 0.72rem;
+    color: #888;
+    letter-spacing: 0.03em;
+  }
+</style>
+</head>
+<body>
+<div class="newspaper">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <span id="edition-date">Loading…</span>
+      <span>Est. 2025 &bull; Serving RH8 since the beginning</span>
+      <span>Compiled by Claude Opus</span>
+    </div>
+    <h1>The Oxted &amp; Hurst Green Bugle</h1>
+    <p class="masthead-tagline">Your community. Your news. Every day.</p>
+    <hr class="masthead-rule">
+    <div id="weather-strip" class="weather-strip" style="justify-content:center;">
+      <span class="loading">Loading weather…</span>
+    </div>
+  </header>
+
+  <!-- TRAIN STATUS BANNER -->
+  <div id="train-banner" class="train-status">
+    <span class="loading">Checking Oxted Line…</span>
+  </div>
+
+  <!-- ABOVE THE FOLD: top 3 stories -->
+  <div id="lead-section">
+    <div class="lead-grid">
+      <div class="loading" style="grid-column:1/-1;padding:2rem">Loading top stories…</div>
+    </div>
+  </div>
+
+  <!-- PLANNING -->
+  <div class="section-header">
+    <span class="section-icon">🏗️</span>
+    <h2>Planning Applications</h2>
+  </div>
+  <div class="section-body columns-2" id="planning-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <!-- CRIME -->
+  <div class="section-header">
+    <span class="section-icon">🚔</span>
+    <h2>Crime &amp; Policing</h2>
+  </div>
+  <div class="section-body columns-3" id="crime-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <!-- COUNCIL -->
+  <div class="section-header">
+    <span class="section-icon">🏛️</span>
+    <h2>Council News</h2>
+  </div>
+  <div class="section-body columns-2" id="council-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <!-- ENVIRONMENT -->
+  <div class="section-header">
+    <span class="section-icon">🌿</span>
+    <h2>Environment &amp; Flooding</h2>
+  </div>
+  <div class="section-body columns-3" id="environment-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <!-- COURTS -->
+  <div class="section-header">
+    <span class="section-icon">⚖️</span>
+    <h2>Courts</h2>
+  </div>
+  <div class="section-body columns-2" id="courts-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <!-- PROPERTY -->
+  <div class="section-header">
+    <span class="section-icon">🏠</span>
+    <h2>Property Sales</h2>
+  </div>
+  <div class="section-body" id="property-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <!-- SPORTS -->
+  <div class="section-header">
+    <span class="section-icon">⚽</span>
+    <h2>Local Sport</h2>
+  </div>
+  <div class="section-body columns-3" id="sports-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <!-- BINS -->
+  <div class="section-header">
+    <span class="section-icon">🗑️</span>
+    <h2>Bin Collections</h2>
+  </div>
+  <div class="section-body" id="bins-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <!-- EVENTS -->
+  <div class="section-header">
+    <span class="section-icon">🎭</span>
+    <h2>What's On</h2>
+  </div>
+  <div class="section-body columns-3" id="events-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <footer>
+    <p>The Oxted &amp; Hurst Green Bugle &bull; Automated local journalism &bull; Data updated daily at 06:00 &bull;
+    Train alerts every 5 minutes 05:00–10:00 weekdays</p>
+    <p style="margin-top:0.4rem">
+      <a href="https://github.com/adidas7MARCONI3/Oxted-Hurst-Green-Bugle" style="color:#888">Source on GitHub</a>
+      &bull; Submit an event via the events admin CLI
+    </p>
+  </footer>
+</div>
+
+<script>
+/* ── Utilities ── */
+const $ = id => document.getElementById(id);
+
+function formatDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d)) return iso;
+  return d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function storyCard(item, headlineSize = '1.05rem') {
+  const headline = item.headline || item.title;
+  const body = item.summary || item.description || '';
+  const link = item.url ? `<a href="${item.url}" target="_blank" rel="noopener">${headline}</a>` : headline;
+  return `<div class="story">
+    <div class="story-headline" style="font-size:${headlineSize}">${link}</div>
+    <div class="story-meta">${formatDate(item.date)} &bull; ${(item.category||'').replace(/_/g,' ')}</div>
+    <div class="story-body">${body.substring(0, 300)}${body.length > 300 ? '…' : ''}</div>
+  </div>`;
+}
+
+function setSection(id, html) {
+  const el = $(id);
+  if (el) el.innerHTML = html || '<p class="empty">No data available.</p>';
+}
+
+async function loadJSON(source) {
+  try {
+    const r = await fetch(`data/output/${source}.json?t=${Date.now()}`);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+/* ── Edition date ── */
+$('edition-date').textContent = new Date().toLocaleDateString('en-GB',
+  { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+
+/* ── Weather (Open-Meteo, no key needed) ── */
+async function loadWeather() {
+  try {
+    const r = await fetch(
+      'https://api.open-meteo.com/v1/forecast?latitude=51.2572&longitude=-0.0043' +
+      '&current=temperature_2m,weather_code,wind_speed_10m,precipitation&timezone=Europe%2FLondon'
+    );
+    const d = await r.json();
+    const c = d.current;
+    const codes = {0:'☀️ Clear',1:'🌤 Mainly clear',2:'⛅ Partly cloudy',3:'☁️ Overcast',
+      45:'🌫 Fog',51:'🌦 Drizzle',61:'🌧 Rain',63:'🌧 Rain',65:'🌧 Heavy rain',
+      71:'🌨 Snow',80:'🌦 Showers',81:'🌦 Showers',95:'⛈ Thunderstorm'};
+    const desc = codes[c.weather_code] || '🌡';
+    $('weather-strip').innerHTML =
+      `<strong>${desc}</strong> &bull; ${c.temperature_2m.toFixed(0)}°C &bull; ` +
+      `Wind ${c.wind_speed_10m.toFixed(0)} km/h &bull; ` +
+      `Precip ${c.precipitation} mm &bull; <em>Oxted, Surrey</em>`;
+  } catch {
+    $('weather-strip').innerHTML = '<em>Weather unavailable</em>';
+  }
+}
+
+/* ── Trains ── */
+async function loadTrains() {
+  const data = await loadJSON('trains');
+  if (!data || !data.items.length) {
+    $('train-banner').innerHTML = '<span class="train-ok">🚂 No train data — check National Rail for live updates.</span>';
+    return;
+  }
+  const disrupted = data.items.filter(i => i.data.cancelled || i.data.disrupted);
+  if (!disrupted.length) {
+    $('train-banner').innerHTML = '<span class="train-ok">✅ Oxted Line running normally</span>';
+    return;
+  }
+  const rows = disrupted.slice(0, 5).map(i => {
+    const badge = i.data.cancelled
+      ? '<span class="badge badge-cancel">Cancelled</span>'
+      : '<span class="badge badge-delay">Delayed</span>';
+    return `<div class="train-item">${badge}${i.title}</div>`;
+  }).join('');
+  $('train-banner').innerHTML =
+    `<div><span class="train-alert">⚠️ Oxted Line disruptions</span>${rows}</div>`;
+}
+
+/* ── Lead stories: top 3 from planning + council + crime ── */
+async function loadLeadStories() {
+  const sources = await Promise.all(['council','planning','crime'].map(loadJSON));
+  const all = sources.flatMap(d => d ? d.items : []).filter(i => i.headline || i.title);
+  if (!all.length) { $('lead-section').innerHTML = '<p class="loading" style="padding:2rem">No stories yet.</p>'; return; }
+
+  const top = all.slice(0, 3);
+  const [lead, ...rest] = top;
+  const restHtml = rest.map(i => storyCard(i)).join('');
+  $('lead-section').innerHTML = `<div class="lead-grid">
+    <div class="story lead-story">
+      <div class="story-headline" style="font-size:1.6rem">
+        ${lead.url ? `<a href="${lead.url}" target="_blank" rel="noopener">${lead.headline||lead.title}</a>` : (lead.headline||lead.title)}
+      </div>
+      <div class="story-meta">${formatDate(lead.date)} &bull; ${(lead.category||'').replace(/_/g,' ')}</div>
+      <div class="story-body">${(lead.summary||lead.description||'').substring(0,500)}</div>
+    </div>
+    ${restHtml}
+  </div>`;
+}
+
+/* ── Generic section loader ── */
+async function loadSection(sectionId, source, limit, cols, renderer) {
+  const data = await loadJSON(source);
+  if (!data || !data.items.length) { setSection(sectionId, ''); return; }
+  const html = data.items.slice(0, limit).map(renderer).join('');
+  setSection(sectionId, html);
+}
+
+/* ── Planning ── */
+async function loadPlanning() {
+  await loadSection('planning-section', 'planning', 8, 2, i => storyCard(i));
+}
+
+/* ── Crime ── */
+async function loadCrime() {
+  await loadSection('crime-section', 'crime', 9, 3, i => storyCard(i, '0.95rem'));
+}
+
+/* ── Council ── */
+async function loadCouncil() {
+  await loadSection('council-section', 'council', 6, 2, i => storyCard(i));
+}
+
+/* ── Environment ── */
+async function loadEnvironment() {
+  const data = await loadJSON('environment');
+  if (!data || !data.items.length) {
+    setSection('environment-section', '<p class="empty">No flood or air quality alerts at present.</p>');
+    return;
+  }
+  setSection('environment-section', data.items.slice(0, 6).map(i => storyCard(i, '0.9rem')).join(''));
+}
+
+/* ── Courts ── */
+async function loadCourts() {
+  await loadSection('courts-section', 'courts', 6, 2, i => storyCard(i));
+}
+
+/* ── Property ── */
+async function loadProperty() {
+  const data = await loadJSON('property');
+  if (!data || !data.items.length) { setSection('property-section', ''); return; }
+  const rows = data.items.slice(0, 15).map(i =>
+    `<tr>
+      <td>${i.data.category || ''}</td>
+      <td>${i.title.split('—')[0].trim()}</td>
+      <td>${i.data.postcode || ''}</td>
+      <td class="price">${i.data.amount ? '£' + Number(i.data.amount).toLocaleString() : ''}</td>
+      <td>${formatDate(i.date)}</td>
+    </tr>`
+  ).join('');
+  setSection('property-section',
+    `<table class="property-table">
+      <thead><tr><th>Type</th><th>Address</th><th>Postcode</th><th>Price</th><th>Date</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`
+  );
+}
+
+/* ── Sports ── */
+async function loadSports() {
+  await loadSection('sports-section', 'sports', 9, 3, i => storyCard(i, '0.95rem'));
+}
+
+/* ── Bins ── */
+async function loadBins() {
+  const data = await loadJSON('bins');
+  if (!data || !data.items.length) {
+    setSection('bins-section', '<p class="empty">Set BINS_UPRN in environment to see your collection dates.</p>');
+    return;
+  }
+  const icons = { default: '🗑', recycling: '♻️', garden: '🌿', food: '🍎', rubbish: '🗑' };
+  const cards = data.items.slice(0, 6).map(i => {
+    const type = (i.data.type || i.title).toLowerCase();
+    const icon = Object.entries(icons).find(([k]) => type.includes(k))?.[1] || '🗑';
+    return `<div class="bin-card">
+      <div class="bin-icon">${icon}</div>
+      <div class="bin-label">${i.data.type || i.title.split('—')[0].trim()}</div>
+      <div class="bin-date">${formatDate(i.date)}</div>
+    </div>`;
+  }).join('');
+  setSection('bins-section', `<div class="bins-widget">${cards}</div>`);
+}
+
+/* ── Events ── */
+async function loadEvents() {
+  const data = await loadJSON('events');
+  if (!data || !data.items.length) { setSection('events-section', ''); return; }
+  const html = data.items.slice(0, 12).map(i => `
+    <div class="event-card">
+      <div class="event-date">${formatDate(i.date)}</div>
+      <div class="event-title">${i.url
+        ? `<a href="${i.url}" target="_blank" rel="noopener">${i.title}</a>`
+        : i.title}</div>
+      <div class="event-venue">${i.data.venue || ''}</div>
+      <div class="story-body" style="font-size:0.8rem;margin-top:0.2rem">${(i.summary||i.description||'').substring(0,150)}</div>
+    </div>`).join('');
+  setSection('events-section', html);
+}
+
+/* ── Boot ── */
+Promise.all([
+  loadWeather(),
+  loadTrains(),
+  loadLeadStories(),
+  loadPlanning(),
+  loadCrime(),
+  loadCouncil(),
+  loadEnvironment(),
+  loadCourts(),
+  loadProperty(),
+  loadSports(),
+  loadBins(),
+  loadEvents(),
+]);
+</script>
+</body>
+</html>

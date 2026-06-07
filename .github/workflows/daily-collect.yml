@@ -1,0 +1,79 @@
+name: Daily collection
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # 06:00 UTC daily (07:00 BST / 06:00 GMT)
+  workflow_dispatch:        # allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
+
+      - name: Run all collectors + summariser
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DARWIN_API_KEY: ${{ secrets.DARWIN_API_KEY }}
+          PLAY_CRICKET_API_KEY: ${{ secrets.PLAY_CRICKET_API_KEY }}
+          PLAY_CRICKET_SITE_ID: ${{ secrets.PLAY_CRICKET_SITE_ID }}
+          FA_CLUB_NAME: ${{ secrets.FA_CLUB_NAME }}
+          FA_COMPETITION_ID: ${{ secrets.FA_COMPETITION_ID }}
+          HOCKEY_CLUB_NAME: ${{ secrets.HOCKEY_CLUB_NAME }}
+          HOCKEY_CLUB_ID: ${{ secrets.HOCKEY_CLUB_ID }}
+          BINS_UPRN: ${{ secrets.BINS_UPRN }}
+        run: python scripts/collect_all.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "bugle-bot"
+          git config user.email "bugle-bot@users.noreply.github.com"
+          git add data/output/
+          git diff --cached --quiet || git commit -m "chore: daily data update $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Send daily digest email
+        if: env.RESEND_API_KEY != ''
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+        run: |
+          python - <<'EOF'
+          import json, os, sys
+          from pathlib import Path
+          sys.path.insert(0, ".")
+          from dotenv import load_dotenv
+          load_dotenv()
+          from alerts.email import EmailAlert
+
+          sources = ["crime","planning","council","environment","events","trains","bins"]
+          sections = []
+          for src in sources:
+              p = Path(f"data/output/{src}.json")
+              if not p.exists():
+                  continue
+              data = json.loads(p.read_text())
+              items = data.get("items", [])[:5]
+              if not items:
+                  continue
+              rows = "".join(f"<li><b>{i['headline'] or i['title']}</b><br>{i['summary'] or i['description'][:200]}</li>" for i in items)
+              sections.append(f"<h3>{src.title()}</h3><ul>{rows}</ul>")
+
+          html = f"<h1>The Oxted & Hurst Green Bugle</h1>{''.join(sections)}<hr><p><small>Generated automatically</small></p>"
+          EmailAlert().daily_digest(html)
+          print("Daily digest email sent.")
+          EOF
