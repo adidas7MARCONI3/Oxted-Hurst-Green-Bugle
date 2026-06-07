@@ -1,0 +1,29 @@
+bugle:
+  name: "Oxted & Hurst Green Bugle"
+  tagline: "Your local news, delivered daily"
+  locale: "Oxted, Surrey, UK"
+  postcode_district: "RH8"
+
+schedule:
+  digest_time: "07:00"        # morning digest generation
+  article_interval_hours: 4   # how often to check for new stories
+
+llm:
+  model: "claude-opus-4-8"
+  max_tokens: 2048
+  temperature: 0.4
+
+output:
+  articles_dir: "output/articles"
+  digests_dir: "output/digests"
+  archive_dir: "output/archive"
+  keep_days: 30
+
+publisher:
+  email:
+    enabled: false
+    from: "bugle@example.com"
+    subject_prefix: "[Bugle]"
+  web:
+    enabled: false
+    output_dir: "/var/www/bugle"

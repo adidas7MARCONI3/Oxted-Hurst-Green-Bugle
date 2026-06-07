@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+output/articles/*.md
+output/digests/*.md
+output/archive/
+.venv/
+venv/
