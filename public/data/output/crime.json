@@ -1,914 +1,201 @@
 {
   "source": "crime",
-  "collected_at": "2026-06-07T19:01:50.819442+00:00",
+  "collected_at": "2026-06-07T21:02:17.367430+00:00",
   "items": [
     {
-      "id": "134621413",
-      "title": "Anti Social Behaviour \u2013 On Or Near Home Park",
-      "description": "Anti Social Behaviour reported on On Or Near Home Park. Status: under investigation.",
+      "id": "50d2ff97d593",
+      "title": "Anti Social Behaviour \u2013 High Street",
+      "description": "Anti Social Behaviour reported on High Street. Status: Under investigation.",
       "date": "2026-04",
       "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Police Investigate Anti-Social Behaviour Near Home Park",
-      "summary": "Anti-social behaviour has been reported on or near Home Park. Police say the matter is currently under investigation.",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
       "data": {
         "category": "anti-social-behaviour",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.246554",
-          "street": {
-            "id": 2013280,
-            "name": "On or near Home Park"
-          },
-          "longitude": "0.009018"
-        },
-        "context": "",
-        "outcome_status": null,
-        "persistent_id": "",
-        "id": 134621413,
-        "location_subtype": "",
-        "month": "2026-04"
+        "street": "High Street"
       }
     },
     {
-      "id": "134618655",
-      "title": "Anti Social Behaviour \u2013 On Or Near Amy Road",
-      "description": "Anti Social Behaviour reported on On Or Near Amy Road. Status: under investigation.",
+      "id": "f95b83e507e0",
+      "title": "Anti Social Behaviour \u2013 Station Road East",
+      "description": "Anti Social Behaviour reported on Station Road East. Status: No suspect identified.",
       "date": "2026-04",
       "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Anti-social behaviour reported near Amy Road",
-      "summary": "Police are investigating a report of anti-social behaviour on or near Amy Road. The matter remains under investigation, and anyone with information is asked to contact officers.",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
       "data": {
         "category": "anti-social-behaviour",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258439",
-          "street": {
-            "id": 2013175,
-            "name": "On or near Amy Road"
-          },
-          "longitude": "-0.002861"
-        },
-        "context": "",
-        "outcome_status": null,
-        "persistent_id": "",
-        "id": 134618655,
-        "location_subtype": "",
-        "month": "2026-04"
+        "street": "Station Road East"
       }
     },
     {
-      "id": "134618109",
-      "title": "Anti Social Behaviour \u2013 On Or Near Barnett'S Shaw",
-      "description": "Anti Social Behaviour reported on On Or Near Barnett'S Shaw. Status: under investigation.",
+      "id": "3d9a69c7c903",
+      "title": "Vehicle Crime \u2013 Bluehouse Lane",
+      "description": "Vehicle Crime reported on Bluehouse Lane. Status: Local resolution.",
       "date": "2026-04",
       "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Anti-Social Behaviour Reported Near Barnett's Shaw",
-      "summary": "Police are investigating a report of anti-social behaviour on or near Barnett's Shaw. The matter is currently under investigation, and anyone with information is asked to contact officers.",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
       "data": {
-        "category": "anti-social-behaviour",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.265247",
-          "street": {
-            "id": 2013099,
-            "name": "On or near Barnett's Shaw"
-          },
-          "longitude": "-0.010221"
-        },
-        "context": "",
-        "outcome_status": null,
-        "persistent_id": "",
-        "id": 134618109,
-        "location_subtype": "",
-        "month": "2026-04"
+        "category": "vehicle-crime",
+        "street": "Bluehouse Lane"
       }
     },
     {
-      "id": "134618140",
-      "title": "Anti Social Behaviour \u2013 On Or Near Acorn Gardens",
-      "description": "Anti Social Behaviour reported on On Or Near Acorn Gardens. Status: under investigation.",
+      "id": "e0996289a763",
+      "title": "Vehicle Crime \u2013 Silkham Road",
+      "description": "Vehicle Crime reported on Silkham Road. Status: Unable to prosecute suspect.",
       "date": "2026-04",
       "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Police Investigate Anti-Social Behaviour Near Acorn Gardens",
-      "summary": "Anti-social behaviour has been reported on or near Acorn Gardens. The matter is currently under investigation by police.",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
       "data": {
-        "category": "anti-social-behaviour",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.265834",
-          "street": {
-            "id": 2013072,
-            "name": "On or near Acorn Gardens"
-          },
-          "longitude": "-0.012503"
-        },
-        "context": "",
-        "outcome_status": null,
-        "persistent_id": "",
-        "id": 134618140,
-        "location_subtype": "",
-        "month": "2026-04"
+        "category": "vehicle-crime",
+        "street": "Silkham Road"
       }
     },
     {
-      "id": "134623360",
-      "title": "Anti Social Behaviour \u2013 On Or Near Springfield",
-      "description": "Anti Social Behaviour reported on On Or Near Springfield. Status: under investigation.",
+      "id": "5721645f13b1",
+      "title": "Theft From The Person \u2013 High Street",
+      "description": "Theft From The Person reported on High Street. Status: Further action not in public interest.",
       "date": "2026-04",
       "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Anti-Social Behaviour Reported Near Springfield",
-      "summary": "Police are investigating a report of anti-social behaviour on or near Springfield. The matter remains under investigation.",
-      "data": {
-        "category": "anti-social-behaviour",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.251062",
-          "street": {
-            "id": 2013071,
-            "name": "On or near Springfield"
-          },
-          "longitude": "-0.014301"
-        },
-        "context": "",
-        "outcome_status": null,
-        "persistent_id": "",
-        "id": 134623360,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134622794",
-      "title": "Anti Social Behaviour \u2013 On Or Near Hoskins Road",
-      "description": "Anti Social Behaviour reported on On Or Near Hoskins Road. Status: under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Police Investigate Anti-Social Behaviour Near Hoskins Road",
-      "summary": "Anti-social behaviour has been reported on or near Hoskins Road in Oxted. The matter is currently under investigation by police.",
-      "data": {
-        "category": "anti-social-behaviour",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.255800",
-          "street": {
-            "id": 2013152,
-            "name": "On or near Hoskins Road"
-          },
-          "longitude": "-0.006315"
-        },
-        "context": "",
-        "outcome_status": null,
-        "persistent_id": "",
-        "id": 134622794,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134618384",
-      "title": "Anti Social Behaviour \u2013 On Or Near Bushey Croft",
-      "description": "Anti Social Behaviour reported on On Or Near Bushey Croft. Status: under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Police Investigate Anti-Social Behaviour Near Bushey Croft",
-      "summary": "A report of anti-social behaviour on or near Bushey Croft is being looked into by police. The matter remains under investigation.",
-      "data": {
-        "category": "anti-social-behaviour",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.251653",
-          "street": {
-            "id": 2013029,
-            "name": "On or near Bushey Croft"
-          },
-          "longitude": "-0.019463"
-        },
-        "context": "",
-        "outcome_status": null,
-        "persistent_id": "",
-        "id": 134618384,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134621298",
-      "title": "Criminal Damage Arson \u2013 On Or Near Titsey Road",
-      "description": "Criminal Damage Arson reported on On Or Near Titsey Road. Status: Investigation complete; no suspect identified.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Arson Probe on Titsey Road Closes With No Suspect",
-      "summary": "Police investigated a report of arson on or near Titsey Road. The inquiry has now ended without a suspect being identified.",
-      "data": {
-        "category": "criminal-damage-arson",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.262996",
-          "street": {
-            "id": 2013266,
-            "name": "On or near Titsey Road"
-          },
-          "longitude": "0.012516"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Investigation complete; no suspect identified",
-          "date": "2026-04"
-        },
-        "persistent_id": "028903f74cc2adfdcb604817c30fc4c3c8a9fb9072ba9a56274138fd1cc6f9ad",
-        "id": 134621298,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134622256",
-      "title": "Criminal Damage Arson \u2013 On Or Near Titsey Road",
-      "description": "Criminal Damage Arson reported on On Or Near Titsey Road. Status: Investigation complete; no suspect identified.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Arson Investigation Closed With No Suspect On Titsey Road",
-      "summary": "Police investigated a report of criminal damage by arson on or near Titsey Road. The investigation is now complete, but no suspect was identified.",
-      "data": {
-        "category": "criminal-damage-arson",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.262996",
-          "street": {
-            "id": 2013266,
-            "name": "On or near Titsey Road"
-          },
-          "longitude": "0.012516"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Investigation complete; no suspect identified",
-          "date": "2026-04"
-        },
-        "persistent_id": "e2aedec75bd1df43f537cf987abc7bb0b4b11cf099eb381e1b08c7044e8870f5",
-        "id": 134622256,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134620958",
-      "title": "Drugs \u2013 On Or Near Church Lane",
-      "description": "Drugs reported on On Or Near Church Lane. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Drugs Reported Near Church Lane",
-      "summary": "Police are looking into a report of drugs on or near Church Lane. The matter is currently under investigation.",
-      "data": {
-        "category": "drugs",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.255710",
-          "street": {
-            "id": 2013115,
-            "name": "On or near Church Lane"
-          },
-          "longitude": "-0.009472"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "3f5fd551538587764e0e2fa5e95fecd8e9f42d21aaa5b7a89dffdec44c5a0462",
-        "id": 134620958,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134620230",
-      "title": "Other Theft \u2013 On Or Near High Street",
-      "description": "Other Theft reported on On Or Near High Street. Status: Investigation complete; no suspect identified.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Theft Reported Near Oxted High Street",
-      "summary": "Police investigated a theft on or near the High Street. The inquiry has now closed without a suspect being identified.",
-      "data": {
-        "category": "other-theft",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.252656",
-          "street": {
-            "id": 2013061,
-            "name": "On or near High Street"
-          },
-          "longitude": "-0.015522"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Investigation complete; no suspect identified",
-          "date": "2026-04"
-        },
-        "persistent_id": "342e623857780a32252ca06cffe6461750c55e8698af04eeba73d2da0f422011",
-        "id": 134620230,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134619925",
-      "title": "Other Theft \u2013 On Or Near Parking Area",
-      "description": "Other Theft reported on On Or Near Parking Area. Status: Investigation complete; no suspect identified.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Theft Reported Near Local Parking Area",
-      "summary": "Police investigated a theft that took place on or near a parking area. The investigation is now complete, but no suspect was identified.",
-      "data": {
-        "category": "other-theft",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.244357",
-          "street": {
-            "id": 2013226,
-            "name": "On or near Parking Area"
-          },
-          "longitude": "0.004481"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Investigation complete; no suspect identified",
-          "date": "2026-04"
-        },
-        "persistent_id": "c9f017420c3a81ef595996019f515998fa0eb6f845a55f45070e33c1cf70d6c3",
-        "id": 134619925,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134621943",
-      "title": "Other Theft \u2013 On Or Near Petrol Station",
-      "description": "Other Theft reported on On Or Near Petrol Station. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Theft Reported Near Local Petrol Station",
-      "summary": "Police are investigating a theft reported on or near a petrol station. The case remains under investigation, and no further details have been released.",
-      "data": {
-        "category": "other-theft",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258501",
-          "street": {
-            "id": 2013153,
-            "name": "On or near Petrol Station"
-          },
-          "longitude": "-0.006625"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "154f75be35a8759816aa42aeedf0722e8860ada7a98d88e89548b0e9df2595bd",
-        "id": 134621943,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134619028",
-      "title": "Other Theft \u2013 On Or Near Churchill Gardens",
-      "description": "Other Theft reported on On Or Near Churchill Gardens. Status: Investigation complete; no suspect identified.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Theft Reported Near Churchill Gardens",
-      "summary": "A theft was reported on or near Churchill Gardens. Police have completed their investigation but no suspect was identified.",
-      "data": {
-        "category": "other-theft",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.264226",
-          "street": {
-            "id": 2013067,
-            "name": "On or near Churchill Gardens"
-          },
-          "longitude": "-0.014207"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Investigation complete; no suspect identified",
-          "date": "2026-04"
-        },
-        "persistent_id": "0c741cbd8cc4761ab1f465bbe2832bf0329a689a7ecdf7cac8d8faa8d9f94e73",
-        "id": 134619028,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134623449",
-      "title": "Possession Of Weapons \u2013 On Or Near Park/Open Space",
-      "description": "Possession Of Weapons reported on On Or Near Park/Open Space. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Weapons Possession Reported Near Local Open Space",
-      "summary": "Police are investigating a report of weapons possession on or near a park or open space in the area. The case remains under investigation, and no further details have been released.",
-      "data": {
-        "category": "possession-of-weapons",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.253626",
-          "street": {
-            "id": 2013303,
-            "name": "On or near Park/open Space"
-          },
-          "longitude": "0.014086"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "7250b29742ffc95472f2131cc16bd15d7f076d63c310c84924b0ac2c23b03e8f",
-        "id": 134623449,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134621073",
-      "title": "Public Order \u2013 On Or Near Station Road East",
-      "description": "Public Order reported on On Or Near Station Road East. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Public Order Incident Reported on Station Road East",
-      "summary": "Police are investigating a public order incident reported on or near Station Road East. The matter remains under investigation.",
-      "data": {
-        "category": "public-order",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.257830",
-          "street": {
-            "id": 2013171,
-            "name": "On or near Station Road East"
-          },
-          "longitude": "-0.002959"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "4dbd6e961694cfb23b0371b5c515fdbec1cbf172c5f5188df920cab563e211e1",
-        "id": 134621073,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134619104",
-      "title": "Public Order \u2013 On Or Near Oxted",
-      "description": "Public Order reported on On Or Near Oxted. Status: Unable to prosecute suspect.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Public Order Incident Reported in Oxted",
-      "summary": "Police recorded a public order offence in the Oxted area. The case was closed as officers were unable to prosecute a suspect.",
-      "data": {
-        "category": "public-order",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.257902",
-          "street": {
-            "id": 2013164,
-            "name": "On or near Oxted"
-          },
-          "longitude": "-0.004576"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Unable to prosecute suspect",
-          "date": "2026-04"
-        },
-        "persistent_id": "868ff9625a9e9e75b4f796777fc2d9abe4450f53a302e579f2e07c7479bba845",
-        "id": 134619104,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134620113",
-      "title": "Public Order \u2013 On Or Near Station Approach",
-      "description": "Public Order reported on On Or Near Station Approach. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Public Order Incident Reported Near Station Approach",
-      "summary": "Police are investigating a public order incident reported on or near Station Approach. The matter remains under investigation, and no further details have been released.",
-      "data": {
-        "category": "public-order",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258469",
-          "street": {
-            "id": 2013158,
-            "name": "On or near Station Approach"
-          },
-          "longitude": "-0.005626"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "67bf74b1070d5c0bcc6a7d3d1077b480ee846bea63096d98377ca3aced297377",
-        "id": 134620113,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134620955",
-      "title": "Robbery \u2013 On Or Near Station Approach",
-      "description": "Robbery reported on On Or Near Station Approach. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Robbery Reported Near Station Approach",
-      "summary": "Police are investigating a robbery on or near Station Approach. Officers say the case remains under investigation, and anyone with information is urged to come forward.",
-      "data": {
-        "category": "robbery",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258469",
-          "street": {
-            "id": 2013158,
-            "name": "On or near Station Approach"
-          },
-          "longitude": "-0.005626"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "0f6ad2a937b62d262ad68b3c947c6e13823aac6da147803e714365f6f4bb724d",
-        "id": 134620955,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134624110",
-      "title": "Shoplifting \u2013 On Or Near Amy Road",
-      "description": "Shoplifting reported on On Or Near Amy Road. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Amy Road",
-      "summary": "Police are investigating a shoplifting incident on or near Amy Road. The case remains under investigation.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258439",
-          "street": {
-            "id": 2013175,
-            "name": "On or near Amy Road"
-          },
-          "longitude": "-0.002861"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "02879baa82a15a8ee1e84018b44b93a0451127454cb6c24ce1406062cbe0246a",
-        "id": 134624110,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134624355",
-      "title": "Shoplifting \u2013 On Or Near Station Approach",
-      "description": "Shoplifting reported on On Or Near Station Approach. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Station Approach",
-      "summary": "Police are investigating a shoplifting incident on or near Station Approach. The case remains under investigation, and no further details have been released.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258469",
-          "street": {
-            "id": 2013158,
-            "name": "On or near Station Approach"
-          },
-          "longitude": "-0.005626"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "38a7fc0004a7295fcc91d7c732885f4194f79026714b172feb2e88f4e2cd7b0e",
-        "id": 134624355,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134624354",
-      "title": "Shoplifting \u2013 On Or Near Station Approach",
-      "description": "Shoplifting reported on On Or Near Station Approach. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Station Approach",
-      "summary": "Police are investigating a shoplifting incident on or near Station Approach. The matter remains under investigation.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258469",
-          "street": {
-            "id": 2013158,
-            "name": "On or near Station Approach"
-          },
-          "longitude": "-0.005626"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "afe5fe917e4b7013e2ac6c8b84f679478ae9224d2b8003b6524ee80ccf1d1d2d",
-        "id": 134624354,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134617461",
-      "title": "Shoplifting \u2013 On Or Near Supermarket",
-      "description": "Shoplifting reported on On Or Near Supermarket. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported at Local Supermarket",
-      "summary": "Police are investigating a report of shoplifting at or near a supermarket in the area. The matter is currently under investigation.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.256046",
-          "street": {
-            "id": 2013165,
-            "name": "On or near Supermarket"
-          },
-          "longitude": "-0.004341"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "ec61c24afa9a3bd9a68107e82238d9035538cd3ead114135d188c6e32f00d4a8",
-        "id": 134617461,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134623981",
-      "title": "Shoplifting \u2013 On Or Near Amy Road",
-      "description": "Shoplifting reported on On Or Near Amy Road. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Amy Road",
-      "summary": "Police are investigating a shoplifting incident on or near Amy Road. The case remains under investigation.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258439",
-          "street": {
-            "id": 2013175,
-            "name": "On or near Amy Road"
-          },
-          "longitude": "-0.002861"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "796ecc81f24b3ef3268dd6a013c84733cf9542c091e6062b8e32285bad54e122",
-        "id": 134623981,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134621969",
-      "title": "Shoplifting \u2013 On Or Near Station Approach",
-      "description": "Shoplifting reported on On Or Near Station Approach. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Station Approach",
-      "summary": "A shoplifting incident has been reported on or near Station Approach. Police say the matter is under investigation.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258469",
-          "street": {
-            "id": 2013158,
-            "name": "On or near Station Approach"
-          },
-          "longitude": "-0.005626"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "630dec7f19638fff9a1438768cd9ae24d44161eab0a2053f3ac9b8e58a63572e",
-        "id": 134621969,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134621045",
-      "title": "Shoplifting \u2013 On Or Near Petrol Station",
-      "description": "Shoplifting reported on On Or Near Petrol Station. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Local Petrol Station",
-      "summary": "Police are investigating a shoplifting incident reported on or near a petrol station. The matter remains under investigation, and no further details have been released.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258501",
-          "street": {
-            "id": 2013153,
-            "name": "On or near Petrol Station"
-          },
-          "longitude": "-0.006625"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "1490782432c363e38848fb0b7f973d31c4ac4140bca1842a3ce734ac81b9630b",
-        "id": 134621045,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134619879",
-      "title": "Shoplifting \u2013 On Or Near Amy Road",
-      "description": "Shoplifting reported on On Or Near Amy Road. Status: Under investigation.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Amy Road",
-      "summary": "Police are investigating a report of shoplifting on or near Amy Road. The case remains under investigation.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258439",
-          "street": {
-            "id": 2013175,
-            "name": "On or near Amy Road"
-          },
-          "longitude": "-0.002861"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Under investigation",
-          "date": "2026-04"
-        },
-        "persistent_id": "fac6aeb8ccf6a5cd43b6c050009f38e7a0e0565ce1fc0eb838819c7523566ec0",
-        "id": 134619879,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134618480",
-      "title": "Shoplifting \u2013 On Or Near Station Approach",
-      "description": "Shoplifting reported on On Or Near Station Approach. Status: Investigation complete; no suspect identified.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Station Approach",
-      "summary": "A shoplifting incident was reported on or near Station Approach. Police have completed their investigation, but no suspect was identified.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258469",
-          "street": {
-            "id": 2013158,
-            "name": "On or near Station Approach"
-          },
-          "longitude": "-0.005626"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Investigation complete; no suspect identified",
-          "date": "2026-04"
-        },
-        "persistent_id": "22ec03e0713f306457725745c8978bd5c10ab7e8de225e7956ff7893bf3328c4",
-        "id": 134618480,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134620864",
-      "title": "Shoplifting \u2013 On Or Near Station Road East",
-      "description": "Shoplifting reported on On Or Near Station Road East. Status: Investigation complete; no suspect identified.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Station Road East",
-      "summary": "A shoplifting incident was reported on or near Station Road East. Police have completed their investigation but no suspect was identified.",
-      "data": {
-        "category": "shoplifting",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.257830",
-          "street": {
-            "id": 2013171,
-            "name": "On or near Station Road East"
-          },
-          "longitude": "-0.002959"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Investigation complete; no suspect identified",
-          "date": "2026-04"
-        },
-        "persistent_id": "5c757972168d505eb8086546a7da6c78b88c375832fac449df5f44c57189e3ae",
-        "id": 134620864,
-        "location_subtype": "",
-        "month": "2026-04"
-      }
-    },
-    {
-      "id": "134621072",
-      "title": "Theft From The Person \u2013 On Or Near Gresham Road",
-      "description": "Theft From The Person reported on On Or Near Gresham Road. Status: Investigation complete; no suspect identified.",
-      "date": "2026-04",
-      "category": "crime",
-      "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Police Close Gresham Road Theft Case Without Suspect",
-      "summary": "A theft from the person was reported on or near Gresham Road. The investigation is now complete, but no suspect has been identified.",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
       "data": {
         "category": "theft-from-the-person",
-        "location_type": "Force",
-        "location": {
-          "latitude": "51.258406",
-          "street": {
-            "id": 2013197,
-            "name": "On or near Gresham Road"
-          },
-          "longitude": "0.000147"
-        },
-        "context": "",
-        "outcome_status": {
-          "category": "Investigation complete; no suspect identified",
-          "date": "2026-04"
-        },
-        "persistent_id": "61316f2cb762c322ec682a4538cf39084ea1bf62f171004972747e8922db9cb2",
-        "id": 134621072,
-        "location_subtype": "",
-        "month": "2026-04"
+        "street": "High Street"
+      }
+    },
+    {
+      "id": "5bb6961d2bbd",
+      "title": "Shoplifting \u2013 Ellice Road",
+      "description": "Shoplifting reported on Ellice Road. Status: Under investigation.",
+      "date": "2026-04",
+      "category": "crime",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "category": "shoplifting",
+        "street": "Ellice Road"
+      }
+    },
+    {
+      "id": "6b0762dd6c82",
+      "title": "Criminal Damage Arson \u2013 Chichele Road",
+      "description": "Criminal Damage Arson reported on Chichele Road. Status: No suspect identified.",
+      "date": "2026-04",
+      "category": "crime",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "category": "criminal-damage-arson",
+        "street": "Chichele Road"
+      }
+    },
+    {
+      "id": "a1e635d8a4a5",
+      "title": "Public Order \u2013 High Street",
+      "description": "Public Order reported on High Street. Status: Local resolution.",
+      "date": "2026-04",
+      "category": "crime",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "category": "public-order",
+        "street": "High Street"
+      }
+    },
+    {
+      "id": "cc812a9b9963",
+      "title": "Burglary \u2013 Woodland Way",
+      "description": "Burglary reported on Woodland Way. Status: Unable to prosecute suspect.",
+      "date": "2026-04",
+      "category": "crime",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "category": "burglary",
+        "street": "Woodland Way"
+      }
+    },
+    {
+      "id": "3510065dcac6",
+      "title": "Other Theft \u2013 Station Road East",
+      "description": "Other Theft reported on Station Road East. Status: Further action not in public interest.",
+      "date": "2026-04",
+      "category": "crime",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "category": "other-theft",
+        "street": "Station Road East"
+      }
+    },
+    {
+      "id": "23f9a69eb1b1",
+      "title": "Drugs \u2013 Barrow Green Road",
+      "description": "Drugs reported on Barrow Green Road. Status: Under investigation.",
+      "date": "2026-04",
+      "category": "crime",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "category": "drugs",
+        "street": "Barrow Green Road"
+      }
+    },
+    {
+      "id": "d446bae7f4fc",
+      "title": "Violence And Sexual Offences \u2013 High Street",
+      "description": "Violence And Sexual Offences reported on High Street. Status: No suspect identified.",
+      "date": "2026-04",
+      "category": "crime",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "category": "violence-and-sexual-offences",
+        "street": "High Street"
+      }
+    },
+    {
+      "id": "74a23f1e4759",
+      "title": "Other Crime \u2013 Beadles Lane",
+      "description": "Other Crime reported on Beadles Lane. Status: Local resolution.",
+      "date": "2026-04",
+      "category": "crime",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "category": "other-crime",
+        "street": "Beadles Lane"
+      }
+    },
+    {
+      "id": "bdc61dc99813",
+      "title": "Robbery \u2013 Amy Road",
+      "description": "Robbery reported on Amy Road. Status: Unable to prosecute suspect.",
+      "date": "2026-04",
+      "category": "crime",
+      "url": "https://www.police.uk/",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "category": "robbery",
+        "street": "Amy Road"
       }
     }
   ]

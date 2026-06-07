@@ -233,6 +233,42 @@
   }
   .weather-strip strong { font-size: 1rem; }
 
+  /* ── Crime tabs ── */
+  .tab-bar { display: flex; border-bottom: 2px solid var(--rule); margin-bottom: 1rem; gap: 0; }
+  .tab-btn {
+    padding: 0.4rem 1.1rem; font-family: 'Playfair Display', Georgia, serif;
+    font-size: 0.78rem; letter-spacing: 0.07em; text-transform: uppercase;
+    cursor: pointer; border: none; background: none; color: #666;
+    border-bottom: 3px solid transparent; margin-bottom: -2px;
+  }
+  .tab-btn.active { border-bottom-color: var(--accent); font-weight: 700; color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--ink); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  .crime-list { list-style: none; }
+  .crime-item {
+    display: flex; align-items: baseline; gap: 0.5rem;
+    padding: 0.45rem 0; border-bottom: 1px dotted #ccc; font-size: 0.85rem;
+  }
+  .crime-item:last-child { border-bottom: none; }
+  .crime-badge {
+    flex-shrink: 0; display: inline-block; padding: 0.1rem 0.45rem;
+    border-radius: 3px; font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .crime-item-detail { color: #444; }
+  .crime-item-outcome { color: #888; font-style: italic; font-size: 0.8rem; }
+
+  .crime-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+  .crime-table th {
+    text-align: left; padding: 0.35rem 0.6rem;
+    border-bottom: 2px solid var(--rule); font-family: 'Playfair Display', serif;
+  }
+  .crime-table td { padding: 0.3rem 0.6rem; border-bottom: 1px solid #e0d8cc; }
+  .crime-table td:last-child { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .crime-table tr:hover td { background: #f0ebe0; }
+
   /* ── Loading / empty ── */
   .loading { color: #888; font-style: italic; padding: 1rem 0; }
   .empty { color: #aaa; font-style: italic; font-size: 0.85rem; }
@@ -290,9 +326,9 @@
   <!-- CRIME -->
   <div class="section-header">
     <span class="section-icon">🚔</span>
-    <h2>Crime &amp; Policing</h2>
+    <h2>Crime &amp; Policing &ensp;<span id="crime-month-label" style="font-weight:400;font-style:italic;font-size:0.85rem;letter-spacing:0;text-transform:none;opacity:0.8"></span></h2>
   </div>
-  <div class="section-body columns-3" id="crime-section">
+  <div class="section-body" id="crime-section">
     <p class="loading">Loading…</p>
   </div>
 
@@ -376,6 +412,11 @@ const $ = id => document.getElementById(id);
 
 function formatDate(iso) {
   if (!iso) return '';
+  // YYYY-MM only (police API — monthly granularity, no day)
+  if (/^\d{4}-\d{2}$/.test(iso)) {
+    const d = new Date(iso + '-02');  // use 2nd to avoid BST-midnight rolling back to prior month
+    return isNaN(d) ? iso : d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+  }
   const d = new Date(iso);
   if (isNaN(d)) return iso;
   return d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
@@ -488,8 +529,103 @@ async function loadPlanning() {
 }
 
 /* ── Crime ── */
+const CRIME_COLOURS = {
+  'anti-social-behaviour':      ['#fde8ea','#8b1a1a'],
+  'burglary':                   ['#fde8d0','#7a3c00'],
+  'criminal-damage-arson':      ['#ffe0cc','#c04000'],
+  'drugs':                      ['#daeaf5','#1a4f72'],
+  'other-crime':                ['#e8e8e8','#444'],
+  'other-theft':                ['#fef3cd','#856404'],
+  'possession-of-weapons':      ['#f8d7da','#721c24'],
+  'public-order':               ['#d0eaec','#1a5c5e'],
+  'robbery':                    ['#f8d7da','#721c24'],
+  'shoplifting':                ['#fff3cd','#856404'],
+  'theft-from-the-person':      ['#fff3cd','#856404'],
+  'vehicle-crime':              ['#d5e8f5','#1a3f5c'],
+  'violence-and-sexual-offences':['#f5d5d5','#6b0000'],
+};
+
+function crimeBadge(category) {
+  const [bg, fg] = CRIME_COLOURS[category] || ['#e8e8e8','#444'];
+  const label = (category || 'other').replace(/-/g,' ');
+  return `<span class="crime-badge" style="background:${bg};color:${fg}">${label}</span>`;
+}
+
+function crimeTab(name) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === name));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === `crime-${name}`));
+}
+
 async function loadCrime() {
-  await loadSection('crime-section', 'crime', 9, 3, i => storyCard(i, '0.95rem'));
+  const data = await loadJSON('crime');
+  if (!data || !data.items.length) { setSection('crime-section', ''); return; }
+
+  const items = data.items;
+
+  // Derive month label from most common date value
+  const monthCounts = {};
+  items.forEach(i => { monthCounts[i.date] = (monthCounts[i.date] || 0) + 1; });
+  const topMonth = Object.entries(monthCounts).sort((a,b) => b[1]-a[1])[0]?.[0] || '';
+  const monthLabel = topMonth ? `Crime Reports from ${formatDate(topMonth)}` : '';
+  const label = $('crime-month-label');
+  if (label) label.textContent = monthLabel;
+
+  // ── Tab 1: Incidents ──────────────────────────────────────────────────
+  const incidentRows = items.map(i => {
+    const cat = i.data?.category || i.category || '';
+    // title format: "Category – Street Name"
+    const street = i.title.includes('–') ? i.title.split('–').slice(1).join('–').trim() : i.title;
+    // outcome is after "Status:" in description
+    const outcomeMatch = i.description.match(/Status:\s*(.+)\.?\s*$/i);
+    const outcome = outcomeMatch ? outcomeMatch[1] : '';
+    return `<li class="crime-item">
+      ${crimeBadge(cat)}
+      <span class="crime-item-detail">${street}</span>
+      ${outcome ? `<span class="crime-item-outcome">— ${outcome}</span>` : ''}
+    </li>`;
+  }).join('');
+  const incidentsHtml = `<ul class="crime-list">${incidentRows}</ul>`;
+
+  // ── Tab 2: Statistics ─────────────────────────────────────────────────
+  const catCounts = {};
+  items.forEach(i => {
+    const cat = i.data?.category || i.category || 'other';
+    catCounts[cat] = (catCounts[cat] || 0) + 1;
+  });
+  const statsRows = Object.entries(catCounts)
+    .sort((a,b) => b[1]-a[1])
+    .map(([cat, n]) => `<tr><td>${crimeBadge(cat)} ${cat.replace(/-/g,' ')}</td><td>${n}</td></tr>`)
+    .join('');
+  const statsHtml = `<table class="crime-table">
+    <thead><tr><th>Crime type</th><th style="text-align:right">Reports</th></tr></thead>
+    <tbody>${statsRows}</tbody>
+  </table>`;
+
+  // ── Tab 3: Locations ──────────────────────────────────────────────────
+  const locCounts = {};
+  items.forEach(i => {
+    const street = i.title.includes('–') ? i.title.split('–').slice(1).join('–').trim() : 'Unknown';
+    locCounts[street] = (locCounts[street] || 0) + 1;
+  });
+  const locRows = Object.entries(locCounts)
+    .sort((a,b) => b[1]-a[1])
+    .map(([loc, n]) => `<tr><td>${loc}</td><td>${n}</td></tr>`)
+    .join('');
+  const locHtml = `<table class="crime-table">
+    <thead><tr><th>Location</th><th style="text-align:right">Incidents</th></tr></thead>
+    <tbody>${locRows}</tbody>
+  </table>`;
+
+  setSection('crime-section', `
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="incidents" onclick="crimeTab('incidents')">Incidents</button>
+      <button class="tab-btn" data-tab="statistics" onclick="crimeTab('statistics')">Statistics</button>
+      <button class="tab-btn" data-tab="locations" onclick="crimeTab('locations')">Locations</button>
+    </div>
+    <div id="crime-incidents" class="tab-panel active">${incidentsHtml}</div>
+    <div id="crime-statistics" class="tab-panel">${statsHtml}</div>
+    <div id="crime-locations" class="tab-panel">${locHtml}</div>
+  `);
 }
 
 /* ── Council ── */
