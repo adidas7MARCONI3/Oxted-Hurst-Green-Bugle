@@ -371,6 +371,7 @@
 
 <script>
 /* ── Utilities ── */
+const BASE = './public/data';
 const $ = id => document.getElementById(id);
 
 function formatDate(iso) {
@@ -398,7 +399,7 @@ function setSection(id, html) {
 
 async function loadJSON(source) {
   try {
-    const r = await fetch(`data/output/${source}.json?t=${Date.now()}`);
+    const r = await fetch(`${BASE}/output/${source}.json?t=${Date.now()}`);
     if (!r.ok) return null;
     return await r.json();
   } catch { return null; }

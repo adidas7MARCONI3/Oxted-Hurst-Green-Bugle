@@ -10,4 +10,4 @@ dist/
 venv/
 data/events/submissions/*.json
 data/events/rejected/*.json
-data/output/.train_alert_state.json
+public/data/output/.train_alert_state.json

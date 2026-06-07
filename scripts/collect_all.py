@@ -19,6 +19,10 @@ from collectors import (
 )
 from summariser import Summariser
 
+def trigger_redeploy():
+    print("GitHub Pages will redeploy automatically on push")
+
+
 ALL_COLLECTORS = {
     "crime": CrimeCollector,
     "planning": PlanningCollector,
@@ -39,7 +43,7 @@ def main():
                         help="Skip Claude summarisation step")
     parser.add_argument("--sources", default="",
                         help="Comma-separated list of sources to run (default: all)")
-    parser.add_argument("--output-dir", default="data/output",
+    parser.add_argument("--output-dir", default="public/data/output",
                         help="Output directory for JSON files")
     args = parser.parse_args()
 

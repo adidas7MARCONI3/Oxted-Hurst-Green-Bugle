@@ -14,7 +14,11 @@ from dotenv import load_dotenv
 load_dotenv()
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-STATE_FILE = Path("data/output/.train_alert_state.json")
+STATE_FILE = Path("public/data/output/.train_alert_state.json")
+
+
+def trigger_redeploy():
+    print("GitHub Pages will redeploy automatically on push")
 COOLDOWN_MINUTES = 30  # don't re-alert same disruption within this window
 
 

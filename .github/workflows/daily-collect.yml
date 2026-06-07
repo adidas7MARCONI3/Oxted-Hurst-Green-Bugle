@@ -35,13 +35,13 @@ jobs:
           HOCKEY_CLUB_NAME: ${{ secrets.HOCKEY_CLUB_NAME }}
           HOCKEY_CLUB_ID: ${{ secrets.HOCKEY_CLUB_ID }}
           BINS_UPRN: ${{ secrets.BINS_UPRN }}
-        run: python scripts/collect_all.py
+        run: python scripts/collect_all.py --output-dir public/data/output
 
       - name: Commit updated data
         run: |
           git config user.name "bugle-bot"
           git config user.email "bugle-bot@users.noreply.github.com"
-          git add data/output/
+          git add public/data/output/
           git diff --cached --quiet || git commit -m "chore: daily data update $(date -u +%Y-%m-%d)"
           git push
 
@@ -63,7 +63,7 @@ jobs:
           sources = ["crime","planning","council","environment","events","trains","bins"]
           sections = []
           for src in sources:
-              p = Path(f"data/output/{src}.json")
+              p = Path(f"public/data/output/{src}.json")
               if not p.exists():
                   continue
               data = json.loads(p.read_text())
