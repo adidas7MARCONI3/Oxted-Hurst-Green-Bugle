@@ -72,6 +72,79 @@ def test_crime_collector_handles_network_error():
     assert result.items == []
 
 
+# ── Trains (Darwin OpenLDBWS) ─────────────────────────────────────────────
+
+# A realistic Darwin response: the StationBoard child elements live in
+# *several different* versioned `.../ldb/types` namespaces, NOT in the main
+# ldb namespace. This is what previously broke namespace-exact parsing.
+DARWIN_SAMPLE = b"""<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetDepartureBoardResponse xmlns="http://thalesgroup.com/RTTI/2021-11-01/ldb/">
+      <GetStationBoardResult
+          xmlns:lt="http://thalesgroup.com/RTTI/2017-10-01/ldb/types"
+          xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">
+        <lt4:locationName>Oxted</lt4:locationName>
+        <lt4:crs>OXT</lt4:crs>
+        <lt:trainServices>
+          <lt:service>
+            <lt4:std>08:15</lt4:std>
+            <lt4:etd>On time</lt4:etd>
+            <lt4:platform>2</lt4:platform>
+            <lt4:operator>Southern</lt4:operator>
+            <lt:destination>
+              <lt4:location>
+                <lt4:locationName>London Bridge</lt4:locationName>
+              </lt4:location>
+            </lt:destination>
+          </lt:service>
+          <lt:service>
+            <lt4:std>08:32</lt4:std>
+            <lt4:etd>Cancelled</lt4:etd>
+            <lt4:operator>Southern</lt4:operator>
+            <lt:isCancelled>true</lt:isCancelled>
+            <lt:destination>
+              <lt4:location>
+                <lt4:locationName>Victoria</lt4:locationName>
+              </lt4:location>
+            </lt:destination>
+          </lt:service>
+        </lt:trainServices>
+      </GetStationBoardResult>
+    </GetDepartureBoardResponse>
+  </soap:Body>
+</soap:Envelope>"""
+
+
+def test_trains_collector_parses_multi_namespace_response(monkeypatch):
+    monkeypatch.setenv("DARWIN_API_KEY", "test-token")
+    from collectors.trains import TrainsCollector
+
+    with patch("collectors.trains.httpx.post") as mock_post:
+        mock_post.return_value.content = DARWIN_SAMPLE
+        mock_post.return_value.raise_for_status = MagicMock()
+        result = TrainsCollector().collect()
+
+    # Two stations (OXT, HGS) each return two services from the mock.
+    assert result.source == "trains"
+    assert len(result.items) == 4
+    first = result.items[0]
+    assert first.data["destination"] == "London Bridge"
+    assert first.data["scheduled"] == "08:15"
+    assert first.data["operator"] == "Southern"
+    assert first.data["platform"] == "2"
+    assert first.data["cancelled"] is False
+    assert any(i.data["cancelled"] for i in result.items)
+
+
+def test_trains_collector_no_api_key_returns_empty(monkeypatch):
+    monkeypatch.delenv("DARWIN_API_KEY", raising=False)
+    from collectors.trains import TrainsCollector
+    result = TrainsCollector().collect()
+    assert result.source == "trains"
+    assert result.items == []
+
+
 # ── Events admin ──────────────────────────────────────────────────────────
 
 def test_events_loads_approved_submissions(tmp_path):
