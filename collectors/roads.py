@@ -22,6 +22,7 @@ working URL. Items are sorted current/soonest-first.
 import hashlib
 import re
 from datetime import date
+from urllib.parse import quote_plus, urljoin
 import httpx
 from .base import BaseCollector, CollectionResult, Item, now_iso
 
@@ -38,6 +39,21 @@ AREA_RADIUS_M = 3000
 
 # Local relevance terms for filtering the Surrey CC bulletin to our patch
 LOCAL_TERMS = {"oxted", "hurst green", "tandridge", "limpsfield", "rh8"}
+
+# A bulletin line names a specific road/place when it carries a road-type word
+# or a classified-road number (A25, B2024…). Used to decide whether we can build
+# a deep link to that exact road rather than the county-wide roadworks list.
+ROAD_WORD_RE = re.compile(
+    r"\b(road|lane|street|hill|way|close|avenue|crescent|drive|green|common|"
+    r"bridge|level crossing|roundabout|junction|gardens|terrace|row|path|"
+    r"footpath|bypass|highway)\b",
+    re.IGNORECASE,
+)
+ROAD_CLASS_RE = re.compile(r"\b[AB]\d{2,4}\b")
+# Anchor hrefs that point at an individual roadwork/closure rather than the
+# generic landing page — the live-map providers Surrey CC links out to.
+DEEP_LINK_HINTS = ("one.network", "roadworks.org", "elgin", "/works/", "permit")
+SURREY_BASE = "https://www.surreycc.gov.uk"
 
 
 class RoadsCollector(BaseCollector):
@@ -163,6 +179,11 @@ class RoadsCollector(BaseCollector):
         resp.raise_for_status()
         html = resp.text
 
+        # Capture any per-closure deep links the bulletin itself provides
+        # (Surrey CC links individual works out to live-map providers) before
+        # we flatten the markup — that's where the specific URLs live.
+        deep_links = self._collect_roadwork_links(html)
+
         # Strip tags to plain text and split into candidate lines; the bulletin
         # is rendered as a list of road entries. We keep only lines that mention
         # one of our local terms so the feed stays relevant to RH8.
@@ -185,6 +206,11 @@ class RoadsCollector(BaseCollector):
                 continue
             seen.add(uid)
 
+            # Deep link to the specific closure rather than the county-wide list:
+            # prefer a link the bulletin gave us, otherwise point at the exact
+            # road. Vague prose entries keep the generic bulletin page.
+            url = self._deep_link_for(line, deep_links)
+
             items.append(Item(
                 id=uid,
                 title=f"Surrey CC roadworks — {line[:80]}",
@@ -194,7 +220,7 @@ class RoadsCollector(BaseCollector):
                 ),
                 date="",
                 category="roadworks",
-                url=SURREY_BULLETIN,
+                url=url,
                 data={
                     "road": line[:120],
                     "work_type": "Roadworks",
@@ -205,6 +231,60 @@ class RoadsCollector(BaseCollector):
                 },
             ))
         return items
+
+    # ── deep linking ──────────────────────────────────────────────────────
+    @staticmethod
+    def _collect_roadwork_links(html: str) -> list[tuple[str, str]]:
+        """Extract (anchor_text, absolute_href) pairs that look like links to an
+        individual roadwork/closure, so a bulletin entry can be matched to its
+        own page instead of the generic listing."""
+        links: list[tuple[str, str]] = []
+        for m in re.finditer(
+            r'<a\b[^>]*\bhref="([^"]+)"[^>]*>(.*?)</a>',
+            html, flags=re.DOTALL | re.IGNORECASE,
+        ):
+            href = m.group(1).strip()
+            atext = re.sub(r"<[^>]+>", " ", m.group(2))
+            atext = re.sub(r"&nbsp;|&amp;", " ", atext)
+            atext = re.sub(r"\s+", " ", atext).strip()
+            if not href or href.startswith(("#", "mailto:", "tel:", "javascript:")):
+                continue
+            low = href.lower()
+            # Only links that resolve to a *specific* work, not the landing page.
+            if not any(hint in low for hint in DEEP_LINK_HINTS):
+                continue
+            links.append((atext, urljoin(SURREY_BASE + "/", href)))
+        return links
+
+    @classmethod
+    def _deep_link_for(cls, line: str, deep_links: list[tuple[str, str]]) -> str:
+        """Best available URL for a bulletin entry, most specific first."""
+        low = line.lower()
+        # 1) A link from the page whose text appears in (or contains) this entry.
+        best = ""
+        best_len = 0
+        for atext, href in deep_links:
+            a = atext.lower()
+            if len(a) >= 6 and (a in low or low in a) and len(a) > best_len:
+                best, best_len = href, len(a)
+        if best:
+            return best
+        # 2) Otherwise deep-link to the exact road on a map, if we can name one.
+        road = cls._clean_road_name(line)
+        if road and (ROAD_WORD_RE.search(road) or ROAD_CLASS_RE.search(road)):
+            query = quote_plus(f"{road}, Surrey, UK")
+            return f"https://www.google.com/maps/search/?api=1&query={query}"
+        # 3) Vague prose ("upcoming works across Tandridge") → generic listing.
+        return SURREY_BULLETIN
+
+    @staticmethod
+    def _clean_road_name(line: str) -> str:
+        """Trim a bulletin line down to the road/place it names: drop any work
+        description after a dash and any trailing punctuation."""
+        road = re.split(r"\s[—–-]\s", line)[0]
+        road = re.sub(r"\b(roadworks?|road works|closure|closed)\b.*$", "", road,
+                      flags=re.IGNORECASE)
+        return road.strip(" .,:;").strip()
 
     # ── helpers ───────────────────────────────────────────────────────────
     @staticmethod
