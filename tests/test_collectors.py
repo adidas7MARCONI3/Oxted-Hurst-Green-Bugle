@@ -115,3 +115,77 @@ def test_property_collector_parses_sparql():
     assert len(result.items) == 1
     assert "485,000" in result.items[0].title
     assert result.items[0].data["postcode"] == "RH8 0PG"
+
+
+# ── Roads collector (mocked) ──────────────────────────────────────────────
+
+def test_roads_collector_parses_street_manager():
+    from collectors.roads import RoadsCollector
+    mock_activities = [{
+        "street_name": "Station Road East",
+        "town": "Oxted",
+        "activity_type": "Road closure",
+        "promoter_organisation": "SES Water",
+        "traffic_management_type": "Road closure",
+        "work_reference_number": "TM1234-ABC-01",
+        "start_date": "2026-06-10T00:00:00.000Z",
+        "end_date": "2026-06-14T00:00:00.000Z",
+    }]
+
+    def fake_get(url, *args, **kwargs):
+        resp = MagicMock()
+        resp.raise_for_status = MagicMock()
+        if "streetmanager" in url:
+            resp.json.return_value = mock_activities
+        else:  # Surrey CC scrape — return empty page
+            resp.text = "<html><body></body></html>"
+        return resp
+
+    with patch("collectors.roads.httpx.get", side_effect=fake_get):
+        result = RoadsCollector().collect()
+
+    assert result.source == "roads"
+    assert len(result.items) == 1
+    item = result.items[0]
+    assert "Station Road East" in item.title
+    assert item.data["promoter"] == "SES Water"
+    assert item.data["start_date"] == "2026-06-10"
+    assert item.data["end_date"] == "2026-06-14"
+    assert item.url  # every item must have a working URL
+
+
+def test_roads_collector_handles_network_error():
+    from collectors.roads import RoadsCollector
+    import httpx
+    with patch("collectors.roads.httpx.get", side_effect=httpx.ConnectError("refused")):
+        result = RoadsCollector().collect()
+    assert result.source == "roads"
+    assert result.items == []
+
+
+def test_roads_collector_filters_surrey_to_local_area():
+    from collectors.roads import RoadsCollector
+    surrey_html = """
+    <table>
+      <tr><th>Road</th><th>Details</th></tr>
+      <tr><td>High Street, Oxted</td><td>Resurfacing 10/06/2026 to 14/06/2026</td></tr>
+      <tr><td>Main Road, Guildford</td><td>Works far away 10/06/2026</td></tr>
+    </table>
+    """
+
+    def fake_get(url, *args, **kwargs):
+        resp = MagicMock()
+        resp.raise_for_status = MagicMock()
+        if "streetmanager" in url:
+            resp.json.return_value = []
+        else:
+            resp.text = surrey_html
+        return resp
+
+    with patch("collectors.roads.httpx.get", side_effect=fake_get):
+        result = RoadsCollector().collect()
+
+    # Only the Oxted row should survive the Tandridge/local filter.
+    assert len(result.items) == 1
+    assert "Oxted" in result.items[0].title
+    assert result.items[0].data["promoter"] == "Surrey County Council"

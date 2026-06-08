@@ -209,6 +209,24 @@
   .property-table tr:hover td { background: #f0ebe0; }
   .price { font-weight: 700; color: #1a3c1a; }
 
+  /* ── Roads / roadworks ── */
+  .roads-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+  .roads-table th { text-align: left; font-weight: 700; padding: 0.35rem 0.6rem;
+    border-bottom: 2px solid var(--rule); font-family: 'Playfair Display', serif; }
+  .roads-table td { padding: 0.4rem 0.6rem; border-bottom: 1px solid #e0d8cc; vertical-align: top; }
+  .roads-table tr:hover td { background: #f0ebe0; }
+  .roads-table a { color: var(--ink); text-decoration: none; font-weight: 600; }
+  .roads-table a:hover { text-decoration: underline; color: var(--accent); }
+  .roads-road { font-weight: 700; }
+  .roads-promoter { font-size: 0.78rem; color: #666; }
+  .roads-dates { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .roads-badge {
+    display: inline-block; padding: 0.1rem 0.45rem; border-radius: 3px;
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+    text-transform: uppercase; background: #fff3cd; color: #856404;
+  }
+  .roads-badge.live { background: #f8d7da; color: #721c24; }
+
   /* ── Events ── */
   .event-card {
     border-left: 3px solid var(--accent);
@@ -347,6 +365,15 @@
     <h2>Environment &amp; Flooding</h2>
   </div>
   <div class="section-body columns-3" id="environment-section">
+    <p class="loading">Loading…</p>
+  </div>
+
+  <!-- ROADS -->
+  <div class="section-header">
+    <span class="section-icon">🚧</span>
+    <h2>Road Closures &amp; Roadworks</h2>
+  </div>
+  <div class="section-body" id="roads-section">
     <p class="loading">Loading…</p>
   </div>
 
@@ -648,6 +675,45 @@ async function loadCourts() {
   await loadSection('courts-section', 'courts', 6, 2, i => storyCard(i));
 }
 
+/* ── Roads ── */
+async function loadRoads() {
+  const data = await loadJSON('roads');
+  if (!data || !data.items.length) {
+    setSection('roads-section', '<p class="empty">No road closures or roadworks reported for the RH8 area right now.</p>');
+    return;
+  }
+  const today = new Date().toISOString().slice(0, 10);
+  const rows = data.items.slice(0, 20).map(i => {
+    const d = i.data || {};
+    const road = d.road || i.title.split('—')[0].trim();
+    const workType = d.work_type || 'Roadworks';
+    const promoter = d.promoter || '';
+    const start = d.start_date || '';
+    const end = d.end_date || '';
+    const live = start && start <= today && (!end || end >= today);
+    const badge = live
+      ? '<span class="roads-badge live">Live</span>'
+      : '<span class="roads-badge">Planned</span>';
+    const dates = start
+      ? `${formatDate(start)}${end ? ' – ' + formatDate(end) : ''}`
+      : 'Dates TBC';
+    const roadCell = i.url
+      ? `<a href="${i.url}" target="_blank" rel="noopener">${road}</a>`
+      : road;
+    return `<tr>
+      <td class="roads-road">${roadCell}<div class="roads-promoter">${promoter}</div></td>
+      <td>${badge} ${workType}</td>
+      <td class="roads-dates">${dates}</td>
+    </tr>`;
+  }).join('');
+  setSection('roads-section',
+    `<table class="roads-table">
+      <thead><tr><th>Road</th><th>Works</th><th>When</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`
+  );
+}
+
 /* ── Property ── */
 async function loadProperty() {
   const data = await loadJSON('property');
@@ -719,6 +785,7 @@ Promise.all([
   loadCrime(),
   loadCouncil(),
   loadEnvironment(),
+  loadRoads(),
   loadCourts(),
   loadProperty(),
   loadSports(),
