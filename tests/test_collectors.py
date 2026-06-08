@@ -362,9 +362,10 @@ def test_roads_collector_uses_bulletin_deep_link():
 
 
 def test_roads_collector_deep_links_named_road_to_map():
-    """With no per-closure link available, a named road gets a deep link to that
-    exact road; vague prose keeps the generic bulletin page."""
-    from collectors.roads import RoadsCollector, SURREY_BULLETIN
+    """With no per-closure link available, a named road is searched on the
+    one.network live map; vague prose falls back to one.network for the wider
+    Oxted area (never the static council listing)."""
+    from collectors.roads import RoadsCollector, SURREY_BULLETIN, ONE_NETWORK
     import httpx
     surrey_html = """
       <ul>
@@ -385,8 +386,10 @@ def test_roads_collector_deep_links_named_road_to_map():
 
     by_road = {i.data["road"]: i.url for i in result.items}
     named = next(u for r, u in by_road.items() if r.startswith("Limpsfield Road"))
-    assert named.startswith("https://www.google.com/maps/search/")
+    assert named.startswith(ONE_NETWORK)
     assert "Limpsfield+Road" in named
+    assert named != SURREY_BULLETIN
 
     vague = next(u for r, u in by_road.items() if r.lower().startswith("upcoming"))
-    assert vague == SURREY_BULLETIN
+    assert vague.startswith(ONE_NETWORK)
+    assert vague != SURREY_BULLETIN
