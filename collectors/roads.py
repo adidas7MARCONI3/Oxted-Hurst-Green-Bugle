@@ -55,6 +55,18 @@ ROAD_CLASS_RE = re.compile(r"\b[AB]\d{2,4}\b")
 DEEP_LINK_HINTS = ("one.network", "roadworks.org", "elgin", "/works/", "permit")
 SURREY_BASE = "https://www.surreycc.gov.uk"
 
+# one.network is the live roadworks/closures map Surrey CC itself publishes to
+# (and links individual works out to). When the bulletin doesn't hand us a
+# per-closure link we point at one.network rather than the static council
+# listing: its map search takes a free-text location, so we can centre it on a
+# named road, or on Oxted for vague entries.
+ONE_NETWORK = "https://one.network/"
+
+
+def _one_network_search(place: str) -> str:
+    """one.network live-map URL searched to a place (road or town)."""
+    return f"{ONE_NETWORK}?search={quote_plus(place)}"
+
 
 class RoadsCollector(BaseCollector):
     name = "roads"
@@ -269,13 +281,14 @@ class RoadsCollector(BaseCollector):
                 best, best_len = href, len(a)
         if best:
             return best
-        # 2) Otherwise deep-link to the exact road on a map, if we can name one.
+        # 2) Otherwise search one.network's live map for the exact road, if we
+        #    can name one — that's the closures map, not just the road geometry.
         road = cls._clean_road_name(line)
         if road and (ROAD_WORD_RE.search(road) or ROAD_CLASS_RE.search(road)):
-            query = quote_plus(f"{road}, Surrey, UK")
-            return f"https://www.google.com/maps/search/?api=1&query={query}"
-        # 3) Vague prose ("upcoming works across Tandridge") → generic listing.
-        return SURREY_BULLETIN
+            return _one_network_search(f"{road}, Surrey")
+        # 3) Vague prose ("upcoming works across Tandridge") → one.network for
+        #    the wider Oxted area, rather than the static council listing.
+        return _one_network_search("Oxted, Surrey")
 
     @staticmethod
     def _clean_road_name(line: str) -> str:
