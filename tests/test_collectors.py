@@ -117,6 +117,87 @@ def test_property_collector_parses_sparql():
     assert result.items[0].data["postcode"] == "RH8 0PG"
 
 
+# ── Trains collector (Darwin OpenLDBWS) ───────────────────────────────────
+
+# A realistic Darwin reply whose StationBoard children span MULTIPLE versioned
+# `.../ldb/types` namespaces (2015-11-27 and 2017-10-01) — exactly the shape
+# that broke single-namespace parsing and produced empty boards.
+DARWIN_MULTI_NS_RESPONSE = """<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetDepartureBoardResponse xmlns="http://thalesgroup.com/RTTI/2021-11-01/ldb/">
+      <GetStationBoardResult xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/types">
+        <lt:locationName xmlns:lt="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">Oxted</lt:locationName>
+        <lt:crs xmlns:lt="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">OXT</lt:crs>
+        <lt7:trainServices xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types">
+          <lt7:service>
+            <lt4:std xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">09:15</lt4:std>
+            <lt4:etd xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">On time</lt4:etd>
+            <lt4:platform xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">2</lt4:platform>
+            <lt4:operator xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">Southern</lt4:operator>
+            <lt5:destination xmlns:lt5="http://thalesgroup.com/RTTI/2017-10-01/ldb/types">
+              <lt4:location xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">
+                <lt4:locationName>London Bridge</lt4:locationName>
+                <lt4:crs>LBG</lt4:crs>
+              </lt4:location>
+            </lt5:destination>
+          </lt7:service>
+          <lt7:service>
+            <lt4:std xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">09:30</lt4:std>
+            <lt4:etd xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">Cancelled</lt4:etd>
+            <lt4:isCancelled xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">true</lt4:isCancelled>
+            <lt4:operator xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">Southern</lt4:operator>
+            <lt5:destination xmlns:lt5="http://thalesgroup.com/RTTI/2017-10-01/ldb/types">
+              <lt4:location xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types">
+                <lt4:locationName>East Grinstead</lt4:locationName>
+                <lt4:crs>EGR</lt4:crs>
+              </lt4:location>
+            </lt5:destination>
+          </lt7:service>
+        </lt7:trainServices>
+      </GetStationBoardResult>
+    </GetDepartureBoardResponse>
+  </soap:Body>
+</soap:Envelope>"""
+
+
+def test_trains_collector_parses_multi_namespace_response():
+    from collectors.trains import TrainsCollector
+    collector = TrainsCollector()
+    collector.api_key = "test-key"  # bypass the no-key skip
+
+    resp = MagicMock()
+    resp.content = DARWIN_MULTI_NS_RESPONSE.encode()
+    resp.raise_for_status = MagicMock()
+    with patch("collectors.trains.httpx.post", return_value=resp):
+        result = collector.collect()
+
+    assert result.source == "trains"
+    # Two stations are queried with the same mocked reply → 2 services each.
+    assert len(result.items) == 4
+
+    first = result.items[0]
+    assert first.data["destination"] == "London Bridge"
+    assert first.data["scheduled"] == "09:15"
+    assert first.data["operator"] == "Southern"
+    assert first.data["platform"] == "2"
+    assert first.data["cancelled"] is False
+
+    cancelled = [i for i in result.items if i.data["cancelled"]]
+    assert len(cancelled) == 2  # one per station
+    assert cancelled[0].data["destination"] == "East Grinstead"
+    assert "Cancelled" in cancelled[0].title
+
+
+def test_trains_collector_no_api_key_returns_empty():
+    from collectors.trains import TrainsCollector
+    collector = TrainsCollector()
+    collector.api_key = ""
+    result = collector.collect()
+    assert result.source == "trains"
+    assert result.items == []
+
+
 # ── Roads collector (mocked) ──────────────────────────────────────────────
 
 def test_roads_collector_parses_street_manager():

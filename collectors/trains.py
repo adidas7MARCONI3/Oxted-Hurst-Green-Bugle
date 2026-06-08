@@ -37,8 +37,31 @@ SOAP_TEMPLATE = """<?xml version="1.0" encoding="utf-8"?>
 </soap:Envelope>"""
 
 
-def _text(el, tag: str, ns: str = DARWIN_NS) -> str:
-    found = el.find(f"{{{ns}}}{tag}")
+def _local(el) -> str:
+    """Return an element's tag name without any namespace prefix."""
+    tag = el.tag
+    return tag.rsplit("}", 1)[-1] if "}" in tag else tag
+
+
+def _find(el, tag: str):
+    """Find a direct child by local tag name, ignoring namespace."""
+    for child in el:
+        if _local(child) == tag:
+            return child
+    return None
+
+
+def _find_deep(el, tag: str):
+    """Find the first descendant by local tag name, ignoring namespace."""
+    for child in el.iter():
+        if child is not el and _local(child) == tag:
+            return child
+    return None
+
+
+def _text(el, tag: str) -> str:
+    """Text of a direct child by local tag name, ignoring namespace."""
+    found = _find(el, tag)
     return found.text if found is not None and found.text else ""
 
 
@@ -76,12 +99,11 @@ class TrainsCollector(BaseCollector):
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
 
-        body_el = root.find(".//{http://schemas.xmlsoap.org/soap/envelope/}Body")
-        board = body_el.find(f".//{{{DARWIN_NS}}}GetStationBoardResult") if body_el else None
+        board = _find_deep(root, "GetStationBoardResult")
         if board is None:
             return []
 
-        services_el = board.find(f"{{{DARWIN_NS}}}trainServices")
+        services_el = _find(board, "trainServices")
         if services_el is None:
             return []
 
@@ -92,9 +114,9 @@ class TrainsCollector(BaseCollector):
             platform = _text(svc, "platform")
             operator = _text(svc, "operator")
             destination = ""
-            dest_el = svc.find(f"{{{DARWIN_NS}}}destination")
+            dest_el = _find(svc, "destination")
             if dest_el is not None:
-                loc = dest_el.find(f"{{{DARWIN_NS}}}location")
+                loc = _find(dest_el, "location")
                 if loc is not None:
                     destination = _text(loc, "locationName")
 
