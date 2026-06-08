@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-06-08T11:07:00.840193+00:00",
+  "collected_at": "2026-06-08T11:25:19.348010+00:00",
   "items": [
     {
       "id": "d254c7b0724b",
@@ -10,7 +10,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Central Way Home Sells for \u00a3610,000",
-      "summary": "A detached house at 9 Central Way, RH8 0LS, has changed hands for \u00a3610,000. The sale was completed on 22 April 2026.",
+      "summary": "A detached house at 9 Central Way, RH8 0LS, has sold for \u00a3610,000. The sale was completed on 22 April 2026.",
       "data": {
         "amount": 610000,
         "category": "Detached",
@@ -25,7 +25,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Chalkpit Lane Home Sells for \u00a3950,000",
-      "summary": "A detached house at 13 Chalkpit Lane in Oxted has sold for \u00a3950,000. The sale was completed on 16 April 2026.",
+      "summary": "A detached property at 13 Chalkpit Lane, RH8 0NF, has changed hands for \u00a3950,000. The sale was completed on 16 April 2026.",
       "data": {
         "amount": 950000,
         "category": "Detached",
@@ -40,7 +40,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Gordons Way Semi Sells for \u00a3852,500",
-      "summary": "A semi-detached home at 25 Gordons Way, RH8 0NA, has sold for \u00a3852,500. The sale was completed on 16 April 2026.",
+      "summary": "A semi-detached home at 25 Gordons Way, RH8 0NA, has changed hands for \u00a3852,500. The sale was completed on 16 April 2026.",
       "data": {
         "amount": 852500,
         "category": "Semi-detached",
@@ -54,8 +54,8 @@
       "date": "2026-04-15",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "High Street semi sells for \u00a3275,000",
-      "summary": "A semi-detached home at Low Cottage, 2A High Street, RH8 9LP, has sold for \u00a3275,000. The sale was completed on 15 April 2026.",
+      "headline": "High Street Cottage Sells for \u00a3275,000",
+      "summary": "A semi-detached home at Low Cottage, 2A High Street, RH8 9LP has changed hands for \u00a3275,000. The sale was completed on 15 April 2026.",
       "data": {
         "amount": 275000,
         "category": "Semi-detached",
@@ -70,7 +70,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Padbrook Detached Home Sells for \u00a3815,000",
-      "summary": "A detached house at 40 Padbrook, RH8 0DZ, has been sold for \u00a3815,000. The sale was completed on 7 April 2026.",
+      "summary": "A detached house at 40 Padbrook, RH8 0DZ, has sold for \u00a3815,000. The sale was completed on 7 April 2026.",
       "data": {
         "amount": 815000,
         "category": "Detached",
@@ -100,7 +100,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "West Hill Flat Sells for \u00a3240,000",
-      "summary": "A flat at 1A Hillcrest, West Hill, RH8 9JB, has sold for \u00a3240,000. The sale was completed on 27 March 2026.",
+      "summary": "A flat at 1A Hillcrest, West Hill, RH8 9JB has sold for \u00a3240,000. The sale was completed on 27 March 2026.",
       "data": {
         "amount": 240000,
         "category": "Flat",
@@ -114,8 +114,8 @@
       "date": "2026-03-27",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Detached Home on Woodhurst Lane Sells for \u00a3937,500",
-      "summary": "A detached property at Sandstones, Woodhurst Lane (RH8 9HD) was sold on 27 March 2026. The sale price was \u00a3937,500.",
+      "headline": "Woodhurst Lane home sells for \u00a3937,500",
+      "summary": "A detached house at Sandstones, Woodhurst Lane, RH8 9HD has changed hands. The sale was completed on 27 March 2026 for \u00a3937,500.",
       "data": {
         "amount": 937500,
         "category": "Detached",
@@ -159,8 +159,8 @@
       "date": "2026-03-25",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Orchard Way Home Sells for \u00a3875,000",
-      "summary": "A detached house at 34 Orchard Way in Oxted has sold for \u00a3875,000. The sale was completed on 25 March 2026.",
+      "headline": "Orchard Way home sells for \u00a3875,000",
+      "summary": "A detached house at 34 Orchard Way, RH8, has sold for \u00a3875,000. The sale was completed on 25 March 2026.",
       "data": {
         "amount": 875000,
         "category": "Detached",
@@ -175,7 +175,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Greenacres Semi Sells for \u00a3540,000",
-      "summary": "A semi-detached home at 27A Greenacres, RH8 0PA, has been sold for \u00a3540,000. The sale was completed on 13 March 2026.",
+      "summary": "A semi-detached home at 27A Greenacres, RH8 0PA, has sold for \u00a3540,000. The sale was completed on 13 March 2026.",
       "data": {
         "amount": 540000,
         "category": "Semi-detached",
@@ -190,7 +190,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Ridlands Rise Semi Sells for \u00a3655,000",
-      "summary": "A semi-detached house at 9 Ridlands Rise, RH8 0TS, has changed hands. The sale was completed on 11 March 2026 for \u00a3655,000.",
+      "summary": "A semi-detached home at 9 Ridlands Rise, RH8 0TS, has been sold for \u00a3655,000. The sale was completed on 11 March 2026.",
       "data": {
         "amount": 655000,
         "category": "Semi-detached",
@@ -205,7 +205,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Beatrice Road Flat Sells for \u00a3205,000",
-      "summary": "A flat at Flat 1 Beatrice Lodge, Beatrice Road, RH8 0QH has been sold for \u00a3205,000. The sale was completed on 11 March 2026.",
+      "summary": "A flat at Flat 1 Beatrice Lodge on Beatrice Road, RH8 0QH, has been sold for \u00a3205,000. The sale was completed on 11 March 2026.",
       "data": {
         "amount": 205000,
         "category": "Flat",
