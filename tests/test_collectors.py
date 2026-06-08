@@ -332,3 +332,61 @@ def test_roads_collector_filters_surrey_to_tandridge():
     assert "oxted" in titles
     assert "hurst green" in titles
     assert "guildford" not in titles
+
+
+def test_roads_collector_uses_bulletin_deep_link():
+    """When the bulletin links a road out to a live-map provider, the item must
+    point at that specific closure rather than the generic listing page."""
+    from collectors.roads import RoadsCollector, SURREY_BULLETIN
+    import httpx
+    surrey_html = """
+      <ul>
+        <li><a href="https://one.network/?GB/work/ABC123">Oxted, Station Road East</a> — gas works</li>
+      </ul>
+    """
+    with patch("collectors.roads.httpx.get") as mock_get:
+        def side_effect(url, *a, **k):
+            if "streetmanager" in url:
+                raise httpx.ConnectError("no street manager in test")
+            resp = MagicMock()
+            resp.text = surrey_html
+            resp.raise_for_status = MagicMock()
+            return resp
+        mock_get.side_effect = side_effect
+        result = RoadsCollector().collect()
+
+    assert len(result.items) == 1
+    item = result.items[0]
+    assert item.url == "https://one.network/?GB/work/ABC123"
+    assert item.url != SURREY_BULLETIN
+
+
+def test_roads_collector_deep_links_named_road_to_map():
+    """With no per-closure link available, a named road gets a deep link to that
+    exact road; vague prose keeps the generic bulletin page."""
+    from collectors.roads import RoadsCollector, SURREY_BULLETIN
+    import httpx
+    surrey_html = """
+      <ul>
+        <li>Limpsfield Road, Oxted — resurfacing</li>
+        <li>Upcoming works across Tandridge this week</li>
+      </ul>
+    """
+    with patch("collectors.roads.httpx.get") as mock_get:
+        def side_effect(url, *a, **k):
+            if "streetmanager" in url:
+                raise httpx.ConnectError("no street manager in test")
+            resp = MagicMock()
+            resp.text = surrey_html
+            resp.raise_for_status = MagicMock()
+            return resp
+        mock_get.side_effect = side_effect
+        result = RoadsCollector().collect()
+
+    by_road = {i.data["road"]: i.url for i in result.items}
+    named = next(u for r, u in by_road.items() if r.startswith("Limpsfield Road"))
+    assert named.startswith("https://www.google.com/maps/search/")
+    assert "Limpsfield+Road" in named
+
+    vague = next(u for r, u in by_road.items() if r.lower().startswith("upcoming"))
+    assert vague == SURREY_BULLETIN
