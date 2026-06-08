@@ -11,8 +11,12 @@ import httpx
 from xml.etree import ElementTree as ET
 from .base import BaseCollector, CollectionResult, Item, now_iso
 
+# The OpenLDBWS .asmx endpoint and the request namespace are version-locked:
+# ldb11.asmx serves the 2017-10-01 schema. Sending a different RTTI namespace
+# (or SOAPAction) to it makes the service return HTTP 500. Keep these in sync.
+DARWIN_VERSION = "2017-10-01"
 DARWIN_ENDPOINT = "https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx"
-DARWIN_NS = "http://thalesgroup.com/RTTI/2021-11-01/ldb/"
+DARWIN_NS = f"http://thalesgroup.com/RTTI/{DARWIN_VERSION}/ldb/"
 TOKEN_NS = "http://thalesgroup.com/RTTI/2013-11-28/Token/types"
 
 STATIONS = [
@@ -93,7 +97,7 @@ class TrainsCollector(BaseCollector):
             DARWIN_ENDPOINT,
             content=body.encode(),
             headers={"Content-Type": "text/xml; charset=utf-8",
-                     "SOAPAction": "http://thalesgroup.com/RTTI/2021-11-01/ldb/GetDepartureBoard"},
+                     "SOAPAction": f"{DARWIN_NS}GetDepartureBoard"},
             timeout=15,
         )
         resp.raise_for_status()

@@ -189,6 +189,33 @@ def test_trains_collector_parses_multi_namespace_response():
     assert "Cancelled" in cancelled[0].title
 
 
+def test_trains_request_namespace_matches_endpoint_version():
+    """ldb11.asmx is version-locked to the 2017-10-01 schema. Sending a
+    mismatched namespace/SOAPAction makes OpenLDBWS return HTTP 500 (the bug
+    that left the board empty). Assert the outgoing request stays in sync."""
+    import collectors.trains as trains
+    from collectors.trains import TrainsCollector
+    collector = TrainsCollector()
+    collector.api_key = "test-key"
+
+    resp = MagicMock()
+    resp.content = DARWIN_MULTI_NS_RESPONSE.encode()
+    resp.raise_for_status = MagicMock()
+    with patch("collectors.trains.httpx.post", return_value=resp) as mock_post:
+        collector.collect()
+
+    # ldb11.asmx ⇒ 2017-10-01 schema, both in body and SOAPAction header.
+    assert "ldb11.asmx" in trains.DARWIN_ENDPOINT
+    assert trains.DARWIN_NS == "http://thalesgroup.com/RTTI/2017-10-01/ldb/"
+
+    _, kwargs = mock_post.call_args
+    sent_body = kwargs["content"].decode()
+    assert 'xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"' in sent_body
+    assert kwargs["headers"]["SOAPAction"] == (
+        "http://thalesgroup.com/RTTI/2017-10-01/ldb/GetDepartureBoard"
+    )
+
+
 def test_trains_collector_no_api_key_returns_empty():
     from collectors.trains import TrainsCollector
     collector = TrainsCollector()
