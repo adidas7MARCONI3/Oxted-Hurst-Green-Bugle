@@ -117,6 +117,85 @@ def test_property_collector_parses_sparql():
     assert result.items[0].data["postcode"] == "RH8 0PG"
 
 
+# ── Trains collector (mocked) ─────────────────────────────────────────────
+
+# A realistic Darwin OpenLDBWS reply: GetStationBoardResult lives in the main
+# "ldb" namespace, but its children are spread across *versioned* ".../ldb/types"
+# namespaces (here 2015-11-27 and 2017-10-01). The old single-namespace parser
+# matched none of these and silently produced zero services.
+_DARWIN_MULTI_NS = """<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetDepartureBoardResponse xmlns="http://thalesgroup.com/RTTI/2021-11-01/ldb/">
+      <GetStationBoardResult xmlns:lt="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+                             xmlns:lt4="http://thalesgroup.com/RTTI/2017-10-01/ldb/types">
+        <lt:locationName>Oxted</lt:locationName>
+        <lt:crs>OXT</lt:crs>
+        <lt4:trainServices>
+          <lt4:service>
+            <lt4:std>09:15</lt4:std>
+            <lt4:etd>On time</lt4:etd>
+            <lt4:platform>2</lt4:platform>
+            <lt4:operator>Southern</lt4:operator>
+            <lt4:isCancelled>false</lt4:isCancelled>
+            <lt4:destination>
+              <lt4:location>
+                <lt4:locationName>London Bridge</lt4:locationName>
+              </lt4:location>
+            </lt4:destination>
+          </lt4:service>
+          <lt4:service>
+            <lt4:std>09:32</lt4:std>
+            <lt4:etd>Cancelled</lt4:etd>
+            <lt4:operator>Southern</lt4:operator>
+            <lt4:isCancelled>true</lt4:isCancelled>
+            <lt4:destination>
+              <lt4:location>
+                <lt4:locationName>East Grinstead</lt4:locationName>
+              </lt4:location>
+            </lt4:destination>
+          </lt4:service>
+        </lt4:trainServices>
+      </GetStationBoardResult>
+    </GetDepartureBoardResponse>
+  </soap:Body>
+</soap:Envelope>"""
+
+
+def test_trains_collector_parses_multi_namespace_response():
+    from collectors.trains import TrainsCollector
+    collector = TrainsCollector()
+    collector.api_key = "test-key"  # bypass the no-key short circuit
+
+    with patch("collectors.trains.httpx.post") as mock_post:
+        resp = MagicMock()
+        resp.content = _DARWIN_MULTI_NS.encode()
+        resp.raise_for_status = MagicMock()
+        mock_post.return_value = resp
+        result = collector.collect()
+
+    # Two stations are polled with the same mocked reply → 2 services each.
+    assert result.source == "trains"
+    assert len(result.items) == 4
+    first = result.items[0]
+    assert "London Bridge" in first.title
+    assert first.data["scheduled"] == "09:15"
+    assert first.data["platform"] == "2"
+    assert first.data["cancelled"] is False
+    cancelled = [i for i in result.items if i.data["cancelled"]]
+    assert len(cancelled) == 2
+    assert "East Grinstead" in cancelled[0].data["destination"]
+
+
+def test_trains_collector_no_api_key_returns_empty():
+    from collectors.trains import TrainsCollector
+    collector = TrainsCollector()
+    collector.api_key = ""
+    result = collector.collect()
+    assert result.source == "trains"
+    assert result.items == []
+
+
 # ── Roads collector (mocked) ──────────────────────────────────────────────
 
 def test_roads_collector_parses_street_manager():
