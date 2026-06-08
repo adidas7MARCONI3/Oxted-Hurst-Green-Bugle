@@ -69,6 +69,28 @@ def _text(el, tag: str) -> str:
     return found.text if found is not None and found.text else ""
 
 
+def _extract_fault(body: str) -> str:
+    """Pull a human-readable reason out of a SOAP/HTTP error body.
+
+    OpenLDBWS returns SOAP Faults (invalid token, bad version, etc.) wrapped in
+    an HTTP 500. Surfacing the faultstring is the only way to tell those apart
+    from a genuine server outage, so we never throw the body away silently.
+    """
+    if not body:
+        return ""
+    try:
+        root = ET.fromstring(body)
+    except ET.ParseError:
+        return " ".join(body.split())[:300]
+    fault = _find_deep(root, "Fault")
+    scope = fault if fault is not None else root
+    for tag in ("faultstring", "Text", "Reason", "faultcode", "Message"):
+        node = _find_deep(scope, tag)
+        if node is not None and node.text and node.text.strip():
+            return node.text.strip()
+    return " ".join(body.split())[:300]
+
+
 class TrainsCollector(BaseCollector):
     name = "trains"
 
@@ -100,7 +122,17 @@ class TrainsCollector(BaseCollector):
                      "SOAPAction": f"{DARWIN_NS}GetDepartureBoard"},
             timeout=15,
         )
-        resp.raise_for_status()
+        try:
+            resp.raise_for_status()
+        except httpx.HTTPStatusError as exc:
+            # Darwin signals invalid tokens / bad versions / faults as HTTP 500
+            # with the real reason in the body. Surface it instead of a bare 500.
+            detail = _extract_fault(resp.text)
+            endpoint = DARWIN_ENDPOINT.rsplit("/", 1)[-1]
+            raise RuntimeError(
+                f"HTTP {resp.status_code} from {endpoint}"
+                + (f" — {detail}" if detail else "")
+            ) from exc
         root = ET.fromstring(resp.content)
 
         board = _find_deep(root, "GetStationBoardResult")

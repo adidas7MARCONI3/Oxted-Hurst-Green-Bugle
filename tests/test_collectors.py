@@ -216,6 +216,42 @@ def test_trains_request_namespace_matches_endpoint_version():
     )
 
 
+def test_trains_collector_surfaces_soap_fault_on_500():
+    """A 500 from Darwin (e.g. an invalid access token) carries the real reason
+    in a SOAP Fault body. The collector must surface that faultstring in its log
+    instead of a bare 'Server error 500' — otherwise the cause is invisible."""
+    import httpx
+    from collectors.trains import TrainsCollector
+    collector = TrainsCollector()
+    collector.api_key = "bad-key"
+
+    fault_body = (
+        '<?xml version="1.0"?>'
+        '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">'
+        "<soap:Body><soap:Fault>"
+        "<faultcode>soap:Server</faultcode>"
+        "<faultstring>Invalid Access Token supplied to the Web Service</faultstring>"
+        "</soap:Fault></soap:Body></soap:Envelope>"
+    )
+    resp = MagicMock()
+    resp.status_code = 500
+    resp.text = fault_body
+    resp.raise_for_status = MagicMock(
+        side_effect=httpx.HTTPStatusError("500", request=MagicMock(), response=MagicMock())
+    )
+
+    captured = []
+    with patch("collectors.trains.httpx.post", return_value=resp), \
+         patch("builtins.print", side_effect=lambda *a, **k: captured.append(" ".join(map(str, a)))):
+        result = collector.collect()
+
+    # No items, but the failure log must name the actual fault reason.
+    assert result.items == []
+    joined = "\n".join(captured)
+    assert "Invalid Access Token" in joined
+    assert "HTTP 500" in joined
+
+
 def test_trains_collector_no_api_key_returns_empty():
     from collectors.trains import TrainsCollector
     collector = TrainsCollector()
