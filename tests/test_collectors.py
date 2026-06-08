@@ -115,3 +115,76 @@ def test_property_collector_parses_sparql():
     assert len(result.items) == 1
     assert "485,000" in result.items[0].title
     assert result.items[0].data["postcode"] == "RH8 0PG"
+
+
+# ── Roads collector (mocked) ──────────────────────────────────────────────
+
+def test_roads_collector_parses_street_manager():
+    from collectors.roads import RoadsCollector
+    mock_activities = [
+        {
+            "street_name": "Station Road East",
+            "activity_type": "Road closure",
+            "promoter_organisation": "SES Water",
+            "start_date": "2026-06-10T08:00:00Z",
+            "end_date": "2026-06-14T17:00:00Z",
+            "work_reference_number": "SW12345",
+        }
+    ]
+    with patch("collectors.roads.httpx.get") as mock_get:
+        # First call = Street Manager (returns activities); second = Surrey
+        # bulletin (return empty HTML so it contributes nothing).
+        sm = MagicMock()
+        sm.json.return_value = mock_activities
+        sm.raise_for_status = MagicMock()
+        surrey = MagicMock()
+        surrey.text = "<html><body></body></html>"
+        surrey.raise_for_status = MagicMock()
+        mock_get.side_effect = [sm, surrey]
+        result = RoadsCollector().collect()
+
+    assert result.source == "roads"
+    assert len(result.items) == 1
+    item = result.items[0]
+    assert "Station Road East" in item.title
+    assert item.data["promoter"] == "SES Water"
+    assert item.data["start_date"] == "2026-06-10"
+    assert item.data["end_date"] == "2026-06-14"
+    assert item.url
+
+
+def test_roads_collector_handles_network_error():
+    from collectors.roads import RoadsCollector
+    import httpx
+    with patch("collectors.roads.httpx.get",
+               side_effect=httpx.ConnectError("refused")):
+        result = RoadsCollector().collect()
+    assert result.source == "roads"
+    assert result.items == []
+
+
+def test_roads_collector_filters_surrey_to_tandridge():
+    from collectors.roads import RoadsCollector
+    import httpx
+    surrey_html = """
+      <ul>
+        <li>A25 Oxted — resurfacing works</li>
+        <li>High Street, Guildford — drainage</li>
+        <li>Hurst Green level crossing — signal upgrade</li>
+      </ul>
+    """
+    with patch("collectors.roads.httpx.get") as mock_get:
+        def side_effect(url, *a, **k):
+            if "streetmanager" in url:
+                raise httpx.ConnectError("no street manager in test")
+            resp = MagicMock()
+            resp.text = surrey_html
+            resp.raise_for_status = MagicMock()
+            return resp
+        mock_get.side_effect = side_effect
+        result = RoadsCollector().collect()
+
+    titles = " ".join(i.title for i in result.items).lower()
+    assert "oxted" in titles
+    assert "hurst green" in titles
+    assert "guildford" not in titles
