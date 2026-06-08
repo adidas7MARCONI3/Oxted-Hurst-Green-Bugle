@@ -393,3 +393,130 @@ def test_roads_collector_deep_links_named_road_to_map():
     vague = next(u for r, u in by_road.items() if r.lower().startswith("upcoming"))
     assert vague.startswith(ONE_NETWORK)
     assert vague != SURREY_BULLETIN
+
+
+# ── Council collector (mocked) ────────────────────────────────────────────
+
+TANDRIDGE_NEWS_HTML = """
+<html><body>
+  <header><a href="/cookies">Cookie policy</a><a href="/search">Search</a></header>
+  <main id="main-content">
+    <ul class="news-list">
+      <li>
+        <a href="/Your-council/News/Council-tax-support-1-June-2026">
+          Council tax support scheme expanded</a>
+        <span class="date">1 June 2026</span>
+      </li>
+      <li>
+        <a href="/Your-council/News/Recycling-changes">
+          Recycling collection changes for residents</a>
+        <time datetime="2026-05-20">20 May 2026</time>
+      </li>
+    </ul>
+  </main>
+  <footer><a href="/privacy">Privacy</a></footer>
+</body></html>
+"""
+
+TANDRIDGE_MEETINGS_HTML = """
+<html><body>
+  <main role="main">
+    <table>
+      <tr><th>Committee</th></tr>
+      <tr><td>
+        <a href="/Your-council/Meetings-and-decisions/Planning-Committee-2026-06-15">
+          Planning Committee agenda</a> 2026-06-15
+      </td></tr>
+    </table>
+  </main>
+</body></html>
+"""
+
+OXTED_PC_HTML = """
+<html><body>
+  <article>
+    <p><a href="/meetings/full-council-02-06-2026/">
+      Full Council Meeting minutes</a> 02/06/2026</p>
+    <p><a href="https://oxted-pc.org.uk/meetings/planning-12-06-2026/">
+      Planning Sub-Committee agenda</a> 12 June 2026</p>
+  </article>
+</body></html>
+"""
+
+
+def _council_response(html):
+    resp = MagicMock()
+    resp.text = html
+    resp.raise_for_status = MagicMock()
+    return resp
+
+
+def test_council_collector_scrapes_all_sources():
+    from collectors.council import CouncilCollector, NEWS_URL, MEETINGS_URL, OXTED_PC_URL
+
+    def side_effect(url, *a, **k):
+        if url == NEWS_URL:
+            return _council_response(TANDRIDGE_NEWS_HTML)
+        if url == MEETINGS_URL:
+            return _council_response(TANDRIDGE_MEETINGS_HTML)
+        if url == OXTED_PC_URL:
+            return _council_response(OXTED_PC_HTML)
+        raise AssertionError(f"unexpected url {url}")
+
+    with patch("collectors.council.httpx.get", side_effect=side_effect):
+        result = CouncilCollector().collect()
+
+    assert result.source == "council"
+    # 2 news + 1 meeting + 2 Oxted PC = 5 items, chrome links filtered out.
+    assert len(result.items) == 5
+
+    by_url = {i.url: i for i in result.items}
+    # Every item has an absolute, working URL on the correct host.
+    assert all(i.url.startswith("http") for i in result.items)
+    assert "https://www.tandridge.gov.uk/Your-council/News/Recycling-changes" in by_url
+
+    # Dates are extracted from text / surrounding markup; newest first.
+    dates = [i.date for i in result.items]
+    assert dates == sorted(dates, reverse=True)
+    assert "2026-06-15" in dates  # ISO from meetings table
+    assert "2026-06-01" in dates  # "1 June 2026" from news
+
+    # Oxted PC items are tagged local; relative href resolved to absolute.
+    pc = [i for i in result.items if i.data["source"] == "oxted_pc"]
+    assert len(pc) == 2
+    assert all(i.data["local"] for i in pc)
+    assert any(i.url == "http://oxted-pc.org.uk/meetings/full-council-02-06-2026/"
+               for i in pc)
+    # No cookie/privacy/search chrome leaked through.
+    assert not any("cookie" in i.url.lower() or "privacy" in i.url.lower()
+                   for i in result.items)
+
+
+def test_council_collector_one_source_failure_isolated():
+    """A single failing source must not sink the others."""
+    import httpx
+    from collectors.council import CouncilCollector, NEWS_URL, OXTED_PC_URL
+
+    def side_effect(url, *a, **k):
+        if url == NEWS_URL:
+            raise httpx.ConnectError("news down")
+        if url == OXTED_PC_URL:
+            return _council_response(OXTED_PC_HTML)
+        return _council_response("<html><body><main></main></body></html>")
+
+    with patch("collectors.council.httpx.get", side_effect=side_effect):
+        result = CouncilCollector().collect()
+
+    # News blew up, meetings empty, but Oxted PC still yields its 2 items.
+    assert len(result.items) == 2
+    assert all(i.data["source"] == "oxted_pc" for i in result.items)
+
+
+def test_council_collector_handles_network_error():
+    from collectors.council import CouncilCollector
+    import httpx
+    with patch("collectors.council.httpx.get",
+               side_effect=httpx.ConnectError("refused")):
+        result = CouncilCollector().collect()
+    assert result.source == "council"
+    assert result.items == []
