@@ -1,5 +1,96 @@
 {
   "source": "roads",
-  "collected_at": "2026-06-08T00:00:00+00:00",
-  "items": []
+  "collected_at": "2026-06-08T09:08:30.558533+00:00",
+  "items": [
+    {
+      "id": "73f9cdf6b492",
+      "title": "Surrey CC roadworks \u2014 Roadworks in Tandridge",
+      "description": "Roadworks in Tandridge Listed in the Surrey County Council weekly highways bulletin for the Tandridge area.",
+      "date": "",
+      "category": "roadworks",
+      "url": "https://www.surreycc.gov.uk/roads-and-transport/roadworks-and-maintenance/roadworks/in-your-area",
+      "headline": "Roadworks Planned for Tandridge This Week",
+      "summary": "Surrey County Council has listed roadworks in the Tandridge area in its latest weekly highways bulletin. Drivers are advised to check for any delays and plan their journeys ahead.",
+      "data": {
+        "road": "Roadworks in Tandridge",
+        "work_type": "Roadworks",
+        "promoter": "Surrey County Council",
+        "start_date": "",
+        "end_date": "",
+        "source": "Surrey CC bulletin"
+      }
+    },
+    {
+      "id": "915930584f2c",
+      "title": "Surrey CC roadworks \u2014 These are the upcoming works across Tandridge from today until the end of next w",
+      "description": "These are the upcoming works across Tandridge from today until the end of next week. Listed in the Surrey County Council weekly highways bulletin for the Tandridge area.",
+      "date": "",
+      "category": "roadworks",
+      "url": "https://www.surreycc.gov.uk/roads-and-transport/roadworks-and-maintenance/roadworks/in-your-area",
+      "headline": "Roadworks Planned Across Tandridge Over Coming Days",
+      "summary": "Surrey County Council has listed the highways works taking place across the Tandridge area from today until the end of next week. Drivers in Oxted and Hurst Green should check the weekly bulletin and plan ahead for possible delays.",
+      "data": {
+        "road": "These are the upcoming works across Tandridge from today until the end of next week.",
+        "work_type": "Roadworks",
+        "promoter": "Surrey County Council",
+        "start_date": "",
+        "end_date": "",
+        "source": "Surrey CC bulletin"
+      }
+    },
+    {
+      "id": "3327f42dc1f1",
+      "title": "Surrey CC roadworks \u2014 Limpsfield Road",
+      "description": "Limpsfield Road Listed in the Surrey County Council weekly highways bulletin for the Tandridge area.",
+      "date": "",
+      "category": "roadworks",
+      "url": "https://www.surreycc.gov.uk/roads-and-transport/roadworks-and-maintenance/roadworks/in-your-area",
+      "headline": "Roadworks Planned for Limpsfield Road",
+      "summary": "Limpsfield Road appears in this week's Surrey County Council highways bulletin for the Tandridge area. Drivers should check the council's website for full details before they travel.",
+      "data": {
+        "road": "Limpsfield Road",
+        "work_type": "Roadworks",
+        "promoter": "Surrey County Council",
+        "start_date": "",
+        "end_date": "",
+        "source": "Surrey CC bulletin"
+      }
+    },
+    {
+      "id": "3e0dbec81fac",
+      "title": "Surrey CC roadworks \u2014 Lingfield, Crowhurst Tandridge",
+      "description": "Lingfield, Crowhurst Tandridge Listed in the Surrey County Council weekly highways bulletin for the Tandridge area.",
+      "date": "",
+      "category": "roadworks",
+      "url": "https://www.surreycc.gov.uk/roads-and-transport/roadworks-and-maintenance/roadworks/in-your-area",
+      "headline": "Roadworks Planned for Lingfield and Crowhurst",
+      "summary": "Surrey County Council has listed roadworks for Lingfield and Crowhurst in its latest weekly highways bulletin for the Tandridge area. Drivers in the area should check the council's website for full details and any expected delays.",
+      "data": {
+        "road": "Lingfield, Crowhurst Tandridge",
+        "work_type": "Roadworks",
+        "promoter": "Surrey County Council",
+        "start_date": "",
+        "end_date": "",
+        "source": "Surrey CC bulletin"
+      }
+    },
+    {
+      "id": "0b74842bed41",
+      "title": "Surrey CC roadworks \u2014 Tandridge Hill Lane",
+      "description": "Tandridge Hill Lane Listed in the Surrey County Council weekly highways bulletin for the Tandridge area.",
+      "date": "",
+      "category": "roadworks",
+      "url": "https://www.surreycc.gov.uk/roads-and-transport/roadworks-and-maintenance/roadworks/in-your-area",
+      "headline": "Roadworks Planned for Tandridge Hill Lane",
+      "summary": "Tandridge Hill Lane appears in this week's Surrey County Council highways bulletin for the Tandridge area. Drivers should check the council's website for the latest details before setting out.",
+      "data": {
+        "road": "Tandridge Hill Lane",
+        "work_type": "Roadworks",
+        "promoter": "Surrey County Council",
+        "start_date": "",
+        "end_date": "",
+        "source": "Surrey CC bulletin"
+      }
+    }
+  ]
 }
