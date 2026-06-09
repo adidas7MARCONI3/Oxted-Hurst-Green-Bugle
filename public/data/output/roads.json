@@ -1,6 +1,6 @@
 {
   "source": "roads",
-  "collected_at": "2026-06-08T17:38:11.880999+00:00",
+  "collected_at": "2026-06-09T16:23:27.181242+00:00",
   "items": [
     {
       "id": "73f9cdf6b492",
@@ -67,24 +67,6 @@
       "summary": "",
       "data": {
         "road": "Lingfield, Crowhurst Tandridge",
-        "work_type": "Roadworks",
-        "promoter": "Surrey County Council",
-        "start_date": "",
-        "end_date": "",
-        "source": "Surrey CC bulletin"
-      }
-    },
-    {
-      "id": "0b74842bed41",
-      "title": "Surrey CC roadworks \u2014 Tandridge Hill Lane",
-      "description": "Tandridge Hill Lane Listed in the Surrey County Council weekly highways bulletin for the Tandridge area.",
-      "date": "",
-      "category": "roadworks",
-      "url": "https://one.network/?search=Tandridge+Hill+Lane%2C+Surrey",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "road": "Tandridge Hill Lane",
         "work_type": "Roadworks",
         "promoter": "Surrey County Council",
         "start_date": "",

@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-06-08T17:37:24.948341+00:00",
+  "collected_at": "2026-06-09T16:22:38.013634+00:00",
   "items": [
     {
       "id": "551aa37b4d5e",
@@ -30,6 +30,38 @@
       "data": {
         "reference": "2026/448",
         "address": "Foyle Cottage, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "df26a4623033",
+      "title": "2026/623: Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
+      "description": "Variation of Condition 2 (Drawings) of planning permission ref: 2025/458 dated 12/06/2023 (New water storage lake, with associated security fence and landscaping) to allow an amended drainage layout and reduction in lake size.",
+      "date": "2026-08-21",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/623",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/623",
+        "address": "Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "e09137024c35",
+      "title": "2026/436: Scearnbank, Kent Hatch Road, Limpsfield, Oxted, Surrey, RH8 0TB",
+      "description": "Erection of 3 bay car port on existing hard standing",
+      "date": "2026-08-03",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/436",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/436",
+        "address": "Scearnbank, Kent Hatch Road, Limpsfield, Oxted, Surrey, RH8 0TB",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -67,16 +99,16 @@
       }
     },
     {
-      "id": "bb4bccb78f31",
-      "title": "2026/586: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Lawful Development Certificate (Proposed) Erection of outbuilding be used for purposes incidental to the enjoyment of the dwelling (home gym, home art studio and yoga room).",
+      "id": "3a3bc63fd4a1",
+      "title": "2026/589: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Lawful Development Certificate (Proposed) Erection of two storey rear extension and single storey side extension. Erection of double garage outbuilding.",
       "date": "2026-07-27",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/586",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/589",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/586",
+        "reference": "2026/589",
         "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -99,16 +131,16 @@
       }
     },
     {
-      "id": "3a3bc63fd4a1",
-      "title": "2026/589: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Lawful Development Certificate (Proposed) Erection of two storey rear extension and single storey side extension. Erection of double garage outbuilding.",
+      "id": "bb4bccb78f31",
+      "title": "2026/586: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Lawful Development Certificate (Proposed) Erection of outbuilding be used for purposes incidental to the enjoyment of the dwelling (home gym, home art studio and yoga room).",
       "date": "2026-07-27",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/589",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/586",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/589",
+        "reference": "2026/586",
         "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/492",
         "address": "87 Silkham Road, Oxted, Surrey, RH8 0NS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "df1c22c54940",
-      "title": "2026/490: 5 Woodhurst Lane, Oxted, Surrey, RH8 9HN",
-      "description": "Replacement of rear conservatory with a solid single storey extension with a flat roof.",
-      "date": "2026-07-09",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/490",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/490",
-        "address": "5 Woodhurst Lane, Oxted, Surrey, RH8 9HN",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "42b3dfb50a62",
-      "title": "2026/645/TCA: The Bower Cottage, High Street, Limpsfield, Oxted, Surrey, RH8 0DY",
-      "description": "Please refer to photos provided:\r\nG2) - 2 x Goat Willow - remove to ground level",
-      "date": "2026-07-08",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/645/TCA",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/645/TCA",
-        "address": "The Bower Cottage, High Street, Limpsfield, Oxted, Surrey, RH8 0DY",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
