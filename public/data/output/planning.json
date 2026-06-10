@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-06-09T16:22:38.013634+00:00",
+  "collected_at": "2026-06-10T17:45:10.902499+00:00",
   "items": [
     {
       "id": "551aa37b4d5e",
@@ -46,6 +46,22 @@
       "data": {
         "reference": "2026/623",
         "address": "Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "ca774d5bc992",
+      "title": "2026/572: 2a Amy Road, Oxted, Surrey, RH8 0PX",
+      "description": "Demolition of existing buildings and erection of three dwellings, parking & landscaping",
+      "date": "2026-08-03",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/572",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/572",
+        "address": "2a Amy Road, Oxted, Surrey, RH8 0PX",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -99,16 +115,16 @@
       }
     },
     {
-      "id": "3a3bc63fd4a1",
-      "title": "2026/589: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Lawful Development Certificate (Proposed) Erection of two storey rear extension and single storey side extension. Erection of double garage outbuilding.",
+      "id": "bb4bccb78f31",
+      "title": "2026/586: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Lawful Development Certificate (Proposed) Erection of outbuilding be used for purposes incidental to the enjoyment of the dwelling (home gym, home art studio and yoga room).",
       "date": "2026-07-27",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/589",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/586",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/589",
+        "reference": "2026/586",
         "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -131,16 +147,16 @@
       }
     },
     {
-      "id": "bb4bccb78f31",
-      "title": "2026/586: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Lawful Development Certificate (Proposed) Erection of outbuilding be used for purposes incidental to the enjoyment of the dwelling (home gym, home art studio and yoga room).",
+      "id": "3a3bc63fd4a1",
+      "title": "2026/589: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Lawful Development Certificate (Proposed) Erection of two storey rear extension and single storey side extension. Erection of double garage outbuilding.",
       "date": "2026-07-27",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/586",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/589",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/586",
+        "reference": "2026/589",
         "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -270,22 +286,6 @@
       "data": {
         "reference": "2026/577",
         "address": "Holly House, 46 Granville Road, Limpsfield, Oxted, Surrey, RH8 0DA",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "7ee32e6668a1",
-      "title": "2024/915/Cond3: Former, 106 To 128 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HJ",
-      "description": "Details pursuant to Condition 8 (Drainage Verification) of planning permission ref: 2026/915 dated 07/02/2025 (Variation of Condition 4 (Hard and Soft Landscaping), 5 (Tree Protection and Arboricultural statement), 7 (Surface water drainage), 11 (Construction transport management plan) and15 (Vehicular and pedestrian access) of planning permission ref: 2022/1504 (Demolition of existing garages and",
-      "date": "2026-07-15",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2024/915/Cond3",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2024/915/Cond3",
-        "address": "Former, 106 To 128 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HJ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }

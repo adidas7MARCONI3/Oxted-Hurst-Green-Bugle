@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-06-09T16:23:02.610073+00:00",
+  "collected_at": "2026-06-10T17:45:44.594685+00:00",
   "items": [
     {
       "id": "d254c7b0724b",
@@ -180,36 +180,6 @@
         "amount": 540000,
         "category": "Semi-detached",
         "postcode": "RH8 0PA"
-      }
-    },
-    {
-      "id": "dfe3a5d0eda2",
-      "title": "Semi-detached, 9 Ridlands Rise \u2014 \u00a3655,000",
-      "description": "A semi-detached property at 9 Ridlands Rise, RH8 0TS sold for \u00a3655,000 on 2026-03-11.",
-      "date": "2026-03-11",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 655000,
-        "category": "Semi-detached",
-        "postcode": "RH8 0TS"
-      }
-    },
-    {
-      "id": "93924111e3f2",
-      "title": "Flat, Flat 1 Beatrice Lodge Beatrice Road \u2014 \u00a3205,000",
-      "description": "A flat property at Flat 1 Beatrice Lodge Beatrice Road, RH8 0QH sold for \u00a3205,000 on 2026-03-11.",
-      "date": "2026-03-11",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 205000,
-        "category": "Flat",
-        "postcode": "RH8 0QH"
       }
     }
   ]
