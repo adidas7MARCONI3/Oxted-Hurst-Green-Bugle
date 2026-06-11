@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-06-10T17:45:10.902499+00:00",
+  "collected_at": "2026-06-11T17:59:36.448028+00:00",
   "items": [
     {
       "id": "551aa37b4d5e",
@@ -46,6 +46,22 @@
       "data": {
         "reference": "2026/623",
         "address": "Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "b896ae712d67",
+      "title": "2026/613: 9 Central Way, Oxted, Surrey, RH8 0LS",
+      "description": "Demolition of existing garage. Erection of single storey front, flank and rear extension with hipped roof to front and side and flat roof to the rear. Erection of a second storey rear extension with a pitched roof.",
+      "date": "2026-08-06",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/613",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/613",
+        "address": "9 Central Way, Oxted, Surrey, RH8 0LS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -99,6 +115,22 @@
       }
     },
     {
+      "id": "179005a57f2a",
+      "title": "2026/670: Highstead, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
+      "description": "Erection of single storey side extension.",
+      "date": "2026-07-29",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/670",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/670",
+        "address": "Highstead, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "e08c473381e1",
       "title": "2026/437: 17 Godstone Road, Oxted, Surrey, RH8 9JS",
       "description": "Construction of a two storey side extension,  single storey rear extension and replacement of the front porch. (Demolition of conservatory )",
@@ -115,16 +147,16 @@
       }
     },
     {
-      "id": "bb4bccb78f31",
-      "title": "2026/586: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Lawful Development Certificate (Proposed) Erection of outbuilding be used for purposes incidental to the enjoyment of the dwelling (home gym, home art studio and yoga room).",
+      "id": "3a3bc63fd4a1",
+      "title": "2026/589: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Lawful Development Certificate (Proposed) Erection of two storey rear extension and single storey side extension. Erection of double garage outbuilding.",
       "date": "2026-07-27",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/586",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/589",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/586",
+        "reference": "2026/589",
         "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -147,16 +179,16 @@
       }
     },
     {
-      "id": "3a3bc63fd4a1",
-      "title": "2026/589: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Lawful Development Certificate (Proposed) Erection of two storey rear extension and single storey side extension. Erection of double garage outbuilding.",
+      "id": "bb4bccb78f31",
+      "title": "2026/586: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Lawful Development Certificate (Proposed) Erection of outbuilding be used for purposes incidental to the enjoyment of the dwelling (home gym, home art studio and yoga room).",
       "date": "2026-07-27",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/589",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/586",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/589",
+        "reference": "2026/586",
         "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -339,6 +371,22 @@
       }
     },
     {
+      "id": "77ae6591d305",
+      "title": "2026/614: 9 Central Way, Oxted, Surrey, RH8 0LS",
+      "description": "Erection of hip to gable and rear-aspect box dormer in association with conversion of loft to habitable accommodation (Certificate of Lawfulness (Proposed)).",
+      "date": "2026-07-13",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/614",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/614",
+        "address": "9 Central Way, Oxted, Surrey, RH8 0LS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "c179fbabd665",
       "title": "2025/591/Cond2: 21 To 23 Station Road East, Oxted, Surrey, RH8 0BD",
       "description": "Details pursuant to the discharge of Condition 4 (Bin storage and collection) of planning permission ref: 2025/591 dated 23/10/2025 (Alterations to existing shopfront and installation of extraction system and flue to rear elevation to facilitate use of premises as restaurant)",
@@ -350,54 +398,6 @@
       "data": {
         "reference": "2025/591/Cond2",
         "address": "21 To 23 Station Road East, Oxted, Surrey, RH8 0BD",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "4c24d7d2ab07",
-      "title": "2026/416: 7 Tanhouse Road, Oxted, Surrey, RH8 9PE",
-      "description": "Lawful Development Certificate (proposed)  loft conversion including a rear dormer and three front-facing rooflights, demolition of  existing glass rear conservatory and replacement with a single-storey pitched rear extension with two roof lights.",
-      "date": "2026-07-10",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/416",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/416",
-        "address": "7 Tanhouse Road, Oxted, Surrey, RH8 9PE",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "c728d0200ea4",
-      "title": "2026/396: Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
-      "description": "Demolition of existing buildings to provide 6 padel courts (3 under cover) and conversion of existing buildings to provide new club house and member facilities together with parking and landscaping",
-      "date": "2026-07-10",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/396",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/396",
-        "address": "Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "31ee6f27f408",
-      "title": "2026/492: 87 Silkham Road, Oxted, Surrey, RH8 0NS",
-      "description": "Variation of Condition 2 (Approved drawings) of planning permission ref: 2025/1537 dated 18/03/2026 (Demolition of existing conservatory. Erection of single storey extension to rear elevation. Garage conversion including raising existing garage roof to match height of new single storey rear extension) to allow revisions to the footprint that account for a previously unknown sewer pipe.",
-      "date": "2026-07-09",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/492",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/492",
-        "address": "87 Silkham Road, Oxted, Surrey, RH8 0NS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
