@@ -261,138 +261,120 @@ def test_trains_collector_no_api_key_returns_empty():
     assert result.items == []
 
 
-# ── Roads collector (mocked) ──────────────────────────────────────────────
+# ── Roads collector — Street Manager API v3 (mocked) ──────────────────────
 
-def test_roads_collector_parses_street_manager():
+def _roads_collector_with_key():
     from collectors.roads import RoadsCollector
-    mock_activities = [
+    c = RoadsCollector()
+    c.api_key = "test-key"  # bypass the no-key skip
+    return c
+
+
+def test_roads_collector_parses_street_manager_works():
+    mock_works = [
         {
-            "street_name": "Station Road East",
-            "activity_type": "Road closure",
-            "promoter_organisation": "SES Water",
-            "start_date": "2026-06-10T08:00:00Z",
-            "end_date": "2026-06-14T17:00:00Z",
-            "work_reference_number": "SW12345",
+            "street_name": "Station Road West, Oxted",
+            "work_type": "Road closure",
+            "work_category": "Major",
+            "promoter_organisation": "Thames Water",
+            "traffic_management_type": "Full road closure with diversion via A25",
+            "work_status": "planned",
+            "usrn": "12345678",
+            "work_reference_number": "TW-2026-ABC123",
+            "proposed_start_date": "2026-06-08T08:00:00Z",
+            "proposed_end_date": "2026-06-12T17:00:00Z",
         }
     ]
     with patch("collectors.roads.httpx.get") as mock_get:
-        # First call = Street Manager (returns activities); second = Surrey
-        # bulletin (return empty HTML so it contributes nothing).
-        sm = MagicMock()
-        sm.json.return_value = mock_activities
-        sm.raise_for_status = MagicMock()
-        surrey = MagicMock()
-        surrey.text = "<html><body></body></html>"
-        surrey.raise_for_status = MagicMock()
-        mock_get.side_effect = [sm, surrey]
-        result = RoadsCollector().collect()
+        resp = MagicMock()
+        resp.json.return_value = {"works": mock_works}
+        resp.raise_for_status = MagicMock()
+        mock_get.return_value = resp
+        result = _roads_collector_with_key().collect()
+
+    # The request carries the Bearer token, the v3 works endpoint and a 3 km radius.
+    _, kwargs = mock_get.call_args
+    assert kwargs["headers"]["Authorization"] == "Bearer test-key"
+    assert kwargs["params"]["radius"] == 3000
+    assert "street-manager-api/v3/works" in mock_get.call_args[0][0]
 
     assert result.source == "roads"
     assert len(result.items) == 1
     item = result.items[0]
-    assert "Station Road East" in item.title
-    assert item.data["promoter"] == "SES Water"
-    assert item.data["start_date"] == "2026-06-10"
-    assert item.data["end_date"] == "2026-06-14"
-    assert item.url
+    d = item.data
+    assert d["street_name"] == "Station Road West, Oxted"
+    assert d["work_type"] == "Road closure"
+    assert d["work_category"] == "Major"
+    assert d["promoter"] == "Thames Water"
+    assert d["status"] == "Planned"
+    assert d["start_date"] == "2026-06-08"
+    assert d["end_date"] == "2026-06-12"
+    # Dates formatted "Mon 8 June – Fri 12 June".
+    assert d["dates"] == "Mon 8 June – Fri 12 June"
+    # Both required deep links.
+    assert d["one_network_url"] == "https://one.network/?USRN=12345678"
+    assert d["street_manager_url"] == (
+        "https://streetmanager.dft.gov.uk/works/TW-2026-ABC123"
+    )
+    assert item.url == d["street_manager_url"]
+    # Summary reads like the brief's template.
+    assert item.description == (
+        "Station Road West, Oxted will be closed from Mon 8 June to Fri 12 June "
+        "for major works by Thames Water. "
+        "Full road closure with diversion via A25."
+    )
 
 
-def test_roads_collector_handles_network_error():
+def test_roads_collector_no_api_key_returns_empty():
     from collectors.roads import RoadsCollector
-    import httpx
-    with patch("collectors.roads.httpx.get",
-               side_effect=httpx.ConnectError("refused")):
-        result = RoadsCollector().collect()
+    c = RoadsCollector()
+    c.api_key = ""
+    result = c.collect()
     assert result.source == "roads"
     assert result.items == []
 
 
-def test_roads_collector_filters_surrey_to_tandridge():
-    from collectors.roads import RoadsCollector
+def test_roads_collector_handles_network_error():
     import httpx
-    surrey_html = """
-      <ul>
-        <li>A25 Oxted — resurfacing works</li>
-        <li>High Street, Guildford — drainage</li>
-        <li>Hurst Green level crossing — signal upgrade</li>
-      </ul>
-    """
+    with patch("collectors.roads.httpx.get",
+               side_effect=httpx.ConnectError("refused")):
+        result = _roads_collector_with_key().collect()
+    assert result.source == "roads"
+    assert result.items == []
+
+
+def test_roads_collector_filters_outside_3km_radius():
+    """A record with its own coordinates beyond 3 km of Oxted is dropped even if
+    the API returned it; one inside is kept."""
+    mock_works = [
+        {"street_name": "High Street, Oxted", "usrn": "1",
+         "work_reference_number": "A", "latitude": 51.2570, "longitude": -0.0050},
+        {"street_name": "North Street, Guildford", "usrn": "2",
+         "work_reference_number": "B", "latitude": 51.2360, "longitude": -0.5800},
+    ]
     with patch("collectors.roads.httpx.get") as mock_get:
-        def side_effect(url, *a, **k):
-            if "streetmanager" in url:
-                raise httpx.ConnectError("no street manager in test")
-            resp = MagicMock()
-            resp.text = surrey_html
-            resp.raise_for_status = MagicMock()
-            return resp
-        mock_get.side_effect = side_effect
-        result = RoadsCollector().collect()
+        resp = MagicMock()
+        resp.json.return_value = mock_works
+        resp.raise_for_status = MagicMock()
+        mock_get.return_value = resp
+        result = _roads_collector_with_key().collect()
 
-    titles = " ".join(i.title for i in result.items).lower()
-    assert "oxted" in titles
-    assert "hurst green" in titles
-    assert "guildford" not in titles
+    roads = [i.data["street_name"] for i in result.items]
+    assert "High Street, Oxted" in roads
+    assert "North Street, Guildford" not in roads
 
 
-def test_roads_collector_uses_bulletin_deep_link():
-    """When the bulletin links a road out to a live-map provider, the item must
-    point at that specific closure rather than the generic listing page."""
-    from collectors.roads import RoadsCollector, SURREY_BULLETIN
-    import httpx
-    surrey_html = """
-      <ul>
-        <li><a href="https://one.network/?GB/work/ABC123">Oxted, Station Road East</a> — gas works</li>
-      </ul>
-    """
-    with patch("collectors.roads.httpx.get") as mock_get:
-        def side_effect(url, *a, **k):
-            if "streetmanager" in url:
-                raise httpx.ConnectError("no street manager in test")
-            resp = MagicMock()
-            resp.text = surrey_html
-            resp.raise_for_status = MagicMock()
-            return resp
-        mock_get.side_effect = side_effect
-        result = RoadsCollector().collect()
-
-    assert len(result.items) == 1
-    item = result.items[0]
-    assert item.url == "https://one.network/?GB/work/ABC123"
-    assert item.url != SURREY_BULLETIN
-
-
-def test_roads_collector_deep_links_named_road_to_map():
-    """With no per-closure link available, a named road is searched on the
-    one.network live map; vague prose falls back to one.network for the wider
-    Oxted area (never the static council listing)."""
-    from collectors.roads import RoadsCollector, SURREY_BULLETIN, ONE_NETWORK
-    import httpx
-    surrey_html = """
-      <ul>
-        <li>Limpsfield Road, Oxted — resurfacing</li>
-        <li>Upcoming works across Tandridge this week</li>
-      </ul>
-    """
-    with patch("collectors.roads.httpx.get") as mock_get:
-        def side_effect(url, *a, **k):
-            if "streetmanager" in url:
-                raise httpx.ConnectError("no street manager in test")
-            resp = MagicMock()
-            resp.text = surrey_html
-            resp.raise_for_status = MagicMock()
-            return resp
-        mock_get.side_effect = side_effect
-        result = RoadsCollector().collect()
-
-    by_road = {i.data["road"]: i.url for i in result.items}
-    named = next(u for r, u in by_road.items() if r.startswith("Limpsfield Road"))
-    assert named.startswith(ONE_NETWORK)
-    assert "Limpsfield+Road" in named
-    assert named != SURREY_BULLETIN
-
-    vague = next(u for r, u in by_road.items() if r.lower().startswith("upcoming"))
-    assert vague.startswith(ONE_NETWORK)
-    assert vague != SURREY_BULLETIN
+def test_roads_collector_categories_and_status():
+    """Immediate/urgent works map to Emergency; status derives from actual dates
+    when no explicit status is supplied."""
+    from collectors.roads import _normalise_category, _normalise_status
+    assert _normalise_category("Immediate - urgent") == "Emergency"
+    assert _normalise_category("Major") == "Major"
+    assert _normalise_category("Standard") == "Standard"
+    # Derived status: an actual start with no end ⇒ In progress.
+    assert _normalise_status("", {"actual_start_date_time": "2026-06-01"}) == "In progress"
+    assert _normalise_status("works in progress", {}) == "In progress"
+    assert _normalise_status("", {}) == "Planned"
 
 
 # ── Council collector (mocked) ────────────────────────────────────────────
