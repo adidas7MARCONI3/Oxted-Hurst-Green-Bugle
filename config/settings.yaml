@@ -15,6 +15,15 @@ location:
   longitude: -0.0043
   radius_miles: 2
 
+roads:
+  # DfT Street Manager API v3 — official UK street/road works register.
+  # The key itself is read from the STREET_MANAGER_API_KEY environment variable
+  # (never commit secrets); these are the query parameters for the works search.
+  api_key_env: STREET_MANAGER_API_KEY
+  latitude: 51.2567
+  longitude: -0.0049
+  radius_m: 3000  # 3 km around Oxted town centre
+
 llm:
   model: "claude-opus-4-8"
   max_tokens: 256

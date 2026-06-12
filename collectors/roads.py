@@ -1,326 +1,317 @@
 """Road closures and roadworks affecting Oxted & Hurst Green (RH8).
 
-Two sources, primary → secondary, with graceful failure on either:
+Source: the DfT **Street Manager API v3** — the official UK government register
+of street and road works.
 
-  1. Street Manager API (primary — official UK government street works
-     database, no API key required)
-     https://api.streetmanager.dft.gov.uk/experimental/activities
-     Filtered to a 3 km radius of Oxted (lat 51.2567, long -0.0049).
-     Returns planned roadworks, road closures and utility works. The
-     experimental endpoint's shape varies, so parsing is tolerant of both
-     bare lists and {activities|data|items} envelopes, and of snake_case
-     or camelCase field names.
+    Base URL: https://api.streetmanager.dft.gov.uk/street-manager-api/v3
+    Auth:     Bearer token in the STREET_MANAGER_API_KEY environment variable
+    Works:    GET /works?latitude=51.2567&longitude=-0.0049&radius=3000
+    Docs:     https://department-for-transport-streetmanager.github.io/
+              street-manager-docs/api-documentation/
 
-  2. Surrey County Council weekly highways bulletin (secondary — scrape)
-     https://www.surreycc.gov.uk/roads-and-transport/roadworks-and-maintenance/roadworks/in-your-area
-     Filtered to Tandridge / RH8 local terms.
+We query works within 3 km of Oxted town centre (lat 51.2567, long -0.0049) and
+defensively re-filter on that radius when a record carries its own coordinates.
 
-Each item carries: road name, type of work, start date, end date, the
-promoter (who is doing the works — Surrey CC, utility company, etc.) and a
-working URL. Items are sorted current/soonest-first.
+Each item carries, in `data`:
+
+  * street_name            — the exact road affected
+  * dates                  — "Mon 8 June – Fri 12 June" (start_date / end_date)
+  * work_type              — Road closure / Lane closure / Traffic lights / …
+  * promoter               — who is doing the work (Thames Water, BT Openreach …)
+  * work_category          — Emergency / Minor / Standard / Major
+  * status                 — Planned / In progress / Completed
+  * traffic_management     — e.g. "Full road closure with diversion"
+  * one_network_url        — deep link to one.network for the USRN
+  * street_manager_url     — deep link to Street Manager public search
+
+The description reads as a plain-English sentence, e.g.
+
+    "Station Road West, Oxted will be closed from Mon 8 June to Fri 12 June for
+     major utility works by Thames Water. Full road closure with diversion."
+
+Items are sorted current/soonest-first.
 """
 import hashlib
+import math
+import os
 import re
 from datetime import date
-from urllib.parse import quote_plus, urljoin
 import httpx
 from .base import BaseCollector, CollectionResult, Item, now_iso
 
-STREET_MANAGER_API = "https://api.streetmanager.dft.gov.uk/experimental/activities"
-SURREY_BULLETIN = (
-    "https://www.surreycc.gov.uk/roads-and-transport/roadworks-and-maintenance/"
-    "roadworks/in-your-area"
-)
+STREET_MANAGER_API = "https://api.streetmanager.dft.gov.uk/street-manager-api/v3"
+WORKS_ENDPOINT = f"{STREET_MANAGER_API}/works"
 
-# Oxted town centre — Street Manager radius filter
+# Oxted town centre — Street Manager radius filter (3 km).
 AREA_LAT = 51.2567
 AREA_LONG = -0.0049
 AREA_RADIUS_M = 3000
 
-# Local relevance terms for filtering the Surrey CC bulletin to our patch
-LOCAL_TERMS = {"oxted", "hurst green", "tandridge", "limpsfield", "rh8"}
-
-# A bulletin line names a specific road/place when it carries a road-type word
-# or a classified-road number (A25, B2024…). Used to decide whether we can build
-# a deep link to that exact road rather than the county-wide roadworks list.
-ROAD_WORD_RE = re.compile(
-    r"\b(road|lane|street|hill|way|close|avenue|crescent|drive|green|common|"
-    r"bridge|level crossing|roundabout|junction|gardens|terrace|row|path|"
-    r"footpath|bypass|highway)\b",
-    re.IGNORECASE,
-)
-ROAD_CLASS_RE = re.compile(r"\b[AB]\d{2,4}\b")
-# Anchor hrefs that point at an individual roadwork/closure rather than the
-# generic landing page — the live-map providers Surrey CC links out to.
-DEEP_LINK_HINTS = ("one.network", "roadworks.org", "elgin", "/works/", "permit")
-SURREY_BASE = "https://www.surreycc.gov.uk"
-
-# one.network is the live roadworks/closures map Surrey CC itself publishes to
-# (and links individual works out to). When the bulletin doesn't hand us a
-# per-closure link we point at one.network rather than the static council
-# listing: its map search takes a free-text location, so we can centre it on a
-# named road, or on Oxted for vague entries.
-ONE_NETWORK = "https://one.network/"
-
-
-def _one_network_search(place: str) -> str:
-    """one.network live-map URL searched to a place (road or town)."""
-    return f"{ONE_NETWORK}?search={quote_plus(place)}"
+# Deep-link templates required by the brief.
+ONE_NETWORK_USRN = "https://one.network/?USRN={usrn}"
+STREET_MANAGER_PUBLIC = "https://streetmanager.dft.gov.uk/works/{ref}"
 
 
 class RoadsCollector(BaseCollector):
     name = "roads"
 
+    def __init__(self):
+        self.api_key = os.getenv("STREET_MANAGER_API_KEY", "")
+
     def collect(self) -> CollectionResult:
-        seen: set[str] = set()
         items: list[Item] = []
+        if not self.api_key:
+            print("[roads] STREET_MANAGER_API_KEY not set — skipping live data")
+            return CollectionResult(source=self.name, collected_at=now_iso(), items=[])
 
         try:
-            items.extend(self._fetch_street_manager(seen))
+            items = self._fetch_works()
         except Exception as exc:
             print(f"[roads] Street Manager API failed: {exc}")
 
-        try:
-            items.extend(self._fetch_surrey_bulletin(seen))
-        except Exception as exc:
-            print(f"[roads] Surrey CC bulletin failed: {exc}")
-
-        # Current/soonest-first: sort by start date ascending, blanks last.
+        # Current/soonest-first: by start date ascending, blanks last.
         items.sort(key=lambda x: x.date or "9999-12-31")
         return CollectionResult(source=self.name, collected_at=now_iso(), items=items)
 
-    # ── Street Manager (primary) ──────────────────────────────────────────
-    def _fetch_street_manager(self, seen: set[str]) -> list[Item]:
+    # ── Street Manager v3 ─────────────────────────────────────────────────
+    def _fetch_works(self) -> list[Item]:
         resp = httpx.get(
-            STREET_MANAGER_API,
+            WORKS_ENDPOINT,
             params={
                 "latitude": AREA_LAT,
                 "longitude": AREA_LONG,
                 "radius": AREA_RADIUS_M,
             },
+            headers={
+                "Accept": "application/json",
+                "Authorization": f"Bearer {self.api_key}",
+            },
             timeout=30,
-            headers={"Accept": "application/json"},
         )
         resp.raise_for_status()
-        payload = resp.json()
-
-        # Tolerate bare lists and common envelope shapes.
-        if isinstance(payload, dict):
-            records = (
-                payload.get("activities")
-                or payload.get("data")
-                or payload.get("items")
-                or payload.get("results")
-                or []
-            )
-        else:
-            records = payload
-        if isinstance(records, dict):
-            records = [records]
+        records = _records(resp.json())
 
         items: list[Item] = []
+        seen: set[str] = set()
         for rec in records:
             if not isinstance(rec, dict):
                 continue
+            if not _within_radius(rec):
+                continue
 
-            def f(*keys, default=""):
-                for k in keys:
-                    if rec.get(k) not in (None, ""):
-                        return rec[k]
-                return default
+            road = _field(rec, "street_name", "streetName", "road_name",
+                          "roadName", "location_description",
+                          "locationDescription", default="Unknown road")
+            work_type = _field(rec, "work_type", "workType", "activity_type",
+                               "activityType", "works_type",
+                               default="Roadworks")
+            promoter = _field(rec, "promoter_organisation",
+                              "promoterOrganisation", "promoter",
+                              "highway_authority", "highwayAuthority",
+                              default="Highway authority")
+            category = _normalise_category(
+                _field(rec, "work_category", "workCategory", default="")
+            )
+            tm = _field(rec, "traffic_management_type", "trafficManagementType",
+                        "traffic_management", default="")
+            usrn = str(_field(rec, "usrn", "USRN", default="")).strip()
+            ref = str(_field(rec, "work_reference_number", "workReferenceNumber",
+                             "permit_reference_number",
+                             default="")).strip()
+            start = _iso_date(_field(rec, "proposed_start_date", "proposedStartDate",
+                                     "start_date", "startDate",
+                                     "actual_start_date_time"))
+            end = _iso_date(_field(rec, "proposed_end_date", "proposedEndDate",
+                                   "end_date", "endDate",
+                                   "actual_end_date_time"))
+            status = _normalise_status(
+                _field(rec, "work_status", "workStatus", "status",
+                       "work_status_ref", default=""),
+                rec,
+            )
 
-            road = f("street_name", "streetName", "road_name", "roadName",
-                     "location_description", "locationDescription",
-                     default="Unknown road")
-            work_type = f("activity_type", "activityType", "work_category",
-                          "workCategory", "activity_name", "activityName",
-                          default="Roadworks")
-            promoter = f("promoter_organisation", "promoterOrganisation",
-                         "highway_authority", "highwayAuthority",
-                         "promoter", default="Highway authority")
-            start = self._iso_date(
-                f("start_date", "startDate", "actual_start_date_time",
-                  "proposed_start_date", "proposedStartDate")
-            )
-            end = self._iso_date(
-                f("end_date", "endDate", "actual_end_date_time",
-                  "proposed_end_date", "proposedEndDate")
-            )
-            ref = f("work_reference_number", "workReferenceNumber",
-                    "permit_reference_number", "activity_reference_number",
-                    default=road)
-            url = f("url", "link") or (
-                "https://www.streetmanager.service.gov.uk/"
-                f"works/{ref}" if ref and ref != road else SURREY_BULLETIN
-            )
+            one_network_url = (ONE_NETWORK_USRN.format(usrn=usrn) if usrn
+                               else "https://one.network/")
+            street_manager_url = (STREET_MANAGER_PUBLIC.format(ref=ref) if ref
+                                  else "https://streetmanager.dft.gov.uk/works")
 
-            uid = hashlib.md5(f"sm{ref}{road}{start}".encode()).hexdigest()[:12]
+            uid = hashlib.md5(f"sm{ref or usrn or road}{start}".encode()).hexdigest()[:12]
             if uid in seen:
                 continue
             seen.add(uid)
 
-            when = self._when_phrase(start, end)
             items.append(Item(
                 id=uid,
                 title=f"{work_type} — {road}",
-                description=(
-                    f"{work_type} on {road}{when}. "
-                    f"Works carried out by {promoter}. Source: Street Manager."
-                ),
+                description=_summary(road, start, end, work_type, category,
+                                     promoter, tm),
                 date=start,
                 category="roadworks",
-                url=url,
+                url=street_manager_url,
                 data={
                     "road": road,
+                    "street_name": road,
+                    "usrn": usrn,
+                    "work_reference_number": ref,
                     "work_type": work_type,
+                    "work_category": category,
+                    "status": status,
+                    "traffic_management": tm,
                     "promoter": promoter,
                     "start_date": start,
                     "end_date": end,
+                    "dates": _date_range(start, end),
+                    "one_network_url": one_network_url,
+                    "street_manager_url": street_manager_url,
                     "source": "Street Manager",
                 },
             ))
         return items
 
-    # ── Surrey CC weekly bulletin (secondary) ─────────────────────────────
-    def _fetch_surrey_bulletin(self, seen: set[str]) -> list[Item]:
-        resp = httpx.get(
-            SURREY_BULLETIN,
-            timeout=30,
-            headers={"User-Agent": "Mozilla/5.0 (OxtedBugle roads collector)"},
-        )
-        resp.raise_for_status()
-        html = resp.text
 
-        # Capture any per-closure deep links the bulletin itself provides
-        # (Surrey CC links individual works out to live-map providers) before
-        # we flatten the markup — that's where the specific URLs live.
-        deep_links = self._collect_roadwork_links(html)
+# ── helpers ───────────────────────────────────────────────────────────────
+def _records(payload) -> list:
+    """Pull the list of works out of a bare list or a common envelope shape."""
+    if isinstance(payload, dict):
+        records = (payload.get("works") or payload.get("data")
+                   or payload.get("items") or payload.get("results") or [])
+    else:
+        records = payload
+    if isinstance(records, dict):
+        records = [records]
+    return records if isinstance(records, list) else []
 
-        # Strip tags to plain text and split into candidate lines; the bulletin
-        # is rendered as a list of road entries. We keep only lines that mention
-        # one of our local terms so the feed stays relevant to RH8.
-        text = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", html,
-                      flags=re.DOTALL | re.IGNORECASE)
-        text = re.sub(r"<[^>]+>", "\n", text)
-        text = re.sub(r"&nbsp;|&amp;", " ", text)
-        lines = [re.sub(r"\s+", " ", ln).strip() for ln in text.splitlines()]
 
-        items: list[Item] = []
-        for line in lines:
-            if len(line) < 12:
-                continue
-            low = line.lower()
-            if not any(term in low for term in LOCAL_TERMS):
-                continue
+def _field(rec: dict, *keys, default=""):
+    for k in keys:
+        if rec.get(k) not in (None, ""):
+            return rec[k]
+    return default
 
-            uid = hashlib.md5(f"surrey{line}".encode()).hexdigest()[:12]
-            if uid in seen:
-                continue
-            seen.add(uid)
 
-            # Deep link to the specific closure rather than the county-wide list:
-            # prefer a link the bulletin gave us, otherwise point at the exact
-            # road. Vague prose entries keep the generic bulletin page.
-            url = self._deep_link_for(line, deep_links)
+def _within_radius(rec: dict) -> bool:
+    """Keep records inside the 3 km radius. The API already filters by radius,
+    so a record without coordinates is trusted; one with coordinates is
+    re-checked (defends against a looser server-side radius)."""
+    lat = _coerce_float(_field(rec, "latitude", "lat", default=None))
+    lng = _coerce_float(_field(rec, "longitude", "long", "lng", default=None))
+    if lat is None or lng is None:
+        return True
+    return _haversine_m(AREA_LAT, AREA_LONG, lat, lng) <= AREA_RADIUS_M
 
-            items.append(Item(
-                id=uid,
-                title=f"Surrey CC roadworks — {line[:80]}",
-                description=(
-                    f"{line} Listed in the Surrey County Council weekly "
-                    f"highways bulletin for the Tandridge area."
-                ),
-                date="",
-                category="roadworks",
-                url=url,
-                data={
-                    "road": line[:120],
-                    "work_type": "Roadworks",
-                    "promoter": "Surrey County Council",
-                    "start_date": "",
-                    "end_date": "",
-                    "source": "Surrey CC bulletin",
-                },
-            ))
-        return items
 
-    # ── deep linking ──────────────────────────────────────────────────────
-    @staticmethod
-    def _collect_roadwork_links(html: str) -> list[tuple[str, str]]:
-        """Extract (anchor_text, absolute_href) pairs that look like links to an
-        individual roadwork/closure, so a bulletin entry can be matched to its
-        own page instead of the generic listing."""
-        links: list[tuple[str, str]] = []
-        for m in re.finditer(
-            r'<a\b[^>]*\bhref="([^"]+)"[^>]*>(.*?)</a>',
-            html, flags=re.DOTALL | re.IGNORECASE,
-        ):
-            href = m.group(1).strip()
-            atext = re.sub(r"<[^>]+>", " ", m.group(2))
-            atext = re.sub(r"&nbsp;|&amp;", " ", atext)
-            atext = re.sub(r"\s+", " ", atext).strip()
-            if not href or href.startswith(("#", "mailto:", "tel:", "javascript:")):
-                continue
-            low = href.lower()
-            # Only links that resolve to a *specific* work, not the landing page.
-            if not any(hint in low for hint in DEEP_LINK_HINTS):
-                continue
-            links.append((atext, urljoin(SURREY_BASE + "/", href)))
-        return links
+def _coerce_float(value):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
 
-    @classmethod
-    def _deep_link_for(cls, line: str, deep_links: list[tuple[str, str]]) -> str:
-        """Best available URL for a bulletin entry, most specific first."""
-        low = line.lower()
-        # 1) A link from the page whose text appears in (or contains) this entry.
-        best = ""
-        best_len = 0
-        for atext, href in deep_links:
-            a = atext.lower()
-            if len(a) >= 6 and (a in low or low in a) and len(a) > best_len:
-                best, best_len = href, len(a)
-        if best:
-            return best
-        # 2) Otherwise search one.network's live map for the exact road, if we
-        #    can name one — that's the closures map, not just the road geometry.
-        road = cls._clean_road_name(line)
-        if road and (ROAD_WORD_RE.search(road) or ROAD_CLASS_RE.search(road)):
-            return _one_network_search(f"{road}, Surrey")
-        # 3) Vague prose ("upcoming works across Tandridge") → one.network for
-        #    the wider Oxted area, rather than the static council listing.
-        return _one_network_search("Oxted, Surrey")
 
-    @staticmethod
-    def _clean_road_name(line: str) -> str:
-        """Trim a bulletin line down to the road/place it names: drop any work
-        description after a dash and any trailing punctuation."""
-        road = re.split(r"\s[—–-]\s", line)[0]
-        road = re.sub(r"\b(roadworks?|road works|closure|closed)\b.*$", "", road,
-                      flags=re.IGNORECASE)
-        return road.strip(" .,:;").strip()
+def _haversine_m(lat1, lon1, lat2, lon2) -> float:
+    r = 6371000.0  # Earth radius, metres
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlam = math.radians(lon2 - lon1)
+    a = (math.sin(dphi / 2) ** 2
+         + math.cos(p1) * math.cos(p2) * math.sin(dlam / 2) ** 2)
+    return 2 * r * math.asin(math.sqrt(a))
 
-    # ── helpers ───────────────────────────────────────────────────────────
-    @staticmethod
-    def _iso_date(value: str) -> str:
-        """Normalise a date/datetime string to YYYY-MM-DD; blank if unparseable."""
-        if not value:
-            return ""
-        value = str(value)
-        m = re.search(r"(\d{4})-(\d{2})-(\d{2})", value)
-        if m:
-            return m.group(0)
-        # DD/MM/YYYY
-        m = re.search(r"(\d{2})/(\d{2})/(\d{4})", value)
-        if m:
-            return f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
+
+def _normalise_category(raw: str) -> str:
+    """Map Street Manager work categories onto Emergency / Minor / Standard /
+    Major (Immediate works are urgent → Emergency)."""
+    low = str(raw).lower()
+    if "emergency" in low or "immediate" in low or "urgent" in low:
+        return "Emergency"
+    if "major" in low:
+        return "Major"
+    if "minor" in low:
+        return "Minor"
+    if "standard" in low:
+        return "Standard"
+    return raw or "Standard"
+
+
+def _normalise_status(raw: str, rec: dict) -> str:
+    """Map a work status onto Planned / In progress / Completed, deriving from
+    the actual start/end dates when no explicit status is given."""
+    low = str(raw).lower()
+    if "progress" in low:
+        return "In progress"
+    if "complet" in low or "closed" in low or "cancel" in low:
+        return "Completed"
+    if "plan" in low or "propos" in low or "registered" in low or "advanced" in low:
+        return "Planned"
+    # Derive from actual dates when the status field is absent/unknown.
+    has_start = bool(_field(rec, "actual_start_date_time", "actual_start_date",
+                            "actualStartDate", default=""))
+    has_end = bool(_field(rec, "actual_end_date_time", "actual_end_date",
+                          "actualEndDate", default=""))
+    if has_end:
+        return "Completed"
+    if has_start:
+        return "In progress"
+    return "Planned"
+
+
+def _parse_date(value) -> date | None:
+    if not value:
+        return None
+    value = str(value)
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", value)
+    if m:
+        try:
+            return date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+        except ValueError:
+            return None
+    m = re.search(r"(\d{2})/(\d{2})/(\d{4})", value)  # DD/MM/YYYY
+    if m:
+        try:
+            return date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
+        except ValueError:
+            return None
+    return None
+
+
+def _iso_date(value) -> str:
+    d = _parse_date(value)
+    return d.isoformat() if d else ""
+
+
+def _fmt_date(value) -> str:
+    """'2026-06-08' → 'Mon 8 June'. Blank if unparseable."""
+    d = _parse_date(value)
+    if not d:
         return ""
+    return f"{d.strftime('%a')} {d.day} {d.strftime('%B')}"
 
-    @staticmethod
-    def _when_phrase(start: str, end: str) -> str:
-        if start and end:
-            return f" from {start} to {end}"
-        if start:
-            return f" starting {start}"
-        if end:
-            return f" until {end}"
-        return ""
+
+def _date_range(start: str, end: str) -> str:
+    """'Mon 8 June – Fri 12 June' (en dash); one side alone if only one date."""
+    s, e = _fmt_date(start), _fmt_date(end)
+    if s and e:
+        return f"{s} – {e}"
+    return s or e
+
+
+def _summary(road, start, end, work_type, category, promoter, tm) -> str:
+    """Plain-English sentence following the brief's template."""
+    s, e = _fmt_date(start), _fmt_date(end)
+    if s and e:
+        when = f"from {s} to {e}"
+    elif s:
+        when = f"from {s}"
+    elif e:
+        when = f"until {e}"
+    else:
+        when = "on dates to be confirmed"
+
+    wt_low = str(work_type).lower()
+    verb = "will be closed" if "closure" in wt_low or "closed" in wt_low \
+        else f"will see {work_type.lower()}"
+    work_desc = f"{category.lower()} works" if category else "works"
+
+    sentence = f"{road} {verb} {when} for {work_desc} by {promoter}."
+    if tm:
+        sentence += f" {tm}."
+    return sentence
