@@ -63,6 +63,33 @@ def test_crime_collector_parses_response():
     assert "High Street" in result.items[0].title or "Anti" in result.items[0].title
 
 
+def test_crime_collector_deduplicates_incidents():
+    from collectors.crime import CrimeCollector
+    # Same crime returned multiple times: once by duplicate id, once by
+    # duplicate persistent_id. Only the first occurrence of each should survive.
+    mock_crimes = [
+        {"id": 1, "persistent_id": "abc", "category": "burglary",
+         "location": {"street": {"name": "High Street"}},
+         "outcome_status": None, "month": "2026-05"},
+        {"id": 1, "persistent_id": "abc", "category": "burglary",
+         "location": {"street": {"name": "High Street"}},
+         "outcome_status": None, "month": "2026-05"},
+        {"id": 2, "persistent_id": "def", "category": "theft",
+         "location": {"street": {"name": "Station Road"}},
+         "outcome_status": None, "month": "2026-05"},
+        {"id": 99, "persistent_id": "def", "category": "theft",
+         "location": {"street": {"name": "Station Road"}},
+         "outcome_status": None, "month": "2026-05"},
+    ]
+    with patch("collectors.crime.httpx.get") as mock_get:
+        mock_get.return_value.json.return_value = mock_crimes
+        mock_get.return_value.raise_for_status = MagicMock()
+        result = CrimeCollector().collect()
+
+    # Four input rows collapse to two unique incidents.
+    assert len(result.items) == 2
+
+
 def test_crime_collector_handles_network_error():
     from collectors.crime import CrimeCollector
     import httpx
