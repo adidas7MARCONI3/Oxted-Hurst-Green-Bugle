@@ -16,13 +16,16 @@ location:
   radius_miles: 2
 
 roads:
-  # DfT Street Manager API v3 — official UK street/road works register.
-  # The key itself is read from the STREET_MANAGER_API_KEY environment variable
-  # (never commit secrets); these are the query parameters for the works search.
-  api_key_env: STREET_MANAGER_API_KEY
+  # DfT Street Manager OPEN DATA — the free, public, KEYLESS register of UK
+  # street/road works. No API key required. The national feed is filtered to
+  # Oxted client-side (3 km radius below, or an area-name match as a fallback).
+  # Override the feed URL with the STREET_MANAGER_OPEN_DATA_URL env var to pin a
+  # specific dated archive file.
+  open_data_url: "https://opendata.streetmanager.service.gov.uk/permit/latest.json"
   latitude: 51.2567
   longitude: -0.0049
   radius_m: 3000  # 3 km around Oxted town centre
+  area_keywords: ["Oxted", "Hurst Green", "Limpsfield", "RH8"]
 
 llm:
   model: "claude-opus-4-8"

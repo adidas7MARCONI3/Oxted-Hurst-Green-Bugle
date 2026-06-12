@@ -14,31 +14,36 @@ parameters that aren't secret live in [`config/settings.yaml`](config/settings.y
 | --- | --- | --- |
 | `ANTHROPIC_API_KEY` | Summariser | Claude API key |
 | `DARWIN_API_KEY` | Trains | National Rail Darwin OpenLDBWS |
-| `STREET_MANAGER_API_KEY` | Roads | DfT Street Manager API v3 (see below) |
+| `STREET_MANAGER_OPEN_DATA_URL` | Roads | _Optional_ — DfT Street Manager Open Data feed URL (keyless, see below) |
 | `PLAY_CRICKET_API_KEY` | Sport | Play-Cricket API |
 | `BINS_UPRN` | Bins | Your property's UPRN |
 | `TWILIO_*` / `RESEND_API_KEY` | Alerts | SMS / email alerts |
 
-### Roads — DfT Street Manager API v3
+### Roads — DfT Street Manager Open Data (keyless)
 
-The roads collector uses the official **DfT Street Manager API v3**, the UK
-government register of street and road works.
+The roads collector uses the official **DfT Street Manager Open Data** feed —
+the free, public register of UK street and road works. **No API key is
+required.** (The live Street Manager API v3 needs a registered-organisation
+key; the open-data archive is the keyless route to the same official data.)
 
-* **Base URL:** `https://api.streetmanager.dft.gov.uk/street-manager-api/v3`
-* **Auth:** Bearer token from the `STREET_MANAGER_API_KEY` environment variable
-* **Works search:** `GET /works?latitude=51.2567&longitude=-0.0049&radius=3000`
-* **Docs:** <https://department-for-transport-streetmanager.github.io/street-manager-docs/api-documentation/>
+* **Feed:** `https://opendata.streetmanager.service.gov.uk/permit/latest.json`
+* **Auth:** none — public open data
+* **Override:** set `STREET_MANAGER_OPEN_DATA_URL` to pin a specific dated file
+* **Docs:** <https://department-for-transport-streetmanager.github.io/street-manager-docs/open-data/>
 
-Works are filtered to within **3 km of Oxted town centre** (lat `51.2567`,
-long `-0.0049`). Each closure item records the street name, start/end dates
-(formatted `Mon 8 June – Fri 12 June`), work type, promoter (who is doing the
-work), work category (Emergency / Minor / Standard / Major) and current status
-(Planned / In progress), plus two deep links: one.network for the USRN
-(`https://one.network/?USRN={usrn}`) and Street Manager public search
+The open-data feed is national, so it is filtered to Oxted **client-side**:
+within **3 km of Oxted town centre** (lat `51.2567`, long `-0.0049`) when a
+record carries WGS84 coordinates, otherwise by an area-name match (Oxted /
+Hurst Green / Limpsfield / RH8). Each closure item records the street name,
+start/end dates (formatted `Mon 8 June – Fri 12 June`), work type, promoter
+(who is doing the work), work category (Emergency / Minor / Standard / Major)
+and current status (Planned / In progress / Completed), plus two deep links:
+one.network for the USRN (`https://one.network/?USRN={usrn}`) and Street
+Manager public search
 (`https://streetmanager.dft.gov.uk/works/{work_reference_number}`).
 
-If `STREET_MANAGER_API_KEY` is unset the collector logs a notice and yields no
-items rather than failing the run.
+If the feed can't be reached the collector logs a notice and yields no items
+rather than failing the run.
 
 ## Running collectors
 
