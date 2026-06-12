@@ -583,7 +583,15 @@ async function loadCrime() {
   const data = await loadJSON('crime');
   if (!data || !data.items.length) { setSection('crime-section', ''); return; }
 
-  const items = data.items;
+  // Deduplicate incidents by id (with a content fallback) so the same crime
+  // is never counted or listed twice.
+  const seen = new Set();
+  const items = data.items.filter(i => {
+    const key = i.id || `${i.title}|${i.date}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 
   // Derive month label from most common date value
   const monthCounts = {};
@@ -641,14 +649,52 @@ async function loadCrime() {
 
   setSection('crime-section', `
     <div class="tab-bar">
-      <button class="tab-btn active" data-tab="incidents" onclick="crimeTab('incidents')">Incidents</button>
-      <button class="tab-btn" data-tab="statistics" onclick="crimeTab('statistics')">Statistics</button>
+      <button class="tab-btn active" data-tab="statistics" onclick="crimeTab('statistics')">Statistics</button>
+      <button class="tab-btn" data-tab="incidents" onclick="crimeTab('incidents')">Incidents</button>
       <button class="tab-btn" data-tab="locations" onclick="crimeTab('locations')">Locations</button>
+      <button class="tab-btn" data-tab="police-feed" onclick="crimeTab('police-feed')">Police X Feed</button>
     </div>
-    <div id="crime-incidents" class="tab-panel active">${incidentsHtml}</div>
-    <div id="crime-statistics" class="tab-panel">${statsHtml}</div>
+    <div id="crime-statistics" class="tab-panel active">${statsHtml}</div>
+    <div id="crime-incidents" class="tab-panel">${incidentsHtml}</div>
     <div id="crime-locations" class="tab-panel">${locHtml}</div>
+    <div id="crime-police-feed" class="tab-panel">${policeFeedHtml()}</div>
   `);
+  loadPoliceFeed();
+}
+
+/* ── Surrey Police live X (Twitter) feed ──────────────────────────────────
+   Change SURREY_POLICE_X to the local neighbourhood team handle if preferred
+   (e.g. the Tandridge team). The widget shows that account's latest posts;
+   X's embed does not support keyword filtering, so we link to a filtered
+   search for Oxted / Hurst Green underneath. */
+const SURREY_POLICE_X = 'SurreyPolice';
+
+function policeFeedHtml() {
+  const searchQuery = encodeURIComponent(`(Oxted OR "Hurst Green") (from:${SURREY_POLICE_X})`);
+  return `
+    <p style="font-size:0.85rem;color:#444;margin-bottom:0.8rem">
+      Latest posts from Surrey Police covering Oxted &amp; Hurst Green.
+      <a href="https://x.com/search?q=${searchQuery}&f=live" target="_blank" rel="noopener">
+        View Oxted / Hurst Green posts on X →</a>
+    </p>
+    <a class="twitter-timeline" data-height="600" data-dnt="true"
+       href="https://twitter.com/${SURREY_POLICE_X}?ref_src=twsrc%5Etfw">
+      Posts by @${SURREY_POLICE_X}</a>`;
+}
+
+function loadPoliceFeed() {
+  // Load X's widget script once, then (re)render any embedded timelines.
+  if (window.twttr && window.twttr.widgets) {
+    window.twttr.widgets.load(document.getElementById('crime-police-feed'));
+    return;
+  }
+  if (!document.getElementById('twitter-wjs')) {
+    const s = document.createElement('script');
+    s.id = 'twitter-wjs';
+    s.async = true;
+    s.src = 'https://platform.twitter.com/widgets.js';
+    document.body.appendChild(s);
+  }
 }
 
 /* ── Council ── */

@@ -27,8 +27,18 @@ class CrimeCollector(BaseCollector):
             print(f"[crime] fetch failed: {exc}")
             crimes = []
 
+        seen_ids: set[str] = set()
         for c in crimes:
-            uid = c.get("id") or hashlib.md5(str(c).encode()).hexdigest()[:12]
+            uid = str(
+                c.get("persistent_id")
+                or c.get("id")
+                or hashlib.md5(str(c).encode()).hexdigest()[:12]
+            )
+            # Skip duplicates — the police API can return the same crime more
+            # than once, which otherwise inflates the incident list.
+            if uid in seen_ids:
+                continue
+            seen_ids.add(uid)
             category = c.get("category", "unknown").replace("-", " ").title()
             location = c.get("location", {})
             street = location.get("street", {}).get("name", "unknown location")
