@@ -1,16 +1,19 @@
 """Road closures and roadworks affecting Oxted & Hurst Green (RH8).
 
-Source: the DfT **Street Manager API v3** — the official UK government register
-of street and road works.
+Source: the DfT **Street Manager Open Data** permit register — the free, public,
+**keyless** archive of UK street and road works published by the Department for
+Transport. (We deliberately use the open-data feed rather than the live
+Street Manager API v3, which requires a registered-organisation API key.)
 
-    Base URL: https://api.streetmanager.dft.gov.uk/street-manager-api/v3
-    Auth:     Bearer token in the STREET_MANAGER_API_KEY environment variable
-    Works:    GET /works?latitude=51.2567&longitude=-0.0049&radius=3000
-    Docs:     https://department-for-transport-streetmanager.github.io/
-              street-manager-docs/api-documentation/
+    Open Data: https://opendata.streetmanager.service.gov.uk/permit/latest.json
+    Auth:      none — public open data, no API key
+    Docs:      https://department-for-transport-streetmanager.github.io/
+               street-manager-docs/open-data/
 
-We query works within 3 km of Oxted town centre (lat 51.2567, long -0.0049) and
-defensively re-filter on that radius when a record carries its own coordinates.
+The open-data feed is national, so we filter to Oxted client-side: by a 3 km
+haversine radius of the town centre (lat 51.2567, long -0.0049) when a record
+carries WGS84 coordinates, otherwise by an area-name keyword match (Oxted /
+Hurst Green / Limpsfield / RH8). Records we can't place locally are dropped.
 
 Each item carries, in `data`:
 
@@ -27,11 +30,12 @@ Each item carries, in `data`:
 The description reads as a plain-English sentence, e.g.
 
     "Station Road West, Oxted will be closed from Mon 8 June to Fri 12 June for
-     major utility works by Thames Water. Full road closure with diversion."
+     major works by Thames Water. Full road closure with diversion."
 
 Items are sorted current/soonest-first.
 """
 import hashlib
+import json
 import math
 import os
 import re
@@ -39,13 +43,22 @@ from datetime import date
 import httpx
 from .base import BaseCollector, CollectionResult, Item, now_iso
 
-STREET_MANAGER_API = "https://api.streetmanager.dft.gov.uk/street-manager-api/v3"
-WORKS_ENDPOINT = f"{STREET_MANAGER_API}/works"
+# Free, keyless Street Manager Open Data permit feed. Overridable via env for
+# pinning to a specific dated archive file if the "latest" path ever moves.
+OPEN_DATA_URL = os.getenv(
+    "STREET_MANAGER_OPEN_DATA_URL",
+    "https://opendata.streetmanager.service.gov.uk/permit/latest.json",
+)
 
-# Oxted town centre — Street Manager radius filter (3 km).
+# Oxted town centre — 3 km radius filter (used when a record carries WGS84
+# coordinates; the open-data location is otherwise British National Grid).
 AREA_LAT = 51.2567
 AREA_LONG = -0.0049
 AREA_RADIUS_M = 3000
+
+# Fallback area filter when a record has no usable WGS84 coordinates: keep works
+# whose street/area/town text mentions one of these (case-insensitive).
+AREA_KEYWORDS = ("oxted", "hurst green", "limpsfield", "rh8")
 
 # Deep-link templates required by the brief.
 ONE_NETWORK_USRN = "https://one.network/?USRN={usrn}"
@@ -56,54 +69,46 @@ class RoadsCollector(BaseCollector):
     name = "roads"
 
     def __init__(self):
-        self.api_key = os.getenv("STREET_MANAGER_API_KEY", "")
+        self.open_data_url = OPEN_DATA_URL
 
     def collect(self) -> CollectionResult:
         items: list[Item] = []
-        if not self.api_key:
-            print("[roads] STREET_MANAGER_API_KEY not set — skipping live data")
-            return CollectionResult(source=self.name, collected_at=now_iso(), items=[])
-
         try:
             items = self._fetch_works()
         except Exception as exc:
-            print(f"[roads] Street Manager API failed: {exc}")
+            print(f"[roads] Street Manager Open Data fetch failed: {exc}")
 
         # Current/soonest-first: by start date ascending, blanks last.
         items.sort(key=lambda x: x.date or "9999-12-31")
         return CollectionResult(source=self.name, collected_at=now_iso(), items=items)
 
-    # ── Street Manager v3 ─────────────────────────────────────────────────
+    # ── Street Manager Open Data ──────────────────────────────────────────
     def _fetch_works(self) -> list[Item]:
         resp = httpx.get(
-            WORKS_ENDPOINT,
-            params={
-                "latitude": AREA_LAT,
-                "longitude": AREA_LONG,
-                "radius": AREA_RADIUS_M,
-            },
-            headers={
-                "Accept": "application/json",
-                "Authorization": f"Bearer {self.api_key}",
-            },
-            timeout=30,
+            self.open_data_url,
+            headers={"Accept": "application/json"},
+            timeout=60,
+            follow_redirects=True,
         )
         resp.raise_for_status()
-        records = _records(resp.json())
+        records = _load_records(resp)
 
         items: list[Item] = []
         seen: set[str] = set()
-        for rec in records:
-            if not isinstance(rec, dict):
+        for raw in records:
+            if not isinstance(raw, dict):
                 continue
-            if not _within_radius(rec):
+            # Open-data event records wrap the permit under `object_data`.
+            rec = raw.get("object_data") if isinstance(raw.get("object_data"), dict) else raw
+            if not _within_area(rec):
                 continue
 
             road = _field(rec, "street_name", "streetName", "road_name",
                           "roadName", "location_description",
-                          "locationDescription", default="Unknown road")
-            work_type = _field(rec, "work_type", "workType", "activity_type",
-                               "activityType", "works_type",
+                          "locationDescription", "area_name",
+                          default="Unknown road")
+            work_type = _field(rec, "activity_type", "activityType", "work_type",
+                               "workType", "works_type", "permit_status",
                                default="Roadworks")
             promoter = _field(rec, "promoter_organisation",
                               "promoterOrganisation", "promoter",
@@ -116,17 +121,17 @@ class RoadsCollector(BaseCollector):
                         "traffic_management", default="")
             usrn = str(_field(rec, "usrn", "USRN", default="")).strip()
             ref = str(_field(rec, "work_reference_number", "workReferenceNumber",
-                             "permit_reference_number",
+                             "permit_reference_number", "permitReferenceNumber",
                              default="")).strip()
             start = _iso_date(_field(rec, "proposed_start_date", "proposedStartDate",
                                      "start_date", "startDate",
-                                     "actual_start_date_time"))
+                                     "actual_start_date", "actual_start_date_time"))
             end = _iso_date(_field(rec, "proposed_end_date", "proposedEndDate",
                                    "end_date", "endDate",
-                                   "actual_end_date_time"))
+                                   "actual_end_date", "actual_end_date_time"))
             status = _normalise_status(
-                _field(rec, "work_status", "workStatus", "status",
-                       "work_status_ref", default=""),
+                _field(rec, "permit_status", "permitStatus", "work_status",
+                       "workStatus", "status", default=""),
                 rec,
             )
 
@@ -163,18 +168,38 @@ class RoadsCollector(BaseCollector):
                     "dates": _date_range(start, end),
                     "one_network_url": one_network_url,
                     "street_manager_url": street_manager_url,
-                    "source": "Street Manager",
+                    "source": "Street Manager Open Data",
                 },
             ))
         return items
 
 
 # ── helpers ───────────────────────────────────────────────────────────────
+def _load_records(resp) -> list:
+    """Read the works out of a JSON array, an envelope, or NDJSON (one JSON
+    object per line — a common open-data publication shape)."""
+    try:
+        return _records(resp.json())
+    except (ValueError, json.JSONDecodeError):
+        pass
+    out: list = []
+    for line in resp.text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            out.append(json.loads(line))
+        except (ValueError, json.JSONDecodeError):
+            continue
+    return out
+
+
 def _records(payload) -> list:
     """Pull the list of works out of a bare list or a common envelope shape."""
     if isinstance(payload, dict):
         records = (payload.get("works") or payload.get("data")
-                   or payload.get("items") or payload.get("results") or [])
+                   or payload.get("items") or payload.get("results")
+                   or payload.get("permits") or [])
     else:
         records = payload
     if isinstance(records, dict):
@@ -189,15 +214,21 @@ def _field(rec: dict, *keys, default=""):
     return default
 
 
-def _within_radius(rec: dict) -> bool:
-    """Keep records inside the 3 km radius. The API already filters by radius,
-    so a record without coordinates is trusted; one with coordinates is
-    re-checked (defends against a looser server-side radius)."""
+def _within_area(rec: dict) -> bool:
+    """Keep records that are local to Oxted. The open-data feed is national and
+    has no server-side radius, so this filters client-side: a 3 km haversine
+    when WGS84 coordinates are present, otherwise an area-name keyword match.
+    Records we can't place locally are dropped."""
     lat = _coerce_float(_field(rec, "latitude", "lat", default=None))
     lng = _coerce_float(_field(rec, "longitude", "long", "lng", default=None))
-    if lat is None or lng is None:
-        return True
-    return _haversine_m(AREA_LAT, AREA_LONG, lat, lng) <= AREA_RADIUS_M
+    if lat is not None and lng is not None:
+        return _haversine_m(AREA_LAT, AREA_LONG, lat, lng) <= AREA_RADIUS_M
+
+    haystack = " ".join(str(_field(rec, k, default="")) for k in (
+        "street_name", "streetName", "area_name", "areaName",
+        "town", "location_description", "locationDescription",
+    )).lower()
+    return any(kw in haystack for kw in AREA_KEYWORDS)
 
 
 def _coerce_float(value):
@@ -233,19 +264,21 @@ def _normalise_category(raw: str) -> str:
 
 
 def _normalise_status(raw: str, rec: dict) -> str:
-    """Map a work status onto Planned / In progress / Completed, deriving from
-    the actual start/end dates when no explicit status is given."""
+    """Map a permit/work status onto Planned / In progress / Completed, deriving
+    from the actual start/end dates when no explicit status is given."""
     low = str(raw).lower()
-    if "progress" in low:
+    if "progress" in low or "started" in low:
         return "In progress"
-    if "complet" in low or "closed" in low or "cancel" in low:
+    if "complet" in low or "closed" in low or "cancel" in low \
+            or "revoked" in low or "refus" in low:
         return "Completed"
-    if "plan" in low or "propos" in low or "registered" in low or "advanced" in low:
+    if ("plan" in low or "propos" in low or "registered" in low
+            or "advanced" in low or "grant" in low or "submit" in low):
         return "Planned"
     # Derive from actual dates when the status field is absent/unknown.
-    has_start = bool(_field(rec, "actual_start_date_time", "actual_start_date",
+    has_start = bool(_field(rec, "actual_start_date", "actual_start_date_time",
                             "actualStartDate", default=""))
-    has_end = bool(_field(rec, "actual_end_date_time", "actual_end_date",
+    has_end = bool(_field(rec, "actual_end_date", "actual_end_date_time",
                           "actualEndDate", default=""))
     if has_end:
         return "Completed"
