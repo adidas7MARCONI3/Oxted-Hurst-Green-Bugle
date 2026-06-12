@@ -252,6 +252,15 @@ def test_trains_collector_surfaces_soap_fault_on_500():
     assert "HTTP 500" in joined
 
 
+def test_trains_collector_uses_correct_station_codes():
+    """The Oxted line stations are Oxted (OXT) and Hurst Green (HUR) per the PRD.
+    "HGS" is Hastings — querying it pulled the wrong station's board."""
+    from collectors.trains import STATIONS
+    codes = {crs for crs, _ in STATIONS}
+    assert codes == {"OXT", "HUR"}
+    assert "HGS" not in codes
+
+
 def test_trains_collector_no_api_key_returns_empty():
     from collectors.trains import TrainsCollector
     collector = TrainsCollector()
