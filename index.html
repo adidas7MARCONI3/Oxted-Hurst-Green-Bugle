@@ -552,6 +552,10 @@ async function loadPlanning() {
 }
 
 /* ── Crime ── */
+// Surrey Police's X (Twitter) handle. Swap for your local Tandridge
+// neighbourhood-team handle if you'd prefer that account's posts.
+const SURREY_POLICE_X = 'SurreyPolice';
+
 const CRIME_COLOURS = {
   'anti-social-behaviour':      ['#fde8ea','#8b1a1a'],
   'burglary':                   ['#fde8d0','#7a3c00'],
@@ -583,7 +587,15 @@ async function loadCrime() {
   const data = await loadJSON('crime');
   if (!data || !data.items.length) { setSection('crime-section', ''); return; }
 
-  const items = data.items;
+  // Defensively de-duplicate incidents before counting/listing — guards
+  // against the same crime appearing more than once in the source JSON.
+  const seenIds = new Set();
+  const items = data.items.filter(i => {
+    const key = i.data?.persistent_id || i.id || `${i.title}|${i.date}`;
+    if (seenIds.has(key)) return false;
+    seenIds.add(key);
+    return true;
+  });
 
   // Derive month label from most common date value
   const monthCounts = {};
@@ -639,16 +651,39 @@ async function loadCrime() {
     <tbody>${locRows}</tbody>
   </table>`;
 
+  // ── Tab 4: Police X (Twitter) feed ────────────────────────────────────
+  const feedHtml = `
+    <p style="font-size:0.85rem;color:#555;margin-bottom:0.6rem">
+      Live posts from <strong>@${SURREY_POLICE_X}</strong>.
+      <a href="https://x.com/search?q=(from%3A${SURREY_POLICE_X})%20(Oxted%20OR%20%22Hurst%20Green%22)&f=live"
+         target="_blank" rel="noopener">Search their posts mentioning Oxted / Hurst Green ↗</a>
+    </p>
+    <a class="twitter-timeline" data-height="500" data-dnt="true"
+       href="https://twitter.com/${SURREY_POLICE_X}?ref_src=twsrc%5Etfw">Posts by @${SURREY_POLICE_X}</a>`;
+
   setSection('crime-section', `
     <div class="tab-bar">
-      <button class="tab-btn active" data-tab="incidents" onclick="crimeTab('incidents')">Incidents</button>
-      <button class="tab-btn" data-tab="statistics" onclick="crimeTab('statistics')">Statistics</button>
+      <button class="tab-btn active" data-tab="statistics" onclick="crimeTab('statistics')">Statistics</button>
+      <button class="tab-btn" data-tab="incidents" onclick="crimeTab('incidents')">Incidents</button>
       <button class="tab-btn" data-tab="locations" onclick="crimeTab('locations')">Locations</button>
+      <button class="tab-btn" data-tab="feed" onclick="crimeTab('feed')">Police X Feed</button>
     </div>
-    <div id="crime-incidents" class="tab-panel active">${incidentsHtml}</div>
-    <div id="crime-statistics" class="tab-panel">${statsHtml}</div>
+    <div id="crime-statistics" class="tab-panel active">${statsHtml}</div>
+    <div id="crime-incidents" class="tab-panel">${incidentsHtml}</div>
     <div id="crime-locations" class="tab-panel">${locHtml}</div>
+    <div id="crime-feed" class="tab-panel">${feedHtml}</div>
   `);
+
+  // Load X's widget script once so the embedded timeline renders.
+  if (window.twttr && window.twttr.widgets) {
+    window.twttr.widgets.load(document.getElementById('crime-feed'));
+  } else if (!document.getElementById('twitter-wjs')) {
+    const s = document.createElement('script');
+    s.id = 'twitter-wjs';
+    s.async = true;
+    s.src = 'https://platform.twitter.com/widgets.js';
+    document.head.appendChild(s);
+  }
 }
 
 /* ── Council ── */
