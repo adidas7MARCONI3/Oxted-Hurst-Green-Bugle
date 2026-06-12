@@ -90,8 +90,16 @@ class RoadsCollector(BaseCollector):
             timeout=60,
             follow_redirects=True,
         )
+        # Make failures visible in the daily run's logs: a 404/403 or an empty
+        # body here is the usual reason the roads section shows nothing.
+        status = getattr(resp, "status_code", "?")
+        print(f"[roads] GET {self.open_data_url} -> HTTP {status}")
+        if isinstance(status, int) and status >= 400:
+            snippet = (resp.text or "")[:300].replace("\n", " ")
+            print(f"[roads] open-data feed returned HTTP {status}: {snippet}")
         resp.raise_for_status()
         records = _load_records(resp)
+        print(f"[roads] parsed {len(records)} raw record(s) from the open-data feed")
 
         items: list[Item] = []
         seen: set[str] = set()
@@ -171,6 +179,7 @@ class RoadsCollector(BaseCollector):
                     "source": "Street Manager Open Data",
                 },
             ))
+        print(f"[roads] {len(items)} work(s) within the Oxted area after filtering")
         return items
 
 
