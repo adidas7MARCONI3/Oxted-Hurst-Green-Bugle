@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-06-11T18:00:06.779882+00:00",
+  "collected_at": "2026-06-12T16:35:19.734082+00:00",
   "items": [
     {
       "id": "d254c7b0724b",
@@ -165,21 +165,6 @@
         "amount": 875000,
         "category": "Detached",
         "postcode": "RH8 9DJ"
-      }
-    },
-    {
-      "id": "4b9b5c84da70",
-      "title": "Semi-detached, 27A Greenacres \u2014 \u00a3540,000",
-      "description": "A semi-detached property at 27A Greenacres, RH8 0PA sold for \u00a3540,000 on 2026-03-13.",
-      "date": "2026-03-13",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 540000,
-        "category": "Semi-detached",
-        "postcode": "RH8 0PA"
       }
     }
   ]
