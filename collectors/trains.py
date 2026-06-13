@@ -11,12 +11,21 @@ import httpx
 from xml.etree import ElementTree as ET
 from .base import BaseCollector, CollectionResult, Item, now_iso
 
-# The OpenLDBWS .asmx endpoint and the request namespace are version-locked:
-# ldb11.asmx serves the 2017-10-01 schema. Sending a different RTTI namespace
-# (or SOAPAction) to it makes the service return HTTP 500. Keep these in sync.
+# OpenLDBWS splits its namespaces in a way that trips people up:
+#   * the request/response *types* are versioned — ldb11.asmx serves 2017-10-01,
+#     so the body wrapper must use that namespace; and
+#   * the *interface* (binding/portType) namespace was frozen at 2012-01-13 when
+#     the service launched and never moved. Every versioned WSDL declares
+#     <soap:operation soapAction="http://thalesgroup.com/RTTI/2012-01-13/ldb/..."/>.
+# Sending the versioned 2017-10-01 SOAPAction makes ldb11.asmx reject the request
+# at the routing layer with HTTP 500 "Server did not recognize the value of HTTP
+# Header SOAPAction". So the body NS and the SOAPAction NS are deliberately NOT
+# the same — that mismatch is correct.
 DARWIN_VERSION = "2017-10-01"
 DARWIN_ENDPOINT = "https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx"
 DARWIN_NS = f"http://thalesgroup.com/RTTI/{DARWIN_VERSION}/ldb/"
+# Frozen interface namespace used for the SOAPAction header (NOT the body).
+DARWIN_SOAPACTION_NS = "http://thalesgroup.com/RTTI/2012-01-13/ldb/"
 TOKEN_NS = "http://thalesgroup.com/RTTI/2013-11-28/Token/types"
 
 STATIONS = [
@@ -119,7 +128,7 @@ class TrainsCollector(BaseCollector):
             DARWIN_ENDPOINT,
             content=body.encode(),
             headers={"Content-Type": "text/xml; charset=utf-8",
-                     "SOAPAction": f"{DARWIN_NS}GetDepartureBoard"},
+                     "SOAPAction": f"{DARWIN_SOAPACTION_NS}GetDepartureBoard"},
             timeout=15,
         )
         try:

@@ -217,9 +217,11 @@ def test_trains_collector_parses_multi_namespace_response():
 
 
 def test_trains_request_namespace_matches_endpoint_version():
-    """ldb11.asmx is version-locked to the 2017-10-01 schema. Sending a
-    mismatched namespace/SOAPAction makes OpenLDBWS return HTTP 500 (the bug
-    that left the board empty). Assert the outgoing request stays in sync."""
+    """OpenLDBWS versions its *types* (the body wrapper, 2017-10-01 on ldb11.asmx)
+    but froze its *interface* namespace at 2012-01-13 — the SOAPAction header. The
+    bug that left the board empty was sending the versioned SOAPAction, which
+    ldb11.asmx rejects with HTTP 500. Assert the body and SOAPAction use the
+    correct, deliberately different namespaces."""
     import collectors.trains as trains
     from collectors.trains import TrainsCollector
     collector = TrainsCollector()
@@ -231,15 +233,17 @@ def test_trains_request_namespace_matches_endpoint_version():
     with patch("collectors.trains.httpx.post", return_value=resp) as mock_post:
         collector.collect()
 
-    # ldb11.asmx ⇒ 2017-10-01 schema, both in body and SOAPAction header.
+    # ldb11.asmx ⇒ 2017-10-01 types in the body, but the SOAPAction uses the
+    # frozen 2012-01-13 interface namespace. They are deliberately different.
     assert "ldb11.asmx" in trains.DARWIN_ENDPOINT
     assert trains.DARWIN_NS == "http://thalesgroup.com/RTTI/2017-10-01/ldb/"
+    assert trains.DARWIN_SOAPACTION_NS == "http://thalesgroup.com/RTTI/2012-01-13/ldb/"
 
     _, kwargs = mock_post.call_args
     sent_body = kwargs["content"].decode()
     assert 'xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"' in sent_body
     assert kwargs["headers"]["SOAPAction"] == (
-        "http://thalesgroup.com/RTTI/2017-10-01/ldb/GetDepartureBoard"
+        "http://thalesgroup.com/RTTI/2012-01-13/ldb/GetDepartureBoard"
     )
 
 
