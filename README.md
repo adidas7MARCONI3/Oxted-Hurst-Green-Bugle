@@ -45,6 +45,26 @@ Manager public search
 If the feed can't be reached the collector logs a notice and yields no items
 rather than failing the run.
 
+## Road closures — Street Manager SNS service (`streetworks/`)
+
+The live road/street-works closure map for Oxted & Hurst Green is a **separate,
+self-contained FastAPI service** in [`streetworks/`](streetworks/README.md). It
+receives **DfT Street Manager open data** as a push feed over **AWS SNS**
+(publisher/subscriber) — not a pollable URL — applies a two-stage Surrey-CC +
+bounding-box filter, accumulates event deltas into current state (Postgres +
+PostGIS, or in-memory for dev), and serves GeoJSON to a Leaflet map.
+
+> **Note:** this supersedes the keyless-poll assumption in the older
+> `collectors/roads.py`. That collector is left in place so the existing Bugle
+> build keeps working, but the SNS service is the road-data path going forward.
+> See [`streetworks/README.md`](streetworks/README.md) for local run, deploy, env
+> vars (`SURREY_SWA_CODE`, the bbox) and the manual gov.uk registration step.
+
+```bash
+pip install -e ".[streetworks]"
+uvicorn streetworks.api:app --reload      # map at http://127.0.0.1:8000/
+```
+
 ## Running collectors
 
 ```bash

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oxted &amp; Hurst Green — road closures &amp; works</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <style>
+    :root { --ink:#1b1b1b; --muted:#6a6a6a; --line:#e3e3e3; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); }
+    header { padding: 12px 16px; border-bottom: 1px solid var(--line); }
+    header h1 { font-size: 1.15rem; margin: 0; }
+    header p { margin: 4px 0 0; color: var(--muted); font-size: .85rem; }
+    #layout { display: flex; height: calc(100vh - 64px); }
+    #map { flex: 2 1 0; min-width: 0; }
+    #list { flex: 1 1 360px; max-width: 460px; overflow-y: auto; border-left: 1px solid var(--line); padding: 8px 12px; }
+    .filters { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; border-bottom: 1px solid var(--line); align-items: center; font-size: .85rem; }
+    .filters select, .filters input { font: inherit; padding: 3px 6px; }
+    .card { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; margin: 8px 0; }
+    .card h3 { margin: 0 0 4px; font-size: .98rem; }
+    .meta { color: var(--muted); font-size: .8rem; margin: 2px 0; }
+    .pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: .72rem; color: #fff; vertical-align: middle; }
+    .empty { color: var(--muted); padding: 24px 6px; text-align: center; }
+    .legend { background: #fff; padding: 6px 8px; line-height: 1.5; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.2); font-size: .78rem; }
+    .legend i { display: inline-block; width: 11px; height: 11px; margin-right: 6px; border-radius: 2px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Oxted &amp; Hurst Green — road closures &amp; street works</h1>
+    <p>Live from DfT Street Manager, filtered to the local area. Auto-refreshes every 60s.
+       <span id="updated"></span></p>
+  </header>
+
+  <div class="filters">
+    <label>Status
+      <select id="f-status">
+        <option value="">Active (default)</option>
+        <option value="proposed">Proposed</option>
+        <option value="in_progress">In progress</option>
+        <option value="completed">Completed</option>
+        <option value="inactive">Cancelled/Inactive</option>
+      </select>
+    </label>
+    <label>Type <input id="f-tmt" placeholder="e.g. Road closure" size="16" /></label>
+    <label>Category <input id="f-cat" placeholder="e.g. Major" size="10" /></label>
+    <label>From <input id="f-from" type="date" /></label>
+    <label>To <input id="f-to" type="date" /></label>
+    <button id="f-apply">Apply</button>
+    <button id="f-clear">Clear</button>
+  </div>
+
+  <div id="layout">
+    <div id="map"></div>
+    <div id="list"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    // Centre on the Oxted / Hurst Green area.
+    const map = L.map('map').setView([51.250, -0.010], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    let layer = L.geoJSON(null);
+    layer.addTo(map);
+
+    // Colour by status; full road closures get the strongest red.
+    function colourFor(props) {
+      if (props.status === 'completed') return '#7a7a7a';
+      if (props.status === 'inactive') return '#b0b0b0';
+      const tmt = (props.traffic_management_type || '').toLowerCase();
+      if (tmt.includes('road closure')) return '#d7191c';
+      if (tmt.includes('lane')) return '#fdae61';
+      if (tmt.includes('signal')) return '#2c7fb8';
+      if (tmt.includes('give')) return '#fee08b';
+      return props.status === 'in_progress' ? '#e8601c' : '#1a9850';
+    }
+
+    function fmtDates(p) {
+      const s = p.proposed_start_date || '—';
+      const e = p.proposed_end_date || '—';
+      const t = p.proposed_start_time ? ' ' + p.proposed_start_time : '';
+      return `${s}${t} → ${e}`;
+    }
+
+    const legend = L.control({ position: 'bottomright' });
+    legend.onAdd = function () {
+      const div = L.DomUtil.create('div', 'legend');
+      div.innerHTML =
+        '<div><i style="background:#d7191c"></i>Road closure</div>' +
+        '<div><i style="background:#fdae61"></i>Lane closure</div>' +
+        '<div><i style="background:#2c7fb8"></i>Multi-way signals</div>' +
+        '<div><i style="background:#1a9850"></i>Other / proposed</div>' +
+        '<div><i style="background:#e8601c"></i>In progress</div>' +
+        '<div><i style="background:#7a7a7a"></i>Completed</div>';
+      return div;
+    };
+    legend.addTo(map);
+
+    function buildQuery() {
+      const params = new URLSearchParams();
+      const status = document.getElementById('f-status').value;
+      const tmt = document.getElementById('f-tmt').value.trim();
+      const cat = document.getElementById('f-cat').value.trim();
+      const from = document.getElementById('f-from').value;
+      const to = document.getElementById('f-to').value;
+      if (status) params.set('status', status);
+      if (tmt) params.set('traffic_management_type', tmt);
+      if (cat) params.set('work_category', cat);
+      if (from) params.set('start_date', from);
+      if (to) params.set('end_date', to);
+      const qs = params.toString();
+      return '/closures' + (qs ? '?' + qs : '');
+    }
+
+    function renderList(features) {
+      const list = document.getElementById('list');
+      if (!features.length) {
+        list.innerHTML = '<div class="empty">No matching closures right now.<br>' +
+          'The store fills as Street Manager events arrive.</div>';
+        return;
+      }
+      // Sorted by start date (API already sorts; keep stable here too).
+      const sorted = [...features].sort((a, b) =>
+        (a.properties.proposed_start_date || '').localeCompare(b.properties.proposed_start_date || ''));
+      list.innerHTML = sorted.map(f => {
+        const p = f.properties;
+        const colour = colourFor(p);
+        return `<div class="card">
+          <h3>${p.street_name || p.reference || 'Unnamed street'}</h3>
+          <div class="meta"><span class="pill" style="background:${colour}">${(p.traffic_management_type || p.status || '').toString()}</span>
+            &nbsp;${p.work_category || ''}</div>
+          <div class="meta">${fmtDates(p)}</div>
+          <div class="meta">${p.promoter_organisation || ''}${p.town ? ' · ' + p.town : ''}</div>
+          <div class="meta">Status: ${p.status}${p.usrn ? ' · USRN ' + p.usrn : ''}</div>
+        </div>`;
+      }).join('');
+    }
+
+    async function refresh() {
+      try {
+        const resp = await fetch(buildQuery());
+        const fc = await resp.json();
+        layer.clearLayers();
+        layer.addData({
+          type: 'FeatureCollection',
+          features: (fc.features || []).filter(f => f.geometry)
+        });
+        layer.eachLayer(l => {
+          const p = l.feature.properties;
+          const colour = colourFor(p);
+          if (l.setStyle) l.setStyle({ color: colour, weight: 5 });
+          if (l.setIcon === undefined && l.setRadius) l.setRadius(8);
+          l.bindPopup(
+            `<strong>${p.street_name || p.reference}</strong><br>` +
+            `${p.traffic_management_type || ''} (${p.status})<br>` +
+            `${fmtDates(p)}<br>${p.promoter_organisation || ''}`
+          );
+        });
+        renderList(fc.features || []);
+        document.getElementById('updated').textContent =
+          '· last loaded ' + new Date().toLocaleTimeString();
+      } catch (e) {
+        console.error('refresh failed', e);
+      }
+    }
+
+    // Render point features as coloured circle markers.
+    layer.options.pointToLayer = (feature, latlng) =>
+      L.circleMarker(latlng, { radius: 8, color: colourFor(feature.properties), weight: 2, fillOpacity: 0.7 });
+
+    document.getElementById('f-apply').addEventListener('click', refresh);
+    document.getElementById('f-clear').addEventListener('click', () => {
+      ['f-status', 'f-tmt', 'f-cat', 'f-from', 'f-to'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+      refresh();
+    });
+
+    refresh();
+    setInterval(refresh, 60000);
+  </script>
+</body>
+</html>
