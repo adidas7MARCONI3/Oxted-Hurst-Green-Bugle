@@ -21,6 +21,24 @@ dev = [
     "pytest>=8.0.0",
     "pytest-asyncio>=0.23.0",
     "ruff>=0.4.0",
+    # Street Manager service deps so the full test suite runs from `.[dev]`.
+    "fastapi>=0.110.0",
+    "pyproj>=3.6.0",
+    "cryptography>=42.0.0",
+    "sqlalchemy>=2.0.0",
+    "httpx>=0.27.0",
+]
+# The Street Manager closure service (streetworks/) is a self-contained
+# FastAPI app. Its runtime deps live here so the newspaper collectors stay
+# lean — install with `pip install -e ".[streetworks]"`.
+streetworks = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
+    "pyproj>=3.6.0",
+    "cryptography>=42.0.0",
+    "sqlalchemy>=2.0.0",
+    "geoalchemy2>=0.14.0",
+    "psycopg[binary]>=3.1.0",
 ]
 
 [project.scripts]
@@ -30,7 +48,10 @@ bugle-events = "admin.events_cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["collectors*", "summariser*", "alerts*", "admin*", "scripts*"]
+include = ["collectors*", "summariser*", "alerts*", "admin*", "scripts*", "streetworks*"]
+
+[tool.setuptools.package-data]
+streetworks = ["static/*", "db/*.sql"]
 
 [tool.ruff]
 line-length = 100
