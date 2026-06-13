@@ -412,6 +412,45 @@ def test_roads_collector_filters_to_oxted_area():
     assert "Bridge Road" not in roads        # no coords, no area match
 
 
+def test_roads_collector_filters_by_bng_wkt_coordinates():
+    """Real Street Manager open data carries no latitude/longitude fields — the
+    location is a British National Grid WKT geometry in
+    `works_location_coordinates`. We must reproject it and apply the 3 km radius,
+    keeping Oxted-area works and dropping a far-away one (e.g. central London)."""
+    mock_works = [
+        {"object_data": {
+            "street_name": "Station Road West", "usrn": "1",
+            "work_reference_number": "OXT-1",
+            # Oxted town centre, OSGB36 easting/northing (~TQ 393 522).
+            "works_location_coordinates": "POINT (539300 152200)"}},
+        {"object_data": {
+            "street_name": "Whitehall", "usrn": "2",
+            "work_reference_number": "LDN-1",
+            # Central London — ~30 km away, must be dropped.
+            "works_location_coordinates": "POINT (530000 180000)"}},
+    ]
+    with patch("collectors.roads.httpx.get") as mock_get:
+        mock_get.return_value = _mock_resp(json_value={"works": mock_works})
+        result = _roads_collector().collect()
+
+    roads = [i.data["street_name"] for i in result.items]
+    assert "Station Road West" in roads
+    assert "Whitehall" not in roads
+
+
+def test_roads_osgb36_reprojection_matches_os_worked_example():
+    """The OS reverse-projection worked example: E651409.903 N313177.270 should
+    reproject to roughly 52.6576 N, 1.7179 E (Airy 1830, no datum shift)."""
+    from collectors.roads import _osgb36_to_wgs84, _parse_bng
+    lat, lng = _osgb36_to_wgs84(651409.903, 313177.270)
+    assert abs(lat - 52.6576) < 0.001
+    assert abs(lng - 1.7179) < 0.001
+    # WKT parsing pulls the first BNG coordinate pair from POINT/POLYGON.
+    assert _parse_bng("POINT (539300 152200)") == (539300.0, 152200.0)
+    assert _parse_bng("POLYGON ((539300 152200, 539310 152210))") == (539300.0, 152200.0)
+    assert _parse_bng("") is None
+
+
 def test_roads_collector_categories_and_status():
     """Immediate/urgent works map to Emergency; permit statuses and actual dates
     map onto Planned / In progress / Completed."""

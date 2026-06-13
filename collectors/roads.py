@@ -11,9 +11,12 @@ Street Manager API v3, which requires a registered-organisation API key.)
                street-manager-docs/open-data/
 
 The open-data feed is national, so we filter to Oxted client-side: by a 3 km
-haversine radius of the town centre (lat 51.2567, long -0.0049) when a record
-carries WGS84 coordinates, otherwise by an area-name keyword match (Oxted /
-Hurst Green / Limpsfield / RH8). Records we can't place locally are dropped.
+haversine radius of the town centre (lat 51.2567, long -0.0049). Street Manager
+encodes the works location as a British National Grid (OSGB36) WKT geometry in
+`works_location_coordinates`, so we parse and reproject that to lat/long before
+measuring the radius; records with no usable coordinates fall back to an
+area-name keyword match (Oxted / Hurst Green / Limpsfield / RH8). Records we
+can't place locally are dropped.
 
 Each item carries, in `data`:
 
@@ -34,6 +37,7 @@ The description reads as a plain-English sentence, e.g.
 
 Items are sorted current/soonest-first.
 """
+import gzip
 import hashlib
 import json
 import math
@@ -50,8 +54,8 @@ OPEN_DATA_URL = os.getenv(
     "https://opendata.streetmanager.service.gov.uk/permit/latest.json",
 )
 
-# Oxted town centre — 3 km radius filter (used when a record carries WGS84
-# coordinates; the open-data location is otherwise British National Grid).
+# Oxted town centre — 3 km radius filter. Record coordinates are reprojected
+# from British National Grid (OSGB36) to lat/long before being measured.
 AREA_LAT = 51.2567
 AREA_LONG = -0.0049
 AREA_RADIUS_M = 3000
@@ -84,23 +88,28 @@ class RoadsCollector(BaseCollector):
 
     # ── Street Manager Open Data ──────────────────────────────────────────
     def _fetch_works(self) -> list[Item]:
+        print(f"[roads] fetching Street Manager Open Data: {self.open_data_url}")
         resp = httpx.get(
             self.open_data_url,
             headers={"Accept": "application/json"},
             timeout=60,
             follow_redirects=True,
         )
+        print(f"[roads] HTTP {resp.status_code} from open-data feed")
         resp.raise_for_status()
         records = _load_records(resp)
+        print(f"[roads] parsed {len(records)} raw record(s) from feed")
 
         items: list[Item] = []
         seen: set[str] = set()
+        dropped_area = 0
         for raw in records:
             if not isinstance(raw, dict):
                 continue
             # Open-data event records wrap the permit under `object_data`.
             rec = raw.get("object_data") if isinstance(raw.get("object_data"), dict) else raw
             if not _within_area(rec):
+                dropped_area += 1
                 continue
 
             road = _field(rec, "street_name", "streetName", "road_name",
@@ -171,19 +180,37 @@ class RoadsCollector(BaseCollector):
                     "source": "Street Manager Open Data",
                 },
             ))
+        print(f"[roads] kept {len(items)} Oxted-area item(s); "
+              f"dropped {dropped_area} outside the area")
         return items
 
 
 # ── helpers ───────────────────────────────────────────────────────────────
 def _load_records(resp) -> list:
     """Read the works out of a JSON array, an envelope, or NDJSON (one JSON
-    object per line — a common open-data publication shape)."""
+    object per line — a common open-data publication shape). Street Manager
+    archive snapshots are often gzip-compressed, so transparently gunzip those."""
     try:
         return _records(resp.json())
     except (ValueError, json.JSONDecodeError):
         pass
+
+    # Gzip-compressed archive file (.json.gz): decompress, then retry as a
+    # single JSON document or as NDJSON.
+    text = resp.text
+    raw = getattr(resp, "content", b"") or b""
+    if raw[:2] == b"\x1f\x8b":  # gzip magic number
+        try:
+            text = gzip.decompress(raw).decode("utf-8", "replace")
+            try:
+                return _records(json.loads(text))
+            except (ValueError, json.JSONDecodeError):
+                pass
+        except (OSError, EOFError):
+            text = resp.text
+
     out: list = []
-    for line in resp.text.splitlines():
+    for line in text.splitlines():
         line = line.strip()
         if not line:
             continue
@@ -216,19 +243,102 @@ def _field(rec: dict, *keys, default=""):
 
 def _within_area(rec: dict) -> bool:
     """Keep records that are local to Oxted. The open-data feed is national and
-    has no server-side radius, so this filters client-side: a 3 km haversine
-    when WGS84 coordinates are present, otherwise an area-name keyword match.
-    Records we can't place locally are dropped."""
-    lat = _coerce_float(_field(rec, "latitude", "lat", default=None))
-    lng = _coerce_float(_field(rec, "longitude", "long", "lng", default=None))
-    if lat is not None and lng is not None:
-        return _haversine_m(AREA_LAT, AREA_LONG, lat, lng) <= AREA_RADIUS_M
+    has no server-side radius, so this filters client-side by a 3 km haversine
+    when coordinates are present, otherwise by an area-name keyword match.
+    Records we can't place locally are dropped.
+
+    Street Manager open data expresses the works location as a British National
+    Grid (OSGB36) WKT geometry in `works_location_coordinates` — e.g.
+    "POINT (539400 152300)" — *not* as latitude/longitude fields, so we parse
+    and reproject that. Plain lat/long fields are still honoured if present."""
+    latlng = _record_latlng(rec)
+    if latlng is not None:
+        return _haversine_m(AREA_LAT, AREA_LONG, latlng[0], latlng[1]) <= AREA_RADIUS_M
 
     haystack = " ".join(str(_field(rec, k, default="")) for k in (
         "street_name", "streetName", "area_name", "areaName",
         "town", "location_description", "locationDescription",
     )).lower()
     return any(kw in haystack for kw in AREA_KEYWORDS)
+
+
+def _record_latlng(rec: dict):
+    """Best-effort (lat, lng) in WGS84 for a record, or None if it can't be
+    placed. Tries explicit lat/long fields first, then a BNG WKT geometry."""
+    lat = _coerce_float(_field(rec, "latitude", "lat", default=None))
+    lng = _coerce_float(_field(rec, "longitude", "long", "lng", default=None))
+    if lat is not None and lng is not None:
+        return (lat, lng)
+
+    en = _parse_bng(_field(rec, "works_location_coordinates",
+                           "worksLocationCoordinates", "geometry",
+                           "works_location", "location_coordinates",
+                           default=""))
+    if en is not None:
+        return _osgb36_to_wgs84(en[0], en[1])
+    return None
+
+
+def _parse_bng(value):
+    """Extract a representative (easting, northing) from a British National Grid
+    WKT string such as "POINT (539400 152300)" or
+    "POLYGON ((539400 152300, …))". Returns the first coordinate pair, or None.
+
+    BNG eastings/northings are 6-figure metre values (0–700000 E, 0–1300000 N),
+    which is how we tell them apart from any stray lat/long pairs."""
+    if not value:
+        return None
+    nums = re.findall(r"-?\d+\.?\d*", str(value))
+    for i in range(len(nums) - 1):
+        e, n = _coerce_float(nums[i]), _coerce_float(nums[i + 1])
+        if e is None or n is None:
+            continue
+        if 0 <= e <= 700000 and 0 <= n <= 1300000 and (e > 1000 or n > 1000):
+            return (e, n)
+    return None
+
+
+def _osgb36_to_wgs84(easting: float, northing: float):
+    """Convert an OSGB36 National Grid easting/northing (metres) to latitude /
+    longitude in degrees. Uses the standard Ordnance Survey reverse projection
+    on the Airy 1830 ellipsoid; the residual OSGB36→WGS84 datum offset (~100 m)
+    is immaterial for a 3 km radius filter, so we skip the Helmert shift."""
+    a, b = 6377563.396, 6356256.909          # Airy 1830 semi-axes
+    f0 = 0.9996012717                          # central meridian scale factor
+    lat0, lon0 = math.radians(49), math.radians(-2)
+    n0, e0 = -100000.0, 400000.0
+    e2 = 1 - (b * b) / (a * a)
+    n = (a - b) / (a + b)
+
+    lat = lat0
+    m = 0.0
+    while abs(northing - n0 - m) >= 0.00001:
+        lat = (northing - n0 - m) / (a * f0) + lat
+        ma = (1 + n + 1.25 * n**2 + 1.25 * n**3) * (lat - lat0)
+        mb = (3 * n + 3 * n**2 + 2.625 * n**3) * math.sin(lat - lat0) * math.cos(lat + lat0)
+        mc = (1.875 * n**2 + 1.875 * n**3) * math.sin(2 * (lat - lat0)) * math.cos(2 * (lat + lat0))
+        md = (35 / 24) * n**3 * math.sin(3 * (lat - lat0)) * math.cos(3 * (lat + lat0))
+        m = b * f0 * (ma - mb + mc - md)
+
+    sin_lat = math.sin(lat)
+    nu = a * f0 / math.sqrt(1 - e2 * sin_lat**2)
+    rho = a * f0 * (1 - e2) / (1 - e2 * sin_lat**2) ** 1.5
+    eta2 = nu / rho - 1
+
+    tan_lat = math.tan(lat)
+    sec_lat = 1 / math.cos(lat)
+    vii = tan_lat / (2 * rho * nu)
+    viii = tan_lat / (24 * rho * nu**3) * (5 + 3 * tan_lat**2 + eta2 - 9 * tan_lat**2 * eta2)
+    ix = tan_lat / (720 * rho * nu**5) * (61 + 90 * tan_lat**2 + 45 * tan_lat**4)
+    x = sec_lat / nu
+    xi = sec_lat / (6 * nu**3) * (nu / rho + 2 * tan_lat**2)
+    xii = sec_lat / (120 * nu**5) * (5 + 28 * tan_lat**2 + 24 * tan_lat**4)
+    xiia = sec_lat / (5040 * nu**7) * (61 + 662 * tan_lat**2 + 1320 * tan_lat**4 + 720 * tan_lat**6)
+
+    de = easting - e0
+    lat = lat - vii * de**2 + viii * de**4 - ix * de**6
+    lon = lon0 + x * de - xi * de**3 + xii * de**5 - xiia * de**7
+    return (math.degrees(lat), math.degrees(lon))
 
 
 def _coerce_float(value):
