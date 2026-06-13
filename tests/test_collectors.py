@@ -553,3 +553,9 @@ def test_council_collector_handles_network_error():
         result = CouncilCollector().collect()
     assert result.source == "council"
     assert result.items == []
+
+
+def test_trains_collector_uses_correct_station_codes():
+    # Hurst Green is HUR; HGS is Hastings. Lock the codes so this can't drift.
+    from collectors.trains import STATIONS
+    assert {crs for crs, _ in STATIONS} == {"OXT", "HUR"}
