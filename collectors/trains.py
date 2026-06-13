@@ -11,12 +11,23 @@ import httpx
 from xml.etree import ElementTree as ET
 from .base import BaseCollector, CollectionResult, Item, now_iso
 
-# The OpenLDBWS .asmx endpoint and the request namespace are version-locked:
-# ldb11.asmx serves the 2017-10-01 schema. Sending a different RTTI namespace
-# (or SOAPAction) to it makes the service return HTTP 500. Keep these in sync.
+# The OpenLDBWS .asmx endpoint and the request-body namespace are version-locked:
+# ldb11.asmx serves the 2017-10-01 schema, so the GetDepartureBoardRequest wrapper
+# must sit in the 2017-10-01/ldb/ namespace.
+#
+# The SOAPAction header is the exception. OpenLDBWS froze its *interface* (binding)
+# namespace at 2012-01-13 when the service launched — only the data *types* ever
+# carry the schema version. Every versioned WSDL therefore declares
+#   <soap:operation soapAction="http://thalesgroup.com/RTTI/2012-01-13/ldb/..."/>
+# Sending the versioned SOAPAction (…/2017-10-01/ldb/GetDepartureBoard) makes the
+# server reject it with HTTP 500 "Server did not recognize the value of HTTP Header
+# SOAPAction". So the SOAPAction stays on 2012-01-13 while the body stays on the
+# endpoint version — they are deliberately *not* the same.
 DARWIN_VERSION = "2017-10-01"
 DARWIN_ENDPOINT = "https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx"
 DARWIN_NS = f"http://thalesgroup.com/RTTI/{DARWIN_VERSION}/ldb/"
+SOAP_ACTION_NS = "http://thalesgroup.com/RTTI/2012-01-13/ldb/"
+SOAP_ACTION = f"{SOAP_ACTION_NS}GetDepartureBoard"
 TOKEN_NS = "http://thalesgroup.com/RTTI/2013-11-28/Token/types"
 
 STATIONS = [
@@ -119,7 +130,7 @@ class TrainsCollector(BaseCollector):
             DARWIN_ENDPOINT,
             content=body.encode(),
             headers={"Content-Type": "text/xml; charset=utf-8",
-                     "SOAPAction": f"{DARWIN_NS}GetDepartureBoard"},
+                     "SOAPAction": SOAP_ACTION},
             timeout=15,
         )
         try:
