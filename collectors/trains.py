@@ -145,7 +145,6 @@ class TrainsCollector(BaseCollector):
             DARWIN_ENDPOINT,
             content=body.encode(),
             headers={"Content-Type": "text/xml; charset=utf-8",
-                     "SOAPAction": f"{DARWIN_SOAPACTION_NS}GetDepartureBoard"},
                      "SOAPAction": SOAP_ACTION},
             timeout=15,
         )
