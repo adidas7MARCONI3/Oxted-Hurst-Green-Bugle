@@ -216,6 +216,14 @@ def test_trains_collector_parses_multi_namespace_response():
     assert "Cancelled" in cancelled[0].title
 
 
+def test_trains_collector_uses_correct_station_codes():
+    """Per the PRD the Oxted-line stations are OXT and HUR. HGS is Hastings,
+    a different line — querying it pulled the wrong board for Hurst Green.
+    Lock the codes so this can't silently drift again."""
+    from collectors.trains import STATIONS
+    assert {crs for crs, _ in STATIONS} == {"OXT", "HUR"}
+
+
 def test_trains_request_namespace_matches_endpoint_version():
     """ldb11.asmx is version-locked to the 2017-10-01 schema. Sending a
     mismatched namespace/SOAPAction makes OpenLDBWS return HTTP 500 (the bug

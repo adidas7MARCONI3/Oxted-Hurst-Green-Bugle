@@ -21,7 +21,7 @@ TOKEN_NS = "http://thalesgroup.com/RTTI/2013-11-28/Token/types"
 
 STATIONS = [
     ("OXT", "Oxted"),
-    ("HGS", "Hurst Green"),
+    ("HUR", "Hurst Green"),  # HGS is Hastings, not Hurst Green
 ]
 
 SOAP_TEMPLATE = """<?xml version="1.0" encoding="utf-8"?>

@@ -7,7 +7,7 @@ bugle:
 stations:
   - crs: OXT
     name: Oxted
-  - crs: HGS
+  - crs: HUR
     name: Hurst Green
 
 location:
