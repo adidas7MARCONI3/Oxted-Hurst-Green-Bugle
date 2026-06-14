@@ -8,10 +8,9 @@ from .trains import TrainsCollector
 from .bins import BinsCollector
 from .events import EventsCollector
 from .sports import SportsCollector
-from .roads import RoadsCollector
 
 __all__ = [
     "CrimeCollector", "PlanningCollector", "CourtsCollector", "CouncilCollector",
     "EnvironmentCollector", "PropertyCollector", "TrainsCollector", "BinsCollector",
-    "EventsCollector", "SportsCollector", "RoadsCollector",
+    "EventsCollector", "SportsCollector",
 ]

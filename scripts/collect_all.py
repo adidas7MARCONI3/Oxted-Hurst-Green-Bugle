@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from collectors import (
     CrimeCollector, PlanningCollector, CourtsCollector, CouncilCollector,
     EnvironmentCollector, PropertyCollector, TrainsCollector, BinsCollector,
-    EventsCollector, SportsCollector, RoadsCollector,
+    EventsCollector, SportsCollector,
 )
 from summariser import Summariser
 
@@ -34,7 +34,6 @@ ALL_COLLECTORS = {
     "bins": BinsCollector,
     "events": EventsCollector,
     "sports": SportsCollector,
-    "roads": RoadsCollector,
 }
 
 
