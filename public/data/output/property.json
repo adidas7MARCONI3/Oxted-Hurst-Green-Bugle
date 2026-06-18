@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-06-17T17:34:46.394843+00:00",
+  "collected_at": "2026-06-18T17:50:27.859841+00:00",
   "items": [
     {
       "id": "d254c7b0724b",
@@ -10,7 +10,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Central Way Detached Home Sells for \u00a3610,000",
-      "summary": "A detached property at 9 Central Way, RH8 0LS, has sold for \u00a3610,000. The sale was completed on 22 April 2026.",
+      "summary": "A detached house at 9 Central Way, RH8 0LS, has sold for \u00a3610,000. The sale was completed on 22 April 2026.",
       "data": {
         "amount": 610000,
         "category": "Detached",
@@ -24,8 +24,8 @@
       "date": "2026-04-16",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Chalkpit Lane Home Sells for \u00a3950,000",
-      "summary": "A detached house at 13 Chalkpit Lane, RH8 0NF, has been sold for \u00a3950,000. The sale was completed on 16 April 2026.",
+      "headline": "Chalkpit Lane home sells for \u00a3950,000",
+      "summary": "A detached house at 13 Chalkpit Lane, RH8 0NF, has sold for \u00a3950,000. The sale was completed on 16 April 2026.",
       "data": {
         "amount": 950000,
         "category": "Detached",
@@ -40,7 +40,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Gordons Way Semi Sells for \u00a3852,500",
-      "summary": "A semi-detached house at 25 Gordons Way, RH8 0NA, has changed hands for \u00a3852,500. The sale was completed on 16 April 2026.",
+      "summary": "A semi-detached home at 25 Gordons Way, RH8 0NA, has sold for \u00a3852,500. The sale was completed on 16 April 2026.",
       "data": {
         "amount": 852500,
         "category": "Semi-detached",
@@ -54,8 +54,8 @@
       "date": "2026-04-15",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "High Street Cottage Sells for \u00a3275,000",
-      "summary": "A semi-detached property at Low Cottage, 2A High Street, RH8 9LP, has been sold for \u00a3275,000. The sale was completed on 15 April 2026.",
+      "headline": "High Street Semi Sells for \u00a3275,000",
+      "summary": "A semi-detached home at Low Cottage, 2A High Street, RH8 9LP, has sold for \u00a3275,000. The sale was completed on 15 April 2026.",
       "data": {
         "amount": 275000,
         "category": "Semi-detached",
@@ -69,8 +69,8 @@
       "date": "2026-04-07",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Padbrook Detached Home Sells for \u00a3815,000",
-      "summary": "A detached house at 40 Padbrook, RH8 0DZ, has been sold for \u00a3815,000. The sale was completed on 7 April 2026.",
+      "headline": "Detached Home on Padbrook Sells for \u00a3815,000",
+      "summary": "A detached property at 40 Padbrook, RH8 0DZ, has sold for \u00a3815,000. The sale was completed on 7 April 2026.",
       "data": {
         "amount": 815000,
         "category": "Detached",
@@ -85,7 +85,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Tippett Lane Terraced Home Sells for \u00a3560,000",
-      "summary": "A terraced property at 3 Tippett Lane, RH8 9BP, has sold for \u00a3560,000. The sale was completed on 1 April 2026.",
+      "summary": "A terraced property at 3 Tippett Lane, RH8 9BP, has been sold for \u00a3560,000. The sale was completed on 1 April 2026.",
       "data": {
         "amount": 560000,
         "category": "Terraced",
@@ -100,7 +100,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "West Hill Flat Sells for \u00a3240,000",
-      "summary": "A flat at 1A Hillcrest, West Hill, has changed hands for \u00a3240,000. The sale was completed on 27 March 2026.",
+      "summary": "A flat at 1A Hillcrest, West Hill, RH8 9JB has changed hands for \u00a3240,000. The sale was completed on 27 March 2026.",
       "data": {
         "amount": 240000,
         "category": "Flat",
@@ -114,8 +114,8 @@
       "date": "2026-03-27",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Woodhurst Lane home sells for \u00a3937,500",
-      "summary": "A detached house at Sandstones, Woodhurst Lane, RH8 9HD has changed hands for \u00a3937,500. The sale was completed on 27 March 2026.",
+      "headline": "Detached Home on Woodhurst Lane Sells for \u00a3937,500",
+      "summary": "A detached property at Sandstones, Woodhurst Lane, RH8 9HD, has changed hands for \u00a3937,500. The sale was completed on 27 March 2026.",
       "data": {
         "amount": 937500,
         "category": "Detached",
@@ -144,8 +144,8 @@
       "date": "2026-03-25",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Hazelwood Road Terraced Home Sells for \u00a3530,000",
-      "summary": "A terraced property at 83 Hazelwood Road, RH8 0JA, has changed hands for \u00a3530,000. The sale was completed on 25 March 2026.",
+      "headline": "Hazelwood Road Terrace Sells for \u00a3530,000",
+      "summary": "A terraced home at 83 Hazelwood Road, RH8 0JA, has sold for \u00a3530,000. The sale was completed on 25 March 2026.",
       "data": {
         "amount": 530000,
         "category": "Terraced",
@@ -159,8 +159,8 @@
       "date": "2026-03-25",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Orchard Way Home Sells for \u00a3875,000",
-      "summary": "A detached house at 34 Orchard Way, RH8 9DJ, has sold for \u00a3875,000. The sale was completed on 25 March 2026.",
+      "headline": "Orchard Way home sells for \u00a3875,000",
+      "summary": "A detached house at 34 Orchard Way, RH8 9DJ, has been sold for \u00a3875,000. The sale was completed on 25 March 2026.",
       "data": {
         "amount": 875000,
         "category": "Detached",

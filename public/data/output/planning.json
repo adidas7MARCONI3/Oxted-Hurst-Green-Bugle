@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-06-17T17:34:18.909567+00:00",
+  "collected_at": "2026-06-18T17:49:54.198582+00:00",
   "items": [
     {
       "id": "551aa37b4d5e",
@@ -9,8 +9,8 @@
       "date": "2026-09-04",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/578",
-      "headline": "Flats Plan for Former Hurst Green Methodist Church",
-      "summary": "Plans have been submitted to demolish the deconsecrated Methodist Church on Hurstlands in Hurst Green. The site would be redeveloped as a four-storey block of sixteen flats, including six one-bedroom, eight two-bedroom and two three-bedroom homes.",
+      "headline": "Plans to replace Hurst Green church with 16 flats",
+      "summary": "A planning application proposes demolishing the deconsecrated Methodist church on Hurstlands and building a four-storey block of 16 flats in its place. The scheme would include six one-bedroom, eight two-bedroom and two three-bedroom homes.",
       "data": {
         "reference": "2026/578",
         "address": "Methodist Church, Hurstlands, Hurst Green, Oxted, Surrey, RH8 0HG",
@@ -26,7 +26,7 @@
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/448",
       "headline": "Three new homes proposed for Red Lane in Limpsfield",
-      "summary": "A planning application seeks to subdivide the garden at Foyle Cottage on Red Lane and build three detached houses. The plans include new landscaping, parking and vehicle access.",
+      "summary": "Plans have been submitted to subdivide the garden at Foyle Cottage on Red Lane and build three detached houses. The scheme includes landscaping, parking and a new vehicle access.",
       "data": {
         "reference": "2026/448",
         "address": "Foyle Cottage, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
@@ -42,9 +42,41 @@
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/623",
       "headline": "Tandridge Golf Club seeks changes to water lake plans",
-      "summary": "The club wants to amend its approved plans for a new water storage lake off Godstone Road in Oxted. The changes would reduce the size of the lake and alter the drainage layout.",
+      "summary": "Tandridge Golf Club has applied to amend its approved plans for a new water storage lake off Godstone Road in Oxted. The changes would alter the drainage layout and reduce the size of the lake.",
       "data": {
         "reference": "2026/623",
+        "address": "Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "67701372351f",
+      "title": "2026/749: Godstone Highway Depot, Oxted Road, Godstone, Surrey, RH9 8BP",
+      "description": "Change of use from sui generis veterinarian to sui generis office use for Surrey County Council Highways Depot (this application is determined by Surrey County Council under their ref SCCRef-2026-0092)",
+      "date": "2026-08-12",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/749",
+      "headline": "Godstone Depot Set for Switch from Vet's to Council Offices",
+      "summary": "Surrey County Council wants to change the use of the Godstone Highway Depot on Oxted Road from a veterinary practice to offices for its highways team. The council will decide the application itself under reference SCCRef-2026-0092.",
+      "data": {
+        "reference": "2026/749",
+        "address": "Godstone Highway Depot, Oxted Road, Godstone, Surrey, RH9 8BP",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "d671f7a9b6d1",
+      "title": "2026/281/Cond1: Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
+      "description": "Details pursuant to the discharge of Condition 6 (Biodiversity Gain Plan) and 7 (Habitat Management and Monitoring Plan) of planning permission ref: 2026/281 dated 15/06/2026 (Reconfigure, extend and enclose the existing driving range at Tandridge Golf Club)",
+      "date": "2026-08-12",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/281/Cond1",
+      "headline": "Tandridge Golf Club Sets Out Nature Plans for New Driving Range",
+      "summary": "Tandridge Golf Club on Godstone Road has submitted details on how it will protect and boost local wildlife as part of its approved plan to reconfigure and enclose the driving range. The documents cover biodiversity gains and a long-term plan to manage and monitor habitats on the site.",
+      "data": {
+        "reference": "2026/281/Cond1",
         "address": "Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -57,8 +89,8 @@
       "date": "2026-08-11",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/743/TPO",
-      "headline": "Tree work planned for protected oak in Oxted garden",
-      "summary": "An application has been submitted to prune a red oak in the front garden of 8 Farley Park, Oxted. The plan would reduce the tree's height to 14 metres and lift its crown, as part of routine care for the protected tree.",
+      "headline": "Pruning planned for protected oak in Farley Park garden",
+      "summary": "A tree work application has been submitted for a red oak in the front garden at 8 Farley Park, Oxted. The plans involve a crown reduction of up to 2 metres and lifting the lower branches as part of routine tree management.",
       "data": {
         "reference": "2026/743/TPO",
         "address": "8 Farley Park, Oxted, Surrey, RH8 9HY",
@@ -73,8 +105,8 @@
       "date": "2026-08-11",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/680",
-      "headline": "Garage Conversion and Extensions Planned for Hurst Green Home",
-      "summary": "Plans have been submitted to convert the garage and build single-storey extensions at 4a Orchard Way in Hurst Green. The work also includes external alterations to the property.",
+      "headline": "Garage Conversion and Extension Plans for Hurst Green Home",
+      "summary": "Plans have been submitted to convert the garage and add single-storey extensions at 4a Orchard Way in Hurst Green. The proposal also includes associated external alterations to the property.",
       "data": {
         "reference": "2026/680",
         "address": "4a Orchard Way, Hurst Green, Oxted, Surrey, RH8 9DJ",
@@ -89,8 +121,8 @@
       "date": "2026-08-07",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/726/TPO",
-      "headline": "Limpsfield Pine Branch Set for Removal After Storm Damage",
-      "summary": "A tree application has been made to remove a damaged branch from a protected Corsican pine at Hunters End on Uvedale Road, Limpsfield. The branch has twisted and half-broken, and now hangs over the property.",
+      "headline": "Pine Branch Removal Sought at Limpsfield Home",
+      "summary": "A tree work application has been made for a Corsican pine at Hunters End on Uvedale Road, Limpsfield. The plan is to remove a low branch that has twisted and half-broken, leaving it hanging over the property.",
       "data": {
         "reference": "2026/726/TPO",
         "address": "Hunters End, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
@@ -105,8 +137,8 @@
       "date": "2026-08-07",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1153/Cond2",
-      "headline": "Details Submitted for Self-Build Home on Woodhurst Lane",
-      "summary": "Plans for a single self-build or custom-build house on land south of Stonehamme in Oxted have moved a step forward. The applicant has submitted details on materials, landscaping, highways and lighting to meet conditions set out in the earlier planning permission.",
+      "headline": "Details Filed for New Self-Build Home off Woodhurst Lane",
+      "summary": "Plans for a single self-build home on land south of Stonehamme in Woodhurst Lane, Oxted, have moved a step forward. The latest submission sets out details on materials, landscaping, highways and external lighting to meet conditions on the earlier approval.",
       "data": {
         "reference": "2025/1153/Cond2",
         "address": "Land South Of Stonehamme, Woodhurst Lane, Oxted, Surrey, RH8 9ED",
@@ -121,8 +153,8 @@
       "date": "2026-08-06",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/613",
-      "headline": "Two-storey extension planned for Central Way home",
-      "summary": "Plans have been submitted to demolish the garage at 9 Central Way in Oxted and build single-storey extensions to the front, side and rear. A second-storey rear extension with a pitched roof is also proposed.",
+      "headline": "Two-storey extension plan lodged for Central Way home",
+      "summary": "Plans have been submitted to demolish the garage at 9 Central Way, Oxted, and build single-storey extensions to the front, side and rear. A second-storey rear extension with a pitched roof is also proposed.",
       "data": {
         "reference": "2026/613",
         "address": "9 Central Way, Oxted, Surrey, RH8 0LS",
@@ -138,7 +170,7 @@
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/718",
       "headline": "Loft and Garage Plans Lodged for Limpsfield Home",
-      "summary": "Plans have been submitted for a loft conversion at 20 Stanhopes in Limpsfield, including two rear dormers and three front roof lights. The proposal also covers converting the garage at the property.",
+      "summary": "Plans have been submitted for a loft conversion at 20 Stanhopes in Limpsfield, including two rear dormers and three roof lights to the front. The application, reference 2026/718, also covers a garage conversion at the property.",
       "data": {
         "reference": "2026/718",
         "address": "20 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
@@ -154,7 +186,7 @@
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/572",
       "headline": "Three New Homes Planned for Amy Road in Oxted",
-      "summary": "A planning application has been submitted to demolish the existing buildings at 2a Amy Road and build three new homes. The plans also include parking and landscaping for the site.",
+      "summary": "A planning application has been submitted to demolish the existing buildings at 2a Amy Road, Oxted, and build three new homes in their place. The plans also include parking and landscaping for the site.",
       "data": {
         "reference": "2026/572",
         "address": "2a Amy Road, Oxted, Surrey, RH8 0PX",
@@ -169,8 +201,8 @@
       "date": "2026-08-03",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/436",
-      "headline": "Car port plan for Limpsfield home",
-      "summary": "Plans have been submitted to build a three-bay car port at Scearnbank on Kent Hatch Road, Limpsfield. The new structure would sit on existing hard standing at the property.",
+      "headline": "Car Port Plan for Limpsfield Home",
+      "summary": "Plans have been submitted to build a three-bay car port at Scearnbank on Kent Hatch Road, Limpsfield. The structure would be put up on an existing area of hard standing.",
       "data": {
         "reference": "2026/436",
         "address": "Scearnbank, Kent Hatch Road, Limpsfield, Oxted, Surrey, RH8 0TB",
@@ -185,8 +217,8 @@
       "date": "2026-07-30",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/672",
-      "headline": "Detached garage planned for Hurst Green home",
-      "summary": "A planning application has been submitted for a new detached garage at 1 Roseacre, Hurst Green. The proposal is listed under reference 2026/672.",
+      "headline": "Garage Plan Lodged for Hurst Green Home",
+      "summary": "Plans have been submitted to build a new detached garage at 1 Roseacre in Hurst Green. The application is now with the council under reference 2026/672.",
       "data": {
         "reference": "2026/672",
         "address": "1 Roseacre, Hurst Green, Oxted, Surrey, RH8 9BE",
@@ -201,8 +233,8 @@
       "date": "2026-07-30",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2022/1299/Cond1",
-      "headline": "Details Submitted for Two New Homes on Amy Road",
-      "summary": "Plans for two new houses with parking and landscaping on Amy Road in Oxted have moved a step forward. The applicant has now submitted details on ground levels, tree protection, construction traffic and ecology, as required by earlier planning conditions.",
+      "headline": "New Homes Plan for Amy Road Site Moves Forward",
+      "summary": "Developers have submitted further details for two new homes off Amy Road in Oxted, covering ground levels, tree protection, construction traffic and wildlife improvements. These follow planning permission granted in October 2024 for the houses, parking and landscaping.",
       "data": {
         "reference": "2022/1299/Cond1",
         "address": "Land At Grid Reference 539488 152894, Amy Road, Oxted, Surrey,",
@@ -233,8 +265,8 @@
       "date": "2026-07-28",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1488/Cond1",
-      "headline": "Drainage Plans Submitted for Bluehouse Lane Home Extension",
-      "summary": "The owners of 95 Bluehouse Lane in Limpsfield have submitted details of a surface water drainage scheme for their approved extension work. The plans relate to a condition of planning permission granted in March 2025 for new side and rear extensions.",
+      "headline": "Drainage Plan Submitted for Bluehouse Lane Home Extension",
+      "summary": "The owners of 95 Bluehouse Lane in Limpsfield have submitted details of a surface water drainage scheme for their planned extension. The work involves demolishing existing extensions and building new single-storey side and rear additions, with changes to windows and doors.",
       "data": {
         "reference": "2025/1488/Cond1",
         "address": "95 Bluehouse Lane, Limpsfield, Oxted, Surrey, RH8 0DE",
@@ -249,8 +281,8 @@
       "date": "2026-07-28",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/437",
-      "headline": "Extension Plans Lodged for Godstone Road Home",
-      "summary": "Plans have been submitted to extend a home at 17 Godstone Road in Oxted, including a two-storey side extension, a single-storey rear extension and a new front porch. The existing conservatory would be demolished as part of the work.",
+      "headline": "Extension Plans Lodged for Godstone Road Home in Oxted",
+      "summary": "Plans have been submitted to extend a house at 17 Godstone Road, Oxted, with a two-storey side extension, a single-storey rear extension and a new front porch. The proposal also includes demolishing the existing conservatory.",
       "data": {
         "reference": "2026/437",
         "address": "17 Godstone Road, Oxted, Surrey, RH8 9JS",
@@ -265,26 +297,10 @@
       "date": "2026-07-27",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/589",
-      "headline": "Lawful Development Certificate sought for Limpsfield home extensions",
-      "summary": "The owners of Buxton on Red Lane in Limpsfield have applied for a Lawful Development Certificate for a two-storey rear extension, a single-storey side extension and a double garage outbuilding. The certificate would confirm the proposed works are lawful and do not need full planning permission.",
+      "headline": "Extensions and Garage Planned for Red Lane Home",
+      "summary": "A homeowner at Buxton on Red Lane in Limpsfield has applied for a Lawful Development Certificate for building work. The plans include a two storey rear extension, a single storey side extension and a double garage outbuilding.",
       "data": {
         "reference": "2026/589",
-        "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "bb4bccb78f31",
-      "title": "2026/586: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Lawful Development Certificate (Proposed) Erection of outbuilding be used for purposes incidental to the enjoyment of the dwelling (home gym, home art studio and yoga room).",
-      "date": "2026-07-27",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/586",
-      "headline": "Limpsfield Home Seeks Garden Studio for Gym and Yoga",
-      "summary": "The owners of Buxton on Red Lane in Limpsfield have applied for a Lawful Development Certificate to build an outbuilding in their grounds. The structure would be used as a home gym, art studio and yoga room.",
-      "data": {
-        "reference": "2026/586",
         "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -297,10 +313,26 @@
       "date": "2026-07-27",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/588",
-      "headline": "Garden Workshop Plan Submitted for Red Lane Home",
-      "summary": "A Lawful Development Certificate has been sought for a single storey outbuilding at Buxton on Red Lane, Limpsfield. The owners want to use the building for garden storage and a home workshop.",
+      "headline": "Garden Workshop Plan for Red Lane Home",
+      "summary": "The owners of Buxton on Red Lane in Limpsfield have applied for a Lawful Development Certificate for a single storey outbuilding. It would be used for garden storage and a home workshop.",
       "data": {
         "reference": "2026/588",
+        "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "bb4bccb78f31",
+      "title": "2026/586: Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Lawful Development Certificate (Proposed) Erection of outbuilding be used for purposes incidental to the enjoyment of the dwelling (home gym, home art studio and yoga room).",
+      "date": "2026-07-27",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/586",
+      "headline": "Limpsfield Home Seeks Go-Ahead for Garden Gym and Studio",
+      "summary": "The owners of Buxton on Red Lane in Limpsfield have applied for a Lawful Development Certificate to build an outbuilding in their garden. It would be used as a home gym, art studio and yoga room linked to the main house.",
+      "data": {
+        "reference": "2026/586",
         "address": "Buxton, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -313,8 +345,8 @@
       "date": "2026-07-24",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/601",
-      "headline": "Loft Conversion Planned for Park Road Home in Limpsfield",
-      "summary": "The owners of Calderstones, 59 Park Road, Limpsfield, have applied to convert their loft. They have requested a Certificate of Lawfulness, which confirms the work can go ahead without full planning permission.",
+      "headline": "Loft Conversion Planned for Limpsfield Home",
+      "summary": "The owners of Calderstones at 59 Park Road in Limpsfield have applied for a loft conversion. They are seeking a Certificate of Lawfulness to confirm the work can proceed without full planning permission.",
       "data": {
         "reference": "2026/601",
         "address": "Calderstones, 59 Park Road, Limpsfield, Oxted, Surrey, RH8 0AN",
@@ -329,8 +361,8 @@
       "date": "2026-07-23",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/580",
-      "headline": "Limpsfield home seeks lawful certificate for extension and new building",
-      "summary": "Plans for Woodlands on Grub Street include a rear extension and a new building to serve the house. The shed would be demolished and rebuilt in a new spot, with the owners applying for a lawful development certificate.",
+      "headline": "Limpsfield home seeks certificate for rear extension and new outbuilding",
+      "summary": "Plans have been submitted for a property called Woodlands on Grub Street, Limpsfield. The work includes a rear extension, a new building for use with the house, and the demolition and rebuilding of a shed in a new spot.",
       "data": {
         "reference": "2026/580",
         "address": "Woodlands, Grub Street, Limpsfield, Oxted, Surrey, RH8 0SH",
@@ -345,8 +377,8 @@
       "date": "2026-07-23",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1335",
-      "headline": "Solar Panels Planned for Limpsfield Home",
-      "summary": "A planning application has been submitted for a solar array at Redwood on Westerham Road in Limpsfield. The proposal is listed under reference 2025/1335.",
+      "headline": "Solar Panels Proposed for Limpsfield Home",
+      "summary": "A planning application has been submitted for a solar array at Redwood on Westerham Road, Limpsfield. The proposal, reference 2025/1335, is now with the council for consideration.",
       "data": {
         "reference": "2025/1335",
         "address": "Redwood, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SW",
@@ -361,43 +393,11 @@
       "date": "2026-07-22",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/569",
-      "headline": "Revised plans submitted for Amy Road home extension",
-      "summary": "The owners of 18 Amy Road in Oxted want to change the approved drawings for their extension project, first granted permission in June 2023. The original scheme includes front and rear extensions, a lower ground floor annexe, solar panels and the removal of the existing chimney.",
+      "headline": "Revised Plans Submitted for Amy Road Home Extension",
+      "summary": "The owners of 18 Amy Road in Oxted have applied to change the approved drawings for their extension project, first granted permission in June 2023. The original scheme includes a front extension, a two-storey rear extension, a lower ground floor annexe and solar panels.",
       "data": {
         "reference": "2026/569",
         "address": "18 Amy Road, Oxted, Surrey, RH8 0PX",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "f15731227484",
-      "title": "2026/637/TPO: 35 Padbrook, Limpsfield, Oxted, Surrey, RH8 0DZ",
-      "description": "1 x Oriental Spruce (T4 of TPO) - Fell and replacement tree planting",
-      "date": "2026-07-21",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/637/TPO",
-      "headline": "Protected Limpsfield spruce set to be felled and replaced",
-      "summary": "A planning application has been submitted to fell an Oriental Spruce at 35 Padbrook in Limpsfield. The tree is protected by a Tree Preservation Order, and a replacement tree would be planted.",
-      "data": {
-        "reference": "2026/637/TPO",
-        "address": "35 Padbrook, Limpsfield, Oxted, Surrey, RH8 0DZ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "eee4283ccf60",
-      "title": "2026/590: 23 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
-      "description": "Proposed first floor side single storey front and rear extensions and alterations.",
-      "date": "2026-07-21",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/590",
-      "headline": "Extension Plans Submitted for Stanhopes Home in Limpsfield",
-      "summary": "A planning application has been lodged for a home at 23 Stanhopes, Limpsfield. The proposal covers a first-floor side extension, single-storey front and rear extensions, and other alterations.",
-      "data": {
-        "reference": "2026/590",
-        "address": "23 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
