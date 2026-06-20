@@ -1,6 +1,6 @@
 {
   "source": "courts",
-  "collected_at": "2026-06-19T16:20:02.956117+00:00",
+  "collected_at": "2026-06-20T12:16:35.071675+00:00",
   "items": [
     {
       "id": "70edc1c20393",
@@ -9,8 +9,8 @@
       "date": "2026-03-09",
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2026/547",
-      "headline": "High Court Rules in Council Case Linked to Oxted",
-      "summary": "The High Court has issued a judgement in a case brought by Tandridge District Council against John Brien and others, concerning the Oxted area. The full ruling is available online for residents who wish to read it.",
+      "headline": "High Court Rules in Tandridge Council Case Linked to Oxted",
+      "summary": "The High Court has issued a judgement in a case brought by Tandridge District Council against John Brien and others. The ruling concerns the Oxted area, and the full text is available online.",
       "data": {
         "court": "High Court (King's Bench Division)",
         "citation": "[2026] EWHC 547 (KB)",
@@ -25,8 +25,8 @@
       "date": "2025-12-11",
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ukut/lc/2025/405",
-      "headline": "Tribunal Rules in Tandridge Council Land Case",
-      "summary": "The Upper Tribunal (Lands Chamber) has issued its judgement in a case between Investview Limited and Tandridge District Council. The full ruling, cited as [2025] UKUT 405 (LC), is available to read online.",
+      "headline": "Tribunal Rules in Land Case Involving Tandridge Council",
+      "summary": "The Upper Tribunal (Lands Chamber) has issued a judgement in a case between Investview Limited and Tandridge District Council. The full ruling, cited as [2025] UKUT 405 (LC), is available to read online.",
       "data": {
         "court": "Upper Tribunal (Lands Chamber)",
         "citation": "[2025] UKUT 405 (LC)",
@@ -41,8 +41,8 @@
       "date": "2025-10-20",
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ukut/lc/2025/342",
-      "headline": "Oxted Flat Dispute Reaches Upper Tribunal",
-      "summary": "A property case involving Peter Calnan and Stack House Residents (Oxted) Limited has been decided by the Upper Tribunal (Lands Chamber). The full judgement, listed as [2025] UKUT 342 (LC), is available to read online.",
+      "headline": "Tribunal Rules on Oxted Property Dispute",
+      "summary": "The Upper Tribunal (Lands Chamber) has issued a judgement in the case of Peter Calnan against Stack House Residents (Oxted) Limited. The full ruling, cited as [2025] UKUT 342 (LC), is available to read online via the link.",
       "data": {
         "court": "Upper Tribunal (Lands Chamber)",
         "citation": "[2025] UKUT 342 (LC)",
@@ -57,8 +57,8 @@
       "date": "2016-04-29",
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2016/414",
-      "headline": "Court of Appeal Rules in Oxted Planning Dispute",
-      "summary": "The Court of Appeal has handed down its judgement in a case between Oxted Residential Ltd and Tandridge District Council. The full ruling, listed as [2016] EWCA Civ 414, can be read online via the link.",
+      "headline": "Appeal Court Rules in Oxted Planning Dispute",
+      "summary": "The Court of Appeal has given its judgement in a case between Oxted Residential Ltd and Tandridge District Council. The full ruling, listed as [2016] EWCA Civ 414, can be read in full at the link.",
       "data": {
         "court": "Court of Appeal (Civil Division)",
         "citation": "[2016] EWCA Civ 414",
@@ -74,7 +74,7 @@
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ewhc/admin/2015/1947",
       "headline": "High Court Rules on Tandridge Council Case",
-      "summary": "The Administrative Court has issued a judgement in a case brought against Tandridge Council by Atkins and others. The full ruling, cited as [2015] EWHC 1947 (Admin), can be read in full via the link.",
+      "summary": "The High Court has issued a judgement in a case brought against Tandridge District Council. The full ruling, listed as Atkins and others v Tandridge City Council [2015] EWHC 1947 (Admin), can be read online via the link.",
       "data": {
         "court": "High Court (Administrative Court)",
         "citation": "[2015] EWHC 1947 (Admin)",
