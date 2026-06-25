@@ -1,6 +1,6 @@
 {
   "source": "crime",
-  "collected_at": "2026-06-24T13:55:19.109323+00:00",
+  "collected_at": "2026-06-25T13:38:15.968022+00:00",
   "items": [
     {
       "id": "134621413",
@@ -9,8 +9,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "",
-      "summary": "",
+      "headline": "Anti-Social Behaviour Reported Near Home Park",
+      "summary": "Police are investigating a report of anti-social behaviour on or near Home Park. The matter is currently under investigation, and anyone with information is encouraged to come forward.",
       "data": {
         "category": "anti-social-behaviour",
         "location_type": "Force",
@@ -37,8 +37,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "",
-      "summary": "",
+      "headline": "Police Look Into Anti-Social Behaviour Near Amy Road",
+      "summary": "Anti-social behaviour has been reported on or near Amy Road. Officers are investigating, and the case remains open.",
       "data": {
         "category": "anti-social-behaviour",
         "location_type": "Force",
@@ -65,8 +65,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "",
-      "summary": "",
+      "headline": "Police Investigate Anti-Social Behaviour Near Barnett's Shaw",
+      "summary": "Anti-social behaviour has been reported on or near Barnett's Shaw. The matter is currently under investigation by police.",
       "data": {
         "category": "anti-social-behaviour",
         "location_type": "Force",
@@ -93,8 +93,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "",
-      "summary": "",
+      "headline": "Police Look Into Anti-Social Behaviour Near Acorn Gardens",
+      "summary": "A report of anti-social behaviour has been made on or near Acorn Gardens. Police say the matter is under investigation.",
       "data": {
         "category": "anti-social-behaviour",
         "location_type": "Force",
@@ -122,7 +122,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Police Investigate Anti-Social Behaviour Near Springfield",
-      "summary": "Anti-social behaviour has been reported on or near Springfield. Officers say the matter is under investigation.",
+      "summary": "A report of anti-social behaviour on or near Springfield is being looked into by police. The matter is currently under investigation.",
       "data": {
         "category": "anti-social-behaviour",
         "location_type": "Force",
@@ -149,8 +149,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Anti-Social Behaviour Reported Near Hoskins Road",
-      "summary": "Police are investigating a report of anti-social behaviour on or near Hoskins Road in Oxted. The case remains under investigation, and anyone with information is encouraged to contact the police.",
+      "headline": "Police Investigate Anti-Social Behaviour Near Hoskins Road",
+      "summary": "A report of anti-social behaviour on or near Hoskins Road is being looked into by police. The matter is currently under investigation.",
       "data": {
         "category": "anti-social-behaviour",
         "location_type": "Force",
@@ -177,8 +177,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Anti-Social Behaviour Reported Near Bushey Croft",
-      "summary": "Police are investigating a report of anti-social behaviour on or near Bushey Croft. The matter is currently under investigation, and anyone with information is encouraged to contact officers.",
+      "headline": "Police Investigate Anti-Social Behaviour Near Bushey Croft",
+      "summary": "Anti-social behaviour has been reported on or near Bushey Croft. Police say the matter is under investigation.",
       "data": {
         "category": "anti-social-behaviour",
         "location_type": "Force",
@@ -205,8 +205,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Arson Investigation on Titsey Road Closes Without Suspect",
-      "summary": "Police investigated a report of arson on or near Titsey Road. The case is now complete, with no suspect identified.",
+      "headline": "Arson Inquiry on Titsey Road Closes With No Suspect",
+      "summary": "Police investigated a report of arson on or near Titsey Road. The inquiry is now complete, and no suspect has been identified.",
       "data": {
         "category": "criminal-damage-arson",
         "location_type": "Force",
@@ -236,8 +236,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Arson Investigation on Titsey Road Closes Without Suspect",
-      "summary": "Police investigated a report of criminal damage by arson on or near Titsey Road. The inquiry has now ended, with no suspect identified.",
+      "headline": "Arson Investigation on Titsey Road Closed Without Suspect",
+      "summary": "Police investigated a report of criminal damage by arson on or near Titsey Road. The investigation has now finished, but no suspect was identified.",
       "data": {
         "category": "criminal-damage-arson",
         "location_type": "Force",
@@ -267,8 +267,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "",
-      "summary": "",
+      "headline": "Drugs Reported Near Church Lane",
+      "summary": "Police are investigating a report of drugs on or near Church Lane. The matter remains under investigation, and no further details have been released.",
       "data": {
         "category": "drugs",
         "location_type": "Force",
@@ -298,8 +298,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Theft Reported Near High Street, No Suspect Found",
-      "summary": "A theft was reported on or near the High Street. Police have completed their investigation, but no suspect was identified.",
+      "headline": "Theft Reported Near Oxted High Street",
+      "summary": "A theft was reported on or near the High Street. Police have completed their investigation, but no suspect has been identified.",
       "data": {
         "category": "other-theft",
         "location_type": "Force",
@@ -329,8 +329,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Theft Reported Near Local Parking Area",
-      "summary": "Police investigated a theft reported on or near a parking area. The case is now closed as no suspect was identified.",
+      "headline": "Theft Reported Near Local Car Park",
+      "summary": "Police investigated a theft that took place on or near a parking area. The investigation has now finished, and no suspect was identified.",
       "data": {
         "category": "other-theft",
         "location_type": "Force",
@@ -361,7 +361,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Theft Reported Near Local Petrol Station",
-      "summary": "Police are investigating a theft reported on or near a petrol station. The case remains under investigation, and anyone with information is asked to contact officers.",
+      "summary": "Police are investigating a theft that took place on or near a petrol station. The case remains under investigation, and anyone with information is asked to contact officers.",
       "data": {
         "category": "other-theft",
         "location_type": "Force",
@@ -392,7 +392,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Theft Reported Near Churchill Gardens",
-      "summary": "A theft has been reported on or near Churchill Gardens. The investigation is now complete, but no suspect was identified.",
+      "summary": "A theft was reported on or near Churchill Gardens. Police have completed their investigation but no suspect was identified.",
       "data": {
         "category": "other-theft",
         "location_type": "Force",
@@ -422,8 +422,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Weapon Possession Reported Near Local Open Space",
-      "summary": "Police are investigating a report of weapon possession on or near a park or open space in the area. The matter remains under investigation, and no further details have been released.",
+      "headline": "Weapons Possession Reported Near Local Open Space",
+      "summary": "Police are investigating a report of weapons possession on or near a park or open space in the area. The matter is currently under investigation, and no further details have been released.",
       "data": {
         "category": "possession-of-weapons",
         "location_type": "Force",
@@ -453,8 +453,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Police Investigate Public Order Incident on Station Road East",
-      "summary": "A public order incident has been reported on or near Station Road East. Police say the matter is currently under investigation.",
+      "headline": "Police Investigate Public Order Report on Station Road East",
+      "summary": "Police are looking into a public order incident reported on or near Station Road East. The matter is currently under investigation.",
       "data": {
         "category": "public-order",
         "location_type": "Force",
@@ -485,7 +485,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Public Order Incident Reported in Oxted",
-      "summary": "Police received a report of a public order offence in the Oxted area. A suspect was identified, but the case could not be taken forward to prosecution.",
+      "summary": "Police looked into a public order report in the Oxted area. A suspect was identified, but officers were unable to take the case to prosecution.",
       "data": {
         "category": "public-order",
         "location_type": "Force",
@@ -515,8 +515,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "",
-      "summary": "",
+      "headline": "Public Order Incident Reported Near Station Approach",
+      "summary": "Police are investigating a public order incident on or near Station Approach. The case remains under investigation, and no further details have been released.",
       "data": {
         "category": "public-order",
         "location_type": "Force",
@@ -547,7 +547,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Robbery Reported Near Station Approach",
-      "summary": "Police are investigating a robbery on or near Station Approach. The case remains under investigation, and no further details have been released.",
+      "summary": "A robbery has been reported on or near Station Approach in Oxted. Police are investigating the incident.",
       "data": {
         "category": "robbery",
         "location_type": "Force",
@@ -578,7 +578,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Shoplifting Reported Near Amy Road",
-      "summary": "Police are investigating a shoplifting incident on or near Amy Road. The case remains under investigation.",
+      "summary": "Police are investigating a report of shoplifting on or near Amy Road. The case remains under investigation.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -609,7 +609,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Shoplifting Reported Near Station Approach",
-      "summary": "Police are looking into a shoplifting incident on or near Station Approach. The matter is currently under investigation.",
+      "summary": "Police are investigating a shoplifting incident on or near Station Approach. The case remains under investigation.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -640,7 +640,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Shoplifting Reported Near Station Approach",
-      "summary": "Police are investigating a shoplifting incident on or near Station Approach. Officers say the matter remains under investigation.",
+      "summary": "Police are investigating a shoplifting incident on or near Station Approach. The case remains under investigation, and no further details have been released.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -671,7 +671,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Police Investigate Shoplifting at Local Supermarket",
-      "summary": "A shoplifting incident has been reported on or near a supermarket in the area. Police say the matter is under investigation.",
+      "summary": "Police are investigating a report of shoplifting at or near a supermarket in the area. The case remains under investigation, and anyone with information is encouraged to come forward.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -702,7 +702,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Shoplifting Reported Near Amy Road",
-      "summary": "Police are investigating a shoplifting incident reported on or near Amy Road. The case remains under investigation, and anyone with information is urged to contact officers.",
+      "summary": "Police are investigating a shoplifting incident reported on or near Amy Road. The matter remains under investigation.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -733,7 +733,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Shoplifting Reported Near Station Approach",
-      "summary": "Police are looking into a shoplifting incident on or near Station Approach. The matter is currently under investigation.",
+      "summary": "Police are investigating a shoplifting incident on or near Station Approach. The matter remains under investigation, and no further details have been released.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -764,7 +764,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Shoplifting Reported Near Local Petrol Station",
-      "summary": "Police are investigating a shoplifting incident reported on or near a petrol station in the area. The case remains under investigation, and anyone with information is encouraged to contact officers.",
+      "summary": "Police are investigating a shoplifting incident reported on or near a petrol station. Officers say the matter remains under investigation.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -794,8 +794,8 @@
       "date": "2026-04",
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
-      "headline": "Shoplifting Reported Near Amy Road",
-      "summary": "Police are investigating a shoplifting incident reported on or near Amy Road. The matter remains under investigation, and anyone with information is encouraged to contact officers.",
+      "headline": "Police Investigate Shoplifting Near Amy Road",
+      "summary": "A shoplifting incident has been reported on or near Amy Road. The case is currently under investigation.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -826,7 +826,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Shoplifting Reported Near Station Approach",
-      "summary": "Police investigated a shoplifting incident on or near Station Approach. The investigation is now complete, but no suspect was identified.",
+      "summary": "Police investigated a shoplifting incident on or near Station Approach. The investigation is now complete, and no suspect was identified.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -857,7 +857,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Shoplifting Reported Near Station Road East",
-      "summary": "Police investigated a shoplifting incident on or near Station Road East. The investigation is now complete, but no suspect was identified.",
+      "summary": "Police investigated a shoplifting incident on or near Station Road East. The inquiry has now ended, with no suspect identified.",
       "data": {
         "category": "shoplifting",
         "location_type": "Force",
@@ -888,7 +888,7 @@
       "category": "crime",
       "url": "https://www.police.uk/pu/your-area/surrey-police/",
       "headline": "Theft Reported Near Gresham Road",
-      "summary": "Police were told about a theft from a person on or near Gresham Road. The investigation has now finished, and no suspect was identified.",
+      "summary": "Police investigated a theft from a person on or near Gresham Road. The inquiry is now complete, and no suspect was identified.",
       "data": {
         "category": "theft-from-the-person",
         "location_type": "Force",
