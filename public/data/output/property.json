@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-07-04T11:13:32.988180+00:00",
+  "collected_at": "2026-07-05T11:22:15.084947+00:00",
   "items": [
     {
       "id": "43956a65796a",
@@ -9,8 +9,8 @@
       "date": "2026-05-18",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Greenacres Terraced Home Sells for \u00a3406,500",
-      "summary": "A terraced house at 53 Greenacres, RH8 0PA, has sold for \u00a3406,500. The sale went through on 18 May 2026.",
+      "headline": "Terraced Home in Greenacres Sells for \u00a3406,500",
+      "summary": "A terraced house at 53 Greenacres, RH8 0PA, has been sold for \u00a3406,500. The sale was completed on 18 May 2026.",
       "data": {
         "amount": 406500,
         "category": "Terraced",
@@ -24,8 +24,8 @@
       "date": "2026-05-12",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Tandridge Lane Semi Sells for \u00a3430,000",
-      "summary": "A semi-detached property at 11 Dean Shaw Cottages, Tandridge Lane, sold for \u00a3430,000. The sale was completed on 12 May 2026.",
+      "headline": "Tandridge Lane semi sells for \u00a3430,000",
+      "summary": "A semi-detached home at 11 Dean Shaw Cottages, Tandridge Lane, RH8 9NN, has been sold for \u00a3430,000. The sale was completed on 12 May 2026.",
       "data": {
         "amount": 430000,
         "category": "Semi-detached",
@@ -39,8 +39,8 @@
       "date": "2026-05-01",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Church Lane flat sells for \u00a3380,000",
-      "summary": "A flat at Flat 8 Langley House on Church Lane has been sold for \u00a3380,000. The sale went through on 1 May 2026.",
+      "headline": "Church Lane Flat Sells for \u00a3380,000",
+      "summary": "A flat at Flat 8 Langley House on Church Lane has sold for \u00a3380,000. The sale went through on 1 May 2026.",
       "data": {
         "amount": 380000,
         "category": "Flat",
@@ -55,7 +55,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Gordons Way Semi Sells for \u00a3595,000",
-      "summary": "A semi-detached house at 29 Gordons Way, RH8 0NA, has sold for \u00a3595,000. The sale was completed on 30 April 2026.",
+      "summary": "A semi-detached home at 29 Gordons Way, RH8 0NA, has been sold for \u00a3595,000. The sale was completed on 30 April 2026.",
       "data": {
         "amount": 595000,
         "category": "Semi-detached",
@@ -70,7 +70,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Detached Home on Central Way Sells for \u00a3610,000",
-      "summary": "A detached property at 9 Central Way, RH8 0LS, changed hands on 22 April 2026. The sale price was \u00a3610,000.",
+      "summary": "A detached house at 9 Central Way, RH8 0LS, has sold for \u00a3610,000. The sale was completed on 22 April 2026.",
       "data": {
         "amount": 610000,
         "category": "Detached",
@@ -84,8 +84,8 @@
       "date": "2026-04-16",
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "Chalkpit Lane home sells for \u00a3950,000",
-      "summary": "A detached property at 13 Chalkpit Lane, RH8 0NF, has sold for \u00a3950,000. The sale went through on 16 April 2026.",
+      "headline": "Chalkpit Lane Home Sells for \u00a3950,000",
+      "summary": "A detached house at 13 Chalkpit Lane, RH8 0NF, sold for \u00a3950,000 on 16 April 2026. The sale adds to recent property activity in the Oxted area.",
       "data": {
         "amount": 950000,
         "category": "Detached",
@@ -100,7 +100,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Gordons Way Semi Sells for \u00a3852,500",
-      "summary": "A semi-detached house at 25 Gordons Way, RH8 0NA, sold for \u00a3852,500 on 16 April 2026. The sale adds to recent property activity in the Oxted area.",
+      "summary": "A semi-detached home at 25 Gordons Way, RH8 0NA, has sold for \u00a3852,500. The sale was completed on 16 April 2026.",
       "data": {
         "amount": 852500,
         "category": "Semi-detached",
@@ -115,7 +115,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "High Street Semi Sells for \u00a3275,000",
-      "summary": "A semi-detached home at Low Cottage, 2A High Street, RH8 9LP, has sold for \u00a3275,000. The sale was completed on 15 April 2026.",
+      "summary": "A semi-detached property at Low Cottage, 2A High Street, RH8 9LP has been sold for \u00a3275,000. The sale was completed on 15 April 2026.",
       "data": {
         "amount": 275000,
         "category": "Semi-detached",
@@ -130,7 +130,7 @@
       "category": "property",
       "url": "https://landregistry.data.gov.uk/app/ppd",
       "headline": "Detached Home on Padbrook Sells for \u00a3815,000",
-      "summary": "A detached property at 40 Padbrook, RH8 0DZ, has been sold for \u00a3815,000. The sale was completed on 7 April 2026.",
+      "summary": "A detached property at 40 Padbrook, RH8 0DZ, has been sold for \u00a3815,000. The sale went through on 7 April 2026.",
       "data": {
         "amount": 815000,
         "category": "Detached",
