@@ -1,6 +1,6 @@
 {
   "source": "courts",
-  "collected_at": "2026-07-15T07:53:14.280506+00:00",
+  "collected_at": "2026-07-16T07:58:38.628629+00:00",
   "items": [
     {
       "id": "70edc1c20393",
@@ -9,7 +9,7 @@
       "date": "2026-03-09",
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2026/547",
-      "headline": "High Court Rules in Council Case Linked to Oxted",
+      "headline": "High Court Rules in Council Case Affecting Oxted",
       "summary": "The High Court has issued a judgement in a case brought by Tandridge District Council against John Brien and others, concerning the Oxted area. The full ruling, cited as [2026] EWHC 547 (KB), is available to read online.",
       "data": {
         "court": "High Court (King's Bench Division)",
@@ -25,8 +25,8 @@
       "date": "2025-12-11",
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ukut/lc/2025/405",
-      "headline": "Tribunal Rules in Land Dispute Involving Tandridge Council",
-      "summary": "The Upper Tribunal (Lands Chamber) has issued a judgement in a case between Investview Limited and Tandridge District Council. The full ruling, cited as [2025] UKUT 405 (LC), is available to read online via the link.",
+      "headline": "Tribunal Rules on Tandridge Council Land Case",
+      "summary": "The Upper Tribunal (Lands Chamber) has issued a judgement in a case between Investview Limited and Tandridge District Council. The full ruling, cited as [2025] UKUT 405 (LC), is available to read online.",
       "data": {
         "court": "Upper Tribunal (Lands Chamber)",
         "citation": "[2025] UKUT 405 (LC)",
@@ -41,7 +41,7 @@
       "date": "2025-10-20",
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ukut/lc/2025/342",
-      "headline": "Oxted Residents' Company in Tribunal Ruling",
+      "headline": "Tribunal Rules in Oxted Property Dispute",
       "summary": "The Upper Tribunal (Lands Chamber) has issued a judgement in a case between Peter Calnan and Stack House Residents (Oxted) Limited. The full ruling, cited as [2025] UKUT 342 (LC), is available to read online.",
       "data": {
         "court": "Upper Tribunal (Lands Chamber)",
@@ -57,8 +57,8 @@
       "date": "2016-04-29",
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2016/414",
-      "headline": "Court of Appeal Rules in Oxted Planning Dispute",
-      "summary": "The Court of Appeal has handed down its judgement in a case between Oxted Residential Ltd and Tandridge District Council. The full ruling, cited as [2016] EWCA Civ 414, is available to read online.",
+      "headline": "Court of Appeal Rules on Oxted Development Case",
+      "summary": "The Court of Appeal has issued a judgement in a case between Oxted Residential Ltd and Tandridge District Council. The full ruling, cited as [2016] EWCA Civ 414, is available to read online via the link.",
       "data": {
         "court": "Court of Appeal (Civil Division)",
         "citation": "[2016] EWCA Civ 414",
@@ -73,8 +73,8 @@
       "date": "2015-07-09",
       "category": "courts",
       "url": "https://caselaw.nationalarchives.gov.uk/ewhc/admin/2015/1947",
-      "headline": "High Court Ruling Involves Tandridge Council",
-      "summary": "The High Court has issued a judgement in a case involving Tandridge District Council. The full ruling, cited as [2015] EWHC 1947 (Admin), is available to read online via the link.",
+      "headline": "High Court Rules on Tandridge Council Case",
+      "summary": "The High Court has issued a judgement in a case brought by local residents against Tandridge Council. The full ruling, cited as [2015] EWHC 1947 (Admin), is available to read online.",
       "data": {
         "court": "High Court (Administrative Court)",
         "citation": "[2015] EWHC 1947 (Admin)",
