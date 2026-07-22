@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-07-21T08:10:53.817266+00:00",
+  "collected_at": "2026-07-22T08:11:09.022871+00:00",
   "items": [
     {
       "id": "c67c284b3326",
@@ -259,6 +259,22 @@
       }
     },
     {
+      "id": "03807b30f334",
+      "title": "2025/597/NMA1: Court Langley, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0ED",
+      "description": "Non material amendment to planning permission 2025/597 (Erection of porch and first floor side extension) to allow amendment of the architectural detailing to the porch and the dormer windows to the side extension",
+      "date": "2026-08-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/597/NMA1",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2025/597/NMA1",
+        "address": "Court Langley, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0ED",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "7aecbbb1a658",
       "title": "2026/767: Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
       "description": "Use of site as Equestrian use. (Certificate of lawfulness for an existing use or development)",
@@ -275,22 +291,6 @@
       }
     },
     {
-      "id": "54c9f1fb520f",
-      "title": "2026/661: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
-      "description": "Conversion of garage to a habitable space (Listed Building Consent)",
-      "date": "2026-08-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/661",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/661",
-        "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "99544bc5289d",
       "title": "2026/641: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
       "description": "Conversion of garage to a habitable space",
@@ -301,6 +301,22 @@
       "summary": "",
       "data": {
         "reference": "2026/641",
+        "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "54c9f1fb520f",
+      "title": "2026/661: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
+      "description": "Conversion of garage to a habitable space (Listed Building Consent)",
+      "date": "2026-08-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/661",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/661",
         "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/743/TPO",
         "address": "8 Farley Park, Oxted, Surrey, RH8 9HY",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "a43a708fb663",
-      "title": "2026/680: 4a Orchard Way, Hurst Green, Oxted, Surrey, RH8 9DJ",
-      "description": "Garage conversion, erection of single-storey extensions and associated external alterations.",
-      "date": "2026-08-11",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/680",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/680",
-        "address": "4a Orchard Way, Hurst Green, Oxted, Surrey, RH8 9DJ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
