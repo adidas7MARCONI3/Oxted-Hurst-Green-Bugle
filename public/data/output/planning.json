@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-07-22T08:11:09.022871+00:00",
+  "collected_at": "2026-07-23T08:14:47.978688+00:00",
   "items": [
     {
       "id": "c67c284b3326",
@@ -14,6 +14,22 @@
       "data": {
         "reference": "2026/551",
         "address": "9 Boulthurst Way, Hurst Green, Oxted, Surrey, RH8 0HT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "ab47749db21c",
+      "title": "2026/729: Old School House, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RS",
+      "description": "Variation of Condition 2 (Approved drawings) of planning permission ref: 2024/102 dated 11/04/2024 (Conversion of existing garage to form home office) to allow replacement of windows with glazed doors",
+      "date": "2026-09-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/729",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/729",
+        "address": "Old School House, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -355,22 +371,6 @@
       }
     },
     {
-      "id": "d671f7a9b6d1",
-      "title": "2026/281/Cond1: Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
-      "description": "Details pursuant to the discharge of Condition 6 (Biodiversity Gain Plan) and 7 (Habitat Management and Monitoring Plan) of planning permission ref: 2026/281 dated 15/06/2026 (Reconfigure, extend and enclose the existing driving range at Tandridge Golf Club)",
-      "date": "2026-08-12",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/281/Cond1",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/281/Cond1",
-        "address": "Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "67701372351f",
       "title": "2026/749: Godstone Highway Depot, Oxted Road, Godstone, Surrey, RH9 8BP",
       "description": "Change of use from sui generis veterinarian to sui generis office use for Surrey County Council Highways Depot (this application is determined by Surrey County Council under their ref SCCRef-2026-0092)",
@@ -387,17 +387,17 @@
       }
     },
     {
-      "id": "8209726fe1bd",
-      "title": "2026/743/TPO: 8 Farley Park, Oxted, Surrey, RH8 9HY",
-      "description": "Please refer to photos provided: \r\nT1) - Red Oak on right-hand side of front garden - To crown reduce to previous points, removing up to 2m growth to a residual height of 14m and crown spread of 11m. Crown lifted to 5m from ground level over road and 2.5m over garden / driveway. Removing limbs <10cm dia. Repeat pruning for good arboricultural management.",
-      "date": "2026-08-11",
+      "id": "d671f7a9b6d1",
+      "title": "2026/281/Cond1: Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
+      "description": "Details pursuant to the discharge of Condition 6 (Biodiversity Gain Plan) and 7 (Habitat Management and Monitoring Plan) of planning permission ref: 2026/281 dated 15/06/2026 (Reconfigure, extend and enclose the existing driving range at Tandridge Golf Club)",
+      "date": "2026-08-12",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/743/TPO",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/281/Cond1",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/743/TPO",
-        "address": "8 Farley Park, Oxted, Surrey, RH8 9HY",
+        "reference": "2026/281/Cond1",
+        "address": "Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
