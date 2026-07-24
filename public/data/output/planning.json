@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-07-23T08:14:47.978688+00:00",
+  "collected_at": "2026-07-24T08:10:54.814022+00:00",
   "items": [
     {
       "id": "c67c284b3326",
@@ -14,6 +14,22 @@
       "data": {
         "reference": "2026/551",
         "address": "9 Boulthurst Way, Hurst Green, Oxted, Surrey, RH8 0HT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "392b39b68477",
+      "title": "2026/798: Finmere, 4 Parklands, Oxted, Surrey, RH8 9DP",
+      "description": "Erection of side garage extension and new front roof extension to form a front porch. Conversion of existing garage to habitable accommodation",
+      "date": "2026-09-15",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/798",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/798",
+        "address": "Finmere, 4 Parklands, Oxted, Surrey, RH8 9DP",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -307,22 +323,6 @@
       }
     },
     {
-      "id": "99544bc5289d",
-      "title": "2026/641: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
-      "description": "Conversion of garage to a habitable space",
-      "date": "2026-08-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/641",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/641",
-        "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "54c9f1fb520f",
       "title": "2026/661: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
       "description": "Conversion of garage to a habitable space (Listed Building Consent)",
@@ -333,6 +333,22 @@
       "summary": "",
       "data": {
         "reference": "2026/661",
+        "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "99544bc5289d",
+      "title": "2026/641: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
+      "description": "Conversion of garage to a habitable space",
+      "date": "2026-08-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/641",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/641",
         "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/749",
         "address": "Godstone Highway Depot, Oxted Road, Godstone, Surrey, RH9 8BP",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "d671f7a9b6d1",
-      "title": "2026/281/Cond1: Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
-      "description": "Details pursuant to the discharge of Condition 6 (Biodiversity Gain Plan) and 7 (Habitat Management and Monitoring Plan) of planning permission ref: 2026/281 dated 15/06/2026 (Reconfigure, extend and enclose the existing driving range at Tandridge Golf Club)",
-      "date": "2026-08-12",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/281/Cond1",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/281/Cond1",
-        "address": "Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
