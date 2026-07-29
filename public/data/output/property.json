@@ -1,7 +1,142 @@
 {
   "source": "property",
-  "collected_at": "2026-07-28T08:18:55.668507+00:00",
+  "collected_at": "2026-07-29T08:24:51.083823+00:00",
   "items": [
+    {
+      "id": "983ec1482347",
+      "title": "Semi-detached, 25 Snatts Hill \u2014 \u00a3875,000",
+      "description": "A semi-detached property at 25 Snatts Hill, RH8 0BL sold for \u00a3875,000 on 2026-06-16.",
+      "date": "2026-06-16",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 875000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0BL"
+      }
+    },
+    {
+      "id": "c3a7bd51660b",
+      "title": "Semi-detached, 86 Home Park \u2014 \u00a3435,000",
+      "description": "A semi-detached property at 86 Home Park, RH8 0JX sold for \u00a3435,000 on 2026-06-10.",
+      "date": "2026-06-10",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 435000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0JX"
+      }
+    },
+    {
+      "id": "80d499377252",
+      "title": "Semi-detached, 10 Godstone Road \u2014 \u00a3360,000",
+      "description": "A semi-detached property at 10 Godstone Road, RH8 9JT sold for \u00a3360,000 on 2026-06-08.",
+      "date": "2026-06-08",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 360000,
+        "category": "Semi-detached",
+        "postcode": "RH8 9JT"
+      }
+    },
+    {
+      "id": "2ed6028b37d4",
+      "title": "Flat, 35 Master Close \u2014 \u00a3349,000",
+      "description": "A flat property at 35 Master Close, RH8 9NA sold for \u00a3349,000 on 2026-06-05.",
+      "date": "2026-06-05",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 349000,
+        "category": "Flat",
+        "postcode": "RH8 9NA"
+      }
+    },
+    {
+      "id": "a0383119a721",
+      "title": "Terraced, 9 Field Court \u2014 \u00a3430,000",
+      "description": "A terraced property at 9 Field Court, RH8 0PD sold for \u00a3430,000 on 2026-06-05.",
+      "date": "2026-06-05",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 430000,
+        "category": "Terraced",
+        "postcode": "RH8 0PD"
+      }
+    },
+    {
+      "id": "27906fd25f41",
+      "title": "Flat, Flat 18 Beatrice Lodge Beatrice Road \u2014 \u00a3215,000",
+      "description": "A flat property at Flat 18 Beatrice Lodge Beatrice Road, RH8 0QH sold for \u00a3215,000 on 2026-06-05.",
+      "date": "2026-06-05",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 215000,
+        "category": "Flat",
+        "postcode": "RH8 0QH"
+      }
+    },
+    {
+      "id": "18b776f15ed9",
+      "title": "Terraced, 3 Diamond Cottages \u2014 \u00a3435,000",
+      "description": "A terraced property at 3 Diamond Cottages, RH8 9BQ sold for \u00a3435,000 on 2026-06-04.",
+      "date": "2026-06-04",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 435000,
+        "category": "Terraced",
+        "postcode": "RH8 9BQ"
+      }
+    },
+    {
+      "id": "2b4f12de7d7d",
+      "title": "Terraced, 59 Holland Road \u2014 \u00a3438,000",
+      "description": "A terraced property at 59 Holland Road, RH8 9AU sold for \u00a3438,000 on 2026-05-29.",
+      "date": "2026-05-29",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 438000,
+        "category": "Terraced",
+        "postcode": "RH8 9AU"
+      }
+    },
+    {
+      "id": "c7c7e7cce695",
+      "title": "Flat, 22 Barnetts Shaw \u2014 \u00a3240,000",
+      "description": "A flat property at 22 Barnetts Shaw, RH8 0NT sold for \u00a3240,000 on 2026-05-29.",
+      "date": "2026-05-29",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 240000,
+        "category": "Flat",
+        "postcode": "RH8 0NT"
+      }
+    },
     {
       "id": "43956a65796a",
       "title": "Terraced, 53 Greenacres \u2014 \u00a3406,500",
