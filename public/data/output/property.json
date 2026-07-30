@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-07-29T08:24:51.083823+00:00",
+  "collected_at": "2026-07-30T08:10:35.350617+00:00",
   "items": [
     {
       "id": "983ec1482347",
@@ -180,21 +180,6 @@
         "amount": 380000,
         "category": "Flat",
         "postcode": "RH8 9LH"
-      }
-    },
-    {
-      "id": "db3843be45e8",
-      "title": "Semi-detached, 29 Gordons Way \u2014 \u00a3595,000",
-      "description": "A semi-detached property at 29 Gordons Way, RH8 0NA sold for \u00a3595,000 on 2026-04-30.",
-      "date": "2026-04-30",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 595000,
-        "category": "Semi-detached",
-        "postcode": "RH8 0NA"
       }
     }
   ]

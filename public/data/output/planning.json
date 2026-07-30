@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-07-29T08:24:23.197759+00:00",
+  "collected_at": "2026-07-30T08:10:00.055228+00:00",
   "items": [
+    {
+      "id": "5b80a3b1a23c",
+      "title": "2026/863: 68 Granville Road,Limpsfield,Oxted,Rh8 0bz, Limpsfield, Oxted, Surrey, RH8 0BZ",
+      "description": "Replacement of existing garage door with UPVC window and brick up remaining double skin wall in association with conversion of garage to habitable accommodation (Certificate of Lawfulness (Proposed))",
+      "date": "2026-09-22",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/863",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/863",
+        "address": "68 Granville Road,Limpsfield,Oxted,Rh8 0bz, Limpsfield, Oxted, Surrey, RH8 0BZ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "c67c284b3326",
       "title": "2026/551: 9 Boulthurst Way, Hurst Green, Oxted, Surrey, RH8 0HT",
@@ -174,6 +190,22 @@
       "data": {
         "reference": "2026/436",
         "address": "Scearnbank, Kent Hatch Road, Limpsfield, Oxted, Surrey, RH8 0TB",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "c728d0200ea4",
+      "title": "2026/396: Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
+      "description": "Demolition of existing buildings to provide 6 padel courts (3 under cover) and conversion of existing buildings to provide new club house and member facilities together with parking and landscaping",
+      "date": "2026-08-28",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/396",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/396",
+        "address": "Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/767",
         "address": "Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "54c9f1fb520f",
-      "title": "2026/661: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
-      "description": "Conversion of garage to a habitable space (Listed Building Consent)",
-      "date": "2026-08-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/661",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/661",
-        "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "99544bc5289d",
-      "title": "2026/641: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
-      "description": "Conversion of garage to a habitable space",
-      "date": "2026-08-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/641",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/641",
-        "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
