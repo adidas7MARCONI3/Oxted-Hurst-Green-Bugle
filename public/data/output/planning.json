@@ -1,7 +1,39 @@
 {
   "source": "planning",
-  "collected_at": "2026-07-30T08:10:00.055228+00:00",
+  "collected_at": "2026-07-31T08:37:21.284709+00:00",
   "items": [
+    {
+      "id": "0ff3d160edca",
+      "title": "2026/745: 115 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HH",
+      "description": "Erection of double storey front and side extension, single storey rear extension, loft conversion and dormer",
+      "date": "2026-09-24",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/745",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/745",
+        "address": "115 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HH",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "0da35615cdd9",
+      "title": "2025/1476/Cond1: Pastens, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RD",
+      "description": "Details pursuant to  Condition 3 (Demolition/Site Clearance Management Plan ) of planning permission ref: 2025/1476 dated 22/06/2026 (Demolition of the existing buildings on the site. Erection of 2no detached houses with associated parking and landscaping)",
+      "date": "2026-09-22",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1476/Cond1",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2025/1476/Cond1",
+        "address": "Pastens, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RD",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "5b80a3b1a23c",
       "title": "2026/863: 68 Granville Road,Limpsfield,Oxted,Rh8 0bz, Limpsfield, Oxted, Surrey, RH8 0BZ",
@@ -14,6 +46,38 @@
       "data": {
         "reference": "2026/863",
         "address": "68 Granville Road,Limpsfield,Oxted,Rh8 0bz, Limpsfield, Oxted, Surrey, RH8 0BZ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "9354bc5358d1",
+      "title": "2026/818: 26 Park Road, Limpsfield, Oxted, Surrey, RH8 0AW",
+      "description": "Variation of Condition 2 (Drawings) of planning permission ref: 2024/691 dated 11/9/2024 (Erection of single storey rear extension, single storey side garage extension) to allow The side garage to be extended by 1.0 metre into the rear garden, and roofline to rear garden adjusted accordingly to improve garage size for storage in addition to a single family car.",
+      "date": "2026-09-22",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/818",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/818",
+        "address": "26 Park Road, Limpsfield, Oxted, Surrey, RH8 0AW",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "4ef4299d8234",
+      "title": "2020/690/Cond13: Land Off Oxted Road (A25), Oxted",
+      "description": "Details pursuant to Condition 6 (Drainage) of planning permission ref: 2020/690 dated 30/09/2021 (Erection of crematorium facility with associated memorial areas, landscaping, parking and infrastructure)",
+      "date": "2026-09-21",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2020/690/Cond13",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2020/690/Cond13",
+        "address": "Land Off Oxted Road (A25), Oxted",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -334,70 +398,6 @@
       "data": {
         "reference": "2026/734",
         "address": "Orchard Cottage, 20 Beadles Lane, Oxted, Surrey, RH8 9JJ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "9858824573a9",
-      "title": "2026/681: 16 Peter Avenue, Oxted, Surrey, RH8 9LG",
-      "description": "Demolition of conservatory, erection of a single storey front and rear extension with associated landscaping alterations.",
-      "date": "2026-08-19",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/681",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/681",
-        "address": "16 Peter Avenue, Oxted, Surrey, RH8 9LG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "67647a42c37e",
-      "title": "2026/759/NH: Friars Wood, 11 Wheeler Avenue, Oxted, Surrey, RH8 9LF",
-      "description": "Erection of single storey rear extension which would extend beyond the rear wall of the original house by 4.46 metres, for which the maximum height would be 4.00 metres, and for which the height of the eaves would be 3.21 metres. (Larger Home Extension) (General Permitted Development) (England) Order 2015 (as amended) - Schedule 2, Part 1, Class A)",
-      "date": "2026-08-17",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/759/NH",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/759/NH",
-        "address": "Friars Wood, 11 Wheeler Avenue, Oxted, Surrey, RH8 9LF",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "03807b30f334",
-      "title": "2025/597/NMA1: Court Langley, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0ED",
-      "description": "Non material amendment to planning permission 2025/597 (Erection of porch and first floor side extension) to allow amendment of the architectural detailing to the porch and the dormer windows to the side extension",
-      "date": "2026-08-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/597/NMA1",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2025/597/NMA1",
-        "address": "Court Langley, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0ED",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "7aecbbb1a658",
-      "title": "2026/767: Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Use of site as Equestrian use. (Certificate of lawfulness for an existing use or development)",
-      "date": "2026-08-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/767",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/767",
-        "address": "Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
