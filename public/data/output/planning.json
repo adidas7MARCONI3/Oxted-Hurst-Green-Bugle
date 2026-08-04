@@ -1,7 +1,39 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-02T08:08:15.339261+00:00",
+  "collected_at": "2026-08-04T08:23:47.696147+00:00",
   "items": [
+    {
+      "id": "43f4a5a7652f",
+      "title": "2026/910: Neb Corner, Neb Lane, Oxted, Surrey, RH8 9JN",
+      "description": "Erection of garden room outbuilding with air conditioning unit to side garden.",
+      "date": "2026-09-28",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/910",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/910",
+        "address": "Neb Corner, Neb Lane, Oxted, Surrey, RH8 9JN",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "475fb01f27f1",
+      "title": "2026/875: 63 Holland Road, Hurst Green, Oxted, Surrey, RH8 9AU",
+      "description": "Addition of a front extension to for WC and utility room. Change of roof hip ends to gable ends to increase attic roof space. Addition of a dormer window on the east elevation of the house.",
+      "date": "2026-09-28",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/875",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/875",
+        "address": "63 Holland Road, Hurst Green, Oxted, Surrey, RH8 9AU",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "0ff3d160edca",
       "title": "2026/745: 115 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HH",
@@ -163,6 +195,22 @@
       }
     },
     {
+      "id": "3818f2889e5c",
+      "title": "2026/877: Mulberries, 22 Tally Road, Limpsfield, Oxted, Surrey, RH8 0TG",
+      "description": "Demolition of existing conservatory, erection of single storey rear extension, alterations to ground floor side window",
+      "date": "2026-09-08",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/877",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/877",
+        "address": "Mulberries, 22 Tally Road, Limpsfield, Oxted, Surrey, RH8 0TG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "dfef1cdbc988",
       "title": "2026/830: 13 St Marys Close, Oxted, Surrey, RH8 9LJ",
       "description": "Conversion of the existing attached garage into habitable accommodation to provide a utility room and office/study/guest room with associated external alterations.",
@@ -291,22 +339,6 @@
       }
     },
     {
-      "id": "4654a1e0ddf1",
-      "title": "2026/448: Foyle Cottage, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "SUBDIVISION OF EXISTING RESIDENTIAL CURTILAGE AND ERECTION OF 3 DETACHED DWELLINGS WITH ASSOCIATED LANDSCAPING, PARKING AND VEHICLE ACCESS",
-      "date": "2026-08-27",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/448",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/448",
-        "address": "Foyle Cottage, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "7e3ca625606f",
       "title": "2026/753: Claremont Dower, Pollards Wood Hill, Limpsfield, Oxted, Surrey, RH8 0QX",
       "description": "Erection of two storey rear extension, including extension to basement",
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/790/TPO",
         "address": "140 Bluehouse Lane, Limpsfield, Oxted, Surrey, RH8 0AR",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "2e8bcceff8c6",
-      "title": "2026/731: Durant Hollies, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
-      "description": "Demolition of existing single storey rear extension and conservatory. Erection of single storey rear extension and orangery.",
-      "date": "2026-08-20",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/731",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/731",
-        "address": "Durant Hollies, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "e32e5f70f9bc",
-      "title": "2026/734: Orchard Cottage, 20 Beadles Lane, Oxted, Surrey, RH8 9JJ",
-      "description": "Erection of single storey detached outbuilding to be used as a habitable annexe,",
-      "date": "2026-08-19",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/734",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/734",
-        "address": "Orchard Cottage, 20 Beadles Lane, Oxted, Surrey, RH8 9JJ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
