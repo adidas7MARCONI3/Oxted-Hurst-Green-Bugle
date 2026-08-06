@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-05T08:21:14.547028+00:00",
+  "collected_at": "2026-08-06T08:18:22.059475+00:00",
   "items": [
     {
       "id": "43f4a5a7652f",
@@ -291,6 +291,22 @@
       }
     },
     {
+      "id": "bb07c3a6a643",
+      "title": "2026/832: 30 Granville Road, Limpsfield, Oxted, Surrey, RH8 0DA",
+      "description": "Variation of condition 2 (Approved Drawings) of planning permission 2024/605 dd 04/09/2024 (Erection of a part single, part two-storey rear extension and first floor extensions at both sides of the existing house) to allow reduced scale of the proposed development, particularly to the rear ground and first floor extension.",
+      "date": "2026-08-28",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/832",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/832",
+        "address": "30 Granville Road, Limpsfield, Oxted, Surrey, RH8 0DA",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "e09137024c35",
       "title": "2026/436: Scearnbank, Kent Hatch Road, Limpsfield, Oxted, Surrey, RH8 0TB",
       "description": "Erection of 3 bay car port on existing hard standing",
@@ -325,7 +341,7 @@
     {
       "id": "12552a83c0ad",
       "title": "2026/665: 41 Granville Road, Limpsfield, Oxted, Surrey, RH8 0BX",
-      "description": "Demolition of existing house and erection of new build, two-storey, five-bedroom detached dwellinghouse andassociated landscaping.",
+      "description": "Demolition of existing house and erection of new build, two-storey, five-bedroom detached dwellinghouse and associated landscaping.",
       "date": "2026-08-27",
       "category": "planning",
       "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/665",
@@ -371,33 +387,17 @@
       }
     },
     {
-      "id": "df26a4623033",
-      "title": "2026/623: Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
-      "description": "Variation of Condition 2 (Drawings) of planning permission ref: 2025/458 dated 12/06/2023 (New water storage lake, with associated security fence and landscaping) to allow an amended drainage layout and reduction in lake size.",
+      "id": "ae771eec9690",
+      "title": "2026/718: 20 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
+      "description": "Loft conversion including two rear dormers and three roof lights to front and garage conversion.",
       "date": "2026-08-21",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/623",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/718",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/623",
-        "address": "Tandridge Golf Club, Godstone Road, Oxted, Surrey, RH8 9NQ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "eb5289b3ec91",
-      "title": "2026/790/TPO: 140 Bluehouse Lane, Limpsfield, Oxted, Surrey, RH8 0AR",
-      "description": "Please refer to photos provided:\r\nT2) - Yew overhanging driveway - Laterals encroaching on drive to be crown lifted to 3m from ground level and reduced back from drive and garage roof by up to 2m.\r\nT3) - Macrocarpa within neighbouring property overhanging right-hand boundary of front garden - To be cut back from garage and house creating at least 2m clearance.",
-      "date": "2026-08-20",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/790/TPO",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/790/TPO",
-        "address": "140 Bluehouse Lane, Limpsfield, Oxted, Surrey, RH8 0AR",
+        "reference": "2026/718",
+        "address": "20 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
