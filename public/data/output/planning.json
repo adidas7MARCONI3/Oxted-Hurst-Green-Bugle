@@ -1,7 +1,55 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-10T07:14:09.729027+00:00",
+  "collected_at": "2026-08-11T06:51:42.049920+00:00",
   "items": [
+    {
+      "id": "b983e8e43dd0",
+      "title": "2026/932: Tubs Cottage, Ballards Lane, Limpsfield, Oxted, Surrey, RH8 0SN",
+      "description": "Demolition of existing sheds. Erection of an outbuilding, swimming pool, patio and all associated works (Certificate of Lawfulness (Proposed))",
+      "date": "2026-10-05",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/932",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/932",
+        "address": "Tubs Cottage, Ballards Lane, Limpsfield, Oxted, Surrey, RH8 0SN",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "ed8f415ea238",
+      "title": "2026/960: 84 Barnfield Way, Hurst Green, Oxted, Surrey, RH8 9QG",
+      "description": "Lawful Development Certificate (proposed) ERECTION OF SINGLE STOREY REAR EXTENSION",
+      "date": "2026-10-01",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/960",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/960",
+        "address": "84 Barnfield Way, Hurst Green, Oxted, Surrey, RH8 9QG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "0e0c75a28cda",
+      "title": "2026/925: Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Demolition of existing buildings on equestrian site. Erection of 3no. self-build dwellings",
+      "date": "2026-10-01",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/925",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/925",
+        "address": "Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "43f4a5a7652f",
       "title": "2026/910: Neb Corner, Neb Lane, Oxted, Surrey, RH8 9JN",
@@ -350,54 +398,6 @@
       "data": {
         "reference": "2026/396",
         "address": "Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "12552a83c0ad",
-      "title": "2026/665: 41 Granville Road, Limpsfield, Oxted, Surrey, RH8 0BX",
-      "description": "Demolition of existing house and erection of new build, two-storey, five-bedroom detached dwellinghouse and associated landscaping.",
-      "date": "2026-08-27",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/665",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/665",
-        "address": "41 Granville Road, Limpsfield, Oxted, Surrey, RH8 0BX",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "7e3ca625606f",
-      "title": "2026/753: Claremont Dower, Pollards Wood Hill, Limpsfield, Oxted, Surrey, RH8 0QX",
-      "description": "Erection of two storey rear extension, including extension to basement",
-      "date": "2026-08-24",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/753",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/753",
-        "address": "Claremont Dower, Pollards Wood Hill, Limpsfield, Oxted, Surrey, RH8 0QX",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "ae87f226077c",
-      "title": "2026/674: Manor Cottage,High Street,Limpsfield,Oxted,Rh8 0dr, Limpsfield, Oxted, Surrey, R",
-      "description": "Erection of ground floor infill extension beneath the existing first-floor overhang. Rear first floor extension to the existing bathroom.",
-      "date": "2026-08-24",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/674",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/674",
-        "address": "Manor Cottage,High Street,Limpsfield,Oxted,Rh8 0dr, Limpsfield, Oxted, Surrey, RH8 0DR",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
