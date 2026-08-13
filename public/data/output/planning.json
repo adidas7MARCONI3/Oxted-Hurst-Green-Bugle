@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-12T07:10:54.015436+00:00",
+  "collected_at": "2026-08-13T07:14:59.910846+00:00",
   "items": [
+    {
+      "id": "44e03255429c",
+      "title": "2026/874: Development Site Rear Of 48 To 52, Station Road East, Oxted, Surrey, RH8 0PG",
+      "description": "Erection of a 4 storey building containing 9 residential dwellings (Use Class C3) alongside landscaping, car and cycle parking, refuse and other associated works",
+      "date": "2026-10-06",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/874",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/874",
+        "address": "Development Site Rear Of 48 To 52, Station Road East, Oxted, Surrey, RH8 0PG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "b983e8e43dd0",
       "title": "2026/932: Tubs Cottage, Ballards Lane, Limpsfield, Oxted, Surrey, RH8 0SN",
@@ -51,6 +67,22 @@
       }
     },
     {
+      "id": "c0518046dba7",
+      "title": "2026/917: 101 Hazelwood Road, Hurst Green, Oxted, Surrey, RH8 0JA",
+      "description": "Alterations to external fenestration of garage and insulation. Installation of roof light. (Certificate of Lawfulness for Proposed use or development)",
+      "date": "2026-09-28",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/917",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/917",
+        "address": "101 Hazelwood Road, Hurst Green, Oxted, Surrey, RH8 0JA",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "43f4a5a7652f",
       "title": "2026/910: Neb Corner, Neb Lane, Oxted, Surrey, RH8 9JN",
       "description": "Erection of garden room outbuilding with air conditioning unit to side garden.",
@@ -94,6 +126,22 @@
       "data": {
         "reference": "2022/1299/Cond2",
         "address": "Land at Amy Road, Oxted",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "6066be4c517c",
+      "title": "2026/840: West House, High Street, Limpsfield, Oxted, Surrey, RH8 0DT",
+      "description": "Minor works, including replacement windows and garage doors, as well as new windows to the garage (Listed Building Consent)",
+      "date": "2026-09-24",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/840",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/840",
+        "address": "West House, High Street, Limpsfield, Oxted, Surrey, RH8 0DT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -350,54 +398,6 @@
       "data": {
         "reference": "2026/714",
         "address": "51 Barrow Green Road, Oxted, Surrey, RH8 0NJ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "bb07c3a6a643",
-      "title": "2026/832: 30 Granville Road, Limpsfield, Oxted, Surrey, RH8 0DA",
-      "description": "Variation of condition 2 (Approved Drawings) of planning permission 2024/605 dd 04/09/2024 (Erection of a part single, part two-storey rear extension and first floor extensions at both sides of the existing house) to allow reduced scale of the proposed development, particularly to the rear ground and first floor extension.",
-      "date": "2026-08-28",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/832",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/832",
-        "address": "30 Granville Road, Limpsfield, Oxted, Surrey, RH8 0DA",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "e09137024c35",
-      "title": "2026/436: Scearnbank, Kent Hatch Road, Limpsfield, Oxted, Surrey, RH8 0TB",
-      "description": "Erection of 3 bay car port on existing hard standing",
-      "date": "2026-08-28",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/436",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/436",
-        "address": "Scearnbank, Kent Hatch Road, Limpsfield, Oxted, Surrey, RH8 0TB",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "c728d0200ea4",
-      "title": "2026/396: Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
-      "description": "Demolition of existing buildings to provide 6 padel courts (3 under cover) and conversion of existing buildings to provide new club house and member facilities together with parking and landscaping",
-      "date": "2026-08-28",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/396",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/396",
-        "address": "Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
