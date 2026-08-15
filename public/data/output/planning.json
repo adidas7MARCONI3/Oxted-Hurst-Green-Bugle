@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-14T07:12:23.564065+00:00",
+  "collected_at": "2026-08-15T06:23:12.206122+00:00",
   "items": [
     {
       "id": "44e03255429c",
@@ -62,6 +62,22 @@
       "data": {
         "reference": "2026/925",
         "address": "Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "67f770b59d9c",
+      "title": "2025/1517/Cond1: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Details pursuant to Condition 8 (CEMP) and Condition 9 (Great Crested Newt compensation) of planning permission ref: 2025/1517 dated 22/07/2026 (Variation of Condition 3 (Plans) of planning permission ref: 2025/58 dated 22/09/2025 (Demolition of existing stables and the erection of 12 dwellings with parking, access, and associated works (Outline application with all matters reserved except access,",
+      "date": "2026-09-28",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1517/Cond1",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2025/1517/Cond1",
+        "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/803",
         "address": "Home Place Lodge, Wolfs Hill, Limpsfield, Oxted, Surrey, RH8 0QT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "00763dc82e91",
-      "title": "2026/714: 51 Barrow Green Road, Oxted, Surrey, RH8 0NJ",
-      "description": "Formation of new driveway to front garden area (Retrospective)",
-      "date": "2026-08-31",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/714",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/714",
-        "address": "51 Barrow Green Road, Oxted, Surrey, RH8 0NJ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
