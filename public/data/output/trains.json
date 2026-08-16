@@ -1,12 +1,12 @@
 {
   "source": "trains",
-  "collected_at": "2026-08-15T06:23:29.152258+00:00",
+  "collected_at": "2026-08-16T06:25:58.765833+00:00",
   "items": [
     {
-      "id": "969f2aa4d925",
-      "title": "Oxted \u2192 London Victoria: 07:23 [On time]",
-      "description": "Southern service from Oxted to London Victoria, scheduled 07:23. Status: On time. Platform 1.",
-      "date": "2026-08-15",
+      "id": "064df19069a3",
+      "title": "Oxted \u2192 London Victoria: 08:29 [On time]",
+      "description": "Southern service from Oxted to London Victoria, scheduled 08:29. Status: On time. Platform 1.",
+      "date": "2026-08-16",
       "category": "trains",
       "url": "https://www.nationalrail.co.uk/",
       "headline": "",
@@ -14,133 +14,7 @@
       "data": {
         "station": "Oxted",
         "crs": "OXT",
-        "scheduled": "07:23",
-        "estimated": "On time",
-        "destination": "London Victoria",
-        "operator": "Southern",
-        "platform": "1",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "5a8002db1624",
-      "title": "Oxted \u2192 East Grinstead: 07:32 [On time]",
-      "description": "Southern service from Oxted to East Grinstead, scheduled 07:32. Status: On time. Platform 2.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Oxted",
-        "crs": "OXT",
-        "scheduled": "07:32",
-        "estimated": "On time",
-        "destination": "East Grinstead",
-        "operator": "Southern",
-        "platform": "2",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "1bd58da70f9d",
-      "title": "Oxted \u2192 East Grinstead: 07:36 [07:38]",
-      "description": "Southern service from Oxted to East Grinstead, scheduled 07:36. Status: 07:38. Platform 2.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Oxted",
-        "crs": "OXT",
-        "scheduled": "07:36",
-        "estimated": "07:38",
-        "destination": "East Grinstead",
-        "operator": "Southern",
-        "platform": "2",
-        "cancelled": false,
-        "disrupted": true
-      }
-    },
-    {
-      "id": "7f89618a64a3",
-      "title": "Oxted \u2192 London Victoria: 07:53 [On time]",
-      "description": "Southern service from Oxted to London Victoria, scheduled 07:53. Status: On time. Platform 1.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Oxted",
-        "crs": "OXT",
-        "scheduled": "07:53",
-        "estimated": "On time",
-        "destination": "London Victoria",
-        "operator": "Southern",
-        "platform": "1",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "b9b2165d8d8d",
-      "title": "Oxted \u2192 East Grinstead: 08:02 [On time]",
-      "description": "Southern service from Oxted to East Grinstead, scheduled 08:02. Status: On time. Platform 2.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Oxted",
-        "crs": "OXT",
-        "scheduled": "08:02",
-        "estimated": "On time",
-        "destination": "East Grinstead",
-        "operator": "Southern",
-        "platform": "2",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "fab7cc9b7f77",
-      "title": "Oxted \u2192 London Bridge: 08:20 [On time]",
-      "description": "Southern service from Oxted to London Bridge, scheduled 08:20. Status: On time. Platform 1.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Oxted",
-        "crs": "OXT",
-        "scheduled": "08:20",
-        "estimated": "On time",
-        "destination": "London Bridge",
-        "operator": "Southern",
-        "platform": "1",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "1504b2a29f28",
-      "title": "Oxted \u2192 London Victoria: 08:23 [On time]",
-      "description": "Southern service from Oxted to London Victoria, scheduled 08:23. Status: On time. Platform 1.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Oxted",
-        "crs": "OXT",
-        "scheduled": "08:23",
+        "scheduled": "08:29",
         "estimated": "On time",
         "destination": "London Victoria",
         "operator": "Southern",
@@ -153,7 +27,7 @@
       "id": "013a11478840",
       "title": "Oxted \u2192 East Grinstead: 08:32 [On time]",
       "description": "Southern service from Oxted to East Grinstead, scheduled 08:32. Status: On time. Platform 2.",
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "category": "trains",
       "url": "https://www.nationalrail.co.uk/",
       "headline": "",
@@ -171,10 +45,10 @@
       }
     },
     {
-      "id": "21d0bb12170b",
-      "title": "Oxted \u2192 Uckfield: 08:36 [Cancelled]",
-      "description": "Southern service from Oxted to Uckfield, scheduled 08:36. Status: Cancelled. Platform 2.",
-      "date": "2026-08-15",
+      "id": "72c10b98fa23",
+      "title": "Oxted \u2192 Uckfield: 08:37 [Cancelled]",
+      "description": "Southern service from Oxted to Uckfield, scheduled 08:37. Status: Cancelled. Platform 2.",
+      "date": "2026-08-16",
       "category": "trains",
       "url": "https://www.nationalrail.co.uk/",
       "headline": "",
@@ -182,7 +56,7 @@
       "data": {
         "station": "Oxted",
         "crs": "OXT",
-        "scheduled": "08:36",
+        "scheduled": "08:37",
         "estimated": "Cancelled",
         "destination": "Uckfield",
         "operator": "Southern",
@@ -192,18 +66,18 @@
       }
     },
     {
-      "id": "06d9a9dba479",
-      "title": "Oxted \u2192 London Victoria: 08:53 [On time]",
-      "description": "Southern service from Oxted to London Victoria, scheduled 08:53. Status: On time. Platform 1.",
-      "date": "2026-08-15",
+      "id": "12733983be67",
+      "title": "Hurst Green \u2192 London Victoria: 08:26 [On time]",
+      "description": "Southern service from Hurst Green to London Victoria, scheduled 08:26. Status: On time. Platform 1.",
+      "date": "2026-08-16",
       "category": "trains",
       "url": "https://www.nationalrail.co.uk/",
       "headline": "",
       "summary": "",
       "data": {
-        "station": "Oxted",
-        "crs": "OXT",
-        "scheduled": "08:53",
+        "station": "Hurst Green",
+        "crs": "HUR",
+        "scheduled": "08:26",
         "estimated": "On time",
         "destination": "London Victoria",
         "operator": "Southern",
@@ -213,10 +87,10 @@
       }
     },
     {
-      "id": "8f20462efd42",
-      "title": "Hurst Green \u2192 London Victoria: 07:20 [On time]",
-      "description": "Southern service from Hurst Green to London Victoria, scheduled 07:20. Status: On time. Platform 1.",
-      "date": "2026-08-15",
+      "id": "13c7c88a6130",
+      "title": "Hurst Green \u2192 East Grinstead: 08:34 [On time]",
+      "description": "Southern service from Hurst Green to East Grinstead, scheduled 08:34. Status: On time. Platform 2.",
+      "date": "2026-08-16",
       "category": "trains",
       "url": "https://www.nationalrail.co.uk/",
       "headline": "",
@@ -224,28 +98,7 @@
       "data": {
         "station": "Hurst Green",
         "crs": "HUR",
-        "scheduled": "07:20",
-        "estimated": "On time",
-        "destination": "London Victoria",
-        "operator": "Southern",
-        "platform": "1",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "5e94d3b0ae37",
-      "title": "Hurst Green \u2192 East Grinstead: 07:35 [On time]",
-      "description": "Southern service from Hurst Green to East Grinstead, scheduled 07:35. Status: On time. Platform 2.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Hurst Green",
-        "crs": "HUR",
-        "scheduled": "07:35",
+        "scheduled": "08:34",
         "estimated": "On time",
         "destination": "East Grinstead",
         "operator": "Southern",
@@ -255,10 +108,10 @@
       }
     },
     {
-      "id": "3d5aad898328",
-      "title": "Hurst Green \u2192 East Grinstead: 07:39 [07:41]",
-      "description": "Southern service from Hurst Green to East Grinstead, scheduled 07:39. Status: 07:41. Platform 2.",
-      "date": "2026-08-15",
+      "id": "b9d19fdf46f9",
+      "title": "Hurst Green \u2192 Uckfield: 08:40 [Cancelled]",
+      "description": "Southern service from Hurst Green to Uckfield, scheduled 08:40. Status: Cancelled. Platform 2.",
+      "date": "2026-08-16",
       "category": "trains",
       "url": "https://www.nationalrail.co.uk/",
       "headline": "",
@@ -266,160 +119,13 @@
       "data": {
         "station": "Hurst Green",
         "crs": "HUR",
-        "scheduled": "07:39",
-        "estimated": "07:41",
-        "destination": "East Grinstead",
-        "operator": "Southern",
-        "platform": "2",
-        "cancelled": false,
-        "disrupted": true
-      }
-    },
-    {
-      "id": "429b57e834f9",
-      "title": "Hurst Green \u2192 London Victoria: 07:50 [On time]",
-      "description": "Southern service from Hurst Green to London Victoria, scheduled 07:50. Status: On time. Platform 1.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Hurst Green",
-        "crs": "HUR",
-        "scheduled": "07:50",
-        "estimated": "On time",
-        "destination": "London Victoria",
-        "operator": "Southern",
-        "platform": "1",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "1a8c06c6db42",
-      "title": "Hurst Green \u2192 East Grinstead: 08:05 [On time]",
-      "description": "Southern service from Hurst Green to East Grinstead, scheduled 08:05. Status: On time. Platform 2.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Hurst Green",
-        "crs": "HUR",
-        "scheduled": "08:05",
-        "estimated": "On time",
-        "destination": "East Grinstead",
-        "operator": "Southern",
-        "platform": "2",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "57fe054d5292",
-      "title": "Hurst Green \u2192 London Bridge: 08:16 [On time]",
-      "description": "Southern service from Hurst Green to London Bridge, scheduled 08:16. Status: On time. Platform 1.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Hurst Green",
-        "crs": "HUR",
-        "scheduled": "08:16",
-        "estimated": "On time",
-        "destination": "London Bridge",
-        "operator": "Southern",
-        "platform": "1",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "4c0119fa59a2",
-      "title": "Hurst Green \u2192 London Victoria: 08:20 [On time]",
-      "description": "Southern service from Hurst Green to London Victoria, scheduled 08:20. Status: On time. Platform 1.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Hurst Green",
-        "crs": "HUR",
-        "scheduled": "08:20",
-        "estimated": "On time",
-        "destination": "London Victoria",
-        "operator": "Southern",
-        "platform": "1",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "2b01c577ef13",
-      "title": "Hurst Green \u2192 East Grinstead: 08:35 [On time]",
-      "description": "Southern service from Hurst Green to East Grinstead, scheduled 08:35. Status: On time. Platform 2.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Hurst Green",
-        "crs": "HUR",
-        "scheduled": "08:35",
-        "estimated": "On time",
-        "destination": "East Grinstead",
-        "operator": "Southern",
-        "platform": "2",
-        "cancelled": false,
-        "disrupted": false
-      }
-    },
-    {
-      "id": "e4080af90f44",
-      "title": "Hurst Green \u2192 Uckfield: 08:39 [Cancelled]",
-      "description": "Southern service from Hurst Green to Uckfield, scheduled 08:39. Status: Cancelled. Platform 2.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Hurst Green",
-        "crs": "HUR",
-        "scheduled": "08:39",
+        "scheduled": "08:40",
         "estimated": "Cancelled",
         "destination": "Uckfield",
         "operator": "Southern",
         "platform": "2",
         "cancelled": true,
         "disrupted": true
-      }
-    },
-    {
-      "id": "c5a9bfadc83e",
-      "title": "Hurst Green \u2192 London Victoria: 08:50 [On time]",
-      "description": "Southern service from Hurst Green to London Victoria, scheduled 08:50. Status: On time. Platform 1.",
-      "date": "2026-08-15",
-      "category": "trains",
-      "url": "https://www.nationalrail.co.uk/",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "station": "Hurst Green",
-        "crs": "HUR",
-        "scheduled": "08:50",
-        "estimated": "On time",
-        "destination": "London Victoria",
-        "operator": "Southern",
-        "platform": "1",
-        "cancelled": false,
-        "disrupted": false
       }
     }
   ]
