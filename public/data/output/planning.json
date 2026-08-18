@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-17T06:36:27.622172+00:00",
+  "collected_at": "2026-08-18T06:28:16.744635+00:00",
   "items": [
     {
       "id": "44e03255429c",
@@ -195,22 +195,6 @@
       }
     },
     {
-      "id": "5b80a3b1a23c",
-      "title": "2026/863: 68 Granville Road,Limpsfield,Oxted,Rh8 0bz, Limpsfield, Oxted, Surrey, RH8 0BZ",
-      "description": "Replacement of existing garage door with UPVC window and brick up remaining double skin wall in association with conversion of garage to habitable accommodation (Certificate of Lawfulness (Proposed))",
-      "date": "2026-09-22",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/863",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/863",
-        "address": "68 Granville Road,Limpsfield,Oxted,Rh8 0bz, Limpsfield, Oxted, Surrey, RH8 0BZ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "9354bc5358d1",
       "title": "2026/818: 26 Park Road, Limpsfield, Oxted, Surrey, RH8 0AW",
       "description": "Variation of Condition 2 (Drawings) of planning permission ref: 2024/691 dated 11/9/2024 (Erection of single storey rear extension, single storey side garage extension) to allow The side garage to be extended by 1.0 metre into the rear garden, and roofline to rear garden adjusted accordingly to improve garage size for storage in addition to a single family car.",
@@ -382,6 +366,22 @@
       "data": {
         "reference": "2026/531",
         "address": "Flat, The Royal Oak Inn, Caterfield Lane, Oxted, Surrey, RH8 0RR",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "e08c473381e1",
+      "title": "2026/437: 17 Godstone Road, Oxted, Surrey, RH8 9JS",
+      "description": "Construction of a two storey side extension,  single storey rear extension and replacement of the front porch. (Demolition of conservatory )",
+      "date": "2026-09-04",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/437",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/437",
+        "address": "17 Godstone Road, Oxted, Surrey, RH8 9JS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
