@@ -1,7 +1,39 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-19T06:28:58.602762+00:00",
+  "collected_at": "2026-08-20T06:30:21.573748+00:00",
   "items": [
+    {
+      "id": "864dd20077e9",
+      "title": "2026/944: 103 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HH",
+      "description": "Erection of single Storey Rear Extension",
+      "date": "2026-10-13",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/944",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/944",
+        "address": "103 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HH",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "b804e37e1871",
+      "title": "2026/808: Rivington House, Rockfield Road, Oxted, Surrey, RH8 0EL",
+      "description": "Variation of Condition 2 (Plans) of planning permission ref: 2025/246 (Erection of double detached garage with attic storage above). To vary the external elevations by:\r\n1) Front twin dormers moved more central and flat roof infill created between them.\r\n2) Removal of twin Velux windows to rear and addition of single central dormer in the same size/style as the consented front dormers but with the",
+      "date": "2026-10-09",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/808",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/808",
+        "address": "Rivington House, Rockfield Road, Oxted, Surrey, RH8 0EL",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "44e03255429c",
       "title": "2026/874: Development Site Rear Of 48 To 52, Station Road East, Oxted, Surrey, RH8 0PG",
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/531",
         "address": "Flat, The Royal Oak Inn, Caterfield Lane, Oxted, Surrey, RH8 0RR",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "e08c473381e1",
-      "title": "2026/437: 17 Godstone Road, Oxted, Surrey, RH8 9JS",
-      "description": "Construction of a two storey side extension,  single storey rear extension and replacement of the front porch. (Demolition of conservatory )",
-      "date": "2026-09-04",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/437",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/437",
-        "address": "17 Godstone Road, Oxted, Surrey, RH8 9JS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "874fdbbf5246",
-      "title": "2026/803: Home Place Lodge, Wolfs Hill, Limpsfield, Oxted, Surrey, RH8 0QT",
-      "description": "Removal of existing dormer to be replaced with new larger dormer. Part section of roof to be replaced due to rotten timbers. Installation of roof light to rear elevation.",
-      "date": "2026-09-02",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/803",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/803",
-        "address": "Home Place Lodge, Wolfs Hill, Limpsfield, Oxted, Surrey, RH8 0QT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
