@@ -1,7 +1,39 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-20T06:30:21.573748+00:00",
+  "collected_at": "2026-08-21T06:31:45.268364+00:00",
   "items": [
+    {
+      "id": "c47ff4caae43",
+      "title": "2026/1006: Chart Grange, Rockfield Road, Oxted, Surrey, RH8 0HA",
+      "description": "New boundary retaining wall and replacement pool house",
+      "date": "2026-10-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1006",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1006",
+        "address": "Chart Grange, Rockfield Road, Oxted, Surrey, RH8 0HA",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "16d8f33d4d59",
+      "title": "2026/866: Valelands,Woodhurst Park,Oxted,Rh8 9ha, Oxted, Surrey, RH8 9HA",
+      "description": "Erection of single storey rear extension to existing detached garage to provide home gym, including associated landscaping",
+      "date": "2026-10-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/866",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/866",
+        "address": "Valelands,Woodhurst Park,Oxted,Rh8 9ha, Oxted, Surrey, RH8 9HA",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "864dd20077e9",
       "title": "2026/944: 103 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HH",
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/830",
         "address": "13 St Marys Close, Oxted, Surrey, RH8 9LJ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "551aa37b4d5e",
-      "title": "2026/578: Methodist Church, Hurstlands, Hurst Green, Oxted, Surrey, RH8 0HG",
-      "description": "Demolition of deconsecrated church building. Redevelopment of former methodist church site to provide a four-storey block of sixteen flats, comprising six one-bedroom flats, eight two-bedroom flats and two three-bedroom flats",
-      "date": "2026-09-04",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/578",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/578",
-        "address": "Methodist Church, Hurstlands, Hurst Green, Oxted, Surrey, RH8 0HG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "50c464036cbf",
-      "title": "2026/531: Flat, The Royal Oak Inn, Caterfield Lane, Oxted, Surrey, RH8 0RR",
-      "description": "Proposed construction of 10 Hotel Rooms",
-      "date": "2026-09-04",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/531",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/531",
-        "address": "Flat, The Royal Oak Inn, Caterfield Lane, Oxted, Surrey, RH8 0RR",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
