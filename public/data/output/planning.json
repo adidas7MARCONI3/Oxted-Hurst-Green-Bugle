@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-21T06:31:45.268364+00:00",
+  "collected_at": "2026-08-22T06:24:36.445114+00:00",
   "items": [
+    {
+      "id": "baf6b828814e",
+      "title": "2026/1008: 16 Hoskins Road, Oxted, Surrey, RH8 9HT",
+      "description": "Demolition of existing garage, erection of new single storey side extension with alterations to existing porch.",
+      "date": "2026-10-16",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1008",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1008",
+        "address": "16 Hoskins Road, Oxted, Surrey, RH8 9HT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "c47ff4caae43",
       "title": "2026/1006: Chart Grange, Rockfield Road, Oxted, Surrey, RH8 0HA",
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/877",
         "address": "Mulberries, 22 Tally Road, Limpsfield, Oxted, Surrey, RH8 0TG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "dfef1cdbc988",
-      "title": "2026/830: 13 St Marys Close, Oxted, Surrey, RH8 9LJ",
-      "description": "Conversion of the existing attached garage into habitable accommodation to provide a utility room and office/study/guest room with associated external alterations.",
-      "date": "2026-09-07",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/830",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/830",
-        "address": "13 St Marys Close, Oxted, Surrey, RH8 9LJ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
