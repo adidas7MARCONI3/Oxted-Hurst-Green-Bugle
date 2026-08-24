@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-23T06:25:58.190758+00:00",
+  "collected_at": "2026-08-24T06:39:24.693688+00:00",
   "items": [
     {
       "id": "baf6b828814e",
@@ -339,6 +339,22 @@
       }
     },
     {
+      "id": "a64f7cb7fa5f",
+      "title": "2026/912/TPO: 4 Park Road, Limpsfield, Oxted, Surrey, RH8 0AL",
+      "description": "T1. Copper beech: to crown lift the road overhanging branches by 7 metres, this will involve just removing small branch growth and not main branches. because of this highway request and to keep the canopy balanced looking; as the tree is so prominent, the crown lift is to be cut all round the lower canopy, keeping a level cut, again this will be without removing any large branches.\n\nTo reduce the ",
+      "date": "2026-09-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/912/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/912/TPO",
+        "address": "4 Park Road, Limpsfield, Oxted, Surrey, RH8 0AL",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "ab47749db21c",
       "title": "2026/729: Old School House, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RS",
       "description": "Variation of Condition 2 (Approved drawings) of planning permission ref: 2024/102 dated 11/04/2024 (Conversion of existing garage to form home office) to allow replacement of windows with glazed doors",
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/700",
         "address": "22 Chestnut Copse, Hurst Green, Oxted, Surrey, RH8 0JH",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "3818f2889e5c",
-      "title": "2026/877: Mulberries, 22 Tally Road, Limpsfield, Oxted, Surrey, RH8 0TG",
-      "description": "Demolition of existing conservatory, erection of single storey rear extension, alterations to ground floor side window",
-      "date": "2026-09-08",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/877",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/877",
-        "address": "Mulberries, 22 Tally Road, Limpsfield, Oxted, Surrey, RH8 0TG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
