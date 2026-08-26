@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-25T06:31:26.328499+00:00",
+  "collected_at": "2026-08-26T06:33:16.407472+00:00",
   "items": [
     {
       "id": "baf6b828814e",
@@ -36,7 +36,7 @@
     },
     {
       "id": "16d8f33d4d59",
-      "title": "2026/866: Valelands,Woodhurst Park,Oxted,Rh8 9ha, Oxted, Surrey, RH8 9HA",
+      "title": "2026/866: Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
       "description": "Erection of single storey rear extension to existing detached garage to provide home gym, including associated landscaping",
       "date": "2026-10-14",
       "category": "planning",
@@ -45,7 +45,23 @@
       "summary": "",
       "data": {
         "reference": "2026/866",
-        "address": "Valelands,Woodhurst Park,Oxted,Rh8 9ha, Oxted, Surrey, RH8 9HA",
+        "address": "Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "5a19ef8aa60e",
+      "title": "2026/789/TCA: Mulberry Cottage, Broadham Green Road, Oxted, Surrey, RH8 9PF",
+      "description": "Please refer to report and photos provided:\r\nBlack circle) Larch (Larix Decidua) - Removal of dead tree",
+      "date": "2026-10-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/789/TCA",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/789/TCA",
+        "address": "Mulberry Cottage, Broadham Green Road, Oxted, Surrey, RH8 9PF",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2023/353/Cond2",
         "address": "27a Greenacres, Oxted, Surrey, RH8 0PA",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "7e80738690e2",
-      "title": "2026/700: 22 Chestnut Copse, Hurst Green, Oxted, Surrey, RH8 0JH",
-      "description": "Erection of single storey front extension",
-      "date": "2026-09-09",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/700",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/700",
-        "address": "22 Chestnut Copse, Hurst Green, Oxted, Surrey, RH8 0JH",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
