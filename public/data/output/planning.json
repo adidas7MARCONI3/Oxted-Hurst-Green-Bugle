@@ -1,7 +1,55 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-26T06:33:16.407472+00:00",
+  "collected_at": "2026-08-27T17:09:46.884930+00:00",
   "items": [
+    {
+      "id": "c865d5355bd0",
+      "title": "2026/969: 10 Brook Hill, Oxted, Surrey, RH8 9LR",
+      "description": "Erection of ancillary outbuilding",
+      "date": "2026-10-19",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/969",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/969",
+        "address": "10 Brook Hill, Oxted, Surrey, RH8 9LR",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "f237fdfd9493",
+      "title": "2026/873: 45 Bluehouse Lane, Limpsfield, Oxted, Surrey, RH8 0AJ",
+      "description": "Erection of single storey flat-roofed rear extension, re-cladding and insulation of the annexe, elevational alterations to the original house and annexe, replacement entry porch, whole-house window replacement, removal of two chimneys, and installation of an air source heat pump",
+      "date": "2026-10-19",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/873",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/873",
+        "address": "45 Bluehouse Lane, Limpsfield, Oxted, Surrey, RH8 0AJ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "610029b5b748",
+      "title": "2024/177/Cond2: Rivington House, Rockfield Road, Oxted, Surrey, RH8 0EL",
+      "description": "Details pursuant to Condition 3 (surface water drainage scheme) of planning permission ref: 2024/177 dated 05/02/2025 (Subdivision of existing site and erection of detached house with access, parking and turning area. (Amended Plans))",
+      "date": "2026-10-16",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2024/177/Cond2",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2024/177/Cond2",
+        "address": "Rivington House, Rockfield Road, Oxted, Surrey, RH8 0EL",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "baf6b828814e",
       "title": "2026/1008: 16 Hoskins Road, Oxted, Surrey, RH8 9HT",
@@ -14,6 +62,22 @@
       "data": {
         "reference": "2026/1008",
         "address": "16 Hoskins Road, Oxted, Surrey, RH8 9HT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "e0099ff4f93c",
+      "title": "2026/1046/TPO: Castleton, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
+      "description": "T1) Sycamore - Reduce the canopy by pollarding to the original pollard cuts. The height will be reduced from 17 metres to 14 metres and the width will be reduced from 12 metres to 9 metres. The canopy has had a large branch failure, which caused roof damage to a neighbouring roof, due to decay at the base of the regrowth from the last reduction. Being the proximity of the tree to The Bull car park",
+      "date": "2026-10-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1046/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1046/TPO",
+        "address": "Castleton, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -334,70 +398,6 @@
       "data": {
         "reference": "2026/551",
         "address": "9 Boulthurst Way, Hurst Green, Oxted, Surrey, RH8 0HT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "392b39b68477",
-      "title": "2026/798: Finmere, 4 Parklands, Oxted, Surrey, RH8 9DP",
-      "description": "Erection of side garage extension and new front roof extension to form a front porch. Conversion of existing garage to habitable accommodation",
-      "date": "2026-09-15",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/798",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/798",
-        "address": "Finmere, 4 Parklands, Oxted, Surrey, RH8 9DP",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "a64f7cb7fa5f",
-      "title": "2026/912/TPO: 4 Park Road, Limpsfield, Oxted, Surrey, RH8 0AL",
-      "description": "T1. Copper beech: to crown lift the road overhanging branches by 7 metres, this will involve just removing small branch growth and not main branches. because of this highway request and to keep the canopy balanced looking; as the tree is so prominent, the crown lift is to be cut all round the lower canopy, keeping a level cut, again this will be without removing any large branches.\n\nTo reduce the ",
-      "date": "2026-09-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/912/TPO",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/912/TPO",
-        "address": "4 Park Road, Limpsfield, Oxted, Surrey, RH8 0AL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "ab47749db21c",
-      "title": "2026/729: Old School House, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RS",
-      "description": "Variation of Condition 2 (Approved drawings) of planning permission ref: 2024/102 dated 11/04/2024 (Conversion of existing garage to form home office) to allow replacement of windows with glazed doors",
-      "date": "2026-09-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/729",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/729",
-        "address": "Old School House, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "248aa6a38abc",
-      "title": "2023/353/Cond2: 27a Greenacres, Oxted, Surrey, RH8 0PA",
-      "description": "Details pursuant to the discharge of Condition 4 (Hard and soft landscaping) and 8 (Bicycle facilities) of planning permission ref: 2023/353 dated 19/06/2023 (Demolition of existing garage and side extension and erection of a two storey end terrace dwelling)",
-      "date": "2026-09-11",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2023/353/Cond2",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2023/353/Cond2",
-        "address": "27a Greenacres, Oxted, Surrey, RH8 0PA",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
