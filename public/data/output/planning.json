@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-27T17:09:46.884930+00:00",
+  "collected_at": "2026-08-28T17:56:44.460023+00:00",
   "items": [
     {
       "id": "c865d5355bd0",
@@ -387,17 +387,17 @@
       }
     },
     {
-      "id": "c67c284b3326",
-      "title": "2026/551: 9 Boulthurst Way, Hurst Green, Oxted, Surrey, RH8 0HT",
-      "description": "Erection of first floor side and single storey front extension.",
-      "date": "2026-09-17",
+      "id": "392b39b68477",
+      "title": "2026/798: Finmere, 4 Parklands, Oxted, Surrey, RH8 9DP",
+      "description": "Erection of side garage extension and new front roof extension to form a front porch. Conversion of existing garage to habitable accommodation",
+      "date": "2026-09-15",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/551",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/798",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/551",
-        "address": "9 Boulthurst Way, Hurst Green, Oxted, Surrey, RH8 0HT",
+        "reference": "2026/798",
+        "address": "Finmere, 4 Parklands, Oxted, Surrey, RH8 9DP",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
