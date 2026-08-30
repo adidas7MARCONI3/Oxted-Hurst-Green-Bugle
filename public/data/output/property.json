@@ -1,5 +1,321 @@
 {
   "source": "property",
-  "collected_at": "2026-08-29T12:02:03.932286+00:00",
-  "items": []
+  "collected_at": "2026-08-30T10:58:32.520537+00:00",
+  "items": [
+    {
+      "id": "07a712806fd0",
+      "title": "Semi-detached, 11A Snatts Hill \u2014 \u00a3632,000",
+      "description": "A semi-detached property at 11A Snatts Hill, RH8 0BL sold for \u00a3632,000 on 2026-07-24.",
+      "date": "2026-07-24",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 632000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0BL"
+      }
+    },
+    {
+      "id": "20758574225a",
+      "title": "Detached, 33 Pollards Oak Road \u2014 \u00a3485,000",
+      "description": "A detached property at 33 Pollards Oak Road, RH8 0JL sold for \u00a3485,000 on 2026-07-21.",
+      "date": "2026-07-21",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 485000,
+        "category": "Detached",
+        "postcode": "RH8 0JL"
+      }
+    },
+    {
+      "id": "d2bf90da152d",
+      "title": "Semi-detached, 7 Church Lane \u2014 \u00a3800,000",
+      "description": "A semi-detached property at 7 Church Lane, RH8 9LQ sold for \u00a3800,000 on 2026-07-17.",
+      "date": "2026-07-17",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 800000,
+        "category": "Semi-detached",
+        "postcode": "RH8 9LQ"
+      }
+    },
+    {
+      "id": "ecdd6cbcc236",
+      "title": "Terraced, 1 Little Court Farm Jackass Lane \u2014 \u00a31,780,000",
+      "description": "A terraced property at 1 Little Court Farm Jackass Lane, RH8 9NH sold for \u00a31,780,000 on 2026-07-10.",
+      "date": "2026-07-10",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 1780000,
+        "category": "Terraced",
+        "postcode": "RH8 9NH"
+      }
+    },
+    {
+      "id": "989585c50dc0",
+      "title": "Semi-detached, 2 Sunt Farm Cottages Caterfield Lane \u2014 \u00a3180,000",
+      "description": "A semi-detached property at 2 Sunt Farm Cottages Caterfield Lane, RH8 0RR sold for \u00a3180,000 on 2026-07-08.",
+      "date": "2026-07-08",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 180000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0RR"
+      }
+    },
+    {
+      "id": "5772e69ef9c0",
+      "title": "Detached, 6 Amy Road \u2014 \u00a3770,000",
+      "description": "A detached property at 6 Amy Road, RH8 0PX sold for \u00a3770,000 on 2026-07-01.",
+      "date": "2026-07-01",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 770000,
+        "category": "Detached",
+        "postcode": "RH8 0PX"
+      }
+    },
+    {
+      "id": "cc784e85ddd5",
+      "title": "Flat, 7 Wyckham House, 2 Station Approach \u2014 \u00a3445,000",
+      "description": "A flat property at 7 Wyckham House, 2 Station Approach, RH8 9EW sold for \u00a3445,000 on 2026-06-26.",
+      "date": "2026-06-26",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 445000,
+        "category": "Flat",
+        "postcode": "RH8 9EW"
+      }
+    },
+    {
+      "id": "d2137f308e1a",
+      "title": "Flat, Flat 11 21 Huxley Drive \u2014 \u00a393,000",
+      "description": "A flat property at Flat 11 21 Huxley Drive, RH8 9BZ sold for \u00a393,000 on 2026-06-26.",
+      "date": "2026-06-26",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 93000,
+        "category": "Flat",
+        "postcode": "RH8 9BZ"
+      }
+    },
+    {
+      "id": "c97a521ec3d6",
+      "title": "Detached, Mulberry Lodge Kent Hatch Road \u2014 \u00a32,650,000",
+      "description": "A detached property at Mulberry Lodge Kent Hatch Road, RH8 0SZ sold for \u00a32,650,000 on 2026-06-26.",
+      "date": "2026-06-26",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 2650000,
+        "category": "Detached",
+        "postcode": "RH8 0SZ"
+      }
+    },
+    {
+      "id": "12be002798f9",
+      "title": "Semi-detached, 62 Home Park \u2014 \u00a3410,000",
+      "description": "A semi-detached property at 62 Home Park, RH8 0JX sold for \u00a3410,000 on 2026-06-22.",
+      "date": "2026-06-22",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 410000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0JX"
+      }
+    },
+    {
+      "id": "43dbb23edbe7",
+      "title": "Semi-detached, 10 Boulthurst Way \u2014 \u00a3565,000",
+      "description": "A semi-detached property at 10 Boulthurst Way, RH8 0HU sold for \u00a3565,000 on 2026-06-22.",
+      "date": "2026-06-22",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 565000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0HU"
+      }
+    },
+    {
+      "id": "6e8ac4a33ee6",
+      "title": "Detached, Skerryvore Uvedale Road \u2014 \u00a32,105,000",
+      "description": "A detached property at Skerryvore Uvedale Road, RH8 0EN sold for \u00a32,105,000 on 2026-06-19.",
+      "date": "2026-06-19",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 2105000,
+        "category": "Detached",
+        "postcode": "RH8 0EN"
+      }
+    },
+    {
+      "id": "2d77d76e73d0",
+      "title": "Detached, Hindover Grub Street \u2014 \u00a31,200,000",
+      "description": "A detached property at Hindover Grub Street, RH8 0SH sold for \u00a31,200,000 on 2026-06-16.",
+      "date": "2026-06-16",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 1200000,
+        "category": "Detached",
+        "postcode": "RH8 0SH"
+      }
+    },
+    {
+      "id": "983ec1482347",
+      "title": "Semi-detached, 25 Snatts Hill \u2014 \u00a3875,000",
+      "description": "A semi-detached property at 25 Snatts Hill, RH8 0BL sold for \u00a3875,000 on 2026-06-16.",
+      "date": "2026-06-16",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 875000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0BL"
+      }
+    },
+    {
+      "id": "117269a24260",
+      "title": "Detached, 18 Hurst Green Road \u2014 \u00a3833,750",
+      "description": "A detached property at 18 Hurst Green Road, RH8 9AG sold for \u00a3833,750 on 2026-06-16.",
+      "date": "2026-06-16",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 833750,
+        "category": "Detached",
+        "postcode": "RH8 9AG"
+      }
+    },
+    {
+      "id": "c3a7bd51660b",
+      "title": "Semi-detached, 86 Home Park \u2014 \u00a3435,000",
+      "description": "A semi-detached property at 86 Home Park, RH8 0JX sold for \u00a3435,000 on 2026-06-10.",
+      "date": "2026-06-10",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 435000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0JX"
+      }
+    },
+    {
+      "id": "80d499377252",
+      "title": "Semi-detached, 10 Godstone Road \u2014 \u00a3360,000",
+      "description": "A semi-detached property at 10 Godstone Road, RH8 9JT sold for \u00a3360,000 on 2026-06-08.",
+      "date": "2026-06-08",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 360000,
+        "category": "Semi-detached",
+        "postcode": "RH8 9JT"
+      }
+    },
+    {
+      "id": "2ed6028b37d4",
+      "title": "Flat, 35 Master Close \u2014 \u00a3349,000",
+      "description": "A flat property at 35 Master Close, RH8 9NA sold for \u00a3349,000 on 2026-06-05.",
+      "date": "2026-06-05",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 349000,
+        "category": "Flat",
+        "postcode": "RH8 9NA"
+      }
+    },
+    {
+      "id": "a0383119a721",
+      "title": "Terraced, 9 Field Court \u2014 \u00a3430,000",
+      "description": "A terraced property at 9 Field Court, RH8 0PD sold for \u00a3430,000 on 2026-06-05.",
+      "date": "2026-06-05",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 430000,
+        "category": "Terraced",
+        "postcode": "RH8 0PD"
+      }
+    },
+    {
+      "id": "27906fd25f41",
+      "title": "Flat, Flat 18 Beatrice Lodge Beatrice Road \u2014 \u00a3215,000",
+      "description": "A flat property at Flat 18 Beatrice Lodge Beatrice Road, RH8 0QH sold for \u00a3215,000 on 2026-06-05.",
+      "date": "2026-06-05",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 215000,
+        "category": "Flat",
+        "postcode": "RH8 0QH"
+      }
+    },
+    {
+      "id": "18b776f15ed9",
+      "title": "Terraced, 3 Diamond Cottages \u2014 \u00a3435,000",
+      "description": "A terraced property at 3 Diamond Cottages, RH8 9BQ sold for \u00a3435,000 on 2026-06-04.",
+      "date": "2026-06-04",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 435000,
+        "category": "Terraced",
+        "postcode": "RH8 9BQ"
+      }
+    }
+  ]
 }
