@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-08-31T12:15:10.300021+00:00",
+  "collected_at": "2026-09-01T10:50:59.142786+00:00",
   "items": [
+    {
+      "id": "02e15540efbb",
+      "title": "2026/1092: Friars Wood, 11 Wheeler Avenue, Oxted, Surrey, RH8 9LF",
+      "description": "Installation of roof-mounted solar photovoltaic panels to the roof slope of the dwellinghouse, projecting no more than 0.2m beyond the plane of the roof slope and no higher than the existing ridge, with inverter and cabling located internally.",
+      "date": "2026-10-22",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1092",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1092",
+        "address": "Friars Wood, 11 Wheeler Avenue, Oxted, Surrey, RH8 9LF",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "c865d5355bd0",
       "title": "2026/969: 10 Brook Hill, Oxted, Surrey, RH8 9LR",
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2020/690/Cond13",
         "address": "Land Off Oxted Road (A25), Oxted",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "392b39b68477",
-      "title": "2026/798: Finmere, 4 Parklands, Oxted, Surrey, RH8 9DP",
-      "description": "Erection of side garage extension and new front roof extension to form a front porch. Conversion of existing garage to habitable accommodation",
-      "date": "2026-09-15",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/798",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/798",
-        "address": "Finmere, 4 Parklands, Oxted, Surrey, RH8 9DP",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
