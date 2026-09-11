@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-09-10T10:19:10.899163+00:00",
+  "collected_at": "2026-09-11T10:18:24.596308+00:00",
   "items": [
     {
       "id": "44d597e8e2f8",
@@ -14,6 +14,22 @@
       "data": {
         "reference": "2026/931",
         "address": "Land Off Oxted Road (A25), Oxted",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "b01a2865b366",
+      "title": "2026/1147/TPO: Greenhurst House, 2a Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LA",
+      "description": "T3) Horse Chestnut - Crown lift to give 3.5m height clearance from ground level on southern side only, achieved by secondary lifting only, meaning we would remove smaller secondary branches rather than branches growing directly from the main stem with a maximum cut diameter of 40mm",
+      "date": "2026-11-04",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1147/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1147/TPO",
+        "address": "Greenhurst House, 2a Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LA",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2025/1517/Cond1",
         "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "c0518046dba7",
-      "title": "2026/917: 101 Hazelwood Road, Hurst Green, Oxted, Surrey, RH8 0JA",
-      "description": "Alterations to external fenestration of garage and insulation. Installation of roof light. (Certificate of Lawfulness for Proposed use or development)",
-      "date": "2026-09-28",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/917",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/917",
-        "address": "101 Hazelwood Road, Hurst Green, Oxted, Surrey, RH8 0JA",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
