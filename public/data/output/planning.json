@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-09-11T10:18:24.596308+00:00",
+  "collected_at": "2026-09-12T09:51:08.782555+00:00",
   "items": [
+    {
+      "id": "ca21a559d108",
+      "title": "2026/954: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Reserved Matters submission pursuant to outline planning permission ref 2025/1517, comprising Appearance and Landscaping for the demolition of existing stables and erection of 12 dwellings",
+      "date": "2026-12-11",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/954",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/954",
+        "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "44d597e8e2f8",
       "title": "2026/931: Land Off Oxted Road (A25), Oxted",
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/925",
         "address": "Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "67f770b59d9c",
-      "title": "2025/1517/Cond1: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Details pursuant to Condition 8 (CEMP) and Condition 9 (Great Crested Newt compensation) of planning permission ref: 2025/1517 dated 22/07/2026 (Variation of Condition 3 (Plans) of planning permission ref: 2025/58 dated 22/09/2025 (Demolition of existing stables and the erection of 12 dwellings with parking, access, and associated works (Outline application with all matters reserved except access,",
-      "date": "2026-09-28",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1517/Cond1",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2025/1517/Cond1",
-        "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
