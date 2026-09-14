@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-09-13T10:50:55.113975+00:00",
+  "collected_at": "2026-09-14T11:19:32.533597+00:00",
   "items": [
     {
       "id": "ca21a559d108",
@@ -35,6 +35,22 @@
       }
     },
     {
+      "id": "e46c0a565e27",
+      "title": "2026/1099: 23 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
+      "description": "Proposed first floor side, single storey front and rear extensions and alterations,",
+      "date": "2026-11-09",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1099",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1099",
+        "address": "23 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "b01a2865b366",
       "title": "2026/1147/TPO: Greenhurst House, 2a Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LA",
       "description": "T3) Horse Chestnut - Crown lift to give 3.5m height clearance from ground level on southern side only, achieved by secondary lifting only, meaning we would remove smaller secondary branches rather than branches growing directly from the main stem with a maximum cut diameter of 40mm",
@@ -46,6 +62,22 @@
       "data": {
         "reference": "2026/1147/TPO",
         "address": "Greenhurst House, 2a Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LA",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "f54a7cb9dd43",
+      "title": "2026/1117: Grants Bungalow, Grants Lane, Limpsfield, Oxted, Surrey, RH8 0RQ",
+      "description": "Lawful Development Certificate (proposed)Erection of rear conservatory in glass and PVC",
+      "date": "2026-11-04",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1117",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1117",
+        "address": "Grants Bungalow, Grants Lane, Limpsfield, Oxted, Surrey, RH8 0RQ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/932",
         "address": "Tubs Cottage, Ballards Lane, Limpsfield, Oxted, Surrey, RH8 0SN",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "ed8f415ea238",
-      "title": "2026/960: 84 Barnfield Way, Hurst Green, Oxted, Surrey, RH8 9QG",
-      "description": "Lawful Development Certificate (proposed) ERECTION OF SINGLE STOREY REAR EXTENSION",
-      "date": "2026-10-01",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/960",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/960",
-        "address": "84 Barnfield Way, Hurst Green, Oxted, Surrey, RH8 9QG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "0e0c75a28cda",
-      "title": "2026/925: Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Demolition of existing buildings on equestrian site. Erection of 3no. self-build dwellings",
-      "date": "2026-10-01",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/925",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/925",
-        "address": "Connerton Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
