@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-09-14T11:19:32.533597+00:00",
+  "collected_at": "2026-09-15T10:44:49.007835+00:00",
   "items": [
     {
       "id": "ca21a559d108",
@@ -99,6 +99,38 @@
       }
     },
     {
+      "id": "da914117d352",
+      "title": "2026/1125: Essington Mount, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RF",
+      "description": "Erection of ground floor side/rear extension.",
+      "date": "2026-10-29",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1125",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1125",
+        "address": "Essington Mount, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RF",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "0bfb8db3c566",
+      "title": "2026/1116: Grants, Grants Lane, Limpsfield, Oxted, Surrey, RH8 0RQ",
+      "description": "Determination of the extent of the residential garden and other previously developed land across the site (Certificate of Lawfulness (Existing))",
+      "date": "2026-10-28",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1116",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1116",
+        "address": "Grants, Grants Lane, Limpsfield, Oxted, Surrey, RH8 0RQ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "a4d6e7710754",
       "title": "2025/1517/Cond2: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
       "description": "Details pursuant to Condition 10 (surface water drainage scheme) of planning permission ref: 2025/1517 dated 22/07/2026 (Variation of Condition 3 (Plans) of planning permission ref: 2025/58 dated 22/09/2025 (Demolition of existing stables and the erection of 12 dwellings with parking, access, and associated works (Outline application with all matters reserved except access, layout and scale) to al",
@@ -110,6 +142,22 @@
       "data": {
         "reference": "2025/1517/Cond2",
         "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "9b2d744e3bc2",
+      "title": "2026/1122/NC: Logham Farm, Tandridge Lane, Tandridge, Oxted, Surrey, RH8 9NS",
+      "description": "Change of use of an agricultural barn to 3x single-storey dwellinghouses (Class C3), together with the building operations reasonably necessary for the conversion.",
+      "date": "2026-10-27",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1122/NC",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1122/NC",
+        "address": "Logham Farm, Tandridge Lane, Tandridge, Oxted, Surrey, RH8 9NS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -350,54 +398,6 @@
       "data": {
         "reference": "2026/1081/TCA",
         "address": "Broadham House, Hall Hill, Oxted, Surrey, RH8 9PA",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "9e8e5b7fb7d8",
-      "title": "2026/1017: 94 Central Way, Oxted, Surrey, RH8 0LY",
-      "description": "Variation of Condition 2 (Drawings) of planning permission ref: 2025/905 dated 22/10/2025 (Erection of a part one and part two-storey side extension (replacing existing garage) and a rear dormer loft extension with Juliette balcony. Provision of permeable paving to front.) to allow omission of the approved single-storey side structure adjacent to the boundary, replacing it with an open side passag",
-      "date": "2026-10-08",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1017",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1017",
-        "address": "94 Central Way, Oxted, Surrey, RH8 0LY",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "44e03255429c",
-      "title": "2026/874: Development Site Rear Of 48 To 52, Station Road East, Oxted, Surrey, RH8 0PG",
-      "description": "Erection of a 4 storey building containing 9 residential dwellings (Use Class C3) alongside landscaping, car and cycle parking, refuse and other associated works",
-      "date": "2026-10-06",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/874",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/874",
-        "address": "Development Site Rear Of 48 To 52, Station Road East, Oxted, Surrey, RH8 0PG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "b983e8e43dd0",
-      "title": "2026/932: Tubs Cottage, Ballards Lane, Limpsfield, Oxted, Surrey, RH8 0SN",
-      "description": "Demolition of existing sheds. Erection of an outbuilding, swimming pool, patio and all associated works (Certificate of Lawfulness (Proposed))",
-      "date": "2026-10-05",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/932",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/932",
-        "address": "Tubs Cottage, Ballards Lane, Limpsfield, Oxted, Surrey, RH8 0SN",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
