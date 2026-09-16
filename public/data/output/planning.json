@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-09-15T10:44:49.007835+00:00",
+  "collected_at": "2026-09-16T10:32:57.183159+00:00",
   "items": [
     {
       "id": "ca21a559d108",
@@ -35,6 +35,22 @@
       }
     },
     {
+      "id": "ed1b7f74231d",
+      "title": "2026/1088: Pastens Bungalow, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
+      "description": "Demolition of the existing building and erection of a replacement dwelling including parking and associated works",
+      "date": "2026-11-10",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1088",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1088",
+        "address": "Pastens Bungalow, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "e46c0a565e27",
       "title": "2026/1099: 23 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
       "description": "Proposed first floor side, single storey front and rear extensions and alterations,",
@@ -62,22 +78,6 @@
       "data": {
         "reference": "2026/1147/TPO",
         "address": "Greenhurst House, 2a Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LA",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "f54a7cb9dd43",
-      "title": "2026/1117: Grants Bungalow, Grants Lane, Limpsfield, Oxted, Surrey, RH8 0RQ",
-      "description": "Lawful Development Certificate (proposed)Erection of rear conservatory in glass and PVC",
-      "date": "2026-11-04",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1117",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1117",
-        "address": "Grants Bungalow, Grants Lane, Limpsfield, Oxted, Surrey, RH8 0RQ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -275,6 +275,22 @@
       }
     },
     {
+      "id": "766fe9a26fc1",
+      "title": "2026/1051: Four Winds, Chapel Road, Limpsfield, Oxted, Surrey, RH8 0SX",
+      "description": "Erection of a rear extension of more than one storey with 3m depth and the installation of roof lights",
+      "date": "2026-10-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1051",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1051",
+        "address": "Four Winds, Chapel Road, Limpsfield, Oxted, Surrey, RH8 0SX",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "e0099ff4f93c",
       "title": "2026/1046/TPO: Castleton, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
       "description": "T1) Sycamore - Reduce the canopy by pollarding to the original pollard cuts. The height will be reduced from 17 metres to 14 metres and the width will be reduced from 12 metres to 9 metres. The canopy has had a large branch failure, which caused roof damage to a neighbouring roof, due to decay at the base of the regrowth from the last reduction. Being the proximity of the tree to The Bull car park",
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/808",
         "address": "Rivington House, Rockfield Road, Oxted, Surrey, RH8 0EL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "cd99f5d7b547",
-      "title": "2026/1081/TCA: Broadham House, Hall Hill, Oxted, Surrey, RH8 9PA",
-      "description": "T1) Weeping Willow (with recent limb failure on right hand side of driveway entrance) - Crown reduction by up to 4m",
-      "date": "2026-10-08",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1081/TCA",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1081/TCA",
-        "address": "Broadham House, Hall Hill, Oxted, Surrey, RH8 9PA",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
