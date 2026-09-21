@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-09-20T10:20:58.568272+00:00",
+  "collected_at": "2026-09-21T11:32:47.954580+00:00",
   "items": [
     {
       "id": "ca21a559d108",
@@ -211,6 +211,22 @@
       }
     },
     {
+      "id": "f318fffce45d",
+      "title": "2026/1156/TCA: Woodside, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
+      "description": "*) Dead tree stump - removal\r\nT16) Beech - tree to be felled\r\nT17) Lime - crown reduced by up to 10m\r\nT25) Sycamore - large dead tree to be felled",
+      "date": "2026-10-22",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1156/TCA",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1156/TCA",
+        "address": "Woodside, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "02e15540efbb",
       "title": "2026/1092: Friars Wood, 11 Wheeler Avenue, Oxted, Surrey, RH8 9LF",
       "description": "Installation of roof-mounted solar photovoltaic panels to the roof slope of the dwellinghouse, projecting no more than 0.2m beyond the plane of the roof slope and no higher than the existing ridge, with inverter and cabling located internally.",
@@ -291,22 +307,6 @@
       }
     },
     {
-      "id": "e0099ff4f93c",
-      "title": "2026/1046/TPO: Castleton, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
-      "description": "T1) Sycamore - Reduce the canopy by pollarding to the original pollard cuts. The height will be reduced from 17 metres to 14 metres and the width will be reduced from 12 metres to 9 metres. The canopy has had a large branch failure, which caused roof damage to a neighbouring roof, due to decay at the base of the regrowth from the last reduction. Being the proximity of the tree to The Bull car park",
-      "date": "2026-10-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1046/TPO",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1046/TPO",
-        "address": "Castleton, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "766fe9a26fc1",
       "title": "2026/1051: Four Winds, Chapel Road, Limpsfield, Oxted, Surrey, RH8 0SX",
       "description": "Erection of a rear extension of more than one storey with 3m depth and the installation of roof lights",
@@ -318,6 +318,22 @@
       "data": {
         "reference": "2026/1051",
         "address": "Four Winds, Chapel Road, Limpsfield, Oxted, Surrey, RH8 0SX",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "e0099ff4f93c",
+      "title": "2026/1046/TPO: Castleton, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
+      "description": "T1) Sycamore - Reduce the canopy by pollarding to the original pollard cuts. The height will be reduced from 17 metres to 14 metres and the width will be reduced from 12 metres to 9 metres. The canopy has had a large branch failure, which caused roof damage to a neighbouring roof, due to decay at the base of the regrowth from the last reduction. Being the proximity of the tree to The Bull car park",
+      "date": "2026-10-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1046/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1046/TPO",
+        "address": "Castleton, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/944",
         "address": "103 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HH",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "c5a90cf1136b",
-      "title": "2026/1025: Woodlands, Grub Street, Limpsfield, Oxted, Surrey, RH8 0SH",
-      "description": "Proposed entrance hall, porch and study",
-      "date": "2026-10-12",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1025",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1025",
-        "address": "Woodlands, Grub Street, Limpsfield, Oxted, Surrey, RH8 0SH",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
