@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-09-21T11:32:47.954580+00:00",
+  "collected_at": "2026-09-22T10:39:25.680947+00:00",
   "items": [
     {
       "id": "ca21a559d108",
@@ -30,6 +30,38 @@
       "data": {
         "reference": "2026/931",
         "address": "Land Off Oxted Road (A25), Oxted",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "f7abce5c3622",
+      "title": "2026/1002: 149 Station Road East, Oxted, Surrey, RH8 0QE",
+      "description": "Erection of  1 fascia sign 1 projecting sign",
+      "date": "2026-11-13",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1002",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1002",
+        "address": "149 Station Road East, Oxted, Surrey, RH8 0QE",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "5f5d11726e8a",
+      "title": "2026/1178/TPO: 4 Farley Park, Oxted, Surrey, RH8 9HY",
+      "description": "T1- Sweet Chestnut to have the lowest 3 limbs overhanging the neighbors side reduced by 3m and the crown also raised to 5m on the neighbors side only.",
+      "date": "2026-11-11",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1178/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1178/TPO",
+        "address": "4 Farley Park, Oxted, Surrey, RH8 9HY",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -307,22 +339,6 @@
       }
     },
     {
-      "id": "766fe9a26fc1",
-      "title": "2026/1051: Four Winds, Chapel Road, Limpsfield, Oxted, Surrey, RH8 0SX",
-      "description": "Erection of a rear extension of more than one storey with 3m depth and the installation of roof lights",
-      "date": "2026-10-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1051",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1051",
-        "address": "Four Winds, Chapel Road, Limpsfield, Oxted, Surrey, RH8 0SX",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "e0099ff4f93c",
       "title": "2026/1046/TPO: Castleton, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
       "description": "T1) Sycamore - Reduce the canopy by pollarding to the original pollard cuts. The height will be reduced from 17 metres to 14 metres and the width will be reduced from 12 metres to 9 metres. The canopy has had a large branch failure, which caused roof damage to a neighbouring roof, due to decay at the base of the regrowth from the last reduction. Being the proximity of the tree to The Bull car park",
@@ -334,6 +350,22 @@
       "data": {
         "reference": "2026/1046/TPO",
         "address": "Castleton, Hookwood Park, Limpsfield, Oxted, Surrey, RH8 0DU",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "766fe9a26fc1",
+      "title": "2026/1051: Four Winds, Chapel Road, Limpsfield, Oxted, Surrey, RH8 0SX",
+      "description": "Erection of a rear extension of more than one storey with 3m depth and the installation of roof lights",
+      "date": "2026-10-14",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1051",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1051",
+        "address": "Four Winds, Chapel Road, Limpsfield, Oxted, Surrey, RH8 0SX",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/866",
         "address": "Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "5a19ef8aa60e",
-      "title": "2026/789/TCA: Mulberry Cottage, Broadham Green Road, Oxted, Surrey, RH8 9PF",
-      "description": "Please refer to report and photos provided:\r\nBlack circle) Larch (Larix Decidua) - Removal of dead tree",
-      "date": "2026-10-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/789/TCA",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/789/TCA",
-        "address": "Mulberry Cottage, Broadham Green Road, Oxted, Surrey, RH8 9PF",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "864dd20077e9",
-      "title": "2026/944: 103 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HH",
-      "description": "Erection of single Storey Rear Extension",
-      "date": "2026-10-13",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/944",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/944",
-        "address": "103 Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HH",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
