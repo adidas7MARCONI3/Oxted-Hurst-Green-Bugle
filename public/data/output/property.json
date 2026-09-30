@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-09-29T11:52:44.432730+00:00",
+  "collected_at": "2026-09-30T11:39:55.702672+00:00",
   "items": [
     {
       "id": "13d0274b9e00",
@@ -270,21 +270,6 @@
         "amount": 180000,
         "category": "Semi-detached",
         "postcode": "RH8 0RR"
-      }
-    },
-    {
-      "id": "5772e69ef9c0",
-      "title": "Detached, 6 Amy Road \u2014 \u00a3770,000",
-      "description": "A detached property at 6 Amy Road, RH8 0PX sold for \u00a3770,000 on 2026-07-01.",
-      "date": "2026-07-01",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 770000,
-        "category": "Detached",
-        "postcode": "RH8 0PX"
       }
     }
   ]
