@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-10-05T13:07:33.038259+00:00",
+  "collected_at": "2026-10-06T12:29:20.913239+00:00",
   "items": [
+    {
+      "id": "5976933a9da8",
+      "title": "2026/1235: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+      "description": "Single Storey Kitchen Extension",
+      "date": "2026-12-24",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1235",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1235",
+        "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "eb4371295dc8",
       "title": "2026/955: Development Site East Of Rowlands, Westerham Road, Limpsfield, Oxted, Surrey, RH",
@@ -30,6 +46,22 @@
       "data": {
         "reference": "2026/954",
         "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "a12ce75ea652",
+      "title": "2026/1229: 15 Haywain, Oxted, Surrey, RH8 9LL",
+      "description": "Erection of single storey rear extension. Lawful Development Certificate (proposed)",
+      "date": "2026-11-30",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1229",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1229",
+        "address": "15 Haywain, Oxted, Surrey, RH8 9LL",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -83,22 +115,6 @@
       }
     },
     {
-      "id": "29efa667d35d",
-      "title": "2025/1517/Cond3: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Details pursuant to Condition 5 (Arboricultural Method Statement) and 6 (Tree Monitoring Program) of planning permission ref: 2025/1517 dated 22/07/2026 (Variation of Condition 3 (Plans) of planning permission ref: 2025/58 dated 22/09/2025 (Demolition of existing stables and the erection of 12 dwellings with parking, access, and associated works (Outline application with all matters reserved excep",
-      "date": "2026-11-19",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1517/Cond3",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2025/1517/Cond3",
-        "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "c095ef3f1117",
       "title": "2025/1517/Cond4: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
       "description": "Details pursuant to Condition 11 (Construction Transport Management Plan) of planning permission ref: 2025/1517 dated 22/07/2026 (Variation of Condition 3 (Plans) of planning permission ref: 2025/58 dated 22/09/2025 (Demolition of existing stables and the erection of 12 dwellings with parking, access, and associated works (Outline application with all matters reserved except access, layout and sca",
@@ -109,6 +125,22 @@
       "summary": "",
       "data": {
         "reference": "2025/1517/Cond4",
+        "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "29efa667d35d",
+      "title": "2025/1517/Cond3: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Details pursuant to Condition 5 (Arboricultural Method Statement) and 6 (Tree Monitoring Program) of planning permission ref: 2025/1517 dated 22/07/2026 (Variation of Condition 3 (Plans) of planning permission ref: 2025/58 dated 22/09/2025 (Demolition of existing stables and the erection of 12 dwellings with parking, access, and associated works (Outline application with all matters reserved excep",
+      "date": "2026-11-19",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1517/Cond3",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2025/1517/Cond3",
         "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/1122/NC",
         "address": "Logham Farm, Tandridge Lane, Tandridge, Oxted, Surrey, RH8 9NS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "6c6834864d31",
-      "title": "2025/1239/Cond1: 19 Granville Road, Limpsfield, Oxted, Surrey, RH8 0BX",
-      "description": "Details pursuant to Condition 3 (Arboricultural Method Statement (AMS)) and 5 (hard and soft landscape works ) of planning permission ref: 2025/1239 dated 11/12/2025 (Two-storey side extension, ground floor rear extension, front and rear facade window alterations, new roof and lantern to existing rear extension)",
-      "date": "2026-10-27",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1239/Cond1",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2025/1239/Cond1",
-        "address": "19 Granville Road, Limpsfield, Oxted, Surrey, RH8 0BX",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "115351e64740",
-      "title": "2026/964: 4 Park Road, Limpsfield, Oxted, Surrey, RH8 0AL",
-      "description": "Erection of two storey rear extension and a detached gym outbuilding",
-      "date": "2026-10-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/964",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/964",
-        "address": "4 Park Road, Limpsfield, Oxted, Surrey, RH8 0AL",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
