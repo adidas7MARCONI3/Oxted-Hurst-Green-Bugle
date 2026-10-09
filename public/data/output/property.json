@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-10-08T12:32:45.767255+00:00",
+  "collected_at": "2026-10-09T12:21:13.685025+00:00",
   "items": [
     {
       "id": "13d0274b9e00",
@@ -240,21 +240,6 @@
         "amount": 420000,
         "category": "Terraced",
         "postcode": "RH8 0NY"
-      }
-    },
-    {
-      "id": "ecdd6cbcc236",
-      "title": "Terraced, 1 Little Court Farm Jackass Lane \u2014 \u00a31,780,000",
-      "description": "A terraced property at 1 Little Court Farm Jackass Lane, RH8 9NH sold for \u00a31,780,000 on 2026-07-10.",
-      "date": "2026-07-10",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 1780000,
-        "category": "Terraced",
-        "postcode": "RH8 9NH"
       }
     }
   ]
