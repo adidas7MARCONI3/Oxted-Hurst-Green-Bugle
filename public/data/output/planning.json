@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-10-12T13:59:16.187378+00:00",
+  "collected_at": "2026-10-13T13:15:04.691110+00:00",
   "items": [
     {
       "id": "eb4371295dc8",
@@ -51,6 +51,22 @@
       }
     },
     {
+      "id": "df7ffa8e024c",
+      "title": "2026/1253: Land To The Rear Of 60-64 Station Road East, Oxted, RH8 0PG",
+      "description": "Land to the rear of 60-64 Station Road East Oxted: constrtuction of a detached bungalow",
+      "date": "2026-12-07",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1253",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1253",
+        "address": "Land To The Rear Of 60-64 Station Road East, Oxted, RH8 0PG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "1bc4ea3d3248",
       "title": "2026/1217: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
       "description": "Demolition of existing outbuilding. Erection of a single-storey rear extension with rooflights and glazed doors to the rear",
@@ -78,6 +94,22 @@
       "data": {
         "reference": "2026/1218",
         "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "e347b9b83c5c",
+      "title": "2026/1246/TPO: Oaklands, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
+      "description": "T11 Oak - Removal of oak tree number. The tree is dying of Canker\r\nT1 Oak - Remove 2 dead branches from oak tree",
+      "date": "2026-12-02",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1246/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1246/TPO",
+        "address": "Oaklands, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/1061",
         "address": "6 Paddock Close, Hurst Green, Oxted, Surrey, RH8 0LQ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "b01a2865b366",
-      "title": "2026/1147/TPO: Greenhurst House, 2a Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LA",
-      "description": "T3) Horse Chestnut - Crown lift to give 3.5m height clearance from ground level on southern side only, achieved by secondary lifting only, meaning we would remove smaller secondary branches rather than branches growing directly from the main stem with a maximum cut diameter of 40mm",
-      "date": "2026-11-04",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1147/TPO",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1147/TPO",
-        "address": "Greenhurst House, 2a Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LA",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "bf5866d11783",
-      "title": "2026/1080: Cedarwood, Woodhurst Park, Oxted, Surrey, RH8 9HA",
-      "description": "Erection of a single-storey front and side extension, new roof lights and updated cladding",
-      "date": "2026-11-02",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1080",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1080",
-        "address": "Cedarwood, Woodhurst Park, Oxted, Surrey, RH8 9HA",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
