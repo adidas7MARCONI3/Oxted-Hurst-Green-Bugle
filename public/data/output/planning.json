@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-10-13T13:15:04.691110+00:00",
+  "collected_at": "2026-10-14T10:54:37.202704+00:00",
   "items": [
     {
       "id": "eb4371295dc8",
@@ -99,6 +99,22 @@
       }
     },
     {
+      "id": "c015f628f45f",
+      "title": "2026/1285/TPO: The Wellows, 8 Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LB",
+      "description": "Red dot) Eucalyptus - segmented removal of the tree from top to ground level due to significant rot at the base",
+      "date": "2026-12-03",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1285/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1285/TPO",
+        "address": "The Wellows, 8 Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LB",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "e347b9b83c5c",
       "title": "2026/1246/TPO: Oaklands, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
       "description": "T11 Oak - Removal of oak tree number. The tree is dying of Canker\r\nT1 Oak - Remove 2 dead branches from oak tree",
@@ -126,6 +142,22 @@
       "data": {
         "reference": "2026/1229",
         "address": "15 Haywain, Oxted, Surrey, RH8 9LL",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "ef293b7cd375",
+      "title": "2026/1265: Marylands, West Hill, Oxted, Surrey, RH8 9JB",
+      "description": "Demolition of existing dwelling, erection of replacement dwelling and detached garage with associated works",
+      "date": "2026-11-27",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1265",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1265",
+        "address": "Marylands, West Hill, Oxted, Surrey, RH8 9JB",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -179,22 +211,6 @@
       }
     },
     {
-      "id": "5976933a9da8",
-      "title": "2026/1235: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
-      "description": "Single Storey Kitchen Extension",
-      "date": "2026-11-24",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1235",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1235",
-        "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "51995a890d46",
       "title": "2026/1248: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
       "description": "Single Storey Kitchen Extension to listed building",
@@ -205,6 +221,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1248",
+        "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "5976933a9da8",
+      "title": "2026/1235: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+      "description": "Single Storey Kitchen Extension",
+      "date": "2026-11-24",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1235",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1235",
         "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/1111",
         "address": "Bulbarrow, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "e46c0a565e27",
-      "title": "2026/1099: 23 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
-      "description": "Proposed first floor side, single storey front and rear extensions and alterations,",
-      "date": "2026-11-09",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1099",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1099",
-        "address": "23 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "adc298a3d411",
-      "title": "2026/1061: 6 Paddock Close, Hurst Green, Oxted, Surrey, RH8 0LQ",
-      "description": "Change of use of integral garage to ancillary annexe accommodation with associated external alterations",
-      "date": "2026-11-09",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1061",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1061",
-        "address": "6 Paddock Close, Hurst Green, Oxted, Surrey, RH8 0LQ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
