@@ -1,5 +1,50 @@
 {
   "source": "environment",
-  "collected_at": "2026-10-23T10:45:41.225018+00:00",
-  "items": []
+  "collected_at": "2026-10-24T10:02:18.542983+00:00",
+  "items": [
+    {
+      "id": "433746ba56e1",
+      "title": "Flood Notice \u2014 Unknown area",
+      "description": "Upper River Mole, Ifield Brook, Gatwick Stream and Burstow Stream",
+      "date": "2026-10-23",
+      "category": "flood",
+      "url": "Ifield Brook, River Mole, Gatwick Stream, Burstow Stream",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "severity": "Warning no longer in force",
+        "raw": {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/id/floods/064WAF32UpprMole",
+          "description": "Upper River Mole, Ifield Brook, Gatwick Stream and Burstow Stream",
+          "eaAreaName": "Kent, South London and East Sussex",
+          "eaRegionName": "No longer used",
+          "floodArea": {
+            "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/064WAF32UpprMole",
+            "county": "Surrey, West Sussex",
+            "envelope": {
+              "lowerCorner": {
+                "lx": 521370,
+                "ly": 132465
+              },
+              "upperCorner": {
+                "ux": 532721,
+                "uy": 145762
+              }
+            },
+            "notation": "064WAF32UpprMole",
+            "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/064WAF32UpprMole/polygon",
+            "riverOrSea": "Ifield Brook, River Mole, Gatwick Stream, Burstow Stream"
+          },
+          "floodAreaID": "064WAF32UpprMole",
+          "isTidal": false,
+          "message": "There is no longer a threat of flooding.\nFurther rainfall is forecast but no further flooding is expected. \nWe will continue to monitor the situation and will issue further alerts or warnings if necessary.  \nContinue to take care on waterside roads and footpaths and don't put yourself in unnecessary danger.  \n",
+          "severity": "Warning no longer in force",
+          "severityLevel": 4,
+          "timeMessageChanged": "2026-10-23T16:45:00",
+          "timeRaised": "2026-10-23T16:45:22",
+          "timeSeverityChanged": "2026-10-23T16:45:00"
+        }
+      }
+    }
+  ]
 }

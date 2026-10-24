@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-10-23T10:45:32.663150+00:00",
+  "collected_at": "2026-10-24T10:02:09.465331+00:00",
   "items": [
     {
       "id": "eb4371295dc8",
@@ -14,6 +14,38 @@
       "data": {
         "reference": "2026/955",
         "address": "Development Site East Of Rowlands, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0ED",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "c6d9b7a956ce",
+      "title": "2026/1303: Hurst Green School, Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HJ",
+      "description": "Proposed single storey rear extension with external alteration to front fenestration.",
+      "date": "2026-12-18",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1303",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1303",
+        "address": "Hurst Green School, Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HJ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "d11112ff3d30",
+      "title": "2025/342/Cond1: Brickmakers Arms, Tandridge Lane, Tandridge, Oxted, Surrey, RH8 9NS",
+      "description": "Details pursuant to Condition 8 (bat precautionary working method statement) and 9 (Ecological Enhancement Plan) of planning permission ref: 2025/342 dated 08/06/2026 (Demolition of the existing public house (Sui Generis) and erection of two three-bedroom and two four-bedroom dwellings (Use Class C3) forming access off Tandridge Lane, with associated parking and hard and soft landscaping, at Brick",
+      "date": "2026-12-17",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/342/Cond1",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2025/342/Cond1",
+        "address": "Brickmakers Arms, Tandridge Lane, Tandridge, Oxted, Surrey, RH8 9NS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -115,22 +147,6 @@
       }
     },
     {
-      "id": "1bc4ea3d3248",
-      "title": "2026/1217: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
-      "description": "Demolition of existing outbuilding. Erection of a single-storey rear extension with rooflights and glazed doors to the rear",
-      "date": "2026-12-07",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1217",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1217",
-        "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "a13caf9e97d8",
       "title": "2026/1218: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
       "description": "Erection of a rear dormer extension, installation of front roof lights and removal of existing chimney in association with conversion of loft to habitable accommodation. Alterations to rear first floor fenestrations (Certificate of Lawfulness (Proposed))",
@@ -141,6 +157,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1218",
+        "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "1bc4ea3d3248",
+      "title": "2026/1217: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
+      "description": "Demolition of existing outbuilding. Erection of a single-storey rear extension with rooflights and glazed doors to the rear",
+      "date": "2026-12-07",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1217",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1217",
         "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -275,22 +307,6 @@
       }
     },
     {
-      "id": "5976933a9da8",
-      "title": "2026/1235: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
-      "description": "Single Storey Kitchen Extension",
-      "date": "2026-11-24",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1235",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1235",
-        "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "51995a890d46",
       "title": "2026/1248: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
       "description": "Single Storey Kitchen Extension to listed building",
@@ -301,6 +317,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1248",
+        "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "5976933a9da8",
+      "title": "2026/1235: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+      "description": "Single Storey Kitchen Extension",
+      "date": "2026-11-24",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1235",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1235",
         "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2025/1517/Cond4",
         "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "f53b0c50ed59",
-      "title": "2026/1140: Scearnebank Bungalow, Trevereux Hill, Limpsfield, Oxted, Surrey, RH8 0TL",
-      "description": "Loft conversion and alterations to fenestrations in association with the conversion of existing outbuilding to ancillary residential accommodation",
-      "date": "2026-11-19",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1140",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1140",
-        "address": "Scearnebank Bungalow, Trevereux Hill, Limpsfield, Oxted, Surrey, RH8 0TL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "ab81198a1a3c",
-      "title": "2026/1199: 5 Chathill Cottages, Miles Lane, Tandridge, Oxted, Surrey, RH8 9NR",
-      "description": "Erection of single storey rear extension creating new sunroom",
-      "date": "2026-11-17",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1199",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1199",
-        "address": "5 Chathill Cottages, Miles Lane, Tandridge, Oxted, Surrey, RH8 9NR",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
