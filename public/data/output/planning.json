@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-10-26T11:56:50.849433+00:00",
+  "collected_at": "2026-10-27T11:19:20.078497+00:00",
   "items": [
     {
       "id": "eb4371295dc8",
@@ -30,6 +30,22 @@
       "data": {
         "reference": "2026/1303",
         "address": "Hurst Green School, Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HJ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "703a36e66ac1",
+      "title": "2026/1341/TPO: 1 Gresham Close, Limpsfield, Oxted, Surrey, RH8 0BH",
+      "description": "T1: Lime in rear garden height pollarded back to previous points, laterals reduced to maintain shape and screening, removing up to 1.5m. Residual overall spread of 6m. Basal epicormic growth removed. \nMaintain suitable size for location.",
+      "date": "2026-12-17",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1341/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1341/TPO",
+        "address": "1 Gresham Close, Limpsfield, Oxted, Surrey, RH8 0BH",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/396",
         "address": "Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "29efa667d35d",
-      "title": "2025/1517/Cond3: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Details pursuant to Condition 5 (Arboricultural Method Statement) and 6 (Tree Monitoring Program) of planning permission ref: 2025/1517 dated 22/07/2026 (Variation of Condition 3 (Plans) of planning permission ref: 2025/58 dated 22/09/2025 (Demolition of existing stables and the erection of 12 dwellings with parking, access, and associated works (Outline application with all matters reserved excep",
-      "date": "2026-11-19",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1517/Cond3",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2025/1517/Cond3",
-        "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
