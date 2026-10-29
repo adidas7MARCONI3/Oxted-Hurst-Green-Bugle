@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-10-28T11:53:58.656453+00:00",
+  "collected_at": "2026-10-29T12:00:50.906748+00:00",
   "items": [
+    {
+      "id": "4290ffae1b8c",
+      "title": "2025/1517/Cond5: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+      "description": "Details pursuant to Condition 4 (Contamination assessment), 7 (Biodiversity Gain Plan), and 13 (Mechanical ventilation system) of planning permission ref: 2025/1517 dated 22/07/2026 (Variation of Condition 3 (Plans) of planning permission ref: 2025/58 dated 22/09/2025 (Demolition of existing stables and the erection of 12 dwellings with parking, access, and associated works (Outline application wi",
+      "date": "2026-12-21",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1517/Cond5",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2025/1517/Cond5",
+        "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "eb4371295dc8",
       "title": "2026/955: Development Site East Of Rowlands, Westerham Road, Limpsfield, Oxted, Surrey, RH",
@@ -163,22 +179,6 @@
       }
     },
     {
-      "id": "a13caf9e97d8",
-      "title": "2026/1218: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
-      "description": "Erection of a rear dormer extension, installation of front roof lights and removal of existing chimney in association with conversion of loft to habitable accommodation. Alterations to rear first floor fenestrations (Certificate of Lawfulness (Proposed))",
-      "date": "2026-12-07",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1218",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1218",
-        "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "1bc4ea3d3248",
       "title": "2026/1217: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
       "description": "Demolition of existing outbuilding. Erection of a single-storey rear extension with rooflights and glazed doors to the rear",
@@ -189,6 +189,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1217",
+        "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "a13caf9e97d8",
+      "title": "2026/1218: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
+      "description": "Erection of a rear dormer extension, installation of front roof lights and removal of existing chimney in association with conversion of loft to habitable accommodation. Alterations to rear first floor fenestrations (Certificate of Lawfulness (Proposed))",
+      "date": "2026-12-07",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1218",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1218",
         "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -291,6 +307,22 @@
       }
     },
     {
+      "id": "16d8f33d4d59",
+      "title": "2026/866: Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
+      "description": "Erection of single storey rear extension to existing detached garage to provide home gym, including associated landscaping",
+      "date": "2026-11-27",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/866",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/866",
+        "address": "Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "d8954e367654",
       "title": "2026/1247/TPO: 1 Rockfield Close, Oxted, Surrey, RH8 0DN",
       "description": "T1 Larch (Larix decidua) to be removed due to dieback and safety concerns (TPO 106 - W1 on map shown as T1 on Tree Survey Plan TS1.0)",
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/1100",
         "address": "Garth Cottage, Icehouse Wood, Oxted, Surrey, RH8 9DW",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "12552a83c0ad",
-      "title": "2026/665: 41 Granville Road, Limpsfield, Oxted, Surrey, RH8 0BX",
-      "description": "Demolition of existing house and erection of new build, two-storey, five-bedroom detached dwellinghouse and associated landscaping.\r\n(The changes to the application include revised front and rear elevations, a reduction in the ridge height, removal of the accommodation above the proposed garage and associated external stair and a revised materials palette)",
-      "date": "2026-11-20",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/665",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/665",
-        "address": "41 Granville Road, Limpsfield, Oxted, Surrey, RH8 0BX",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "c728d0200ea4",
-      "title": "2026/396: Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
-      "description": "Demolition of existing buildings to provide 6 padel courts (3 under cover) and conversion of existing buildings to provide new club house and member facilities together with parking and landscaping",
-      "date": "2026-11-20",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/396",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/396",
-        "address": "Broomlands Farm, Broomlands Lane, Limpsfield, Oxted, Surrey, RH8 0SP",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
