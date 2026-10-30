@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-10-29T12:00:50.906748+00:00",
+  "collected_at": "2026-10-30T11:54:44.230642+00:00",
   "items": [
+    {
+      "id": "184502ea54d9",
+      "title": "2026/1314: 2 Moat Farm Cottages, Itchingwood Common Road, Limpsfield, Oxted, Surrey, RH8 0R",
+      "description": "Single storey rear extension",
+      "date": "2026-12-22",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1314",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1314",
+        "address": "2 Moat Farm Cottages, Itchingwood Common Road, Limpsfield, Oxted, Surrey, RH8 0RL",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "4290ffae1b8c",
       "title": "2025/1517/Cond5: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
@@ -179,22 +195,6 @@
       }
     },
     {
-      "id": "1bc4ea3d3248",
-      "title": "2026/1217: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
-      "description": "Demolition of existing outbuilding. Erection of a single-storey rear extension with rooflights and glazed doors to the rear",
-      "date": "2026-12-07",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1217",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1217",
-        "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "a13caf9e97d8",
       "title": "2026/1218: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
       "description": "Erection of a rear dormer extension, installation of front roof lights and removal of existing chimney in association with conversion of loft to habitable accommodation. Alterations to rear first floor fenestrations (Certificate of Lawfulness (Proposed))",
@@ -205,6 +205,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1218",
+        "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "1bc4ea3d3248",
+      "title": "2026/1217: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
+      "description": "Demolition of existing outbuilding. Erection of a single-storey rear extension with rooflights and glazed doors to the rear",
+      "date": "2026-12-07",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1217",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1217",
         "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -355,22 +371,6 @@
       }
     },
     {
-      "id": "51995a890d46",
-      "title": "2026/1248: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
-      "description": "Single Storey Kitchen Extension to listed building",
-      "date": "2026-11-24",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1248",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1248",
-        "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "5976933a9da8",
       "title": "2026/1235: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
       "description": "Single Storey Kitchen Extension",
@@ -387,17 +387,17 @@
       }
     },
     {
-      "id": "f744c0167615",
-      "title": "2026/1100: Garth Cottage, Icehouse Wood, Oxted, Surrey, RH8 9DW",
-      "description": "Erection of single storey front & side extension, two storey rear extension; conversion one side of existing double garage; new front porch; front and rear dormers & removal of chimney breast.",
-      "date": "2026-11-23",
+      "id": "51995a890d46",
+      "title": "2026/1248: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+      "description": "Single Storey Kitchen Extension to listed building",
+      "date": "2026-11-24",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1100",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1248",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/1100",
-        "address": "Garth Cottage, Icehouse Wood, Oxted, Surrey, RH8 9DW",
+        "reference": "2026/1248",
+        "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }

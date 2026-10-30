@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-10-29T12:01:22.575959+00:00",
+  "collected_at": "2026-10-30T11:55:25.291986+00:00",
   "items": [
     {
       "id": "2da7105b8639",
@@ -345,36 +345,6 @@
         "amount": 490000,
         "category": "Semi-detached",
         "postcode": "RH8 0JL"
-      }
-    },
-    {
-      "id": "ced447f1e7a5",
-      "title": "Semi-detached, 102 Wolfs Wood \u2014 \u00a3415,000",
-      "description": "A semi-detached property at 102 Wolfs Wood, RH8 0HJ sold for \u00a3415,000 on 2026-07-31.",
-      "date": "2026-07-31",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 415000,
-        "category": "Semi-detached",
-        "postcode": "RH8 0HJ"
-      }
-    },
-    {
-      "id": "d4a06fdc9239",
-      "title": "Semi-detached, 15 Johnsdale \u2014 \u00a3422,000",
-      "description": "A semi-detached property at 15 Johnsdale, RH8 0BW sold for \u00a3422,000 on 2026-07-31.",
-      "date": "2026-07-31",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 422000,
-        "category": "Semi-detached",
-        "postcode": "RH8 0BW"
       }
     }
   ]
