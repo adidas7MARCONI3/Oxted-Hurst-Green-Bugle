@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-10-30T11:54:44.230642+00:00",
+  "collected_at": "2026-10-31T11:28:15.660654+00:00",
   "items": [
     {
       "id": "184502ea54d9",
@@ -275,22 +275,6 @@
       }
     },
     {
-      "id": "a12ce75ea652",
-      "title": "2026/1229: 15 Haywain, Oxted, Surrey, RH8 9LL",
-      "description": "Erection of single storey rear extension. Lawful Development Certificate (proposed)",
-      "date": "2026-11-30",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1229",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1229",
-        "address": "15 Haywain, Oxted, Surrey, RH8 9LL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "ef293b7cd375",
       "title": "2026/1265: Marylands, West Hill, Oxted, Surrey, RH8 9JB",
       "description": "Demolition of existing dwelling, erection of replacement dwelling and detached garage with associated works",
@@ -398,6 +382,22 @@
       "data": {
         "reference": "2026/1248",
         "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "f744c0167615",
+      "title": "2026/1100: Garth Cottage, Icehouse Wood, Oxted, Surrey, RH8 9DW",
+      "description": "Erection of single storey front & side extension, two storey rear extension; conversion one side of existing double garage; new front porch; front and rear dormers & removal of chimney breast.",
+      "date": "2026-11-23",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1100",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1100",
+        "address": "Garth Cottage, Icehouse Wood, Oxted, Surrey, RH8 9DW",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
