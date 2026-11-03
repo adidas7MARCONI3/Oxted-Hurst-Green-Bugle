@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-02T14:19:04.350585+00:00",
+  "collected_at": "2026-11-03T13:19:32.545216+00:00",
   "items": [
+    {
+      "id": "b3be79d7ba2f",
+      "title": "2026/1328: 16 Detillens Lane, Limpsfield, Oxted, Surrey, RH8 0DJ",
+      "description": "Erection of ancillary garden outbuilding",
+      "date": "2026-12-28",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1328",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1328",
+        "address": "16 Detillens Lane, Limpsfield, Oxted, Surrey, RH8 0DJ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "184502ea54d9",
       "title": "2026/1314: 2 Moat Farm Cottages, Itchingwood Common Road, Limpsfield, Oxted, Surrey, RH8 0R",
@@ -195,22 +211,6 @@
       }
     },
     {
-      "id": "a13caf9e97d8",
-      "title": "2026/1218: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
-      "description": "Erection of a rear dormer extension, installation of front roof lights and removal of existing chimney in association with conversion of loft to habitable accommodation. Alterations to rear first floor fenestrations (Certificate of Lawfulness (Proposed))",
-      "date": "2026-12-07",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1218",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1218",
-        "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "1bc4ea3d3248",
       "title": "2026/1217: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
       "description": "Demolition of existing outbuilding. Erection of a single-storey rear extension with rooflights and glazed doors to the rear",
@@ -221,6 +221,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1217",
+        "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "a13caf9e97d8",
+      "title": "2026/1218: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
+      "description": "Erection of a rear dormer extension, installation of front roof lights and removal of existing chimney in association with conversion of loft to habitable accommodation. Alterations to rear first floor fenestrations (Certificate of Lawfulness (Proposed))",
+      "date": "2026-12-07",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1218",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1218",
         "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/1248",
         "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "f744c0167615",
-      "title": "2026/1100: Garth Cottage, Icehouse Wood, Oxted, Surrey, RH8 9DW",
-      "description": "Erection of single storey front & side extension, two storey rear extension; conversion one side of existing double garage; new front porch; front and rear dormers & removal of chimney breast.",
-      "date": "2026-11-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1100",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1100",
-        "address": "Garth Cottage, Icehouse Wood, Oxted, Surrey, RH8 9DW",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
