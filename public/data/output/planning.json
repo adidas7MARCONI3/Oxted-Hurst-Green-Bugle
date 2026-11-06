@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-05T13:45:57.012762+00:00",
+  "collected_at": "2026-11-06T13:30:04.458785+00:00",
   "items": [
     {
       "id": "0c9e1447a310",
@@ -339,22 +339,6 @@
       }
     },
     {
-      "id": "44d597e8e2f8",
-      "title": "2026/931: Land Off Oxted Road (A25), Oxted",
-      "description": "Variation of Condition 2 (Approved plans) and 6 (Drainage scheme) of planning permission ref: 2020/690 (APP/M3645/W/21/3272384) dated 30/09/2021 (Erection of crematorium facility with associated memorial areas, landscaping, parking and infrastructure), as amended under 2020/690/NMA2 dated 03.06.2026, to allow revised plans to accommodate a Porte Cochere and the implementation of an alternative dra",
-      "date": "2026-11-27",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/931",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/931",
-        "address": "Land Off Oxted Road (A25), Oxted",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "16d8f33d4d59",
       "title": "2026/866: Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
       "description": "Erection of single storey rear extension to existing detached garage to provide home gym, including associated landscaping",
@@ -398,6 +382,22 @@
       "data": {
         "reference": "2026/1161",
         "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "51995a890d46",
+      "title": "2026/1248: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+      "description": "Single Storey Kitchen Extension to listed building",
+      "date": "2026-11-24",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1248",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1248",
+        "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
