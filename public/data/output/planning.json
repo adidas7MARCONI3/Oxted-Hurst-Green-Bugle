@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-06T13:30:04.458785+00:00",
+  "collected_at": "2026-11-07T12:09:37.480167+00:00",
   "items": [
+    {
+      "id": "f71209c45d8f",
+      "title": "2026/1408/TPO: 25 Lankester Square, Oxted, Surrey, RH8 0LJ",
+      "description": "T1) Indian Bean - Crown reduced by 2.5m to a residual height of 8m and overall spread of 8m. Deadwood >6cm dia removed. To reduce risk of failure of over extended limbs and maintain suitable size for location.",
+      "date": "2026-12-29",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1408/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1408/TPO",
+        "address": "25 Lankester Square, Oxted, Surrey, RH8 0LJ",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "0c9e1447a310",
       "title": "2026/1365: 91 Home Park, Hurst Green, Oxted, Surrey, RH8 0JT",
@@ -35,22 +51,6 @@
       }
     },
     {
-      "id": "957b602e1ff1",
-      "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
-      "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
-      "date": "2026-12-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1268",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1268",
-        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "496e06d7bc1c",
       "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
       "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
@@ -61,6 +61,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1269",
+        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "957b602e1ff1",
+      "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
+      "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
+      "date": "2026-12-23",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1268",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1268",
         "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/1161",
         "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "51995a890d46",
-      "title": "2026/1248: Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
-      "description": "Single Storey Kitchen Extension to listed building",
-      "date": "2026-11-24",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1248",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1248",
-        "address": "Dell Cottage, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
