@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-08T12:30:27.943277+00:00",
+  "collected_at": "2026-11-09T14:46:18.893128+00:00",
   "items": [
+    {
+      "id": "5c60fc6495e7",
+      "title": "2026/1321: Flat 6, Green Hedges, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0EE",
+      "description": "Replacement of window with new french doors and erection of glass balustrade at an overall height of 1.1m to top of existing parapet wall on rear elevation and 1.8m high privacy screen to side elevation, to existing flat roof on first floor rear elevation to form balcony to flat 6",
+      "date": "2026-12-31",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1321",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1321",
+        "address": "Flat 6, Green Hedges, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0EE",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "f71209c45d8f",
       "title": "2026/1408/TPO: 25 Lankester Square, Oxted, Surrey, RH8 0LJ",
@@ -51,22 +67,6 @@
       }
     },
     {
-      "id": "496e06d7bc1c",
-      "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
-      "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
-      "date": "2026-12-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1269",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1269",
-        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "957b602e1ff1",
       "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
       "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
@@ -77,6 +77,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1268",
+        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "496e06d7bc1c",
+      "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
+      "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
+      "date": "2026-12-23",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1269",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1269",
         "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -355,6 +371,22 @@
       }
     },
     {
+      "id": "ed1b7f74231d",
+      "title": "2026/1088: Pastens Bungalow, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
+      "description": "Demolition of the existing building and erection of a replacement dwelling including parking and associated works",
+      "date": "2026-11-27",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1088",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1088",
+        "address": "Pastens Bungalow, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "16d8f33d4d59",
       "title": "2026/866: Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
       "description": "Erection of single storey rear extension to existing detached garage to provide home gym, including associated landscaping",
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/866",
         "address": "Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "d8954e367654",
-      "title": "2026/1247/TPO: 1 Rockfield Close, Oxted, Surrey, RH8 0DN",
-      "description": "T1 Larch (Larix decidua) to be removed due to dieback and safety concerns (TPO 106 - W1 on map shown as T1 on Tree Survey Plan TS1.0)",
-      "date": "2026-11-25",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1247/TPO",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1247/TPO",
-        "address": "1 Rockfield Close, Oxted, Surrey, RH8 0DN",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "cda86b3394ea",
-      "title": "2026/1161: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
-      "description": "Demolition of the existing stables and erection of a new dwelling",
-      "date": "2026-11-25",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1161",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1161",
-        "address": "Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
