@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-10T14:00:27.561250+00:00",
+  "collected_at": "2026-11-11T13:16:54.150914+00:00",
   "items": [
+    {
+      "id": "6c1abbbc35b9",
+      "title": "2026/1320: 7 Tanhouse Road, Oxted, Surrey, RH8 9PE",
+      "description": "Proposed loft conversion including a rear dormer and three front-facing rooflights. (Certificate of Lawfulness for a proposed use)",
+      "date": "2027-01-11",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1320",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1320",
+        "address": "7 Tanhouse Road, Oxted, Surrey, RH8 9PE",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "5c60fc6495e7",
       "title": "2026/1321: Flat 6, Green Hedges, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0EE",
@@ -67,22 +83,6 @@
       }
     },
     {
-      "id": "957b602e1ff1",
-      "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
-      "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
-      "date": "2026-12-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1268",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1268",
-        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "496e06d7bc1c",
       "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
       "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
@@ -93,6 +93,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1269",
+        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "957b602e1ff1",
+      "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
+      "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
+      "date": "2026-12-23",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1268",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1268",
         "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -286,22 +302,6 @@
       "data": {
         "reference": "2026/1253",
         "address": "Land To The Rear Of 60-64 Station Road East, Oxted, RH8 0PG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "1bc4ea3d3248",
-      "title": "2026/1217: 15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
-      "description": "Demolition of existing outbuilding. Erection of a single-storey rear extension with rooflights and glazed doors to the rear",
-      "date": "2026-12-07",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1217",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1217",
-        "address": "15 Meadowlands, Hurst Green, Oxted, Surrey, RH8 9BG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }

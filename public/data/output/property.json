@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-11-10T14:00:58.893346+00:00",
+  "collected_at": "2026-11-11T13:17:24.505139+00:00",
   "items": [
     {
       "id": "2da7105b8639",
@@ -300,21 +300,6 @@
         "amount": 555000,
         "category": "Flat",
         "postcode": "RH8 9JA"
-      }
-    },
-    {
-      "id": "255112a46246",
-      "title": "Terraced, 45 Barnfield Way \u2014 \u00a3350,000",
-      "description": "A terraced property at 45 Barnfield Way, RH8 9QF sold for \u00a3350,000 on 2026-08-12.",
-      "date": "2026-08-12",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 350000,
-        "category": "Terraced",
-        "postcode": "RH8 9QF"
       }
     }
   ]
