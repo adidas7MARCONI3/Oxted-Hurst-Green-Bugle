@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-11T13:16:54.150914+00:00",
+  "collected_at": "2026-11-12T14:19:51.080229+00:00",
   "items": [
     {
       "id": "6c1abbbc35b9",
@@ -14,6 +14,70 @@
       "data": {
         "reference": "2026/1320",
         "address": "7 Tanhouse Road, Oxted, Surrey, RH8 9PE",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "ff8a7a5e25f4",
+      "title": "2026/1376: Champions Cottage, Caxton Lane, Limpsfield, Oxted, Surrey, RH8 0TD",
+      "description": "Installation of a swimming pool",
+      "date": "2027-01-07",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1376",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1376",
+        "address": "Champions Cottage, Caxton Lane, Limpsfield, Oxted, Surrey, RH8 0TD",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "57b7f9dcfda4",
+      "title": "2026/1370: 9 Godstone Road, Oxted, Surrey, RH8 9JS",
+      "description": "Partial demolition of existing single-storey sunroom and erection of a replacement single-storey extension, incorporating retained external masonry walls",
+      "date": "2027-01-06",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1370",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1370",
+        "address": "9 Godstone Road, Oxted, Surrey, RH8 9JS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "83ad381f09cc",
+      "title": "2026/1371: 9 Godstone Road, Oxted, Surrey, RH8 9JS",
+      "description": "Partial demolition of existing single-storey sunroom and erection of a replacement single-storey extension, incorporating retained external masonry walls (Listed Building Consent)",
+      "date": "2027-01-05",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1371",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1371",
+        "address": "9 Godstone Road, Oxted, Surrey, RH8 9JS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "b800879bf8ab",
+      "title": "2026/1006/Cond1: Chart Grange, Rockfield Road, Oxted, Surrey, RH8 0HA",
+      "description": "Details pursuant to Condition 4 (Construction Environmental Management Plan (CEMP)) of planning permission ref: 2026/1006 dated 20/10/2026 (New boundary retaining wall and replacement pool house)",
+      "date": "2027-01-01",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1006/Cond1",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1006/Cond1",
+        "address": "Chart Grange, Rockfield Road, Oxted, Surrey, RH8 0HA",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -83,22 +147,6 @@
       }
     },
     {
-      "id": "496e06d7bc1c",
-      "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
-      "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
-      "date": "2026-12-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1269",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1269",
-        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "957b602e1ff1",
       "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
       "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
@@ -109,6 +157,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1268",
+        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "496e06d7bc1c",
+      "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
+      "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
+      "date": "2026-12-23",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1269",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1269",
         "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -323,81 +387,17 @@
       }
     },
     {
-      "id": "c015f628f45f",
-      "title": "2026/1285/TPO: The Wellows, 8 Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LB",
-      "description": "Red dot) Eucalyptus - segmented removal of the tree from top to ground level due to significant rot at the base",
-      "date": "2026-12-03",
+      "id": "44e03255429c",
+      "title": "2026/874: Development Site Rear Of 48 To 52, Station Road East, Oxted, Surrey, RH8 0PG",
+      "description": "Erection of a 4 storey building containing 9 residential dwellings (Use Class C3) alongside landscaping, car and cycle parking, refuse and other associated works",
+      "date": "2026-12-04",
       "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1285/TPO",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/874",
       "headline": "",
       "summary": "",
       "data": {
-        "reference": "2026/1285/TPO",
-        "address": "The Wellows, 8 Greenhurst Lane, Hurst Green, Oxted, Surrey, RH8 0LB",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "e347b9b83c5c",
-      "title": "2026/1246/TPO: Oaklands, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
-      "description": "T11 Oak - Removal of oak tree number. The tree is dying of Canker\r\nT1 Oak - Remove 2 dead branches from oak tree",
-      "date": "2026-12-02",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1246/TPO",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1246/TPO",
-        "address": "Oaklands, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "ef293b7cd375",
-      "title": "2026/1265: Marylands, West Hill, Oxted, Surrey, RH8 9JB",
-      "description": "Demolition of existing dwelling, erection of replacement dwelling and detached garage with associated works",
-      "date": "2026-11-27",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1265",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1265",
-        "address": "Marylands, West Hill, Oxted, Surrey, RH8 9JB",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "ed1b7f74231d",
-      "title": "2026/1088: Pastens Bungalow, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
-      "description": "Demolition of the existing building and erection of a replacement dwelling including parking and associated works",
-      "date": "2026-11-27",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1088",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1088",
-        "address": "Pastens Bungalow, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "16d8f33d4d59",
-      "title": "2026/866: Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
-      "description": "Erection of single storey rear extension to existing detached garage to provide home gym, including associated landscaping",
-      "date": "2026-11-27",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/866",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/866",
-        "address": "Valelands, Woodhurst Park, Oxted, Surrey, RH8 9HA",
+        "reference": "2026/874",
+        "address": "Development Site Rear Of 48 To 52, Station Road East, Oxted, Surrey, RH8 0PG",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
