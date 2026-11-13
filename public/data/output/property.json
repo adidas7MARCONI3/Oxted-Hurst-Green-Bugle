@@ -1,5 +1,246 @@
 {
   "source": "property",
-  "collected_at": "2026-11-12T14:20:31.224563+00:00",
-  "items": []
+  "collected_at": "2026-11-13T13:41:52.056444+00:00",
+  "items": [
+    {
+      "id": "2da7105b8639",
+      "title": "Semi-detached, 1 Springfield \u2014 \u00a3547,500",
+      "description": "A semi-detached property at 1 Springfield, RH8 9JL sold for \u00a3547,500 on 2026-09-28.",
+      "date": "2026-09-28",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 547500,
+        "category": "Semi-detached",
+        "postcode": "RH8 9JL"
+      }
+    },
+    {
+      "id": "1dad416bbd7d",
+      "title": "Semi-detached, 55 Westlands Way \u2014 \u00a3600,000",
+      "description": "A semi-detached property at 55 Westlands Way, RH8 0NB sold for \u00a3600,000 on 2026-09-24.",
+      "date": "2026-09-24",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 600000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0NB"
+      }
+    },
+    {
+      "id": "d28d894bdef8",
+      "title": "Detached, 42 Central Way \u2014 \u00a3937,500",
+      "description": "A detached property at 42 Central Way, RH8 0LZ sold for \u00a3937,500 on 2026-09-16.",
+      "date": "2026-09-16",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 937500,
+        "category": "Detached",
+        "postcode": "RH8 0LZ"
+      }
+    },
+    {
+      "id": "9175da8d0472",
+      "title": "Flat, Flat 19 Sycamore Court Hoskins Road \u2014 \u00a3375,000",
+      "description": "A flat property at Flat 19 Sycamore Court Hoskins Road, RH8 9JQ sold for \u00a3375,000 on 2026-09-11.",
+      "date": "2026-09-11",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 375000,
+        "category": "Flat",
+        "postcode": "RH8 9JQ"
+      }
+    },
+    {
+      "id": "dd7059f87de2",
+      "title": "Terraced, 90 The Greenway \u2014 \u00a3432,500",
+      "description": "A terraced property at 90 The Greenway, RH8 0JZ sold for \u00a3432,500 on 2026-09-02.",
+      "date": "2026-09-02",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 432500,
+        "category": "Terraced",
+        "postcode": "RH8 0JZ"
+      }
+    },
+    {
+      "id": "a60dccee9c5d",
+      "title": "Semi-detached, 36 Gordons Way \u2014 \u00a3730,000",
+      "description": "A semi-detached property at 36 Gordons Way, RH8 0LW sold for \u00a3730,000 on 2026-08-28.",
+      "date": "2026-08-28",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 730000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0LW"
+      }
+    },
+    {
+      "id": "474222ba46bc",
+      "title": "Terraced, 8 Rosemary Close \u2014 \u00a3350,000",
+      "description": "A terraced property at 8 Rosemary Close, RH8 9PY sold for \u00a3350,000 on 2026-08-28.",
+      "date": "2026-08-28",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 350000,
+        "category": "Terraced",
+        "postcode": "RH8 9PY"
+      }
+    },
+    {
+      "id": "786f3bbd7b3f",
+      "title": "Flat, Flat 6 The Hoskins Station Road West \u2014 \u00a3455,000",
+      "description": "A flat property at Flat 6 The Hoskins Station Road West, RH8 9EB sold for \u00a3455,000 on 2026-08-27.",
+      "date": "2026-08-27",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 455000,
+        "category": "Flat",
+        "postcode": "RH8 9EB"
+      }
+    },
+    {
+      "id": "89b0aa81e165",
+      "title": "Detached, 2 Hallsland Way \u2014 \u00a3775,000",
+      "description": "A detached property at 2 Hallsland Way, RH8 9AL sold for \u00a3775,000 on 2026-08-25.",
+      "date": "2026-08-25",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 775000,
+        "category": "Detached",
+        "postcode": "RH8 9AL"
+      }
+    },
+    {
+      "id": "8d8aa37e0357",
+      "title": "Detached, Montague House Uvedale Road \u2014 \u00a31,780,000",
+      "description": "A detached property at Montague House Uvedale Road, RH8 0EW sold for \u00a31,780,000 on 2026-08-21.",
+      "date": "2026-08-21",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 1780000,
+        "category": "Detached",
+        "postcode": "RH8 0EW"
+      }
+    },
+    {
+      "id": "7f3a78cfaa7c",
+      "title": "Otherpropertytype, Garth Cottage Icehouse Wood \u2014 \u00a31,025,000",
+      "description": "A otherpropertytype property at Garth Cottage Icehouse Wood, RH8 9DW sold for \u00a31,025,000 on 2026-08-21.",
+      "date": "2026-08-21",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 1025000,
+        "category": "Otherpropertytype",
+        "postcode": "RH8 9DW"
+      }
+    },
+    {
+      "id": "e45354d95acc",
+      "title": "Detached, Hammerwood Wilderness Road \u2014 \u00a31,900,000",
+      "description": "A detached property at Hammerwood Wilderness Road, RH8 9HS sold for \u00a31,900,000 on 2026-08-21.",
+      "date": "2026-08-21",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 1900000,
+        "category": "Detached",
+        "postcode": "RH8 9HS"
+      }
+    },
+    {
+      "id": "30340b3b79df",
+      "title": "Detached, 33 Beadles Lane \u2014 \u00a3690,000",
+      "description": "A detached property at 33 Beadles Lane, RH8 9JG sold for \u00a3690,000 on 2026-08-21.",
+      "date": "2026-08-21",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 690000,
+        "category": "Detached",
+        "postcode": "RH8 9JG"
+      }
+    },
+    {
+      "id": "abd6f631fadc",
+      "title": "Terraced, 138 The Greenway \u2014 \u00a3450,000",
+      "description": "A terraced property at 138 The Greenway, RH8 0JD sold for \u00a3450,000 on 2026-08-19.",
+      "date": "2026-08-19",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 450000,
+        "category": "Terraced",
+        "postcode": "RH8 0JD"
+      }
+    },
+    {
+      "id": "aab4f9fed788",
+      "title": "Otherpropertytype, Ridlands Cottage Ridlands Lane \u2014 \u00a3980,000",
+      "description": "A otherpropertytype property at Ridlands Cottage Ridlands Lane, RH8 0TU sold for \u00a3980,000 on 2026-08-18.",
+      "date": "2026-08-18",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 980000,
+        "category": "Otherpropertytype",
+        "postcode": "RH8 0TU"
+      }
+    },
+    {
+      "id": "030aa8a7a0e2",
+      "title": "Flat, 22 Westerham Road \u2014 \u00a3550,000",
+      "description": "A flat property at 22 Westerham Road, RH8 0ER sold for \u00a3550,000 on 2026-08-18.",
+      "date": "2026-08-18",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 550000,
+        "category": "Flat",
+        "postcode": "RH8 0ER"
+      }
+    }
+  ]
 }
