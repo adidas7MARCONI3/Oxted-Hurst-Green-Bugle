@@ -1,7 +1,23 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-17T15:14:57.374247+00:00",
+  "collected_at": "2026-11-18T14:52:04.833050+00:00",
   "items": [
+    {
+      "id": "d2d7ef0015e7",
+      "title": "2026/1364: Highstead, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
+      "description": "Demolition of existing dwellinghouse. Erection of a replacement dwellinghouse and garage with associated new driveway, engineering works and swimming pool",
+      "date": "2027-02-17",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1364",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1364",
+        "address": "Highstead, Pastens Road, Limpsfield, Oxted, Surrey, RH8 0RE",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
     {
       "id": "a538a0316840",
       "title": "2026/1424: Beresford Court, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0SL",
@@ -30,6 +46,22 @@
       "data": {
         "reference": "2024/1240/Cond2",
         "address": "4 Wynnstow Park, Oxted, Surrey, RH8 9DR",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "7d3afb988ede",
+      "title": "2026/1350: Lovelands Cottage, 17 Wolfs Row, Limpsfield, Oxted, Surrey, RH8 0EB",
+      "description": "Installation of solar panels on the roof of the dwelling - Certificate of Lawfulness (Proposed)",
+      "date": "2027-01-11",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1350",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1350",
+        "address": "Lovelands Cottage, 17 Wolfs Row, Limpsfield, Oxted, Surrey, RH8 0EB",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -131,6 +163,22 @@
       }
     },
     {
+      "id": "54101a6a3f99",
+      "title": "2026/1158: Ivan Cottage, West Hill, Oxted, Surrey, RH8 9JD",
+      "description": "Raising of an existing rear catslide roof and alterations to first-floor accommodation, including provision of a raised rear patio/balcony and associated access steps.",
+      "date": "2027-01-01",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1158",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1158",
+        "address": "Ivan Cottage, West Hill, Oxted, Surrey, RH8 9JD",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "5c60fc6495e7",
       "title": "2026/1321: Flat 6, Green Hedges, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0EE",
       "description": "Replacement of window with new french doors and erection of glass balustrade at an overall height of 1.1m to top of existing parapet wall on rear elevation and 1.8m high privacy screen to side elevation, to existing flat roof on first floor rear elevation to form balcony to flat 6",
@@ -211,22 +259,6 @@
       }
     },
     {
-      "id": "496e06d7bc1c",
-      "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
-      "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
-      "date": "2026-12-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1269",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1269",
-        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "957b602e1ff1",
       "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
       "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
@@ -237,6 +269,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1268",
+        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "496e06d7bc1c",
+      "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
+      "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
+      "date": "2026-12-23",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1269",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1269",
         "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -350,54 +398,6 @@
       "data": {
         "reference": "2025/1295/NMA1",
         "address": "Rivington House, Rockfield Road, Oxted, Surrey, RH8 0EL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "3e931fc3e449",
-      "title": "2026/1304: Cobwebs, 4 Hamfield Close, Oxted, Surrey, RH8 0NG",
-      "description": "Demolition of existing single storey rear extension, erection of a new single storey rear extension on the same footprint",
-      "date": "2026-12-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1304",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1304",
-        "address": "Cobwebs, 4 Hamfield Close, Oxted, Surrey, RH8 0NG",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "ca21a559d108",
-      "title": "2026/954: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Reserved Matters submission pursuant to outline planning permission ref 2025/1517, comprising Appearance and Landscaping for the demolition of existing stables and erection of 12 dwellings",
-      "date": "2026-12-11",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/954",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/954",
-        "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "ec59427f9049",
-      "title": "2026/1306: 20 Detillens Lane, Limpsfield, Oxted, Surrey, RH8 0DJ",
-      "description": "Erection of a part single storey rear infill extension and first floor extension over existing ground floor element.",
-      "date": "2026-12-09",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1306",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1306",
-        "address": "20 Detillens Lane, Limpsfield, Oxted, Surrey, RH8 0DJ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }

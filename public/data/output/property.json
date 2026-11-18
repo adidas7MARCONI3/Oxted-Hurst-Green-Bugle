@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-11-17T15:15:34.350471+00:00",
+  "collected_at": "2026-11-18T14:52:40.645200+00:00",
   "items": [
     {
       "id": "2da7105b8639",
@@ -195,21 +195,6 @@
         "amount": 690000,
         "category": "Detached",
         "postcode": "RH8 9JG"
-      }
-    },
-    {
-      "id": "abd6f631fadc",
-      "title": "Terraced, 138 The Greenway \u2014 \u00a3450,000",
-      "description": "A terraced property at 138 The Greenway, RH8 0JD sold for \u00a3450,000 on 2026-08-19.",
-      "date": "2026-08-19",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 450000,
-        "category": "Terraced",
-        "postcode": "RH8 0JD"
       }
     }
   ]
