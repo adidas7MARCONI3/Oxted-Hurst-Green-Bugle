@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-18T14:52:04.833050+00:00",
+  "collected_at": "2026-11-19T14:57:49.654401+00:00",
   "items": [
     {
       "id": "d2d7ef0015e7",
@@ -35,6 +35,22 @@
       }
     },
     {
+      "id": "bd04bf1b3852",
+      "title": "2026/1355/TPO: The Evergreens, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
+      "description": "The trees are T2-T3 on the plan provided in the report on page 2.\n\nWe wish to professionally remove the broken and damaged branches with care that are overhanging the access footpath to our home and drive.",
+      "date": "2027-01-13",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1355/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1355/TPO",
+        "address": "The Evergreens, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "70eb0bf62d58",
       "title": "2024/1240/Cond2: 4 Wynnstow Park, Oxted, Surrey, RH8 9DR",
       "description": "Details pursuant to Condition 3 (detailed tree protection plan and detailed arboricultural method statement) and 4 (method statement for the demolition and/or construction) of planning permission ref: 2024/1240 dated 30/01/2025 (Demolition of existing single storey garage and utility room to side. Erection of two storey side/rear extension, lower ground garage, two storey front extension and chang",
@@ -46,6 +62,22 @@
       "data": {
         "reference": "2024/1240/Cond2",
         "address": "4 Wynnstow Park, Oxted, Surrey, RH8 9DR",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "4ac1991c9721",
+      "title": "2026/1425: Woodlands, Caxton Lane, Limpsfield, Oxted, Surrey, RH8 0TD",
+      "description": "Demolition of existing greenhouses and construction of a single-storey rear extension in their place, together with construction of a single-storey side extension, conversion of the integral garage, a new first-floor roof extension for an en suite, and new/replacement timber cladding.",
+      "date": "2027-01-11",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1425",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1425",
+        "address": "Woodlands, Caxton Lane, Limpsfield, Oxted, Surrey, RH8 0TD",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -259,22 +291,6 @@
       }
     },
     {
-      "id": "957b602e1ff1",
-      "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
-      "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
-      "date": "2026-12-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1268",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1268",
-        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "496e06d7bc1c",
       "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
       "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
@@ -285,6 +301,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1269",
+        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "957b602e1ff1",
+      "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
+      "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
+      "date": "2026-12-23",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1268",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1268",
         "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -366,38 +398,6 @@
       "data": {
         "reference": "2026/1341/TPO",
         "address": "1 Gresham Close, Limpsfield, Oxted, Surrey, RH8 0BH",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "d11112ff3d30",
-      "title": "2025/342/Cond1: Brickmakers Arms, Tandridge Lane, Tandridge, Oxted, Surrey, RH8 9NS",
-      "description": "Details pursuant to Condition 8 (bat precautionary working method statement) and 9 (Ecological Enhancement Plan) of planning permission ref: 2025/342 dated 08/06/2026 (Demolition of the existing public house (Sui Generis) and erection of two three-bedroom and two four-bedroom dwellings (Use Class C3) forming access off Tandridge Lane, with associated parking and hard and soft landscaping, at Brick",
-      "date": "2026-12-17",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/342/Cond1",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2025/342/Cond1",
-        "address": "Brickmakers Arms, Tandridge Lane, Tandridge, Oxted, Surrey, RH8 9NS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "5e652fdc1b61",
-      "title": "2025/1295/NMA1: Rivington House, Rockfield Road, Oxted, Surrey, RH8 0EL",
-      "description": "Non Material Amendment to planning permission 2025/1295 (Details pursuant to the variation of (Plans) of planning permission ref: 2024/177 (Subdivision of existing site and erection of detached house with access, parking and turning area.) to allow minor alterations to the elevations) to allow removal of chimney, increase in height of vertical tile hanging on the rear elevation by 200mm, alteratio",
-      "date": "2026-12-14",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1295/NMA1",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2025/1295/NMA1",
-        "address": "Rivington House, Rockfield Road, Oxted, Surrey, RH8 0EL",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
