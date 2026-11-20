@@ -1,5 +1,141 @@
 {
   "source": "property",
-  "collected_at": "2026-11-19T14:58:29.407097+00:00",
-  "items": []
+  "collected_at": "2026-11-20T14:40:27.917509+00:00",
+  "items": [
+    {
+      "id": "2da7105b8639",
+      "title": "Semi-detached, 1 Springfield \u2014 \u00a3547,500",
+      "description": "A semi-detached property at 1 Springfield, RH8 9JL sold for \u00a3547,500 on 2026-09-28.",
+      "date": "2026-09-28",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 547500,
+        "category": "Semi-detached",
+        "postcode": "RH8 9JL"
+      }
+    },
+    {
+      "id": "1dad416bbd7d",
+      "title": "Semi-detached, 55 Westlands Way \u2014 \u00a3600,000",
+      "description": "A semi-detached property at 55 Westlands Way, RH8 0NB sold for \u00a3600,000 on 2026-09-24.",
+      "date": "2026-09-24",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 600000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0NB"
+      }
+    },
+    {
+      "id": "d28d894bdef8",
+      "title": "Detached, 42 Central Way \u2014 \u00a3937,500",
+      "description": "A detached property at 42 Central Way, RH8 0LZ sold for \u00a3937,500 on 2026-09-16.",
+      "date": "2026-09-16",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 937500,
+        "category": "Detached",
+        "postcode": "RH8 0LZ"
+      }
+    },
+    {
+      "id": "9175da8d0472",
+      "title": "Flat, Flat 19 Sycamore Court Hoskins Road \u2014 \u00a3375,000",
+      "description": "A flat property at Flat 19 Sycamore Court Hoskins Road, RH8 9JQ sold for \u00a3375,000 on 2026-09-11.",
+      "date": "2026-09-11",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 375000,
+        "category": "Flat",
+        "postcode": "RH8 9JQ"
+      }
+    },
+    {
+      "id": "dd7059f87de2",
+      "title": "Terraced, 90 The Greenway \u2014 \u00a3432,500",
+      "description": "A terraced property at 90 The Greenway, RH8 0JZ sold for \u00a3432,500 on 2026-09-02.",
+      "date": "2026-09-02",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 432500,
+        "category": "Terraced",
+        "postcode": "RH8 0JZ"
+      }
+    },
+    {
+      "id": "a60dccee9c5d",
+      "title": "Semi-detached, 36 Gordons Way \u2014 \u00a3730,000",
+      "description": "A semi-detached property at 36 Gordons Way, RH8 0LW sold for \u00a3730,000 on 2026-08-28.",
+      "date": "2026-08-28",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 730000,
+        "category": "Semi-detached",
+        "postcode": "RH8 0LW"
+      }
+    },
+    {
+      "id": "474222ba46bc",
+      "title": "Terraced, 8 Rosemary Close \u2014 \u00a3350,000",
+      "description": "A terraced property at 8 Rosemary Close, RH8 9PY sold for \u00a3350,000 on 2026-08-28.",
+      "date": "2026-08-28",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 350000,
+        "category": "Terraced",
+        "postcode": "RH8 9PY"
+      }
+    },
+    {
+      "id": "786f3bbd7b3f",
+      "title": "Flat, Flat 6 The Hoskins Station Road West \u2014 \u00a3455,000",
+      "description": "A flat property at Flat 6 The Hoskins Station Road West, RH8 9EB sold for \u00a3455,000 on 2026-08-27.",
+      "date": "2026-08-27",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 455000,
+        "category": "Flat",
+        "postcode": "RH8 9EB"
+      }
+    },
+    {
+      "id": "89b0aa81e165",
+      "title": "Detached, 2 Hallsland Way \u2014 \u00a3775,000",
+      "description": "A detached property at 2 Hallsland Way, RH8 9AL sold for \u00a3775,000 on 2026-08-25.",
+      "date": "2026-08-25",
+      "category": "property",
+      "url": "https://landregistry.data.gov.uk/app/ppd",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "amount": 775000,
+        "category": "Detached",
+        "postcode": "RH8 9AL"
+      }
+    }
+  ]
 }
