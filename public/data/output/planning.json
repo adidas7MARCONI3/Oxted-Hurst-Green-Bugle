@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-22T13:50:18.119703+00:00",
+  "collected_at": "2026-11-23T16:56:08.078986+00:00",
   "items": [
     {
       "id": "d2d7ef0015e7",
@@ -46,6 +46,22 @@
       "data": {
         "reference": "2026/1355/TPO",
         "address": "The Evergreens, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "3e08d0bb5c7c",
+      "title": "2026/1467: 13 Chalkpit Lane, Oxted, Surrey, RH8 0NF",
+      "description": "Demolition of existing side garage and utility room. Erection of two storey side extension and single storey rear extension.",
+      "date": "2027-01-12",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1467",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1467",
+        "address": "13 Chalkpit Lane, Oxted, Surrey, RH8 0NF",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -291,22 +307,6 @@
       }
     },
     {
-      "id": "496e06d7bc1c",
-      "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
-      "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
-      "date": "2026-12-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1269",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1269",
-        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
       "id": "957b602e1ff1",
       "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
       "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
@@ -317,6 +317,22 @@
       "summary": "",
       "data": {
         "reference": "2026/1268",
+        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "496e06d7bc1c",
+      "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
+      "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
+      "date": "2026-12-23",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1269",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1269",
         "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
@@ -382,22 +398,6 @@
       "data": {
         "reference": "2026/1303",
         "address": "Hurst Green School, Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HJ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "703a36e66ac1",
-      "title": "2026/1341/TPO: 1 Gresham Close, Limpsfield, Oxted, Surrey, RH8 0BH",
-      "description": "T1: Lime in rear garden height pollarded back to previous points, laterals reduced to maintain shape and screening, removing up to 1.5m. Residual overall spread of 6m. Basal epicormic growth removed. \nMaintain suitable size for location.",
-      "date": "2026-12-17",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1341/TPO",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1341/TPO",
-        "address": "1 Gresham Close, Limpsfield, Oxted, Surrey, RH8 0BH",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
