@@ -1,6 +1,6 @@
 {
   "source": "property",
-  "collected_at": "2026-11-23T16:56:48.310981+00:00",
+  "collected_at": "2026-11-24T16:46:24.584433+00:00",
   "items": [
     {
       "id": "2da7105b8639",
@@ -120,21 +120,6 @@
         "amount": 455000,
         "category": "Flat",
         "postcode": "RH8 9EB"
-      }
-    },
-    {
-      "id": "89b0aa81e165",
-      "title": "Detached, 2 Hallsland Way \u2014 \u00a3775,000",
-      "description": "A detached property at 2 Hallsland Way, RH8 9AL sold for \u00a3775,000 on 2026-08-25.",
-      "date": "2026-08-25",
-      "category": "property",
-      "url": "https://landregistry.data.gov.uk/app/ppd",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "amount": 775000,
-        "category": "Detached",
-        "postcode": "RH8 9AL"
       }
     }
   ]
