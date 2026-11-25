@@ -1,6 +1,6 @@
 {
   "source": "planning",
-  "collected_at": "2026-11-24T16:45:55.849905+00:00",
+  "collected_at": "2026-11-25T16:32:32.152220+00:00",
   "items": [
     {
       "id": "d2d7ef0015e7",
@@ -35,6 +35,54 @@
       }
     },
     {
+      "id": "a5d4c9e5502d",
+      "title": "2026/1450/TCA: 6 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
+      "description": "Back Garden Behind Rear Fence\nT1 - Lime\nRe-pollard 2 Lime trees back to previous points.\n\nWorks are for general upkeep and maintenance and to maintain at suitable size for the location.\nRe-pollarding to previous points only with no reduction of framework. \nWork would not be detrimental to the trees health, and would be leaving inner growth to assist with recovery.",
+      "date": "2027-01-20",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1450/TCA",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1450/TCA",
+        "address": "6 Stanhopes, Limpsfield, Oxted, Surrey, RH8 0TY",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "544420d64f39",
+      "title": "2026/1469: Bulbarrow, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+      "description": "Installation of external wall insulation with render and hung-tile finishes, roof alterations including a replacement insulated roof structure, together with associated external alterations",
+      "date": "2027-01-19",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1469",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1469",
+        "address": "Bulbarrow, Pains Hill, Limpsfield, Oxted, Surrey, RH8 0RG",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "5f3e1fb0491c",
+      "title": "2026/1440: Vicars Haw, Trevereux Hill, Limpsfield, Oxted, Surrey, RH8 0TL",
+      "description": "Demolition of existing dwelling and erection of replacement detached house",
+      "date": "2027-01-15",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1440",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1440",
+        "address": "Vicars Haw, Trevereux Hill, Limpsfield, Oxted, Surrey, RH8 0TL",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
       "id": "bd04bf1b3852",
       "title": "2026/1355/TPO: The Evergreens, Uvedale Road, Limpsfield, Oxted, Surrey, RH8 0EN",
       "description": "The trees are T2-T3 on the plan provided in the report on page 2.\n\nWe wish to professionally remove the broken and damaged branches with care that are overhanging the access footpath to our home and drive.",
@@ -62,6 +110,54 @@
       "data": {
         "reference": "2026/1467",
         "address": "13 Chalkpit Lane, Oxted, Surrey, RH8 0NF",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "d1c9f307cf8d",
+      "title": "2025/342/Cond3: Brickmakers Arms, Tandridge Lane, Tandridge, Oxted, Surrey, RH8 9NS",
+      "description": "Details pursuant to Condition 14 ( external lighting) of planning permission ref: 2025/342 dated 08/06/2026 (Demolition of the existing public house (Sui Generis) and erection of two three-bedroom and two four-bedroom dwellings (Use Class C3) forming access off Tandridge Lane, with associated parking and hard and soft landscaping, at Brickmakers Arms, Tandridge Lane, Tandridge, Surrey RH8 9NS in a",
+      "date": "2027-01-12",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/342/Cond3",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2025/342/Cond3",
+        "address": "Brickmakers Arms, Tandridge Lane, Tandridge, Oxted, Surrey, RH8 9NS",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "9a045089f2fb",
+      "title": "2026/1457/TCA: 93 Bluehouse Lane, Limpsfield, Oxted, Surrey, RH8 0DE",
+      "description": "Full removal of the hedge between 93 and 95 Bluehouse Lane to be replaced with a boundary fence.\nCommon Beech hedge (Fagus sylvatica), Juniper (Juniperus sp.), English yew ( Taxus baccata) Incvludes Forsythia. Stem diameter 80. Height >2m\nHedge is G001 on the location plan",
+      "date": "2027-01-11",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1457/TCA",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1457/TCA",
+        "address": "93 Bluehouse Lane, Limpsfield, Oxted, Surrey, RH8 0DE",
+        "decision": "Not yet determined",
+        "source": "tandridge_portal"
+      }
+    },
+    {
+      "id": "6052bacae5e2",
+      "title": "2026/1459/TPO: Oaklands, Wolfs Hill, Limpsfield, Oxted, Surrey, RH8 0QT",
+      "description": "T1 Oak - Remove \n\n1. The tree works are proposed to stop the influence of the tree(s) on the soil below building foundation level and provide long term stability  7 Paddock Close, Oxted, RH8 0LQ\n\nEstimated costs of repair to the building are \u00a3158,400  if the influence of the tree(s) remain and \u00a3 78,750  if the proposed tree works are allowed to proceed. Granting permission will limit these costs. ",
+      "date": "2027-01-11",
+      "category": "planning",
+      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1459/TPO",
+      "headline": "",
+      "summary": "",
+      "data": {
+        "reference": "2026/1459/TPO",
+        "address": "Oaklands, Wolfs Hill, Limpsfield, Oxted, Surrey, RH8 0QT",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
@@ -302,102 +398,6 @@
       "data": {
         "reference": "2026/1328",
         "address": "16 Detillens Lane, Limpsfield, Oxted, Surrey, RH8 0DJ",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "957b602e1ff1",
-      "title": "2026/1268: 3 Central Way, Oxted, Surrey, RH8 0LS",
-      "description": "Lawful Development Certificate (proposed) Hip-to-gable loft conversion with rear dormer extension. Single-storey rear extension with a depth not exceeding 3m.",
-      "date": "2026-12-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1268",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1268",
-        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "496e06d7bc1c",
-      "title": "2026/1269: 3 Central Way, Oxted, Surrey, RH8 0LS",
-      "description": "Construction of a hip-to-gable loft conversion with rear dormer, a 3m deep single-storey rear extension, and a double-storey side extension.",
-      "date": "2026-12-23",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1269",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1269",
-        "address": "3 Central Way, Oxted, Surrey, RH8 0LS",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "184502ea54d9",
-      "title": "2026/1314: 2 Moat Farm Cottages, Itchingwood Common Road, Limpsfield, Oxted, Surrey, RH8 0R",
-      "description": "Single storey rear extension",
-      "date": "2026-12-22",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1314",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1314",
-        "address": "2 Moat Farm Cottages, Itchingwood Common Road, Limpsfield, Oxted, Surrey, RH8 0RL",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "4290ffae1b8c",
-      "title": "2025/1517/Cond5: Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-      "description": "Details pursuant to Condition 4 (Contamination assessment), 7 (Biodiversity Gain Plan), and 13 (Mechanical ventilation system) of planning permission ref: 2025/1517 dated 22/07/2026 (Variation of Condition 3 (Plans) of planning permission ref: 2025/58 dated 22/09/2025 (Demolition of existing stables and the erection of 12 dwellings with parking, access, and associated works (Outline application wi",
-      "date": "2026-12-21",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2025/1517/Cond5",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2025/1517/Cond5",
-        "address": "Stables, Red Lane Farm, Red Lane, Limpsfield, Oxted, Surrey, RH8 0RT",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "eb4371295dc8",
-      "title": "2026/955: Development Site East Of Rowlands, Westerham Road, Limpsfield, Oxted, Surrey, RH",
-      "description": "Erection of 26 new market and affordable homes (Class C3), together with associated vehicular, pedestrian and cycle access, parking, SuDS, landscaping and open space",
-      "date": "2026-12-21",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/955",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/955",
-        "address": "Development Site East Of Rowlands, Westerham Road, Limpsfield, Oxted, Surrey, RH8 0ED",
-        "decision": "Not yet determined",
-        "source": "tandridge_portal"
-      }
-    },
-    {
-      "id": "c6d9b7a956ce",
-      "title": "2026/1303: Hurst Green School, Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HJ",
-      "description": "Proposed single storey rear extension with external alteration to front fenestration.",
-      "date": "2026-12-18",
-      "category": "planning",
-      "url": "https://tdcplanningsearch.tandridge.gov.uk/PlanningApplicationDetail.aspx?ref=2026/1303",
-      "headline": "",
-      "summary": "",
-      "data": {
-        "reference": "2026/1303",
-        "address": "Hurst Green School, Wolfs Wood, Hurst Green, Oxted, Surrey, RH8 0HJ",
         "decision": "Not yet determined",
         "source": "tandridge_portal"
       }
